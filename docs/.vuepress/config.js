@@ -12,9 +12,11 @@ module.exports = {
     lineNumbers: true
   },
   themeConfig: {
+    logo: '/logo.png',
+    lastUpdated: '上次更新时间',
     nav: [{
       text: '博文',
-      link: '/blog/javascript-loop'
+      link: '/blog/javascript-logical-operators'
     }, {
       text: '关于',
       link: '/about/'
@@ -36,13 +38,15 @@ module.exports = {
       {
         title: 'JavaScript基础',
         children: [
+          '/blog/javascript-logical-operators',
           '/blog/javascript-mulit-array',
           '/blog/javascript-loop'
         ]
       }, {
         title: 'CSS世界',
         children: [
-
+          '/blog/css-simple-progress',
+          '/blog/css-border-radius'
         ]
       }, {
         title: 'Vue.js',
@@ -54,12 +58,12 @@ module.exports = {
       }, {
         title: 'React.js',
         children: [
-
+          '/blog/react-install-error'
         ]
       }, {
         title: '小程序',
         children: [
-
+          '/blog/miniprogram-summary-1'
         ]
       }, {
         title: 'BootStrap',
