@@ -36,6 +36,7 @@ module.exports = {
       {
         title: 'JavaScript基础',
         children: [
+          '/blog/javascript-mulit-array',
           '/blog/javascript-loop'
         ]
       }, {
@@ -46,6 +47,7 @@ module.exports = {
       }, {
         title: 'Vue.js',
         children: [
+          '/blog/vue-swipe',
           '/blog/vue-port-config',
           '/blog/vue-transition'
         ]
@@ -62,6 +64,8 @@ module.exports = {
       }, {
         title: 'BootStrap',
         children: [
+          '/blog/bootstrap-select-reset-tip',
+          '/blog/bootstrap-submit-validator',
           '/blog/bootstrap-validator&bootstrap-datetimepicker'
         ]
       }, {
