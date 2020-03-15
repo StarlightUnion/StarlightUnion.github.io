@@ -3,7 +3,7 @@ module.exports = {
   description: 'Just do it!',
   head: [
     ['link', { rel: 'icon', href: '/logo.ico' }],
-    ['link', { rel: 'manifest', href: '/logo.png' }],
+    ['link', { rel: 'manifest', href: '/logo.ico' }],
     ['link', { rel: 'apple-touch-icon', href: '/logo.png' }],
   ],
   serviceWorker: true,
@@ -13,10 +13,22 @@ module.exports = {
   },
   themeConfig: {
     logo: '/logo.png',
-    lastUpdated: '上次更新时间',
     nav: [{
+      text: '首页',
+      link: '/'
+      }, {
       text: '博文',
-      link: '/blog/javascript-logical-operators'
+      // link: '/blog/javascript-logical-operators'
+      items: [{
+        text: '前端',
+        link: '/blog/frontend/javascript-logical-operators'
+      }, {
+        text: '其他',
+        link: '/blog/others/webstorm-background'
+      }]
+    }, {
+      text: '随笔',
+      link: '/life&hobby/'
     }, {
       text: '关于',
       link: '/about/'
@@ -34,58 +46,53 @@ module.exports = {
       }]
     }],
     sidebar: {
-      '/blog/': [
+      '/blog/frontend/': [
       {
         title: 'JavaScript基础',
         children: [
-          '/blog/javascript-logical-operators',
-          '/blog/javascript-mulit-array',
-          '/blog/javascript-loop'
+          '/blog/frontend/javascript-logical-operators',
+          '/blog/frontend/javascript-mulit-array',
+          '/blog/frontend/javascript-loop'
         ]
       }, {
         title: 'CSS世界',
         children: [
-          '/blog/css-simple-progress',
-          '/blog/css-border-radius'
+          '/blog/frontend/css-simple-progress',
+          '/blog/frontend/css-border-radius'
         ]
       }, {
         title: 'Vue.js',
         children: [
-          '/blog/vue-swipe',
-          '/blog/vue-port-config',
-          '/blog/vue-transition'
+          '/blog/frontend/vue-swipe',
+          '/blog/frontend/vue-port-config',
+          '/blog/frontend/vue-transition'
         ]
       }, {
         title: 'React.js',
         children: [
-          '/blog/react-install-error'
+          '/blog/frontend/react-install-error'
         ]
       }, {
         title: '小程序',
         children: [
-          '/blog/miniprogram-summary-1'
+          '/blog/frontend/miniprogram-summary-1'
         ]
       }, {
         title: 'BootStrap',
         children: [
-          '/blog/bootstrap-select-reset-tip',
-          '/blog/bootstrap-submit-validator',
-          '/blog/bootstrap-validator&bootstrap-datetimepicker'
+          '/blog/frontend/bootstrap-select-reset-tip',
+          '/blog/frontend/bootstrap-submit-validator',
+          '/blog/frontend/bootstrap-validator&bootstrap-datetimepicker'
         ]
-      }, {
-        title: '杂记',
-        children: [
-          '/blog/webstorm-background',
-          '/blog/webstorm-tfs-2',
-          '/blog/webstorm-tfs-1',
-          '/blog/homebrew'
-        ]
-      }],
-      '/about/': [
-        '/about/'
+      }, ],
+      '/blog/others/': [
+        '/blog/others/webstorm-background',
+        '/blog/others/webstorm-tfs-2',
+        '/blog/others/webstorm-tfs-1',
+        '/blog/others/homebrew'
       ]
     },
-    lastUpdated: 'Last Updated'
+    lastUpdated: '上次更新时间'
   },
   // sidebarDepth: 2,
   plugins: [
@@ -93,6 +100,34 @@ module.exports = {
       sidebarLinkSelector: '.sidebar-link',
       headerAnchorSelector: '.header-anchor'
     }],
-    '@vuepress/back-to-top'
+    '@vuepress/back-to-top',
+    ['@vuepress/last-updated', {
+      transformer: (timestamp, lang) => {
+        const moment = require('moment')
+        moment.locale(lang)
+
+        const transform = (timestamp) => {
+          timestamp = timestamp ? timestamp : new Date().getTime();
+          const time = new Date(timestamp)
+          const y = time.getFullYear()
+          const M = time.getMonth() + 1
+          const d = time.getDate()
+          const h = time.getHours()
+          const m = time.getMinutes()
+          const s = time.getSeconds()
+
+          return y + '/' + addZero(M) + '/' + addZero(d) + ' ' + addZero(h) + ':' + addZero(m) + ':' + addZero(s)
+        }
+
+        const addZero = (m) => {
+          return m < 10 ? '0' + m : m
+        }
+
+        return transform(timestamp)
+
+        // const now = moment(timestamp).fromNow() // Github上的时间
+        // return now
+      }
+    }]
   ]
 };
