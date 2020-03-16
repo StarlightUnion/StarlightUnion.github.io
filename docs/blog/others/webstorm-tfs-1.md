@@ -1,7 +1,7 @@
 ---
 title: webstorm TFS 插件的安装与使用(1)
 date: 2019-03-02 00:00:00
-tags: 杂记
+tags: 杂记, WebStorm, tfs
 ---
 
 # webstorm TFS 插件的安装与使用(1)
