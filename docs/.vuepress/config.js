@@ -24,7 +24,7 @@ module.exports = {
         link: '/blog/frontend/javascript-logical-operators'
       }, {
         text: '其他',
-        link: '/blog/others/git-remove-dir'
+        link: '/blog/others/github-sshkey-config'
       }]
     }, {
       text: '随笔',
@@ -86,6 +86,7 @@ module.exports = {
         ]
       }, ],
       '/blog/others/': [
+        '/blog/others/github-sshkey-config',
         '/blog/others/git-remove-dir',
         '/blog/others/webstorm-background',
         '/blog/others/webstorm-tfs-2',
