@@ -20,8 +20,11 @@ module.exports = {
       text: '博文',
       // link: '/blog/javascript-logical-operators'
       items: [{
-        text: '前端',
+        text: '前端技术',
         link: '/blog/frontend/javascript-logical-operators'
+      }, {
+        text: '计算机基础',
+        link: '/blog/cb/'
       }, {
         text: '其他',
         link: '/blog/others/github-sshkey-config'
@@ -96,7 +99,7 @@ module.exports = {
     },
     lastUpdated: '上次更新时间'
   },
-  // sidebarDepth: 2,
+  // sidebarDepth: 4,
   plugins: [
     ['@vuepress/active-header-links', {
       sidebarLinkSelector: '.sidebar-link',
