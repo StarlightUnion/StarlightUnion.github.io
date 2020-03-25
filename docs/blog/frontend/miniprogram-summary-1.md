@@ -124,7 +124,9 @@ Page({
   ...
 ```
 
-推荐一下我写过的第一个小程序：[一个可以查询天气的小程序源码](https://github.com/StarlightUnion/Weather-MiniProgram)<br>
-喜欢的话麻烦点个star
+推荐一下我写过的第一个小程序：[一个可以查询天气的小程序源码](https://github.com/StarlightUnion/Weather-MiniProgram)喜欢的话麻烦点个star
+![天气](/images/frontend/miniprogram/mp-qrcode.png)
+
+
 
 

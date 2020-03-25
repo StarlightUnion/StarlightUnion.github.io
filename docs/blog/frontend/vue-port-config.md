@@ -5,7 +5,7 @@ tags: Vue.js
 ---
 
 # 开发环境中修改端口号
-![描述](/images/vue/vue_port_01.png)
+![描述](/images/frontend/vue/vue-port-01.png)
 >如上图所示，在开发环境中，**8080**便是端口号，这也是使用Vue脚手架创建的项目运行时的默认的端口。
 
 ## 1.Vue 2.x
@@ -40,7 +40,7 @@ module.exports = {
 };
 ```
 ## 3.起因
-![描述](/images/vue/vue_port_02.png)
+![描述](/images/frontend/vue/vue-port-02.png)
 ```
 Access to XMLHttpRequest at 'http://localhost:8080/sockjs-node/info?t=1565711501046' from origin 'http://192.168.0.104:8080' has been blocked by CORS policy: No 'Access-Control-Allow-Origin' header is present on the requested resource.
 
@@ -48,4 +48,4 @@ localhost:8080/sockjs-node/info?t=1565711501046:1 Failed to load resource: net::
 ```
 
 > 今天我调试练手的项目时发现报了这么个错误，当时百度了好久不得解决要领，后来想起来自己开了两个项目，一个是**Vue2.x**，另一个是**Vue3.x**，看来一下两个的端口号都是8080，冲突了。**至于为什么同一个端口号能运行两个项目，是因为Vue3.0运行时会产生两个项目地址（如下图），我点了后一个......**
-![描述](/images/vue/vue_port_03.png)
+![描述](/images/frontend/vue/vue-port-03.png)

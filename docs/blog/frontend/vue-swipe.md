@@ -10,7 +10,7 @@ tags: Vue.js
 
 > 这是前几个月[仿某米商城首页项目](https://github.com/StarlightUnion/xiaomi)时的一些感悟，现在记录在这里。所以样式以及数据什么的都是照搬过来的，没收广告费，也不耍—哔—。。。
 
-![描述](/images/vue/vue_swipe.gif)
+![描述](/images/frontend/vue/vue-swipe.gif)
 
 [轮播图预览地址](https://starlightunion.github.io/Blog-Content/Vue/banner/banner.html)
 

@@ -27,7 +27,7 @@ module.exports = {
         link: '/blog/cb/'
       }, {
         text: '其他',
-        link: '/blog/others/github-sshkey-config'
+        link: '/blog/others/nginx-deploy-record'
       }]
     }, {
       text: '随笔',
@@ -89,6 +89,7 @@ module.exports = {
         ]
       }, ],
       '/blog/others/': [
+        '/blog/others/nginx-deploy-record',
         '/blog/others/github-sshkey-config',
         '/blog/others/git-remove-dir',
         '/blog/others/webstorm-background',
@@ -98,6 +99,7 @@ module.exports = {
       ]
     },
     lastUpdated: '上次更新时间'
+    // lastUpdated: 'Last Updated'
   },
   // sidebarDepth: 4,
   plugins: [

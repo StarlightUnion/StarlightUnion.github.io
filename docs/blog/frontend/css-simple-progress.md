@@ -16,7 +16,7 @@ tags: CSS世界
 
 首先我们来看一下``<progress>``的兼容性，可以发现**目前全部主流的浏览器都支持该新标签**，但是支持归支持，效果确实另一码事。。。虽然测试的不完全，但是一定程度上也能反映问题（提前说明，测试的浏览器都是当前时间下**最新的版本**）。
 
-![css02-1.png](/images/css/css_02_01.png)
+![css02-1.png](/images/frontend/css/css-02-01.png)
 
 ### 1.**Windows10**
 
@@ -24,10 +24,10 @@ tags: CSS世界
 
 | 序号 |            浏览器            |            显示效果             |
 | :--: | :--------------------------: | :-----------------------------: |
-|  1   |        Google Chrome         | ![image](/images/css/css_02_05.png) |
-|  2   | Microsoft Edge(chromium内核) | ![image](/images/css/css_02_06.png) |
-|  3   |           Firefox            | ![image](/images/css/css_02_04.png) |
-|  3   |     Internet Explorer        | ![image](/images/css/css_02_03.png) |
+|  1   |        Google Chrome         | ![image](/images/frontend/css/css-02-05.png) |
+|  2   | Microsoft Edge(chromium内核) | ![image](/images/frontend/css/css-02-06.png) |
+|  3   |           Firefox            | ![image](/images/frontend/css/css-02-04.png) |
+|  3   |     Internet Explorer        | ![image](/images/frontend/css/css-02-03.png) |
 
 ### 2.**macOS Catalina**
 
@@ -35,9 +35,9 @@ tags: CSS世界
 
 | 序号 |            浏览器            |            显示效果             |
 | :--: | :--------------------------: | :-----------------------------: |
-|  1   |        Google Chrome         | ![css02-2.png](/images/css/css_02_02.png) |
-|  2   | Microsoft Edge(chromium内核) | ![css02-2.png](/images/css/css_02_02.png) |
-|  3   |           Firefox            | ![css02-2.png](/images/css/css_02_02.png) |
+|  1   |        Google Chrome         | ![css02-2.png](/images/frontend/css/css-02-02.png) |
+|  2   | Microsoft Edge(chromium内核) | ![css02-2.png](/images/frontend/css/css-02-02.png) |
+|  3   |           Firefox            | ![css02-2.png](/images/frontend/css/css-02-02.png) |
 
 ### 3.移动端
 
@@ -45,9 +45,9 @@ tags: CSS世界
 
 | 序号 |       浏览器       |            显示效果             |
 | :--: | :----------------: | :-----------------------------: |
-|  1   |  Android Webview   | ![css02-8.png](/images/css/css_02_08.png) |
-|  2   | Chrome for Android | ![css02-8.png](/images/css/css_02_08.png) |
-|  3   |   Safari on iOS    | ![css02-7.jpg](/images/css/css_02_07.jpg) |
+|  1   |  Android Webview   | ![css02-8.png](/images/frontend/css/css-02-08.png) |
+|  2   | Chrome for Android | ![css02-8.png](/images/frontend/css/css-02-08.png) |
+|  3   |   Safari on iOS    | ![css02-7.jpg](/images/frontend/css/css-02-07.jpg) |
 
 这下大概明白问题了吧，不同系统、不同浏览器、甚至**有的同样的浏览器不同的系统**，``<progress>``标签的显示效果都不一样。特别是在**Windows10**系统环境下，每个浏览器都不一样，至于为什么加个**10**，**因为据说Windows7环境下和Windows10环境下也不一样**。。~~（其实我没测过win7）~~
 

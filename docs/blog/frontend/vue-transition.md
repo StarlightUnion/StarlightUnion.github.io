@@ -11,7 +11,7 @@ tags: Vue.js
 
 >问题起源于使用Vue做网站时涉及到的一个小部件显示动画，阅读了Vue的文档后结合网上各位的经验，花了点时间研究了下。
 
-![描述](/images/vue/vue_tran_01.gif)
+![描述](/images/frontend/vue/vue-tran-01.gif)
 
 >最终的效果**如上图所示**，当鼠标移入灰色方块时弹出层会**至下而上**显示出来，类似于 **拉链式窗帘(?)**。
 
@@ -126,7 +126,7 @@ tags: Vue.js
 </html>
 ```
 ## 二、transition的使用
-![描述](/images/vue/vue_tran_02.png)
+![描述](/images/frontend/vue/vue-tran-02.png)
 > 以上为各类状态/过程对应的类名示意图。
 
 ### 1.没有名字的transition组件
