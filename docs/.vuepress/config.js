@@ -58,7 +58,7 @@ module.exports = {
           '/blog/frontend/javascript-loop'
         ]
       }, {
-        title: 'CSS世界',
+        title: 'CSS/HTML',
         children: [
           '/blog/frontend/css-simple-progress',
           '/blog/frontend/css-border-radius'
