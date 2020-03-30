@@ -26,7 +26,7 @@ module.exports = {
         text: '计算机基础',
         link: '/blog/cb/'
       }, {
-        text: '其他',
+        text: '技术杂记',
         link: '/blog/others/nginx-deploy-record'
       }]
     }, {
@@ -60,6 +60,8 @@ module.exports = {
       }, {
         title: 'CSS/HTML',
         children: [
+          '/blog/frontend/css-selector-2',
+          '/blog/frontend/css-selector-1',
           '/blog/frontend/css-simple-progress',
           '/blog/frontend/css-border-radius'
         ]
