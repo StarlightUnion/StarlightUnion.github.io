@@ -21,7 +21,7 @@ tags: CSS, selector, CSS进阶
     p.select {
       color: red;
     }
-  
+
   	/* 选择类名为select的类名为class的元素/标签 */
   	/* 下面的优先级要高于上面的 */
     .class.select {

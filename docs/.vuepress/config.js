@@ -60,6 +60,7 @@ module.exports = {
       }, {
         title: 'CSS/HTML',
         children: [
+          '/blog/frontend/html-base-tag',
           '/blog/frontend/css-selector-2',
           '/blog/frontend/css-selector-1',
           '/blog/frontend/css-simple-progress',
