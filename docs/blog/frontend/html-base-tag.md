@@ -1,10 +1,10 @@
 ---
-title: HTML Base标签的使用技巧
-date: 2020-03-301 00:00:00
+title: HTML Base标签的使用技巧-为页面设置统一的资源地址
+date: 2020-03-31 00:00:00
 tags: HTML, 标签
 ---
 
-# HTML Base标签的使用技巧
+# HTML Base标签的使用技巧-为页面设置统一的资源地址
 
 > 要不是因为部署项目，我还不知道有这个标签🙄。
 
@@ -62,12 +62,12 @@ tags: HTML, 标签
   <base href="http://www.xxx.com/">
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  
+
   <script type="text/javascript" src="/common/111.js"></script>
   <script type="text/javascript" src="/common/222.js"></script>
   <link rel="stylesheet" href="/common/111.css">
   <link rel="stylesheet" href="/common/222.css">
-  
+
   <script type="text/javascript" src="/public/scripts/plug.js"></script>
 	...
 </head>
@@ -82,13 +82,13 @@ tags: HTML, 标签
   <base href="http://www.xxx.com/public/script/">
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  
+
   <!--  -->
   <script type="text/javascript" src="/common/111.js"></script>
   <script type="text/javascript" src="/common/222.js"></script>
   <link rel="stylesheet" href="/common/111.css">
   <link rel="stylesheet" href="/common/222.css">
-  
+
 > <script type="text/javascript" src="/script/plug.js"></script>
 	...
 </head>

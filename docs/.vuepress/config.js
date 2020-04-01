@@ -27,7 +27,7 @@ module.exports = {
         link: '/blog/cb/'
       }, {
         text: '技术杂记',
-        link: '/blog/others/nginx-deploy-record'
+        link: '/blog/others/nginx-start'
       }]
     }, {
       text: '随笔',
@@ -92,6 +92,7 @@ module.exports = {
         ]
       }, ],
       '/blog/others/': [
+        '/blog/others/nginx-start',
         '/blog/others/nginx-deploy-record',
         '/blog/others/github-sshkey-config',
         '/blog/others/git-remove-dir',
