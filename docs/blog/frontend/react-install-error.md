@@ -6,7 +6,7 @@ tags: React.js
 
 # npx create-react-app xxx创建项目报错的解决办法
 
-> 手头有一台大学时代的Windows电脑，它此前没有装过``create-react-app``，只装了node环境。**版本信息：node -> 10.16.3，npm -> 6.9.0。**前几日闲的无事想给它装个React，结果失败了，报了错，所以有了下面这出。
+> 手头有一台大学时代的Windows电脑，它此前没有装过``create-react-app``，只装了node环境。版本信息：node -> 10.16.3，npm -> 6.9.0。前几日闲的无事想给它装个React，结果失败了，报了错，所以有了下面这出。
 
 ## 一、安装过程
 ![install-react](/images/frontend/react/install-react.png)
@@ -32,7 +32,7 @@ Install for create-react-app@latest failed with code 1
 
 只好祭出百度大法，一顿操作，走了不少弯路，不过还是让我找到了一位**大佬**写的[解决办法](https://segmentfault.com/a/1190000021730681)，**在此鸣谢这位大佬。**
 
-出现问题的原因是**``node-cache``的路径中存在空格**，所以根据上文报错信息中的路径去找肯定找不到。。。
+出现问题的原因是`node-cache`**的路径中存在空格**，所以根据上文报错信息中的路径去找肯定找不到。。。
 
 ```shell
 npm config set prefix "E:\Program~1\nodejs\node-global"
