@@ -18,6 +18,6 @@ tags: CSS, selector, CSS进阶
 
 CSS3中新增了许多新的伪类伪元素，许多都是不太熟的。在这里**测试一下顺便混个眼熟**😂。
 
-
+![2](/images/frontend/css/css-selector-02-02.png)
 
 施工中🚧...

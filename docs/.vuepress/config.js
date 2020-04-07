@@ -18,16 +18,15 @@ module.exports = {
       link: '/'
       }, {
       text: '博文',
-      // link: '/blog/javascript-logical-operators'
       items: [{
         text: '前端技术',
-        link: '/blog/frontend/javascript-logical-operators'
+        link: '/blog/frontend/javascript/javascript-logical-operators'
       }, {
         text: '计算机基础',
         link: '/blog/cb/'
       }, {
         text: '技术杂记',
-        link: '/blog/others/nginx-start'
+        link: '/blog/others/devtool/nginx-start'
       }]
     }, {
       text: '随笔',
@@ -53,54 +52,63 @@ module.exports = {
       {
         title: 'JavaScript基础',
         children: [
-          '/blog/frontend/javascript-logical-operators',
-          '/blog/frontend/javascript-mulit-array',
-          '/blog/frontend/javascript-loop'
+          '/blog/frontend/javascript/javascript-logical-operators',
+          '/blog/frontend/javascript/javascript-mulit-array',
+          '/blog/frontend/javascript/javascript-loop'
         ]
       }, {
         title: 'CSS/HTML',
         children: [
-          '/blog/frontend/html-base-tag',
-          '/blog/frontend/css-selector-2',
-          '/blog/frontend/css-selector-1',
-          '/blog/frontend/css-simple-progress',
-          '/blog/frontend/css-border-radius'
+          '/blog/frontend/css&html/html-base-tag',
+          '/blog/frontend/css&html/css-selector-2',
+          '/blog/frontend/css&html/css-selector-1',
+          '/blog/frontend/css&html/css-simple-progress',
+          '/blog/frontend/css&html/css-border-radius'
         ]
       }, {
         title: 'Vue.js',
         children: [
-          '/blog/frontend/vue-swipe',
-          '/blog/frontend/vue-port-config',
-          '/blog/frontend/vue-transition'
+          '/blog/frontend/vue/vue-swipe',
+          '/blog/frontend/vue/vue-port-config',
+          '/blog/frontend/vue/vue-transition'
         ]
       }, {
         title: 'React.js',
         children: [
-          '/blog/frontend/react-install-error'
+          '/blog/frontend/react/react-install-error'
         ]
       }, {
         title: '小程序',
         children: [
-          '/blog/frontend/miniprogram-summary-1'
+          '/blog/frontend/miniprogram/miniprogram-summary-1'
         ]
       }, {
         title: 'BootStrap',
         children: [
-          '/blog/frontend/bootstrap-select-reset-tip',
-          '/blog/frontend/bootstrap-submit-validator',
-          '/blog/frontend/bootstrap-validator&bootstrap-datetimepicker'
+          '/blog/frontend/bootstrap/bootstrap-select-reset-tip',
+          '/blog/frontend/bootstrap/bootstrap-submit-validator',
+          '/blog/frontend/bootstrap/bootstrap-validator&bootstrap-datetimepicker'
         ]
-      }, ],
+      }],
       '/blog/others/': [
-        '/blog/others/nginx-start',
-        '/blog/others/nginx-deploy-record',
-        '/blog/others/github-sshkey-config',
-        '/blog/others/git-remove-dir',
-        '/blog/others/webstorm-background',
-        '/blog/others/webstorm-tfs-2',
-        '/blog/others/webstorm-tfs-1',
-        '/blog/others/homebrew'
-      ]
+      {
+        title: '开发工具',
+        children: [
+          '/blog/others/devtool/nginx-start',
+          '/blog/others/devtool/nginx-deploy-record',
+          '/blog/others/devtool/github-sshkey-config',
+          '/blog/others/devtool/git-remove-dir',
+          '/blog/others/devtool/webstorm-background',
+          '/blog/others/devtool/webstorm-tfs-2',
+          '/blog/others/devtool/webstorm-tfs-1',
+          '/blog/others/devtool/homebrew'
+        ]
+      }, {
+        title: '博客相关',
+        children: [
+          '/blog/others/aboutblog/vuepress-build-blog-1'
+        ]
+      }]
     },
     lastUpdated: '上次更新时间'
     // lastUpdated: 'Last Updated'

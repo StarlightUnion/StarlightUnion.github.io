@@ -1,4 +1,4 @@
-# Computer Basics
+# CB
 
 ![stop](/stop.png)
 
