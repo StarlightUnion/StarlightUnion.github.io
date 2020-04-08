@@ -25,6 +25,9 @@ module.exports = {
         text: '计算机基础',
         link: '/blog/cb/'
       }, {
+        text: 'LeetCode',
+        link: '/blog/leetcode/'
+      }, {
         text: '技术杂记',
         link: '/blog/others/devtool/nginx-start'
       }]
@@ -52,6 +55,7 @@ module.exports = {
       {
         title: 'JavaScript基础',
         children: [
+          '/blog/frontend/javascript/object-array-classification',
           '/blog/frontend/javascript/javascript-logical-operators',
           '/blog/frontend/javascript/javascript-mulit-array',
           '/blog/frontend/javascript/javascript-loop'
@@ -90,9 +94,17 @@ module.exports = {
           '/blog/frontend/bootstrap/bootstrap-validator&bootstrap-datetimepicker'
         ]
       }],
+      '/blog/leetcode/': [
+      {
+        title: 'JavaScript',
+        children: [
+          '/blog/leetcode/'
+        ]
+      }],
       '/blog/others/': [
       {
         title: '开发工具',
+        // sidebarDepth: 3,
         children: [
           '/blog/others/devtool/nginx-start',
           '/blog/others/devtool/nginx-deploy-record',
@@ -113,7 +125,6 @@ module.exports = {
     lastUpdated: '上次更新时间'
     // lastUpdated: 'Last Updated'
   },
-  // sidebarDepth: 4,
   plugins: [
     ['@vuepress/active-header-links', {
       sidebarLinkSelector: '.sidebar-link',

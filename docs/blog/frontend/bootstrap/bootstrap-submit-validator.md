@@ -35,6 +35,6 @@ tags: BootStrap
     ...
 </form>
 ```
-> 这样写点击除``提交``外的按钮就可以避免触发验证了，``<button>``标签的``type``属性有三个值，分别是``submit``、``button``和``reset``，在BootStrapValidator的验证表单中只能有一个``type=submit``的按钮，**如果``type``属性不写或为空，那么就会被自动识别为``type=submit``**，点击时会触发验证。而``type=button``可以为多个，所以可以在不需要加验证的按钮给**``type``属性设为``button``**就好了。而``type=reset``的按钮点击时也会触发验证。
+> 这样写点击除``提交``外的按钮就可以避免触发验证了，``<button>``标签的``type``属性有三个值，分别是``submit``、``button``和``reset``，在BootStrapValidator的验证表单中只能有一个``type=submit``的按钮，**如果``type``属性不写或为空，那么就会被自动识别为``type=submit``**，点击时会触发验证。而``type=button``可以为多个，所以可以在不需要加验证的按钮给``type``属性设为``button``就好了。而``type=reset``的按钮点击时也会触发验证。
 
 > 具体的各位读者老爷们可以自行验证...
