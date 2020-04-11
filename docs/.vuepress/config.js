@@ -26,7 +26,7 @@ module.exports = {
         link: '/blog/cb/'
       }, {
         text: 'LeetCode',
-        link: '/blog/leetcode/'
+        link: '/blog/leetcode/js/exercises-01'
       }, {
         text: '技术杂记',
         link: '/blog/others/devtool/nginx-start'
@@ -98,7 +98,7 @@ module.exports = {
       {
         title: 'JavaScript',
         children: [
-          '/blog/leetcode/'
+          '/blog/leetcode/js/exercises-01'
         ]
       }],
       '/blog/others/': [
