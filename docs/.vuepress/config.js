@@ -20,7 +20,7 @@ module.exports = {
       text: '博文',
       items: [{
         text: '前端技术',
-        link: '/blog/frontend/javascript/javascript-logical-operators'
+        link: '/blog/frontend/javascript/object-array-classification'
       }, {
         text: '计算机基础',
         link: '/blog/cb/'
