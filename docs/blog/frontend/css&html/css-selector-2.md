@@ -1,16 +1,16 @@
 ---
-title: 【CSS进阶】选择器进阶笔记（2）伪类和伪元素
+title: 【CSS进阶】选择器进阶笔记（2）伪类
 date: 2020-03-30 00:00:00
 tags: CSS, selector, CSS进阶
 ---
 
-# 【CSS进阶】选择器进阶笔记（2）伪类和伪元素
+# 【CSS进阶】选择器进阶笔记（2）伪类
 
-接上一个[选择器进阶笔记（1）](https://starlightunion.github.io/blog/frontend/css-selector-1.html)，CSS选择器还有**伪类和伪元素**这两大重要的组成部分。
+接上一个[选择器进阶笔记（1）](https://starlightunion.github.io/blog/frontend/css-selector-1.html)，CSS选择器还有**伪类**这两大重要的组成部分。
 
-## 一、CSS3之前的伪类和伪元素
+## 一、CSS3之前的伪类
 
-**CSS3之前的伪类和伪元素**主要如下图所示👇
+**CSS3之前的伪类**主要如下图所示👇
 
 ![1](/images/frontend/css/css-selector-02-01.png)
 
@@ -54,10 +54,33 @@ tags: CSS, selector, CSS进阶
 
 :::
 
-## 二、CSS3中的伪类和伪元素
+## 二、CSS3中的伪类
 
-CSS3中新增了许多新的伪类伪元素，许多都是不太熟的。在这里**测试一下顺便混个眼熟**😂。
+CSS3中新增了许多新的伪类，基本都不熟。在这里**测试一下顺便混个眼熟**😂。
 
 ![2](/images/frontend/css/css-selector-02-02.png)
+
+CSS3中新的伪类基本都在这儿了，但是光看**例子描述**基本没啥用，还是一个一个来**试试**。。。
+
+### 1.`~`
+
+```html
+<style>
+  span ~ p {
+    color: red;
+  }
+</style>
+
+<div>JavaScript (JS) is a lightweight, interpreted, or just-in-time compiled programming language with first-class functions.</div>
+<p>JavaScript (JS) is a lightweight, interpreted, or just-in-time compiled programming language with first-class functions.</p>
+<span>mark</span>
+<p>JavaScript</p>
+```
+
+图示：
+![4](/images/frontend/css/css-selector-02-04.png)
+### 2.`first-of-type`/`last-of-type`/`only-of-type`
+
+
 
 施工中🚧...

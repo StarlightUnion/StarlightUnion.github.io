@@ -2,7 +2,7 @@
 home: true
 heroImage: /cover_02.jpg
 actionText: 我的博文 →
-actionLink: /blog/frontend/javascript/object-array-classification
+actionLink: /blog/frontend/summary
 # features:
 # - title: 简洁至上
 #   details: 以 Markdown 为中心的项目结构，以最少的配置帮助你专注于写作。

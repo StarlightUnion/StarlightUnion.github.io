@@ -16,7 +16,7 @@ module.exports = {
     nav: [{
       text: '首页',
       link: '/'
-      }, {
+    }, {
       text: '博文',
       items: [{
         text: '前端技术',
@@ -26,7 +26,7 @@ module.exports = {
         link: '/blog/cb/'
       }, {
         text: 'LeetCode',
-        link: '/blog/leetcode/js/exercises-01'
+        link: '/blog/leetcode/js/exercises-02'
       }, {
         text: '技术杂记',
         link: '/blog/others/devtool/nginx-start'
@@ -93,11 +93,15 @@ module.exports = {
           '/blog/frontend/bootstrap/bootstrap-submit-validator',
           '/blog/frontend/bootstrap/bootstrap-validator&bootstrap-datetimepicker'
         ]
+      }, {
+        title: '系列汇总',
+        path: '/blog/frontend/summary'
       }],
       '/blog/leetcode/': [
       {
         title: 'JavaScript',
         children: [
+          '/blog/leetcode/js/exercises-02',
           '/blog/leetcode/js/exercises-01'
         ]
       }],
