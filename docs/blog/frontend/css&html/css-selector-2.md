@@ -44,7 +44,7 @@ tags: CSS, selector, CSS进阶
 </div>
 ```
 
-图示：
+**图示：**
 
 ![3](/images/frontend/css/css-selector-02-03.png)
 
@@ -77,10 +77,75 @@ CSS3中新的伪类基本都在这儿了，但是光看**例子描述**基本没
 <p>JavaScript</p>
 ```
 
-图示：
+**图示：**
+
 ![4](/images/frontend/css/css-selector-02-04.png)
+
 ### 2.`first-of-type`/`last-of-type`/`only-of-type`
 
+```html
+<style>
+  /* first-of-type/last-of-type/only-of-type */
+  /* 同一个父元素下第一个p元素 */
+  p:first-of-type {
+    color: red;
+  }
 
+  /* 同一个父元素下最后一个p元素 */
+  p:last-of-type {
+    font-weight: 100;
+  }
+
+  /* 选择同一个父元素下只有一个<span>元素的元素 */
+  /* 这样写表述还是不够清楚，还是看实例吧。。 */
+  span:only-of-type {
+    color: green;
+  }
+</style>
+
+<!-- 实例1 -->
+<div>
+  <div>JavaScript</div>
+  <p>JavaScript</p>
+  <span>mark</span>
+  <p>JavaScript</p>
+  <span id="type">
+    mark2
+    <span>???</span>
+    <p>+++</p>
+    +++
+    <!-- <span>---</span> -->
+  </span>
+</div>
+
+<!-- 实例2 -->
+<div>
+  <div>JavaScript</div>
+  <p>JavaScript</p>
+  <span>mark</span>
+  <p>JavaScript</p>
+  <span id="type">
+    mark2
+    <span>???</span>
+    <p>+++</p>
+    +++
+   <span>---</span>
+  </span>
+</div>
+```
+
+**图示：**
+
+![实例1](/images/frontend/css/css-selector-02-05.png)
+
+> -----------------------（👆实例1 👇实例2）-----------------------
+
+![实例2](/images/frontend/css/css-selector-02-06.png)
+
+::: warning
+
+可以发现`only-of-type`在**仅适用于相同父元素下只有一个`span`元素**，我多加了一个`span`元素，**样式立马失效了。。**
+
+:::
 
 施工中🚧...
