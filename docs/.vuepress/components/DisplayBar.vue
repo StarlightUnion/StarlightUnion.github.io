@@ -23,15 +23,16 @@ export default {
       createTime: ''
     }
   },
-  methods: {
-    dateHandle: (date) => {
-      const _date = new Date(date);
-      return transform(_date);
-    }
-  },
+  // methods: {
+  //   dateHandle: (date) => {
+  //     const _date = new Date(date).getTime();
+  //     return transform(_date);
+  //   }
+  // },
   mounted () {
     this.tags = this.displayData.tags.split(',');
-    this.createTime = this.dateHandle(this.displayData.date);
+    // this.createTime = this.dateHandle(this.displayData.date);
+    this.createTime = this.displayData.date;
   }
 }
 </script>
@@ -44,8 +45,12 @@ export default {
     font-weight: 300;
   }
 
-  .bar-container span:not(.iconfont):hover {
+  .bar-container span:not(.iconfont) {
     cursor: pointer;
+    font-style: italic;
+  }
+
+  .bar-container span:not(.iconfont):hover {
     color: #87cefa;/* 主题色 $accentColor */
   }
 

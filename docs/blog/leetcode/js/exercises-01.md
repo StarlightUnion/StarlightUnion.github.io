@@ -1,6 +1,6 @@
 ---
 title: 【题库练习】01 两数之和
-date: 2020-04-11 00:00:00
+date: 2020/04/11 00:00:00
 tags: LeetCode, Exercise
 ---
 

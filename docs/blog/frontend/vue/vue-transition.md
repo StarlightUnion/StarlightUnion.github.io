@@ -1,6 +1,6 @@
 ---
 title: Vue中的transition封装组件
-date: 2019-08-13 00:00:00
+date: 2019/08/13 00:00:00
 tags: Vue.js
 ---
 

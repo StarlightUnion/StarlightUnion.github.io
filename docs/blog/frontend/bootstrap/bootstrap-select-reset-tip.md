@@ -1,6 +1,6 @@
 ---
 title: 表单验证中重置BootStrap-select验证提示不清除的坑
-date: 2019-09-16 00:00:00
+date: 2019/09/16 00:00:00
 tags: BootStrap
 ---
 

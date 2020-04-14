@@ -1,6 +1,6 @@
 ---
 title: 【Git】GitHub SSH Key配置push仍然失败的问题
-date: 2019-03-16 00:00:00
+date: 2019/03/16 00:00:00
 tags: 杂记, Git, GitHub
 ---
 

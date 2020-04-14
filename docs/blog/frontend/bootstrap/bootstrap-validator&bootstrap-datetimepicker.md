@@ -1,6 +1,6 @@
 ---
 title: BootStrapValidator无法自动验证BootStrap-datetimepicker的坑
-date: 2019-07-30 00:00:00
+date: 2019/07/30 00:00:00
 tags: Bootstrap
 ---
 
