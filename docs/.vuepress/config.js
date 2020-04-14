@@ -5,6 +5,7 @@ module.exports = {
     ['link', { rel: 'icon', href: '/logo.ico' }],
     ['link', { rel: 'manifest', href: '/logo.ico' }],
     ['link', { rel: 'apple-touch-icon', href: '/logo.png' }],
+    ['link', { rel: 'stylesheet', href: '/assets/css/iconfont.css' }]
   ],
   serviceWorker: true,
   base: '/',
@@ -137,27 +138,27 @@ module.exports = {
     '@vuepress/back-to-top',
     ['@vuepress/last-updated', {
       transformer: (timestamp, lang) => {
-        const moment = require('moment')
-        moment.locale(lang)
+        const moment = require('moment');
+        moment.locale(lang);
 
         const transform = (timestamp) => {
           timestamp = timestamp ? timestamp : new Date().getTime();
-          const time = new Date(timestamp)
-          const y = time.getFullYear()
-          const M = time.getMonth() + 1
-          const d = time.getDate()
-          const h = time.getHours()
-          const m = time.getMinutes()
-          const s = time.getSeconds()
+          const time = new Date(timestamp),
+            y = time.getFullYear(),
+            M = time.getMonth() + 1,
+            d = time.getDate(),
+            h = time.getHours(),
+            m = time.getMinutes(),
+            s = time.getSeconds();
 
-          return y + '/' + addZero(M) + '/' + addZero(d) + ' ' + addZero(h) + ':' + addZero(m) + ':' + addZero(s)
+          return y + '/' + addZero(M) + '/' + addZero(d) + ' ' + addZero(h) + ':' + addZero(m) + ':' + addZero(s);
         }
 
         const addZero = (m) => {
-          return m < 10 ? '0' + m : m
+          return m < 10 ? '0' + m : m;
         }
 
-        return transform(timestamp)
+        return transform(timestamp);
 
         // const now = moment(timestamp).fromNow() // Github上的时间
         // return now

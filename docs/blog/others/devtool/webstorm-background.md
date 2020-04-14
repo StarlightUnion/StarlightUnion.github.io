@@ -6,6 +6,10 @@ tags: 杂记, WebStorm
 
 
 # webstorm只改变编辑器背景主题颜色
+<ClientOnly>
+  <display-bar :displayData="$frontmatter"></display-bar>
+</ClientOnly>
+
 >**webstorm版本信息：2018.1**
 
 >前几天在工作中不小心改了webstorm的主题，导致整个webstorm界面都**变成深色**了，虽然都是深色看着也还行，但是终归还是不太习惯，因为之前我的webstorm界面只有编辑器的界面为黑色，其它地方都为原色（白色）。

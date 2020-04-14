@@ -1,10 +1,13 @@
 ---
 title: 将数组元素按某一属性值进行分类
 date: 2020-04-08 00:00:00
-tags: javascript, 数据分类
+tags: Javascript, 数据分类
 ---
 
 # 将数组元素按某一属性值进行分类
+<ClientOnly>
+  <display-bar :displayData="$frontmatter"></display-bar>
+</ClientOnly>
 
 > 在日常工作中，前端需要对服务端获取的数据进行处理，之后并将其展示到页面中。但是往往**获取到的数据的结构**并不符合**要展示的数据的结构**，这就需要对数据进行处理了。。。
 

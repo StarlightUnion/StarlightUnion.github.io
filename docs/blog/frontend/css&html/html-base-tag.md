@@ -5,6 +5,9 @@ tags: HTML, 标签
 ---
 
 # HTML Base标签的使用技巧-为页面设置统一的资源地址
+<ClientOnly>
+  <display-bar :displayData="$frontmatter"></display-bar>
+</ClientOnly>
 
 > 要不是因为部署项目，我还不知道有这个标签🙄。
 

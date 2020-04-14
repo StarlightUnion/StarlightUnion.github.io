@@ -5,6 +5,10 @@ tags: Vue.js
 ---
 
 # 开发环境中修改端口号
+<ClientOnly>
+  <display-bar :displayData="$frontmatter"></display-bar>
+</ClientOnly>
+
 ![描述](/images/frontend/vue/vue-port-01.png)
 >如上图所示，在开发环境中，**8080**便是端口号，这也是使用Vue脚手架创建的项目运行时的默认的端口。
 

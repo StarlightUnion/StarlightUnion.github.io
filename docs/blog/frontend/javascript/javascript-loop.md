@@ -1,10 +1,13 @@
 ---
 title: JS中如何跳出循环/结束遍历
 date: 2019-08-24 00:00:00
-tags: JavaScript基础
+tags: JavaScript
 ---
 
 # JS中如何跳出循环/结束遍历
+<ClientOnly>
+  <display-bar :displayData="$frontmatter"></display-bar>
+</ClientOnly>
 
 > 直接抛结论，下表是JS中常用的实现循环遍历的方法的跳出/结束遍历的办法，经过测试后的总结。可能各位大佬还有其他的办法，我在此表示大佬NB。
 

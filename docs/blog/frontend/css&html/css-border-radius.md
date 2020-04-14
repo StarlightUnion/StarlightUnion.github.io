@@ -1,10 +1,13 @@
 ---
 title: border-radius深入了解
 date: 2020-03-06 00:00:00
-tags: CSS, border
+tags: CSS, Border
 ---
 
 # border-radius深入了解
+<ClientOnly>
+  <display-bar :displayData="$frontmatter"></display-bar>
+</ClientOnly>
 
 ![css01](/images/frontend/css/css-01-01.png)
 > 如上图所示，最近碰见有个需求，需要实现上图效果。外面矩形好说，阴影部分犯了难了，不知为何，我看到第一眼居然是想用``canvas``中的贝塞尔曲线画出来。。。~~最近在入门canvas。。~~

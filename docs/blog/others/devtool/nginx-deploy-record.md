@@ -5,6 +5,9 @@ tags: 杂记, Nginx, Windows
 ---
 
 # Nginx部署笔记-Windows（1）
+<ClientOnly>
+  <display-bar :displayData="$frontmatter"></display-bar>
+</ClientOnly>
 
 > 对于**前后端分离**的项目，由于**页面和服务运行的端口不一致，会产生跨域问题**，所以必须使用反向代理以解决跨域问题。
 

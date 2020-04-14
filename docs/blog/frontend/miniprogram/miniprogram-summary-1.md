@@ -5,6 +5,9 @@ tags: 小程序
 ---
 
 # 小程序学习遇到的问题汇总
+<ClientOnly>
+  <display-bar :displayData="$frontmatter"></display-bar>
+</ClientOnly>
 
 > 之前在学习小程序的过程中碰见了不少问题，在这里汇总记录一下，本篇为第一篇。
 

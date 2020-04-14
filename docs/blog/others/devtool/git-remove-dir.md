@@ -5,6 +5,9 @@ tags: 杂记, Git, GitHub
 ---
 
 # 【Git】删除GitHub中的某个文件夹以及Git常用命令
+<ClientOnly>
+  <display-bar :displayData="$frontmatter"></display-bar>
+</ClientOnly>
 
 > 今天在把项目push到GitHub时把``node_modules``给传上去了，由于是新仓库，配置时忘记把``node_modules``**加到.gitignore里面**去了。错已铸就，老老实实给删掉吧。。。
 

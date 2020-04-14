@@ -5,6 +5,9 @@ tags: React.js
 ---
 
 # npx create-react-app xxx创建项目报错的解决办法
+<ClientOnly>
+  <display-bar :displayData="$frontmatter"></display-bar>
+</ClientOnly>
 
 > 手头有一台大学时代的Windows电脑，它此前没有装过``create-react-app``，只装了node环境。版本信息：node -> 10.16.3，npm -> 6.9.0。前几日闲的无事想给它装个React，结果失败了，报了错，所以有了下面这出。
 

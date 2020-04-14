@@ -1,10 +1,13 @@
 ---
 title: 【题库练习】02 两数相加
 date: 2020-04-12 00:00:00
-tags: leetcode, exercise
+tags: LeetCode, Exercise
 ---
 
 # 【题库练习】02 两数相加
+<ClientOnly>
+  <display-bar :displayData="$frontmatter"></display-bar>
+</ClientOnly>
 
 > 题目地址@[LeetCode-add-two-numbers](https://leetcode-cn.com/problems/add-two-numbers/)
 

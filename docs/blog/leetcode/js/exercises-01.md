@@ -1,10 +1,13 @@
 ---
 title: 【题库练习】01 两数之和
 date: 2020-04-11 00:00:00
-tags: leetcode, exercise
+tags: LeetCode, Exercise
 ---
 
 # 【题库练习】01 两数之和
+<ClientOnly>
+  <display-bar :displayData="$frontmatter"></display-bar>
+</ClientOnly>
 
 LeetCode第一题开始，准备小试水果刀。。😮~~挑出以前做的的一些题做(chong)个(shi)笔(bo)记(ke)。。~~
 

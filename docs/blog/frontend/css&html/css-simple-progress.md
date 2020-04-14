@@ -1,10 +1,13 @@
 ---
 title: HTML5 Progress标签和纯CSS实现简单进度条
 date: 2020-03-10 00:00:00
-tags: CSS
+tags: CSS, HTML5, 标签
 ---
 
 # HTML5 Progress标签和纯CSS实现简单进度条
+<ClientOnly>
+  <display-bar :displayData="$frontmatter"></display-bar>
+</ClientOnly>
 
 > 标题党了一回，虽然本文主要写的是**纯CSS实现简单进度条**，但是却和HTML5中的新标签``<progress>``有很大的关系。
 >

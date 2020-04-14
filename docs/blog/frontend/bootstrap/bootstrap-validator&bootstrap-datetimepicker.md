@@ -5,6 +5,10 @@ tags: Bootstrap
 ---
 
 # BootStrapValidator无法自动验证BootStrap-datetimepicker的坑
+<ClientOnly>
+  <display-bar :displayData="$frontmatter"></display-bar>
+</ClientOnly>
+
 >##### 各插件版本信息：
 >jQuery: 3.4.1 | BootStrap: 3.3.7 | BootStrap-Validator: 0.5.3 | BootStrap-datetimepicker: 2.4.4
 

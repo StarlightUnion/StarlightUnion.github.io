@@ -1,12 +1,15 @@
 ---
 title: 【CSS进阶】选择器进阶笔记（2）伪类
-date: 2020-03-30 00:00:00
-tags: CSS, selector, CSS进阶
+date: 2020-03-30 24:11:11
+tags: CSS, Selector, CSS进阶
 ---
 
 # 【CSS进阶】选择器进阶笔记（2）伪类
+<ClientOnly>
+  <display-bar :displayData="$frontmatter"></display-bar>
+</ClientOnly>
 
-接上一个[选择器进阶笔记（1）](https://starlightunion.github.io/blog/frontend/css-selector-1.html)，CSS选择器还有**伪类**这两大重要的组成部分。
+接上一个[选择器进阶笔记（1）](https://starlightunion.github.io/blog/frontend/css-selector-1.html)，CSS选择器还有**伪类**这一重要的组成部分。
 
 ## 一、CSS3之前的伪类
 
@@ -56,11 +59,9 @@ tags: CSS, selector, CSS进阶
 
 ## 二、CSS3中的伪类
 
-CSS3中新增了许多新的伪类，基本都不熟。在这里**测试一下顺便混个眼熟**😂。
-
 ![2](/images/frontend/css/css-selector-02-02.png)
 
-CSS3中新的伪类基本都在这儿了，但是光看**例子描述**基本没啥用，还是一个一个来**试试**。。。
+CSS3中新的伪类基本都在这儿了，但是光看**例子描述**基本没啥用，还是一个一个来**试试**，顺便混个眼熟。。
 
 ### 1.`~`
 

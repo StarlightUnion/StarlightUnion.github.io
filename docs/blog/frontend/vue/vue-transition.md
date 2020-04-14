@@ -5,7 +5,9 @@ tags: Vue.js
 ---
 
 # Vue中的transition封装组件
-
+<ClientOnly>
+  <display-bar :displayData="$frontmatter"></display-bar>
+</ClientOnly>
 
 >##### vue版本信息：2.5.2
 

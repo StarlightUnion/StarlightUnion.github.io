@@ -1,10 +1,14 @@
 ---
 title: 系列汇总
 date: 2020-04-12 00:00:00
-tags: summary
+tags: Summary
 ---
 
 # 系列汇总
+<ClientOnly>
+  <display-bar :displayData="$frontmatter"></display-bar>
+</ClientOnly>
+
 > 汇总CSS进阶、JS进阶（~~还没写😂~~）、ES6学习（~~还没写😅~~）等系列博文
 
 ## CSS进阶

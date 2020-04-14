@@ -5,6 +5,10 @@ tags: 杂记, HomeBrew
 ---
 
 # macOS系统下安装Homebrew
+<ClientOnly>
+  <display-bar :displayData="$frontmatter"></display-bar>
+</ClientOnly>
+
 #### 系统版本信息：macOS Mojave 10.14.3
 >接下来进入正题，最近为了折腾Vue的环境在网上找了不少的资料，包括博客，提问啥的，发现到最后都解决不了问题，一直报错，直到翻到了这个[Mac下使用国内镜像安装Homebrew][1]和[HomeBrew 官方安装太慢而失败?这么搞就行.(转载)][2]，受此启发并结合自己的安装经历，给那篇补充一些细节，并希望给后来者一些帮助和启发。
 

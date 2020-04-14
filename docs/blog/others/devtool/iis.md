@@ -5,6 +5,9 @@ tags: 杂记, IIS
 ---
 
 # 配置IIS遇到的坑...
+<ClientOnly>
+  <display-bar :displayData="$frontmatter"></display-bar>
+</ClientOnly>
 
 最近维护老项目时碰到了点小麻烦，公司老项目都是前后端不分离的，使用.Net开发，需要配合IIS进行维护。按理说配置是后端的事，但是前端还是需要了解一些...
 

@@ -5,6 +5,9 @@ tags: BootStrap
 ---
 
 # 表单验证中重置BootStrap-select验证提示不清除的坑
+<ClientOnly>
+  <display-bar :displayData="$frontmatter"></display-bar>
+</ClientOnly>
 
 > 还是表单验证的问题，发现如果表单内有使用BootStrap-select的下拉选框，在重置表单内容时，会触发对下拉选框的验证，并且验证的提示**不会被清除，仍然会存在**。
 

@@ -1,10 +1,13 @@
 ---
 title: 【CSS进阶】选择器进阶笔记（1）
 date: 2020-03-29 00:00:00
-tags: CSS, selector, CSS进阶
+tags: CSS, Selector, CSS进阶
 ---
 
 # 【CSS进阶】选择器进阶笔记（1）
+<ClientOnly>
+  <display-bar :displayData="$frontmatter"></display-bar>
+</ClientOnly>
 
 > CSS作为**web前端基础三剑客**之一，值得好好学习。那从选择器开始进阶！😮
 

@@ -5,6 +5,9 @@ tags: 杂记, Git, GitHub
 ---
 
 # 【Git】GitHub SSH Key配置push仍然失败的问题
+<ClientOnly>
+  <display-bar :displayData="$frontmatter"></display-bar>
+</ClientOnly>
 
 ![git_ssh_key](/images/other/git_ssh_key_01.png)
 

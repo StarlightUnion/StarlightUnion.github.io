@@ -1,10 +1,13 @@
 ---
 title: JS中的逻辑位运算符和移位运算符
 date: 2020-01-09 00:00:00
-tags: JavaScript基础
+tags: JavaScript
 ---
 
 # JS中的逻辑位运算符和移位运算符
+<ClientOnly>
+  <display-bar :displayData="$frontmatter"></display-bar>
+</ClientOnly>
 
 > 前几天在某刷题网站看到一篇题解，作者用的是移位运算+逻辑位运算，当时看的有点懵逼，移位运算是知道的，**逻辑位运算**有些不解，故特意了解了一下。
 > ``逻辑位运算符``和``移位运算符``可以统称为``位运算符``，其中，逻辑位运算符有四种，移位运算符则有三种。

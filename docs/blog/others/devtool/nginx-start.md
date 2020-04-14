@@ -5,6 +5,9 @@ tags: 杂记, Nginx, Windows
 ---
 
 # Nginx部署笔记-Windows（2）开机自启动
+<ClientOnly>
+  <display-bar :displayData="$frontmatter"></display-bar>
+</ClientOnly>
 
 > 部署完`nginx`后还要设置一下**开机自启**，不然**重启一次电脑就要手动启动**一次`nginx`，手打命令还是太繁琐了。本文参考资料：[windows nginx开机启动](https://blog.csdn.net/hqbootstrap1/article/details/87299312)和[Nginx（二）-服务模式运行nginx之WINSW](https://www.cnblogs.com/merray/p/8460992.html)。
 

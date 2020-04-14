@@ -5,6 +5,9 @@ tags: BootStrap
 ---
 
 # 表单验证中的非Submit类型按钮点击时触发验证的坑
+<ClientOnly>
+  <display-bar :displayData="$frontmatter"></display-bar>
+</ClientOnly>
 
 > BootStrapValidator表单验证插件的坑还真不少，又让我碰上一个...
 > **BootStrapValidator验证的表单中只可有一个``type="submit"``的按钮。**我这样写了之后**（代码如下）**，点击其它按钮仍会触发验证...

@@ -5,6 +5,9 @@ tags: Vue.js
 ---
 
 # 实现滑动和闪现轮播图
+<ClientOnly>
+  <display-bar :displayData="$frontmatter"></display-bar>
+</ClientOnly>
 
 > #### vue版本信息：2.5.2
 

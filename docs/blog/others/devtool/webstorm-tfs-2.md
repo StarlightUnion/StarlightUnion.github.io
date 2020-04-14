@@ -1,10 +1,14 @@
 ---
 title: webstorm TFS 插件的安装与使用(2)
 date: 2019-03-04 00:00:00
-tags: 杂记, WebStorm, tfs
+tags: 杂记, WebStorm, TFS
 ---
 
 # webstorm TFS 插件的安装与使用(2)
+<ClientOnly>
+  <display-bar :displayData="$frontmatter"></display-bar>
+</ClientOnly>
+
 >继续上一篇的内容，下面是**TFS 插件的使用：关联 TFS 插件**和**使用 TFS 插件提交代码以及解决冲突**。
 ## 3.关联 TFS 插件
 >在某个项目中使用 TFS 插件，首先要是这个项目**关联到 TFS 插件**，关联到 TFS 插件后，如果在项目任意一个文件中**添加或删除或其他改动**，这个文件的文件名就会发生变化（**字体变蓝色**）。下面是关联到 TFS 插件的教程。
