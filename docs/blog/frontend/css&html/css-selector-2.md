@@ -67,6 +67,7 @@ CSS3中新的伪类基本都在这儿了，但是光看**例子描述**基本没
 
 ```html
 <style>
+  /* 选择前面是span元素的p元素 */
   span ~ p {
     color: red;
   }
@@ -82,7 +83,7 @@ CSS3中新的伪类基本都在这儿了，但是光看**例子描述**基本没
 
 ![4](/images/frontend/css/css-selector-02-04.png)
 
-### 2.`first-of-type`/`last-of-type`/`only-of-type`
+### 2.`:first-of-type`/`:last-of-type`/`:only-of-type`
 
 ```html
 <style>
@@ -98,7 +99,7 @@ CSS3中新的伪类基本都在这儿了，但是光看**例子描述**基本没
   }
 
   /* 选择同一个父元素下只有一个<span>元素的元素 */
-  /* 这样写表述还是不够清楚，还是看实例吧。。 */
+  /* 这样写表述还是不够清楚，还是看实例1和2吧。。 */
   span:only-of-type {
     color: green;
   }
@@ -148,5 +149,15 @@ CSS3中新的伪类基本都在这儿了，但是光看**例子描述**基本没
 可以发现`only-of-type`在**仅适用于相同父元素下只有一个`span`元素**，我多加了一个`span`元素，**样式立马失效了。。**
 
 :::
+
+### 3.`:only-child`/`:nth-child(n)`/`:nth-last-child(n)`
+
+
+
+### 4.`:nth-of-type(n)`/`:nth-last-of-type()`/`:last-child`
+
+
+
+### 5.`:root`
 
 施工中🚧...

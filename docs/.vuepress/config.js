@@ -111,6 +111,7 @@ module.exports = {
         title: '开发工具',
         // sidebarDepth: 3,
         children: [
+          '/blog/others/devtool/nginx-deploy-summary',
           '/blog/others/devtool/nginx-start',
           '/blog/others/devtool/nginx-deploy-record',
           '/blog/others/devtool/github-sshkey-config',
