@@ -49,7 +49,7 @@ http {
             auth_request /auth;
             error_page 401 = @error401;# 401为没有访问权限/需进行登录验证
         }
-        
+
         location /auth {# 用户登录验证
 			internal;# 该location只能被内部调用，外部访问无效->404
             proxy_set_header Host $host;
@@ -57,7 +57,7 @@ http {
             proxy_set_header Content-Length "";
             proxy_pass http://localhost:8001/LoginVerification;# 用户登录验证地址
 		}
-        
+
         location @error401 {
             add_header Set-Cookie "redirect=$scheme://$http_host$request_uri;Path=/";# 将当前访问地址设置为Cookie
             set $page_401 http://localhost:8000/login.html;# 登录页面
