@@ -1,7 +1,7 @@
 ---
 title: 系列汇总
 date: 2020/04/12 00:00:00
-tags: Summary
+tags: 前端技术, Summary
 ---
 
 # 系列汇总
@@ -9,7 +9,7 @@ tags: Summary
   <display-bar :displayData="$frontmatter"></display-bar>
 </ClientOnly>
 
-> 汇总CSS进阶、JS进阶（~~还没写😂~~）、ES6学习（~~还没写😅~~）等系列博文
+> 汇总CSS进阶、JS进阶（~~还没写😂~~）、ES6学习（~~还没写😅~~）等系列博文，不包括零散的文章。
 
 ## CSS进阶
 <a href="/blog/frontend/css&html/css-selector-1" target="_blank">【CSS进阶】选择器进阶笔记（1）</a>

@@ -21,7 +21,7 @@ module.exports = {
       text: '博文',
       items: [{
         text: '前端技术',
-        link: '/blog/frontend/javascript/object-array-classification'
+        link: '/blog/frontend/summary'
       }, {
         text: '计算机基础',
         link: '/blog/cb/'
@@ -30,7 +30,7 @@ module.exports = {
         link: '/blog/leetcode/js/exercises-02'
       }, {
         text: '技术杂记',
-        link: '/blog/others/devtool/nginx-start'
+        link: '/blog/others/summary'
       }]
     }, {
       text: '随笔',
@@ -54,6 +54,9 @@ module.exports = {
     sidebar: {
       '/blog/frontend/': [
       {
+        title: '系列汇总',
+        path: '/blog/frontend/summary'
+      }, {
         title: 'JavaScript基础',
         children: [
           '/blog/frontend/javascript/object-array-classification',
@@ -94,9 +97,6 @@ module.exports = {
           '/blog/frontend/bootstrap/bootstrap-submit-validator',
           '/blog/frontend/bootstrap/bootstrap-validator&bootstrap-datetimepicker'
         ]
-      }, {
-        title: '系列汇总',
-        path: '/blog/frontend/summary'
       }],
       '/blog/leetcode/': [
       {
@@ -108,6 +108,9 @@ module.exports = {
       }],
       '/blog/others/': [
       {
+        title: '系列汇总',
+        path: '/blog/others/summary'
+      }, {
         title: '开发工具',
         // sidebarDepth: 3,
         children: [
