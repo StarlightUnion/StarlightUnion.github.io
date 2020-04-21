@@ -27,14 +27,14 @@ module.exports = {
         link: '/blog/cb/'
       }, {
         text: 'LeetCode',
-        link: '/blog/leetcode/js/exercises-02'
+        link: '/blog/leetcode/js/exercises-03'
       }, {
         text: '技术杂记',
         link: '/blog/others/summary'
       }]
     }, {
       text: '随笔',
-      link: '/life&hobby/'
+      link: '/life&hobby/digital/benq-monitor-pd2500q'
     }, {
       text: '关于',
       link: '/about/'
@@ -103,6 +103,7 @@ module.exports = {
       {
         title: 'JavaScript',
         children: [
+          '/blog/leetcode/js/exercises-03',
           '/blog/leetcode/js/exercises-02',
           '/blog/leetcode/js/exercises-01'
         ]
@@ -130,7 +131,15 @@ module.exports = {
         children: [
           '/blog/others/aboutblog/vuepress-build-blog-1'
         ]
-      }]
+      }],
+      '/life&hobby/': [
+        {
+          title: '电子数码',
+          children: [
+            '/life&hobby/digital/benq-monitor-pd2500q'
+          ]
+        }
+      ]
     },
     lastUpdated: '上次更新时间'
     // lastUpdated: 'Last Updated'
