@@ -13,4 +13,8 @@ tags: 杂记, Summary
 > 汇总**技术杂记**的系列篇文章，不包括零散的文章。
 
 ## Nginx相关
+<a href="/blog/others/devtool/nginx-deploy-record" target="_blank">Nginx部署笔记-Windows（1）</a>
 
+<a href="/blog/others/devtool/nginx-start" target="_blank">Nginx部署笔记-Windows（2）开机自启动</a>
+
+<a href="/blog/others/devtool/nginx-deploy-summary" target="_blank">Nginx部署笔记-常用配置总结</a>

@@ -35,7 +35,9 @@ http {
 
 **适用场景**：**用户跳过登录页**直接访问`http://localhost:8000/System/html`。
 
-如果之前**没有登录过/Cookie过期失效**，就会跳转至`http://localhost:8000/login.html`登录页。
+如果之前**没有登录过/Cookie过期失效**，就会跳转至`http://localhost:8000/login.html`登录页，
+
+若想要在**登录页成功登陆之后跳转回原来想要访问的地址**，从Cookie中获取就好了。
 
 ```nginx
 http {

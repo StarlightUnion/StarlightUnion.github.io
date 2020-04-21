@@ -152,12 +152,146 @@ CSS3中新的伪类基本都在这儿了，但是光看**例子描述**基本没
 
 ### 3.`:only-child`/`:nth-child(n)`/`:nth-last-child(n)`
 
+```html
+<style>
+  /* 父元素下有且只有一个p元素的 */
+  p:only-child {
+    color: red;
+  }
+</style>
 
+<div>JavaScript0</div>
+<div>
+  <p>JavaScript1</p>
+  <!-- 如果下面的span不注释，那么它的兄弟p元素中的文字将不会是红色 -->
+  <!-- <span>JavaScript1</span> -->
+</div>
+<div>
+  <p>JavaScript2</p>
+  <p>JavaScript2</p>
+</div>
+```
+
+**图示：**
+
+![7](/images/frontend/css/css-selector-02-07.png)
+
+```html
+<style>
+  /* 父元素下第2个元素为p元素的 */
+  p:nth-child(2) {
+    font-weight: 200;
+  }
+</style>
+
+<div>JavaScript0</div>
+<div>
+  <span>JavaScript1</span>
+  <p>JavaScript1</p>
+  <p>JavaScript1</p>
+</div>
+<div>
+  <p>JavaScript2</p>
+  <p>JavaScript2</p>
+</div>
+```
+
+**图示：**
+
+![8](/images/frontend/css/css-selector-02-08.png)
+
+```html
+<style>
+    /* 选择倒数第二个p元素，只有倒数第二个元素为p元素时 */
+    p:nth-last-child(2) {
+      color: blue;
+    }`
+</style>
+
+<div>
+  <div>JavaScript0</div>
+  <div>
+    <p>JavaScript1</p>
+    <p>JavaScript1</p>
+    <span>JavaScript1</span>
+  </div>
+  <div>
+    <p>JavaScript2</p>
+    <span>JavaScript2</span>
+    <p>JavaScript2</p>
+  </div>
+</div>
+```
+
+**图示：**
+
+![9](/images/frontend/css/css-selector-02-09.png)
 
 ### 4.`:nth-of-type(n)`/`:nth-last-of-type()`/`:last-child`
 
+以下几个伪类的测试HTML结构如下：
 
+```html
+<div>
+  <div>JavaScript0</div>
+  <div>
+    <p>JavaScript1</p>
+    <p>JavaScript1</p>
+    <span>JavaScript1</span>
+  </div>
+  <div>
+    <p>JavaScript2</p>
+    <span>JavaScript2</span>
+    <p>JavaScript2</p>
+  </div>
+</div>
+```
 
-### 5.`:root`
+```css
+/* 选择第二个p元素 */
+p:nth-of-type(2) {
+	color: red;
+}
+```
 
-施工中🚧...
+**图示：**
+
+![10](/images/frontend/css/css-selector-02-10.png)
+
+```css
+/* 自下而上，选择倒数第二个p元素 */
+p:nth-last-of-type(2) {
+  color: red;
+}
+```
+
+**图示：**
+
+![11](/images/frontend/css/css-selector-02-11.png)
+
+```css
+/* 选择最后一个p元素，只有最后一个元素为p元素时 */
+p:last-child {
+  color: red;
+}
+```
+
+**图示：**
+
+![12](/images/frontend/css/css-selector-02-12.png)
+
+### 5.`:root`/`:empty`/`:target`/`:enabled`/`:disabled`/`:checked`
+
+这几个其实都可以**根据字面意思来理解**。。
+
+* `:root`：选择根元素，**特定用法**，只能这么写，没有其他的像`p:root`这种什么的。。`:root`这样写将选择文档根元素，就是`<html>`。
+* `:empty`：选择**没有子元素的每个父元素** ，例如`div:empty`，就是选择每个下面没有子元素的`div`。
+* `:target`：选择**当前活动的HTML锚**，DEMO详见[CSS3 :target 选择器](https://www.w3school.com.cn/tiy/t.asp?f=css_sel_target)。
+* `:enabled`：选择**启用**的元素。
+* `:disabled`：选择**禁用**的元素。
+* `:checked`：选择**被选中**的元素，应用于`checkbox`。
+
+### 6.`:not(selector)`/`::selection`
+
+* `:not()`是比较常用的，可以用来**选择一堆兄弟元素中特殊的一个或多个**。
+* `::selection`没用过，不过可以试一下这个DEMO[CSS3 ::selection 选择器](https://www.w3school.com.cn/tiy/t.asp?f=css_sel_selection)，**需要注意的是，这个选中是指鼠标右键按住拖移的选中。**

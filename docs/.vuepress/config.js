@@ -3,7 +3,7 @@ module.exports = {
   description: 'Just do it!',
   head: [
     ['link', { rel: 'icon', href: '/logo.ico' }],
-    ['link', { rel: 'manifest', href: '/logo.ico' }],
+    ['link', { rel: 'manifest', href: '/manifest.json' }],
     ['link', { rel: 'apple-touch-icon', href: '/logo.png' }],
     ['link', { rel: 'stylesheet', href: '/assets/css/iconfont.css' }]
   ],
@@ -59,6 +59,7 @@ module.exports = {
       }, {
         title: 'JavaScript基础',
         children: [
+          '/blog/frontend/javascript/array-sort',
           '/blog/frontend/javascript/object-array-classification',
           '/blog/frontend/javascript/javascript-logical-operators',
           '/blog/frontend/javascript/javascript-mulit-array',
