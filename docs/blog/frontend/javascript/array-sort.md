@@ -134,6 +134,7 @@ const mixArray2 = ['你', 'me', 100, '汉', 1, '字', 'num', 'array', '对', '�
 ```
 
 直接使用sort()将会得到如下结果：
+
 ![sort-1](/images/frontend/js/js-sort-1.png)
 
 > 汉字的对比排序不知道是按啥排的，应该也是UniCode吧。。
