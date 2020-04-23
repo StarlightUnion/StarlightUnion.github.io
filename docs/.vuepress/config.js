@@ -27,7 +27,7 @@ module.exports = {
         link: '/blog/cb/'
       }, {
         text: 'LeetCode',
-        link: '/blog/leetcode/js/exercises-04'
+        link: '/blog/leetcode/js/exercises-05'
       }, {
         text: '技术杂记',
         link: '/blog/others/summary'
@@ -103,6 +103,7 @@ module.exports = {
       {
         title: 'JavaScript',
         children: [
+          '/blog/leetcode/js/exercises-05',
           '/blog/leetcode/js/exercises-04',
           '/blog/leetcode/js/exercises-03',
           '/blog/leetcode/js/exercises-02',
