@@ -66,7 +66,11 @@ var findMedianSortedArrays = function(nums1, nums2) {
 };
 ```
 
+**提交结果：**
 
+| Time  | Memory |
+| ----- | ------ |
+| 144ms | 39.8MB |
 
 
 

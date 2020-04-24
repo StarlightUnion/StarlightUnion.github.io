@@ -24,7 +24,7 @@ tags: Javascript, Methods
 const months = ['March', 'Jan', 'Feb', 'Dec'];
 months.sort();// [ 'Dec', 'Feb', 'Jan', 'March' ]
 
-onst txts = ['ability', 'absent', 'April', 'divide', 'center', 'context', 'container'];
+const txts = ['ability', 'absent', 'April', 'divide', 'center', 'context', 'container'];
 txts.sort();// ['April', 'ability', 'absent', 'center', 'container', 'context', 'divide']
 ```
 
