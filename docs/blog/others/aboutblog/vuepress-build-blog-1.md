@@ -21,20 +21,55 @@ npm install -g vuepress
 mkdir my-blog
 ```
 
-在`my-blog`创建文件结构如下所示：
+在`my-blog`下创建文件结构如下所示：
 
 ```
-.
+.根目录
 ├── docs
-│   └── .vuepress
-│       ├── public
-│       ├── styles
-│       │   └── palette.styl
-│       └── config.js
+│   ├── .vuepress
+│   │   ├── public 存放图片等静态资源
+│   │   ├── styles
+│   │   │   └── palette.styl 主题样式->全局
+│   │   └── config.js 配置
+│   ├── README.md 首页
+│   └── blog
+│       └── README.md
 └── package.json
 ```
 
+### 1.`config.js`
 
+```js
+module.exports = {
+  title: '游客17846',
+  description: 'Just do it!',
+  head: [// 会加入<head>中
+    ['link', { rel: 'icon', href: '/logo.ico' }],// 指定浏览器Tab图标
+    ['link', { rel: 'manifest', href: '/manifest.json' }],//PWA
+    ['link', { rel: 'apple-touch-icon', href: '/logo.png' }]// 指定safari浏览器保存书签至桌面图标
+  ],
+  serviceWorker: true,
+  base: '/',// 部署时指定存放的项目的地址
+  markdown: {
+    lineNumbers: true// 代码块行号显示
+  },
+  themeConfig: {
+    logo: '/logo.png',// 主页显示图标
+    nav: [
+      { text: '首页', link: '/' },// 首页地址不想指定的话就不用改，默认指向docs下面的README.md
+      { text: '博文', link: '/blog/' },// 默认指向blog下的README.md
+      { text: 'GitHub', link: 'https://github.com/StarlightUnion' }
+    ],
+    lastUpdated: '上次更新时间'// 页面最下方的最后更新时间戳
+  }
+};
+```
+
+参考资料：
+
+* [vuepress基本配置官方文档](https://www.vuepress.cn/guide/basic-config.html#配置文件)
+
+* [PWA](https://developer.mozilla.org/zh-CN/docs/Web/Manifest)
 
 施工中🚧...
 
