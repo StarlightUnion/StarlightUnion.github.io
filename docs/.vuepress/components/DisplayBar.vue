@@ -8,6 +8,12 @@
       <span class="iconfont icon-tag"></span>
       <span v-for="(item, key) in tags" :key="key">{{item.trim()}}</span>
     </div>
+    <div class="bar-item" v-show="recommend">
+      <span class="iconfont icon-like"></span>
+      <span class="iconfont icon-stars" v-for="item in recommend_int"></span>
+      <span class="iconfont icon-star-half" v-show="recommend_dec === 0.5"></span>
+      <span>{{recommend}}/5</span>
+    </div>
   </div>
 </template>
 
@@ -22,7 +28,10 @@ export default {
   data () {
     return {
       tags: '',
-      createTime: ''
+      createTime: '',
+      recommend: null,
+      recommend_int: 0,
+      recommend_dec: 0,
     }
   },
   // methods: {
@@ -33,13 +42,28 @@ export default {
   // },
   mounted () {
     if (this.displayData) {
+      // 标签
       this.tags = this.displayData.tags.length ? this.displayData.tags.split(',') : [];
+
+      // 时间
       // this.createTime = this.dateHandle(this.displayData.date);
       this.createTime = this.displayData.date;
+
+      // 推荐
+      if (this.displayData.recommend) {
+        this.recommend = this.displayData.recommend;
+        this.recommend_int = parseInt(this.recommend);
+        this.recommend_dec = this.displayData.recommend - this.recommend_int;
+      } else {
+        this.recommend = null;
+      }
     } else {
       this.tags = [];
       this.createTime = '';
+      this.recommend = null;
     }
+
+    // console.log(this.displayData);
   }
 }
 </script>
@@ -70,4 +94,11 @@ export default {
 
     .icon-tag ~ span
       margin: 0 2px
+
+    .icon-like ~ span
+      cursor pointer
+      font-style italic
+
+    .icon-like ~ .icon-stars
+      margin 0 2px
 </style>
