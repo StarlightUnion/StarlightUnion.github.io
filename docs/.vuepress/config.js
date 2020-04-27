@@ -51,6 +51,7 @@ module.exports = {
         link: 'https://github.com/StarlightUnion'
       }]
     }],
+    // sidebar: 'auto',
     sidebar: {
       '/blog/frontend/': [
       {
@@ -119,6 +120,7 @@ module.exports = {
         title: '开发工具',
         // sidebarDepth: 3,
         children: [
+          '/blog/others/devtool/folder-tree-content',
           '/blog/others/devtool/nginx-deploy-summary',
           '/blog/others/devtool/nginx-start',
           '/blog/others/devtool/nginx-deploy-record',

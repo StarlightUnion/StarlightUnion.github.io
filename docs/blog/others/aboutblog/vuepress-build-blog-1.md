@@ -37,6 +37,12 @@ mkdir my-blog
 └── package.json
 ```
 
+::: warning
+
+⚠️注意：`README.md`是必须的，访问`/blog/`时将自动指向`blog`文件夹下面的`README.md`，没有该文件会引发编译错误。
+
+:::
+
 ### 1.`config.js`
 
 ```js
@@ -70,6 +76,17 @@ module.exports = {
 * [vuepress基本配置官方文档](https://www.vuepress.cn/guide/basic-config.html#配置文件)
 
 * [PWA](https://developer.mozilla.org/zh-CN/docs/Web/Manifest)
+
+### 2.`palette.styl`
+
+```stylus
+$accentColor = #87cefa // 主题色
+$textColor = #000 // 文字颜色
+$borderColor = #eaecef // 边框颜色
+$codeBgColor = #282c34 // 代码背景颜色
+```
+
+这是全局样式文件，可以**自己设置主题色**等，另外在写自己的插件或页面时，**这些样式可以继承使用**。
 
 施工中🚧...
 
