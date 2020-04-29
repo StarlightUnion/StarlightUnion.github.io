@@ -101,4 +101,7 @@ export default {
 
     .icon-like ~ .icon-stars
       margin 0 2px
+
+    .icon-like ~ .icon-star-half
+      margin 0 -1px
 </style>

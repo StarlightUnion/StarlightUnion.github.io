@@ -18,3 +18,10 @@ tags: 杂记, Summary
 <a href="/blog/others/devtool/nginx-start" target="_blank">Nginx部署笔记-Windows（2）开机自启动</a>
 
 <a href="/blog/others/devtool/nginx-deploy-summary" target="_blank">Nginx部署笔记-常用配置总结</a>
+
+## vuepress搭建博客
+
+<a href="/blog/others/aboutblog/vuepress-build-blog" target="_blank">vuepress + GitHub搭建个人博客笔记（1）</a>
+
+<a href="/blog/others/aboutblog/vuepress-plugin" target="_blank">vuepress + GitHub搭建个人博客笔记（2）必备插件</a>
+
