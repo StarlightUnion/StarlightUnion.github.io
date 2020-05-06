@@ -14,6 +14,9 @@
       <span class="iconfont icon-star-half" v-show="recommend_dec === 0.5"></span>
       <span>{{recommend}}/5</span>
     </div>
+    <div class="difficulty" v-show="difficulty.length">
+      难度：<span :style="{'color': diffColor}">{{difficulty}}</span>
+    </div>
   </div>
 </template>
 
@@ -27,11 +30,14 @@ export default {
   },
   data () {
     return {
+      colors: {'简单': '#009975', '中等': '#ed7336', '困难': '#ec4c47'},
       tags: '',
       createTime: '',
       recommend: null,
       recommend_int: 0,
       recommend_dec: 0,
+      difficulty: '',
+      diffColor: ''
     }
   },
   // methods: {
@@ -56,6 +62,12 @@ export default {
         this.recommend_dec = this.displayData.recommend - this.recommend_int;
       } else {
         this.recommend = null;
+      }
+
+      // 难度
+      if (this.displayData.difficulty.length) {
+        this.difficulty = this.displayData.difficulty;
+        this.diffColor = this.colors[this.difficulty];
       }
     } else {
       this.tags = [];

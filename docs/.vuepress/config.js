@@ -27,7 +27,7 @@ module.exports = {
         link: '/blog/cb/'
       }, {
         text: 'LeetCode',
-        link: '/blog/leetcode/js/exercises-06'
+        link: '/blog/leetcode/js/exercises-07'
       }, {
         text: '技术杂记',
         link: '/blog/others/summary'
@@ -60,6 +60,7 @@ module.exports = {
       }, {
         title: 'JavaScript基础',
         children: [
+          '/blog/frontend/javascript/float-operation',
           '/blog/frontend/javascript/array-sort',
           '/blog/frontend/javascript/object-array-classification',
           '/blog/frontend/javascript/javascript-logical-operators',
@@ -104,6 +105,7 @@ module.exports = {
       {
         title: 'JavaScript',
         children: [
+          '/blog/leetcode/js/exercises-07',
           '/blog/leetcode/js/exercises-06',
           '/blog/leetcode/js/exercises-05',
           '/blog/leetcode/js/exercises-04',

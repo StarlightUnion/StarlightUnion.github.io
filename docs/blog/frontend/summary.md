@@ -5,6 +5,7 @@ tags: 前端技术, Summary
 ---
 
 # 系列汇总
+
 <ClientOnly>
   <display-bar :displayData="$frontmatter"></display-bar>
 </ClientOnly>
@@ -16,3 +17,10 @@ tags: 前端技术, Summary
 <a href="/blog/frontend/css&html/css-selector-1" target="_blank">【CSS进阶】选择器进阶笔记（1）</a>
 
 <a href="/blog/frontend/css&html/css-selector-2" target="_blank">【CSS进阶】选择器进阶笔记（2）伪类</a>
+
+## JavaScript方法
+
+### Array
+
+<a href="/blog/frontend/javascript/array-sort" target="_blank">Array.prototype.sort()用法总结</a>
+

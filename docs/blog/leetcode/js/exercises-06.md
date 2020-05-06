@@ -2,6 +2,7 @@
 title: 【题库练习】06 Z字形变换
 date: 2019/11/21 18:01:33
 tags: LeetCode, Exercise
+difficulty: 中等
 ---
 
 # 【题库练习】06 Z字形变换
