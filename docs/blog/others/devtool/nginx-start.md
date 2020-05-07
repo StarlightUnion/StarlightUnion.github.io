@@ -17,8 +17,8 @@ tags: 杂记, Nginx, Windows
 
 ::: warning
 
-* `.netframework2.0` 选择`WinSW.NET2.exe`
-* `.netframework4.0` 选择`WinSW.NET4.exe`
+* `.NET Framework2.0` 选择`WinSW.NET2.exe`
+* `.NET Framework4.0` 选择`WinSW.NET4.exe`
 
 :::
 

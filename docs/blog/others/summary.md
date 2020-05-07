@@ -17,7 +17,9 @@ tags: 杂记, Summary
 
 <a href="/blog/others/devtool/nginx-start" target="_blank">Nginx部署笔记-Windows（2）开机自启动</a>
 
-<a href="/blog/others/devtool/nginx-deploy-summary" target="_blank">Nginx部署笔记-常用配置总结</a>
+<a href="/blog/others/devtool/nginx-deploy-summary" target="_blank">Nginx部署笔记-常用配置总结</a> 
+
+<a href="/blog/others/devtool/nginx-error-summary-1" target="_blank">Nginx部署笔记-常见错误总结（1）</a>
 
 ## vuepress搭建博客
 

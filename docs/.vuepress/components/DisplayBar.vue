@@ -65,7 +65,7 @@ export default {
       }
 
       // 难度
-      if (this.displayData.difficulty.length) {
+      if (this.displayData.difficulty) {
         this.difficulty = this.displayData.difficulty;
         this.diffColor = this.colors[this.difficulty];
       }
