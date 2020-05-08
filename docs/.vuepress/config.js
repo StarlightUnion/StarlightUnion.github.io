@@ -187,6 +187,9 @@ module.exports = {
         // const now = moment(timestamp).fromNow() // Github上的时间
         // return now
       }
+    }],
+    ['@vuepress/google-analytics', {
+      'ga': 'UA-165879949-1' // UA-00000000-0
     }]
   ]
 };

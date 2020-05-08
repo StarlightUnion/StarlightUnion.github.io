@@ -10,4 +10,6 @@ tags: Javascript
   <display-bar :displayData="$frontmatter"></display-bar>
 </ClientOnly>
 
+![float-operation-01](/images/frontend/js/js-float-operation-01.jpg)
+
 施工中🚧...
