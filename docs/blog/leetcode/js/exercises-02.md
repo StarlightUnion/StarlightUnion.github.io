@@ -103,7 +103,7 @@ addTwoNumbers(l1, l2);// {val: 7, next: {val: 0, next: {val: 8, next: null}}}
 
 **提交结果：**
 
-| Time  | Memory |
+| Time  | Cache  |
 | ----- | ------ |
 | 140ms | 38.2MB |
 

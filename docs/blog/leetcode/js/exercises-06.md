@@ -108,7 +108,7 @@ convert("JAVASCRIPTISAPROGRAMMINGLANGUAGE", 4)
 
 **提交结果：**
 
-| Time  | Memory |
+| Time  | Cache  |
 | ----- | ------ |
 | 148ms | 37.8MB |
 

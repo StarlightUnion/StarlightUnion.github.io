@@ -101,7 +101,7 @@ var longestPalindrome = function(s) {
 
 **提交结果：**
 
-| Time  | Memory |
+| Time  | Cache  |
 | ----- | ------ |
 | 192ms | 37.4MB |
 

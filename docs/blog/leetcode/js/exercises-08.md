@@ -108,6 +108,6 @@ myAtoi("4193 with words")
 
 **提交结果：**
 
-| Time | Memory |
+| Time | Cache  |
 | ---- | ------ |
 | 96ms | 35.8MB |

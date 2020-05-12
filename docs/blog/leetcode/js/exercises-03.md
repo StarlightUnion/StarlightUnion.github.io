@@ -76,7 +76,7 @@ lengthOfLongestSubstring("abcbacbb") // "abc" "cba" "bac" "acb" -> 都是3
 
 **提交结果：**
 
-| Time  | Memory |
+| Time  | Cache  |
 | ----- | ------ |
 | 160ms | 40.3MB |
 
@@ -114,7 +114,7 @@ var lengthOfLongestSubstring = function(s) {
 
 **提交结果：**
 
-| Time | Memory |
+| Time | Cache  |
 | ---- | ------ |
 | 80ms | 37.3MB |
 

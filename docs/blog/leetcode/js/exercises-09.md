@@ -59,7 +59,7 @@ var isPalindrome = function(x) {
 
 **提交结果：**
 
-| Time  | Memory |
+| Time  | Cache  |
 | ----- | ------ |
 | 256ms | 45.8MB |
 

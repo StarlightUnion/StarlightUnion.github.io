@@ -40,4 +40,39 @@ difficulty: 中等
 > ```
 >
 
+### 解（来自题解）
+
+```js
+/**
+ * @param {number[]} nums
+ * @param {number} target
+ * @return {number}
+ */
+var search = function(nums, target) {
+  let start = 0;
+  let end = nums.length - 1;
+
+  while (start <= end) {
+    const mid = start + ((end - start) >> 1);// 取中间点
+    if (nums[mid] === target) return mid;
+
+    if (nums[mid] >= nums[start]) {
+      // 在mid左边
+      if (nums[start] <= target && target <= nums[mid]) {
+        end = mid - 1;
+      } else {
+        start = mid + 1;
+      }
+    } else {
+      if (nums[mid] <= target && target <= nums[end]) {
+        start = mid + 1;
+      } else {
+        end = mid - 1;
+      }
+    }
+  }
+  return -1;
+};
+```
+
 施工中🚧...

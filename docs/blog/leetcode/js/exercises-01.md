@@ -60,7 +60,7 @@ twoSum(nums, 9)// [0, 1]
 
 **提交结果：**
 
-| Time  | Memory |
+| Time  | Cache  |
 | ----- | ------ |
 | 172ms | 34.5MB |
 
@@ -96,7 +96,7 @@ var twoSum = function(nums, target) {
 
 **提交结果：**
 
-| Time | Memory |
+| Time | Cache  |
 | ---- | ------ |
 | 72ms | 34.9MB |
 
