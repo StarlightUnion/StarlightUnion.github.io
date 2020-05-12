@@ -10,9 +10,10 @@ tags: 杂记, Summary
   <display-bar :displayData="$frontmatter"></display-bar>
 </ClientOnly>
 
-> 汇总**技术杂记**的系列篇文章，不包括零散的文章。
+> 只包括**技术杂记**的系列篇文章，不包括其它零散的文章。
 
-## Nginx相关
+### Nginx相关
+
 <a href="/blog/others/devtool/nginx-deploy-record" target="_blank">Nginx部署笔记-Windows（1）</a>
 
 <a href="/blog/others/devtool/nginx-start" target="_blank">Nginx部署笔记-Windows（2）开机自启动</a>
@@ -21,7 +22,7 @@ tags: 杂记, Summary
 
 <a href="/blog/others/devtool/nginx-error-summary-1" target="_blank">Nginx部署笔记-常见错误总结（1）</a>
 
-## vuepress搭建博客
+### vuepress搭建博客
 
 <a href="/blog/others/aboutblog/vuepress-build-blog" target="_blank">vuepress + GitHub搭建个人博客笔记（1）</a>
 

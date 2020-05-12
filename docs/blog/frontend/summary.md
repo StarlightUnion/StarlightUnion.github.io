@@ -10,17 +10,17 @@ tags: 前端技术, Summary
   <display-bar :displayData="$frontmatter"></display-bar>
 </ClientOnly>
 
-> 汇总CSS进阶、JS进阶（~~还没写😂~~）、ES6学习（~~还没写😅~~）等系列博文，不包括零散的文章。
+> 只包括**前端相关**的系列篇文章。
 
-## CSS进阶
+### CSS进阶
 
 <a href="/blog/frontend/css&html/css-selector-1" target="_blank">【CSS进阶】选择器进阶笔记（1）</a>
 
 <a href="/blog/frontend/css&html/css-selector-2" target="_blank">【CSS进阶】选择器进阶笔记（2）伪类</a>
 
-## JavaScript方法
+### JavaScript方法
 
-### Array
+#### Array
 
 <a href="/blog/frontend/javascript/array-sort" target="_blank">Array.prototype.sort()用法总结</a>
 
