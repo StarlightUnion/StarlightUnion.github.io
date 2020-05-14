@@ -5,7 +5,7 @@ module.exports = {
     ['link', { rel: 'icon', href: '/logo.ico' }],
     ['link', { rel: 'manifest', href: '/manifest.json' }],
     ['link', { rel: 'apple-touch-icon', href: '/logo.png' }],
-    ['link', { rel: 'stylesheet', href: '/assets/css/iconfont.css' }]
+    ['link', { rel: 'stylesheet', href: '/assets/css/iconfont.css' }],
   ],
   serviceWorker: true,
   base: '/',

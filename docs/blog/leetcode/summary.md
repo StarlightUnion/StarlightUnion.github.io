@@ -6,6 +6,10 @@ tags: LeetCode, Summary
 
 # 系列汇总
 
+<ClientOnly>
+  <display-bar :displayData="$frontmatter"></display-bar>
+</ClientOnly>
+
 > [力扣](https://leetcode-cn.com/)系列篇。
 
 ### 每日一题
