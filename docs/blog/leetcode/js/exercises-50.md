@@ -48,11 +48,13 @@ difficulty: 中等
 
 注意上面的说明，有符号整数。。并且已经给出了范围。
 
-`n`的**正负**对计算结果有直接影响。
+`n`的**正负**对计算结果的影响：
 
  * n < 0：`1 / x^n`
  * n = 0：`x`
  * n > 0：`x^n`
+
+**递归**与**迭代**的区别是：**递归**是不断的调用自己，并返回每次调用后的新的参数，**迭代**则是保存每次循环的参数，作为下一次迭代的初始值。
 
 ## 一、递归
 
@@ -65,7 +67,7 @@ difficulty: 中等
 var myPow = function(x, n) {
   if (n === 0) return 1;
   if (n < 0) return 1 / myPow(x, -n);
-  if (n % 2) return x * myPow(x, n - 1);
+  if (n % 2) return x * myPow(x, n - 1);// n为奇数时将n转换为偶数
   return myPow(x * x, n / 2);
 };
 ```
