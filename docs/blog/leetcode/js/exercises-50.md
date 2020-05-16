@@ -54,6 +54,8 @@ difficulty: 中等
  * n = 0：`x`
  * n > 0：`x^n`
 
+另外对于**奇次幂**需要将其转为**偶次幂**处理。
+
 **递归**与**迭代**的区别是：**递归**是不断的调用自己，并返回每次调用后的新的参数，**迭代**则是保存每次循环的参数，作为下一次迭代的初始值。
 
 ## 一、递归
@@ -68,7 +70,7 @@ var myPow = function(x, n) {
   if (n === 0) return 1;
   if (n < 0) return 1 / myPow(x, -n);
   if (n % 2) return x * myPow(x, n - 1);// n为奇数时将n转换为偶数
-  return myPow(x * x, n / 2);
+  return myPow(x * x, n / 2);// 偶次幂
 };
 ```
 
@@ -83,16 +85,16 @@ var myPow = function(x, n) {
 ```js
 var myPow = function(x, n) {
     if (n === 0) return 1;
-    if (n < 0) {
+    if (n < 0) {// n为负数
       x = 1 / x;
       n = -n;
     }
 
     let res = 1;
     while(n) {
-      if (n % 2) res *= x;
+      if (n % 2) res *= x;// 为奇次幂时
       x *= x;
-      n = parseInt(n / 2);
+      n = parseInt(n / 2);// n >>> 1
     }
 
     return res;
@@ -104,5 +106,3 @@ var myPow = function(x, n) {
 | Time        | Cache         |
 | ----------- | ------------- |
 | 76ms 33.75% | 33.9MB 92.59% |
-
-施工中🚧...
