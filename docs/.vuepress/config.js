@@ -160,8 +160,8 @@ module.exports = {
         }
       ]
     },
-    lastUpdated: '上次更新时间'
-    // lastUpdated: 'Last Updated'
+    // lastUpdated: '上次更新时间'
+    lastUpdated: 'Last Updated'
   },
   plugins: [
     ['@vuepress/active-header-links', {
@@ -173,28 +173,8 @@ module.exports = {
       transformer: (timestamp, lang) => {
         const moment = require('moment');
         moment.locale(lang);
-
-        const transform = (timestamp) => {
-          timestamp = timestamp ? timestamp : new Date().getTime();
-          const time = new Date(timestamp),
-            y = time.getFullYear(),
-            M = time.getMonth() + 1,
-            d = time.getDate(),
-            h = time.getHours(),
-            m = time.getMinutes(),
-            s = time.getSeconds();
-
-          return y + '/' + addZero(M) + '/' + addZero(d) + ' ' + addZero(h) + ':' + addZero(m) + ':' + addZero(s);
-        }
-
-        const addZero = (m) => {
-          return m < 10 ? '0' + m : m;
-        }
-
-        return transform(timestamp);
-
-        // const now = moment(timestamp).fromNow() // Github上的时间
-        // return now
+        const now = moment(timestamp).fromNow() // Github上的时间
+        return now
       }
     }],
     ['@vuepress/google-analytics', {
