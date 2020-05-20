@@ -61,4 +61,30 @@ var subarraySum = function(nums, k) {
 | ------------ | ----------- |
 | 548ms 11.65% | 36.1MB 100% |
 
-施工中🚧...
+## 二、前缀和（来自题解）
+
+> 来自题解[LeetCode@hyj8](https://leetcode-cn.com/problems/subarray-sum-equals-k/solution/dai-ni-da-tong-qian-zhui-he-cong-zui-ben-fang-fa-y/)
+>
+> 每次遍历时将**从第0项到该项的值的和**`prefixSum`（即前缀和）作为`key`，出现次数（初始为1）作为`value`，保存在对象`map`中。施工中🚧...
+
+```js
+var subarraySum = (nums, k) => {
+  if (nums.length === 0) return 0
+  let map = { 0: 1 }// 预设已经出现 1 次为 0 的前缀和
+  let prefixSum = 0
+  let count = 0
+  for (let i = 0; i < nums.length; i++) {
+    prefixSum += nums[i]
+    if (map[prefixSum - k]) {
+      count += map[prefixSum - k];
+    }
+    if (map[prefixSum]) {
+      map[prefixSum]++
+    } else {
+      map[prefixSum] = 1
+    }
+  }
+  return count
+}
+```
+

@@ -147,6 +147,7 @@ module.exports = {
       }, {
         title: '博客相关',
         children: [
+          '/blog/others/aboutblog/vuepress-make-vue-plugin',
           '/blog/others/aboutblog/vuepress-plugin',
           '/blog/others/aboutblog/vuepress-build-blog'
         ]
