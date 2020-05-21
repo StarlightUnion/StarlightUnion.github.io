@@ -22,3 +22,4 @@ tags: LeetCode, Summary
 
 <a href="/blog/leetcode/js/exercises-560" target="_blank">【每日一题】560 和为K的子数组</a>
 
+<a href="/blog/leetcode/js/exercises-152" target="_blank">【每日一题】152 乘积最大子数组</a>

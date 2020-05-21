@@ -65,7 +65,19 @@ var subarraySum = function(nums, k) {
 
 > 来自题解[LeetCode@hyj8](https://leetcode-cn.com/problems/subarray-sum-equals-k/solution/dai-ni-da-tong-qian-zhui-he-cong-zui-ben-fang-fa-y/)
 >
-> 每次遍历时将**从第0项到该项的值的和**`prefixSum`（即前缀和）作为`key`，出现次数（初始为1）作为`value`，保存在对象`map`中。施工中🚧...
+> **分析题意：**（看懂官方题解有感）
+>
+> 设`prefixSum[i]`为`nums`数组中第`0`个到第`i`个的和，那么可得出：
+>
+> * *prefixSum[i] = nums[0] + nums[1] + ... + nums[i]*（1）
+>
+> * *prefixSum[i] = prefixSum[i - 1] + nums[i]*（2）
+>
+> 接下来，题意为**如果存在一个连续的数组**，其和为`k`，则这个数组就是其中一个解。假设这个数组为第`i`到第`j`个数之和，那么根据（2）式可得👇
+>
+> * *prefixSum[j] - prefixSum[i - 1] = k*（3）
+>
+> * *prefixSum[i - 1] = prefixSum[j] - k*（4）
 
 ```js
 var subarraySum = (nums, k) => {
@@ -75,7 +87,7 @@ var subarraySum = (nums, k) => {
   let count = 0
   for (let i = 0; i < nums.length; i++) {
     prefixSum += nums[i]
-    if (map[prefixSum - k]) {
+    if (map[prefixSum - k]) {// prefixSum - k 即为目标值，这个prefixSum在分析中是prefixSum[i]
       count += map[prefixSum - k];
     }
     if (map[prefixSum]) {
@@ -87,4 +99,3 @@ var subarraySum = (nums, k) => {
   return count
 }
 ```
-
