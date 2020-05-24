@@ -10,7 +10,7 @@ tags: LeetCode, Summary
   <display-bar :displayData="$frontmatter"></display-bar>
 </ClientOnly>
 
-> [力扣](https://leetcode-cn.com/)系列篇。
+> [力扣](https://leetcode-cn.com/)系列篇，每天（~~其实并没有~~）进步一点点。
 
 ### 每日一题
 
