@@ -14,13 +14,13 @@ tags: 前端技术, Summary
 
 ### CSS进阶
 
-<a href="/blog/frontend/css&html/css-selector-1" target="_blank">【CSS进阶】选择器进阶笔记（1）</a>
+<a href="/blog/frontend/css&html/css-selector-1.html" target="_blank">【CSS进阶】选择器进阶笔记（1）</a>
 
-<a href="/blog/frontend/css&html/css-selector-2" target="_blank">【CSS进阶】选择器进阶笔记（2）伪类</a>
+<a href="/blog/frontend/css&html/css-selector-2.html" target="_blank">【CSS进阶】选择器进阶笔记（2）伪类</a>
 
 ### JavaScript方法
 
 #### Array
 
-<a href="/blog/frontend/javascript/array-sort" target="_blank">Array.prototype.sort()用法总结</a>
+<a href="/blog/frontend/javascript/array-sort.html" target="_blank">Array.prototype.sort()用法总结</a>
 
