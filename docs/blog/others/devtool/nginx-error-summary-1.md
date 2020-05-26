@@ -42,7 +42,7 @@ tags: 杂记, Nginx, Windows, Summary
 >
 >   ![nginx-error-summary-1-04](/images/other/nginx-error-summary-1-04.png)
 
-根据[Nginx部署笔记-Windows（2）开机自启动](/blog/others/devtool/nginx-start)一文：
+根据[Nginx部署笔记-Windows（2）开机自启动](/blog/others/devtool/nginx-start.html)一文：
 
 ![nginx-error-summary-1-05](/images/other/nginx-error-summary-1-05.png)
 

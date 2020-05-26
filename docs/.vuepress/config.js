@@ -130,20 +130,26 @@ module.exports = {
         title: '系列汇总',
         path: '/blog/others/summary'
       }, {
-        title: '工具相关',
+        title: '工具/环境相关',
         // sidebarDepth: 3,
         children: [
-          '/blog/others/devtool/nginx-error-summary-1',
+          '/blog/others/devtool/nodejs-config-for-centos',
           '/blog/others/devtool/folder-tree-content',
-          '/blog/others/devtool/nginx-deploy-summary',
-          '/blog/others/devtool/nginx-start',
-          '/blog/others/devtool/nginx-deploy-record',
           '/blog/others/devtool/github-sshkey-config',
           '/blog/others/devtool/git-remove-dir',
           '/blog/others/devtool/webstorm-background',
           '/blog/others/devtool/webstorm-tfs-2',
           '/blog/others/devtool/webstorm-tfs-1',
           '/blog/others/devtool/homebrew'
+        ]
+      }, {
+        title: '部署相关',
+        children: [
+          '/blog/others/aboutdeploy/nginx-deploy-for-centos',
+          '/blog/others/devtool/nginx-error-summary-1',
+          '/blog/others/devtool/nginx-deploy-summary',
+          '/blog/others/devtool/nginx-start',
+          '/blog/others/devtool/nginx-deploy-record',
         ]
       }, {
         title: '博客相关',
