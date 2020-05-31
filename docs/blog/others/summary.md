@@ -22,6 +22,8 @@ tags: 杂记, Summary
 
 <a href="/blog/others/devtool/nginx-error-summary-1.html" target="_blank">Nginx部署笔记-常见错误总结（1）</a>
 
+<a href="/blog/others/devtool/nodejs-config-for-centos.html" target="_blank">CentOS下配置node.js和nginx环境</a>
+
 <a href="/blog/others/aboutdeploy/nginx-deploy-for-centos.html" target="_blank">Nginx部署笔记-CentOS</a>
 
 ### vuepress相关
