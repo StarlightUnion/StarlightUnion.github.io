@@ -1,7 +1,7 @@
 ---
 title: 【每日一题】50 Pow(x, n)
 date: 2020/05/12 00:00:00
-tags: LeetCode, Exercise, 每日一题
+tags: ["LeetCode", "Exercise", "每日一题"]
 difficulty: 中等
 ---
 

@@ -1,7 +1,7 @@
 ---
 title: vuepress之开发自己的插件
 date: 2020/04/12 00:00:00
-tags: Vuepress, Blog, Vue
+tags: ["Vuepress", "Blog", "Vue"]
 ---
 # vuepress之开发自己的插件
 

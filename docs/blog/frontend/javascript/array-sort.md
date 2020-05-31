@@ -1,7 +1,7 @@
 ---
 title: Array.prototype.sort()用法总结
 date: 2020/04/20 00:00:00
-tags: Javascript, Methods
+tags: ["Javascript", "Methods"]
 ---
 
 # Array.prototype.sort()用法总结

@@ -1,7 +1,7 @@
 ---
 title: 【每日一题】560 和为K的子数组
 date: 2020/05/15 00:00:00
-tags: LeetCode, Exercise, 每日一题
+tags: ["LeetCode", "Exercise", "每日一题"]
 difficulty: 中等
 ---
 

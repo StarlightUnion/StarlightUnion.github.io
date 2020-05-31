@@ -1,7 +1,7 @@
 ---
 title: Nginx部署笔记-常见错误总结（1）
 date: 2020/05/07 21:18:00
-tags: 杂记, Nginx, Windows, Summary
+tags: ["杂记", "Nginx", "Windows", "Summary"]
 ---
 
 # Nginx部署笔记-常见错误总结（1）

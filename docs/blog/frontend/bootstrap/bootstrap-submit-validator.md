@@ -1,7 +1,7 @@
 ---
 title: 表单验证中的非Submit类型按钮点击时触发验证的坑
 date: 2019/09/04 00:00:00
-tags: BootStrap
+tags: ["BootStrap"]
 ---
 
 # 表单验证中的非Submit类型按钮点击时触发验证的坑

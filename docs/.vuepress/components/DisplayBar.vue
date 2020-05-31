@@ -49,7 +49,8 @@ export default {
   mounted () {
     if (this.displayData) {
       // 标签
-      this.tags = this.displayData.tags.length ? this.displayData.tags.split(',') : [];
+      // this.tags = this.displayData.tags.length ? this.displayData.tags.split(',') : [];
+      this.tags = this.displayData.tags.length ? this.displayData.tags : [];
 
       // 时间
       // this.createTime = this.dateHandle(this.displayData.date);

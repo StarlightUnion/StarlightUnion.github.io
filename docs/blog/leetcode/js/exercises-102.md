@@ -1,7 +1,7 @@
 ---
 title: 【每日一题】102 二叉树的层序遍历
 date: 2020/05/13 00:00:00
-tags: LeetCode, Exercise, 每日一题
+tags: ["LeetCode", "Exercise", "每日一题"]
 difficulty: 中等
 ---
 

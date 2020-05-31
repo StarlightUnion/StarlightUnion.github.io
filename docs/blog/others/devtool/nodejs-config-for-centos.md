@@ -1,7 +1,7 @@
 ---
 title: CentOS下配置node.js和nginx环境
 date: 2020/05/26 21:35:00
-tags: 杂记, CentOS, Linux, Node.js, Nginx
+tags: ["杂记", "CentOS", "Linux", "Node.js", "Nginx"]
 ---
 
 # CentOS下配置node.js和nginx环境
@@ -158,3 +158,12 @@ vim /etc/rc.local # 此时进入文件的查看模式
 
 按`i`进入**编辑模式**，在最后一行加上`/usr/local/nginx-1.16.1/sbin/nginx`，按`esc`退出**编辑模式**，输入`:wq`**退出并保存**。
 
+### 4.最后
+
+```shell
+# 建立软链接，将nginx添加到全局
+ln -s /usr/local/nginx-1.16.1/sbin/nginx /usr/bin/nginx
+
+cd /usr/local
+rm -rf nginx-1.16.1.tar.gz # 删除安装包
+```

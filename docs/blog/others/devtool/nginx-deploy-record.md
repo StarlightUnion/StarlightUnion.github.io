@@ -1,7 +1,7 @@
 ---
 title: Nginx部署笔记-Windows（1）
 date: 2020/03/25 00:00:00
-tags: 杂记, Nginx, Windows
+tags: ["杂记", "Nginx", "Windows"]
 ---
 
 # Nginx部署笔记-Windows（1）

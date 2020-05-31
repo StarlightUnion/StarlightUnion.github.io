@@ -1,7 +1,7 @@
 ---
 title: BootStrapValidator无法自动验证BootStrap-datetimepicker的坑
 date: 2019/07/30 00:00:00
-tags: Bootstrap
+tags: ["Bootstrap"]
 ---
 
 # BootStrapValidator无法自动验证BootStrap-datetimepicker的坑
@@ -134,4 +134,4 @@ $(function () {
 >以上共有三种方法使之触发再次验证，这些方法中，`changeDate`换成`change`也是可行的。[本文的源码在此][1]。
 
 
-  [1]: https://github.com/StarlightUnion/Blog-Content/tree/master/BootStrap/Validator&datetimepicker
+[1]: https://github.com/StarlightUnion/Blog-Content/tree/master/BootStrap/Validator&datetimepicker

@@ -1,7 +1,7 @@
 ---
 title: 系列汇总
 date: 2020/04/12 00:00:00
-tags: 前端技术, Summary
+tags: ["前端技术", "Summary"]
 ---
 
 # 系列汇总

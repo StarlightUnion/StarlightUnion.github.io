@@ -1,7 +1,7 @@
 ---
 title: 【题库练习】09 回文数
 date: 2019/11/25 19:53:24
-tags: LeetCode, Exercise
+tags: ["LeetCode", "Exercise"]
 difficulty: 简单
 ---
 

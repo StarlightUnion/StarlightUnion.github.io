@@ -1,7 +1,7 @@
 ---
 title: 【每日一题】152 乘积最大子数组
 date: 2020/05/18 00:00:00
-tags: LeetCode, Exercise, 每日一题
+tags: ["LeetCode", "Exercise", "每日一题"]
 difficulty: 中等
 ---
 

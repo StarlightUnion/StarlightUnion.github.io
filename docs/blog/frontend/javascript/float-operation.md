@@ -1,7 +1,7 @@
 ---
 title: JS的浮点运算精度问题
 date: 2020/05/06 00:00:00
-tags: Javascript
+tags: ["Javascript"]
 ---
 
 # JS的浮点运算精度问题

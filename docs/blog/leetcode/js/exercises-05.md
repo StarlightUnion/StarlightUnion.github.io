@@ -1,7 +1,7 @@
 ---
 title: 【题库练习】05 最长回文子串
 date: 2019/12/02 23:07:34
-tags: LeetCode, Exercise
+tags: ["LeetCode", "Exercise"]
 difficulty: 中等
 ---
 

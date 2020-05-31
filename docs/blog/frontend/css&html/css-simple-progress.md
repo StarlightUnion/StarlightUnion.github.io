@@ -1,7 +1,7 @@
 ---
 title: HTML5 Progress标签和纯CSS实现简单进度条
 date: 2020/03/10 00:00:00
-tags: CSS, HTML5, 标签
+tags: ["CSS", "HTML5", "标签"]
 ---
 
 # HTML5 Progress标签和纯CSS实现简单进度条

@@ -1,7 +1,7 @@
 ---
 title: webstorm只改变编辑器背景主题颜色
 date: 2019/07/30 00:00:00
-tags: 杂记, WebStorm
+tags: ["杂记", "WebStorm"]
 ---
 
 

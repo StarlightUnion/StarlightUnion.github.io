@@ -1,7 +1,7 @@
 ---
 title: 系列汇总
 date: 2020/04/16 00:00:00
-tags: 杂记, Summary
+tags: ["杂记", "Summary"]
 ---
 
 # 系列汇总
@@ -10,9 +10,9 @@ tags: 杂记, Summary
   <display-bar :displayData="$frontmatter"></display-bar>
 </ClientOnly>
 
-> 只包括**技术杂记**的系列篇文章，不包括其它零散的文章。
+> 记录**系列篇**和**重要**的文章。
 
-### Nginx相关
+### Nginx部署相关
 
 <a href="/blog/others/devtool/nginx-deploy-record.html" target="_blank">Nginx部署笔记-Windows（1）</a>
 
@@ -34,3 +34,6 @@ tags: 杂记, Summary
 
 <a href="/blog/others/aboutblog/vuepress-make-vue-plugin.html" target="_blank">vuepress之开发自己的插件</a>
 
+### 自动化部署
+
+<a href="/blog/others/aboutdeploy/auto-deploy-nodejs.html" target="_blank">node.js + GitHub Webhooks实现自动化部署</a>

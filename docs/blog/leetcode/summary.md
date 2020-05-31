@@ -1,7 +1,7 @@
 ---
 title: 系列汇总
 date: 2020/05/12 00:00:00
-tags: LeetCode, Summary
+tags: ["LeetCode", "Summary"]
 ---
 
 # 系列汇总

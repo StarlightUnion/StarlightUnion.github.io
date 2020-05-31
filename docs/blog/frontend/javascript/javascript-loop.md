@@ -1,7 +1,7 @@
 ---
 title: JS中如何跳出循环/结束遍历
 date: 2019/08/24 00:00:00
-tags: JavaScript
+tags: ["JavaScript"]
 ---
 
 # JS中如何跳出循环/结束遍历

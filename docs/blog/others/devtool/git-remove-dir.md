@@ -1,7 +1,7 @@
 ---
 title: 【Git】删除GitHub中的某个文件夹以及Git常用命令
 date: 2020/03/15 00:00:00
-tags: 杂记, Git, GitHub
+tags: ["杂记", "Git", "GitHub"]
 ---
 
 # 【Git】删除GitHub中的某个文件夹以及Git常用命令

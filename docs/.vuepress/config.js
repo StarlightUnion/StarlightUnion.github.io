@@ -34,7 +34,7 @@ module.exports = {
       }]
     }, {
       text: '随笔',
-      link: '/life&hobby/digital/benq-monitor-pd2500q'
+      link: '/life&hobby/'
     }, {
       text: '关于',
       link: '/about/'
@@ -145,11 +145,12 @@ module.exports = {
       }, {
         title: '部署相关',
         children: [
+          '/blog/others/aboutdeploy/auto-deploy-nodejs',
           '/blog/others/aboutdeploy/nginx-deploy-for-centos',
           '/blog/others/devtool/nginx-error-summary-1',
           '/blog/others/devtool/nginx-deploy-summary',
           '/blog/others/devtool/nginx-start',
-          '/blog/others/devtool/nginx-deploy-record',
+          '/blog/others/devtool/nginx-deploy-record'
         ]
       }, {
         title: '博客相关',

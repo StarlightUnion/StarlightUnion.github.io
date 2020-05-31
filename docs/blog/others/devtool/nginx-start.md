@@ -1,7 +1,7 @@
 ---
 title: Nginx部署笔记-Windows（2）开机自启动
 date: 2020/04/01 00:00:00
-tags: 杂记, Nginx, Windows
+tags: ["杂记", "Nginx", "Windows"]
 ---
 
 # Nginx部署笔记-Windows（2）开机自启动

@@ -1,7 +1,7 @@
 ---
 title: 【CSS进阶】选择器进阶笔记（1）
 date: 2020/03/29 00:00:00
-tags: CSS, Selector, CSS进阶
+tags: ["CSS", "Selector", "CSS进阶"]
 ---
 
 # 【CSS进阶】选择器进阶笔记（1）

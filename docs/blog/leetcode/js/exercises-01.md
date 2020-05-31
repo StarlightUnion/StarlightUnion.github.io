@@ -1,7 +1,7 @@
 ---
 title: 【题库练习】01 两数之和
 date: 2019/10/30 21:54:13
-tags: LeetCode, Exercise
+tags: ["LeetCode", "Exercise"]
 difficulty: 简单
 ---
 

@@ -1,7 +1,7 @@
 ---
 title: 【每日一题】33 搜索旋转排序数组
 date: 2020/04/27 00:00:00
-tags: LeetCode, Exercise, 每日一题
+tags: ["LeetCode", "Exercise", "每日一题"]
 difficulty: 中等
 ---
 

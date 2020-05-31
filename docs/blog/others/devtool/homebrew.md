@@ -1,7 +1,7 @@
 ---
 title: macOS系统下安装Homebrew
 date: 2019/03/02 00:00:00
-tags: 杂记, HomeBrew
+tags: ["杂记", "HomeBrew"]
 ---
 
 # macOS系统下安装Homebrew
@@ -70,5 +70,5 @@ source ~/.bash_profile
 ```
 
 
-  [1]: https://www.jianshu.com/p/6523d3eee50d
-  [2]: https://blog.csdn.net/qq_33591200/article/details/82882562
+[1]: https://www.jianshu.com/p/6523d3eee50d
+[2]: https://blog.csdn.net/qq_33591200/article/details/82882562

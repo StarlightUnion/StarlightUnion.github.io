@@ -1,7 +1,7 @@
 ---
 title: JS中的逻辑位运算符和移位运算符
 date: 2020/01/09 00:00:00
-tags: JavaScript
+tags: ["JavaScript"]
 ---
 
 # JS中的逻辑位运算符和移位运算符
