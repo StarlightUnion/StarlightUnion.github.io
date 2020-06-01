@@ -139,6 +139,26 @@ module.exports = {
 
 [Moment.js文档](http://momentjs.cn/)
 
-### 5.register-components
+### 5.search
+
+> 默认主题自带的搜索插件，即header上面的搜索框。
+
+::: danger
+⚠️如果在博客中使用了**标注**，即每一个`.md`开头的使用两行`---`分隔线中间的标注，那么`tags`这一栏
+**必须使用数组而不能使用其他类型**，否则搜索将会报错。
+:::
+
+比如本篇：👇
+
+``` {4}
+---
+title: vuepress + GitHub搭建个人博客笔记（2）必备插件
+date: 2020/04/08 00:00:00
+tags: ["Vuepress", "Blog"]
+---
+```
+
+### 6.register-components
 
 具体参考文档，该插件可以使在某个目录下的所有组件被注册为全局组件。
+

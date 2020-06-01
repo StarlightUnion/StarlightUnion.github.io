@@ -76,6 +76,11 @@ export default {
       this.recommend = null;
     }
 
+    this.$Alert.showMessage({
+      content: '加载完成！',
+      type: 'info'
+    });
+
     // console.log(this.displayData);
   }
 }
@@ -85,8 +90,12 @@ export default {
   .display-bar
     display flex
     color rgba(0,0,0,.54)
-    font-size 12px
+    font-size 0.8rem
     font-weight 400
+    // width 100%
+    // overflow hidden
+    // white-space nowrap
+    // text-overflow ellipsis
 
     span:not(.iconfont)
       cursor pointer
@@ -96,25 +105,25 @@ export default {
       color $accentColor
 
     .iconfont
-      font-size 12px
+      font-size 0.8rem
       font-weight 600
 
     .bar-item
-      margin-right 20px
+      margin-right 1.25rem
 
     .icon-time + span
-      margin-left 2px
+      margin-left 0.125rem
 
     .icon-tag ~ span
-      margin: 0 2px
+      margin: 0 0.125rem
 
     .icon-like ~ span
       cursor pointer
       font-style italic
 
     .icon-like ~ .icon-stars
-      margin 0 2px
+      margin 0 0.125rem
 
     .icon-like ~ .icon-star-half
-      margin 0 -1px
+      margin 0 -0.0625rem
 </style>

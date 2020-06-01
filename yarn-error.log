@@ -1,5 +1,5 @@
 Arguments: 
-  /usr/local/bin/node /usr/local/bin/yarn add -D @vuepress/plugin-google-analytics
+  /usr/local/bin/node /usr/local/bin/yarn add vuepress-plugin-helper-live2d
 
 PATH: 
   /usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin
@@ -14,7 +14,7 @@ Platform:
   darwin x64
 
 Trace: 
-  Error: EACCES: permission denied, rmdir '/Users/xingchen/Documents/GitHub/My-Blog/node_modules/@vuepress/core/.temp/app-enhancers'
+  Error: EACCES: permission denied, rmdir '/Users/xingchen/Documents/GitHub/My-Blog/node_modules/@vuepress/core/.temp/internal'
 
 npm manifest: 
   {

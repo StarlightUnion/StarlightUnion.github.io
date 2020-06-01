@@ -160,14 +160,14 @@ module.exports = {
           '/blog/others/aboutblog/vuepress-build-blog'
         ]
       }],
-      '/life&hobby/': [
-        {
-          title: '电子数码',
-          children: [
-            '/life&hobby/digital/benq-monitor-pd2500q'
-          ]
-        }
-      ]
+      // '/life&hobby/': [
+      //   {
+      //     title: '电子数码',
+      //     children: [
+      //       '/life&hobby/digital/benq-monitor-pd2500q'
+      //     ]
+      //   }
+      // ]
     },
     // lastUpdated: '上次更新时间'
     lastUpdated: 'Last Updated'
@@ -188,6 +188,26 @@ module.exports = {
     }],
     ['@vuepress/google-analytics', {
       'ga': 'UA-165879949-1' // UA-00000000-0
+    }],
+    ['vuepress-plugin-helper-live2d', {
+      live2d: {
+        enable: true,
+        // 模型名称(default: hibiki)>>>取值请参考：https://github.com/JoeyBling/hexo-theme-yilia-plus/wiki/live2d%E6%A8%A1%E5%9E%8B%E5%8C%85%E5%B1%95%E7%A4%BA
+        model: 'shizuku', // shizuku, miku, haru, hibiki, hijiki, tororo
+        display: {
+          position: "right",
+          width: 135,
+          height: 300,
+          hOffset: 10,
+          vOffset: 100,
+        },
+        mobile: {
+          show: false
+        },
+        react: {
+          opacity: 0.8
+        }
+      }
     }]
   ]
 };

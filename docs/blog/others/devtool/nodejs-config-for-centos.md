@@ -70,10 +70,10 @@ echo $PATH # 查看全局有哪些路径
 
 ```shell
 # 将root目录中的node安装包中的node 链接到 全局路径/usr/bin/，下面的类似
-ln -s /root/node-v14.3.0-linux-x64/bin/node /usr/bin/node 
+ln -s /root/node-v14.3.0-linux-x64/bin/node /usr/bin/node
 
 ln -s /root/node-v14.3.0-linux-x64/bin/npm /usr/bin/npm
-ln -s /root/node-v14.3.0-linux-x64/bin/npx /usr/bin/npx 
+ln -s /root/node-v14.3.0-linux-x64/bin/npx /usr/bin/npx
 ```
 
 ![centos-node-03](/images/other/devtool/centos-node-03.png)
@@ -137,7 +137,7 @@ make install # 编译安装
 whereis nginx # 查看nginx位置
 cd /usr/bin/nginx # 进不去，说明nginx不存在或者不是个文件夹
 # conf里面的nginx.conf就是配置nginx的地方，sbin则是存放编译后的nginx等的地方
-cd /usr/local/nginx && ls 
+cd /usr/local/nginx && ls
 cd sbin
 nginx # 通过这一步和上一步可以发现全局中没有nginx
 ./nginx # 启动

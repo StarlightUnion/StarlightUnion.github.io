@@ -34,12 +34,12 @@ vim nginx.conf # 进入文件查看模式
 server {
 	listen	80;
 	server_name	your host;
-	
+
   location / {
     root	/my-blog/master/; # 这里为博客项目的地址
     index	index.html index.htm;
   }
-  
+
   error_page /404.html;
 }
 ...
