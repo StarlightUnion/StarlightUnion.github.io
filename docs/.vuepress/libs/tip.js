@@ -17,7 +17,7 @@ function notice ({ duration = 2, content = '' }) {
 }
 
 export default {
-  showMessage (options) {
+  show (options) {
     return notice(options);
   }
 }

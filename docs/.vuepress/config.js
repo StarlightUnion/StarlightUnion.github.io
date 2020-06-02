@@ -192,14 +192,14 @@ module.exports = {
     ['vuepress-plugin-helper-live2d', {
       live2d: {
         enable: true,
-        // 模型名称(default: hibiki)>>>取值请参考：https://github.com/JoeyBling/hexo-theme-yilia-plus/wiki/live2d%E6%A8%A1%E5%9E%8B%E5%8C%85%E5%B1%95%E7%A4%BA
+        // 模型名称：https://github.com/JoeyBling/hexo-theme-yilia-plus/wiki/live2d%E6%A8%A1%E5%9E%8B%E5%8C%85%E5%B1%95%E7%A4%BA
         model: 'shizuku', // shizuku, miku, haru, hibiki, hijiki, tororo
         display: {
           position: "right",
           width: 135,
           height: 300,
           hOffset: 10,
-          vOffset: 100,
+          vOffset: 60,
         },
         mobile: {
           show: false

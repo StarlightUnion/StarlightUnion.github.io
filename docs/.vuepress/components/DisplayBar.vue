@@ -76,7 +76,7 @@ export default {
       this.recommend = null;
     }
 
-    this.$Alert.showMessage({
+    this.$Tip.show({
       content: '加载完成！',
       type: 'info'
     });

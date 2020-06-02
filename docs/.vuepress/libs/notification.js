@@ -1,13 +1,13 @@
-import Alert from '../components/Alert.vue'
+import Tip from '../components/Tip.vue'
 import Vue from 'vue'
 
-Alert.newInstance = properties => {
+Tip.newInstance = properties => {
   const props = properties || {};
 
   const Instance = new Vue({
     data: props,
     render (h) {
-      return h(Alert, {
+      return h(Tip, {
         props: props
       });
     }
@@ -16,16 +16,16 @@ Alert.newInstance = properties => {
   const component = Instance.$mount();
   document.body.appendChild(component.$el);
 
-  const alert = Instance.$children[0];
+  const tip = Instance.$children[0];
 
   return {
     add (noticeProps) {
-      alert.add(noticeProps);
+      tip.add(noticeProps);
     },
     remove (name) {
-      alert.remove(name);
+      tip.remove(name);
     }
   }
 };
 
-export default Alert;
+export default Tip;

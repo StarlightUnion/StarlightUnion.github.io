@@ -1,9 +1,9 @@
 <template>
-  <div class="alert">
-    <div class="alert-main" v-for="item in notices" :key="item.name">
-      <div class="alert-content">
-        <span v-show="type === 'info'" class="alert-type type-info">i</span>
-        <span v-show="type === 'error'" class="alert-type type-error">×</span>
+  <div class="tip">
+    <div class="tip-main" v-for="item in notices" :key="item.name">
+      <div class="tip-content">
+        <span v-show="type === 'info'" class="tip-type type-info">i</span>
+        <span v-show="type === 'error'" class="tip-type type-error">×</span>
         {{ item.content }}
       </div>
     </div>
@@ -14,7 +14,7 @@
 let seed = 0;
 
 function getUuid() {
-  return 'alert_' + (seed++);
+  return 'tip' + (seed++);
 }
 
 export default {
@@ -54,7 +54,7 @@ export default {
 </script>
 
 <style lang="stylus">
-  .alert
+  .tip
     position fixed
     width 100%
     top 1rem
@@ -63,7 +63,7 @@ export default {
     pointer-events none
     z-index 99999
 
-  .alert-content
+  .tip-content
     display inline-block
     padding 0.5rem 1rem
     background: #fff
@@ -73,7 +73,7 @@ export default {
     height 1.5rem
     line-height 1.5rem
 
-    .alert-type
+    .tip-type
       width 1.4rem
       height 1.4rem
       border-radius 50%
@@ -81,6 +81,7 @@ export default {
       line-height 1.4rem
       display inline-block
       color #fff
+      font-weight 700
 
     .type-info
       background-color #4fc08d
