@@ -26,12 +26,15 @@ module.exports = {
         text: '计算机基础',
         link: '/blog/cb/'
       }, {
-        text: 'LeetCode',
-        link: '/blog/leetcode/summary'
+        text: '数据结构与算法',
+        link: '/blog/algorithm/summary'
       }, {
         text: '技术杂记',
         link: '/blog/others/summary'
       }]
+    }, {
+      text: 'LeetCode',
+      link: '/blog/leetcode/summary'
     }, {
       text: '随笔',
       link: '/life&hobby/'
@@ -101,30 +104,6 @@ module.exports = {
           '/blog/frontend/bootstrap/bootstrap-validator&bootstrap-datetimepicker'
         ]
       }],
-      '/blog/leetcode/': [
-      {
-        title: '系列汇总',
-        path: '/blog/leetcode/summary'
-      },
-      {
-        title: 'JavaScript',
-        children: [
-          '/blog/leetcode/js/exercises-560',
-          '/blog/leetcode/js/exercises-152',
-          '/blog/leetcode/js/exercises-102',
-          '/blog/leetcode/js/exercises-50',
-          '/blog/leetcode/js/exercises-33',
-          '/blog/leetcode/js/exercises-09',
-          '/blog/leetcode/js/exercises-08',
-          '/blog/leetcode/js/exercises-07',
-          '/blog/leetcode/js/exercises-06',
-          '/blog/leetcode/js/exercises-05',
-          '/blog/leetcode/js/exercises-04',
-          '/blog/leetcode/js/exercises-03',
-          '/blog/leetcode/js/exercises-02',
-          '/blog/leetcode/js/exercises-01'
-        ]
-      }],
       '/blog/others/': [
       {
         title: '系列汇总',
@@ -158,6 +137,31 @@ module.exports = {
           '/blog/others/aboutblog/vuepress-make-vue-plugin',
           '/blog/others/aboutblog/vuepress-plugin',
           '/blog/others/aboutblog/vuepress-build-blog'
+        ]
+      }],
+      '/blog/leetcode/': [
+      {
+        title: '系列汇总',
+        path: '/blog/leetcode/summary'
+      },
+      {
+        title: 'JavaScript',
+        children: [
+          '/blog/leetcode/js/exercises-680',
+          '/blog/leetcode/js/exercises-560',
+          '/blog/leetcode/js/exercises-152',
+          '/blog/leetcode/js/exercises-102',
+          '/blog/leetcode/js/exercises-50',
+          '/blog/leetcode/js/exercises-33',
+          '/blog/leetcode/js/exercises-09',
+          '/blog/leetcode/js/exercises-08',
+          '/blog/leetcode/js/exercises-07',
+          '/blog/leetcode/js/exercises-06',
+          '/blog/leetcode/js/exercises-05',
+          '/blog/leetcode/js/exercises-04',
+          '/blog/leetcode/js/exercises-03',
+          '/blog/leetcode/js/exercises-02',
+          '/blog/leetcode/js/exercises-01'
         ]
       }],
       // '/life&hobby/': [

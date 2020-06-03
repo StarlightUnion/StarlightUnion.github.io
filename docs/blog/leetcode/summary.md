@@ -1,7 +1,7 @@
 ---
 title: 系列汇总
 date: 2020/05/12 00:00:00
-tags: ["LeetCode", "Summary"]
+tags: ["LeetCode", "汇总"]
 ---
 
 # 系列汇总
@@ -23,3 +23,6 @@ tags: ["LeetCode", "Summary"]
 <a href="/blog/leetcode/js/exercises-560.html" target="_blank">【每日一题】560 和为K的子数组</a>
 
 <a href="/blog/leetcode/js/exercises-152.html" target="_blank">【每日一题】152 乘积最大子数组</a>
+
+<a href="/blog/leetcode/js/exercises-680.html" target="_blank">【每日一题】680 验证回文字符串 Ⅱ</a>
+

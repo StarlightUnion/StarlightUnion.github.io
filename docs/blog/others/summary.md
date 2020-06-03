@@ -1,10 +1,10 @@
 ---
 title: 系列汇总
 date: 2020/04/16 00:00:00
-tags: ["杂记", "Summary"]
+tags: ["杂记", "汇总"]
 ---
 
-# 系列汇总
+# 技术杂记系列汇总
 
 <ClientOnly>
   <display-bar :displayData="$frontmatter"></display-bar>

@@ -1,16 +1,16 @@
 ---
-title: vuepress + GitHub搭建个人博客笔记（1）
+title: VuePress + GitHub搭建个人博客笔记（1）
 date: 2020/04/07 00:00:00
-tags: ["Vuepress", "Blog"]
+tags: ["VuePress", "Blog"]
 ---
 
-# vuepress + GitHub搭建个人博客笔记（1）
+# VuePress + GitHub搭建个人博客笔记（1）
 
 <ClientOnly>
   <display-bar :displayData="$frontmatter"></display-bar>
 </ClientOnly>
 
-> 准备搭博客了。之前了解了一下`vuepress`，它**极简**而且又**支持MD语法**，而且还可以使用`Vue`自己**开发个性化插件**，还有一个重要的理由是有自己的网站感觉很酷👀！
+> 准备搭博客了。之前了解了一下`VuePress`，它**极简**而且又**支持MD语法**，而且还可以使用`Vue`自己**开发个性化插件**，还有一个重要的理由是有自己的网站感觉很酷👀！
 ## 一、开始
 
 相关的教程网络上已经一搜一大堆了，我的[参考教程](https://www.cnblogs.com/softidea/p/10084946.html)， 很多**重复的劳动都简要写一下好了**。
@@ -78,7 +78,7 @@ module.exports = {
 
 参考资料：
 
-* [vuepress基本配置官方文档](https://www.vuepress.cn/guide/basic-config.html#配置文件)
+* [VuePress基本配置官方文档](https://www.vuepress.cn/guide/basic-config.html#配置文件)
 
 * [PWA](https://developer.mozilla.org/zh-CN/docs/Web/Manifest)
 
@@ -134,15 +134,15 @@ $codeBgColor = #282c34 // 代码背景颜色
 
   用户名可以从GitHub地址中看出来 -> **红圈内容**，可不分大小写。
 
-  ![vuepress](/images/other/vuepress-blog-01.png)
+  ![vuepress](/images/other/aboutblog/vuepress-blog-01.png)
 
 * 2.需在设置中将`GitHub Pages`开启。
 
   步骤：进入仓库->点击选项卡中的`Setting`->`GitHub Pages`中选择`master branch`。
 
-  ![vuepress](/images/other/vuepress-blog-02.png)
+  ![vuepress](/images/other/aboutblog/vuepress-blog-02.png)
 
-  ![vuepress](/images/other/vuepress-blog-03.png)
+  ![vuepress](/images/other/aboutblog/vuepress-blog-03.png)
 
 :::
 
@@ -206,12 +206,12 @@ cd -
 
 ### 1.白屏并且模块加载失败
 
-![vuepress](/images/other/vuepress-blog-04.png)
+![vuepress](/images/other/aboutblog/vuepress-blog-04.png)
 
 一般是刚建的`md`的文件里面没有写入任何字符，导致错误。
 
 ### 2.白屏并且热更新失败
 
-![vuepress](/images/other/vuepress-blog-05.png)
+![vuepress](/images/other/aboutblog/vuepress-blog-05.png)
 
 不知道为啥，我这里很常见，写着写着就这样，需要`control + c`退出，并且重新`npm run dev`。

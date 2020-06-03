@@ -35,7 +35,7 @@ difficulty: 中等
 
 ## 一、暴力破解
 
-首先来**例行办法**，两个for循环来试一试。。。
+照例首先使用**暴力法**，两个for循环来试一试。。。
 
 ::: warning
 *⚠️注意*：此解未处理`-0`的情况，原因：`-1 * 0 = -0`，但是神奇的是能通过。。
@@ -73,5 +73,34 @@ var maxProduct = function(nums) {
 | ----------- | ------------- |
 | 264ms 5.47% | 35.3MB 66.67% |
 
-施工中🚧...
+## 二、动态规划法（来自题解）
+
+> 来自题解[LeetCode@hyj8](https://leetcode-cn.com/problems/maximum-product-subarray/solution/wa-ni-zhe-ti-jie-shi-xie-gei-bu-hui-dai-ma-de-nu-p/)
+>
+> 由于是**相乘**，**存在一个最小数(负数)与 *另一个负数* 相乘变成最大数的情况，反之也存在一个最大数与 *一个负数* 相乘变成最小数的情况**，所以比较获取最大值与最小值时要比较三方。。
+
+```js
+var maxProduct = function(nums) {
+  let res = nums[0],
+      prevMin = nums[0], // 存放最小值
+      prevMax = nums[0]; // 存放最大值
+  let temp1 = 0,
+      temp2 = 0;
+
+  for (let i = 1; i < nums.length; i++) {
+    temp1 = prevMin * nums[i];
+    temp2 = prevMax * nums[i];
+    prevMin = Math.min(temp1, temp2, nums[i]);// 比较获取最小值
+    prevMax = Math.max(temp1, temp2, nums[i]);// 比较获取最大值
+    res = Math.max(prevMax, res);
+  }
+  return res;
+};
+```
+
+**提交结果：**
+
+| Time        | Cache         |
+| ----------- | ------------- |
+| 264ms 5.47% | 35.3MB 66.67% |
 

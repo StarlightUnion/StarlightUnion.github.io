@@ -12,15 +12,3 @@ actionLink: /blog/frontend/summary
 #   details: VuePress 为每个页面预渲染生成静态的 HTML，同时在页面被加载的时候，将作为 SPA 运行。
 footer: Powered by VuePress | Copyright © 2020-Present 游客17846
 ---
-
-<!-- ::: tip 提示
-this is a tip
-:::
-
-::: warning 注意
-this is a tip
-:::
-
-::: danger 警告
-this is a tip
-::: -->

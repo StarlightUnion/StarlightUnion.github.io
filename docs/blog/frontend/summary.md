@@ -1,10 +1,10 @@
 ---
 title: 系列汇总
 date: 2020/04/12 00:00:00
-tags: ["前端技术", "Summary"]
+tags: ["前端技术", "汇总"]
 ---
 
-# 系列汇总
+# 前端技术系列汇总
 
 <ClientOnly>
   <display-bar :displayData="$frontmatter"></display-bar>
