@@ -7,12 +7,13 @@ function getMessageInstance () {
   return messageInstance;
 }
 
-function notice ({ duration = 2, content = '' }) {
+function notice ({ duration = 2, content = '', type = 'info' }) {
   let instance = getMessageInstance();
 
   instance.add({
     content: content,
-    duration: duration
+    duration: duration,
+    type: type
   });
 }
 

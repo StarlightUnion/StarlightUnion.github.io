@@ -21,8 +21,6 @@
 </template>
 
 <script>
-// import { transform } from '../public/utils/time.js'
-
 export default {
   name: 'DisplayBar',
   props: {
@@ -40,12 +38,6 @@ export default {
       diffColor: ''
     }
   },
-  // methods: {
-  //   dateHandle: (date) => {
-  //     const _date = new Date(date).getTime();
-  //     return transform(_date);
-  //   }
-  // },
   mounted () {
     if (this.displayData) {
       // 标签
@@ -53,7 +45,6 @@ export default {
       this.tags = this.displayData.tags.length ? this.displayData.tags : [];
 
       // 时间
-      // this.createTime = this.dateHandle(this.displayData.date);
       this.createTime = this.displayData.date;
 
       // 推荐

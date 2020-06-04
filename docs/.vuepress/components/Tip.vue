@@ -4,6 +4,7 @@
       <div class="tip-content">
         <span v-show="type === 'info'" class="tip-type type-info">i</span>
         <span v-show="type === 'error'" class="tip-type type-error">×</span>
+        <span v-show="type === 'warn'" class="tip-type type-warn">!</span>
         {{ item.content }}
       </div>
     </div>
@@ -88,4 +89,7 @@ export default {
 
     .type-error
       background-color #e21814
+
+    .type-warn
+      background-color #e7c000
 </style>
