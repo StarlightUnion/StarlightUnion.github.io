@@ -1,4 +1,4 @@
-import Tip from './libs/tip.js'
+import Tip from '@theme/util/tip.js'
 
 export default ({
   Vue

@@ -23,14 +23,14 @@ module.exports = {
         text: '前端技术',
         link: '/blog/frontend/summary'
       }, {
+        text: '技术杂记',
+        link: '/blog/others/summary'
+      }, {
         text: '计算机基础',
         link: '/blog/cb/'
       }, {
         text: '数据结构与算法',
         link: '/blog/algorithm/summary'
-      }, {
-        text: '技术杂记',
-        link: '/blog/others/summary'
       }]
     }, {
       text: 'LeetCode',
@@ -38,9 +38,9 @@ module.exports = {
     }, {
       text: '随笔',
       link: '/life&hobby/'
-    }, {
-      text: '关于',
-      link: '/about/'
+    // }, {
+    //   text: '关于',
+    //   link: '/about/'
     }, {
       text: '链接',
       items: [{
@@ -147,7 +147,6 @@ module.exports = {
       {
         title: 'JavaScript',
         children: [
-          '/blog/leetcode/js/exercises-680',
           '/blog/leetcode/js/exercises-560',
           '/blog/leetcode/js/exercises-152',
           '/blog/leetcode/js/exercises-102',
@@ -173,8 +172,17 @@ module.exports = {
       //   }
       // ]
     },
-    // lastUpdated: '上次更新时间'
-    lastUpdated: 'Last Updated'
+    lastUpdated: 'Last Updated',
+    footers: [{
+      text: 'Powered by VuePress'
+    }, {
+      text: 'Copyright © 2020 - Present 游客17846'
+    }, {
+      text: '浙ICP备20019615号',
+      link: 'http://beian.miit.gov.cn'
+    }],
+    homePageDisplayCount: 8,
+    filterStrs: ['汇总', '随笔']
   },
   plugins: [
     ['@vuepress/active-header-links', {

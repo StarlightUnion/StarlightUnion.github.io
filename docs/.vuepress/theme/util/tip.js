@@ -7,7 +7,7 @@ function getMessageInstance () {
   return messageInstance;
 }
 
-function notice ({ duration = 2, content = '', type = 'info' }) {
+function notice ({ duration = 1.5, content = '', type = 'info' }) {
   let instance = getMessageInstance();
 
   instance.add({

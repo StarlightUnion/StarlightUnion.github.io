@@ -1,4 +1,4 @@
-import Tip from '../components/Tip.vue'
+import Tip from '@theme/components/Tip.vue'
 import Vue from 'vue'
 
 Tip.newInstance = properties => {
