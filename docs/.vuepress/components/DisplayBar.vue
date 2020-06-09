@@ -43,8 +43,8 @@ export default {
   data () {
     return {
       colors: {'简单': '#009975', '中等': '#ed7336', '困难': '#ec4c47'},
-      tags: '',
-      createTime: '',
+      // tags: '',
+      // createTime: '',
       recommend: null,
       recommend_int: 0,
       recommend_dec: 0,
@@ -52,15 +52,18 @@ export default {
       diffColor: ''
     }
   },
+  computed: {
+    // 标签
+    tags () {
+      return this.displayData.tags.length ? this.displayData.tags : []
+    },
+    // 时间
+    createTime () {
+      return this.displayData.date ? this.displayData.date : ''
+    }
+  },
   mounted () {
     if (this.displayData) {
-      // 标签
-      // this.tags = this.displayData.tags.length ? this.displayData.tags.split(',') : [];
-      this.tags = this.displayData.tags.length ? this.displayData.tags : [];
-
-      // 时间
-      this.createTime = this.displayData.date;
-
       // 推荐
       if (this.displayData.recommend) {
         this.recommend = this.displayData.recommend;
@@ -76,15 +79,8 @@ export default {
         this.diffColor = this.colors[this.difficulty];
       }
     } else {
-      this.tags = [];
-      this.createTime = '';
       this.recommend = null;
     }
-
-    // this.$Tip.show({
-    //   content: '加载完成！',
-    //   type: 'info'
-    // });
 
     // console.log(this.displayData);
   }

@@ -1,11 +1,11 @@
 module.exports = {
   title: '游客17846',
-  description: 'Just do it!',
+  description: 'Just do it !',
   head: [
     ['link', { rel: 'icon', href: '/logo.ico' }],
     ['link', { rel: 'manifest', href: '/manifest.json' }],
     ['link', { rel: 'apple-touch-icon', href: '/logo.png' }],
-    ['link', { rel: 'stylesheet', href: '/assets/css/iconfont.css' }],
+    ['link', { rel: 'stylesheet', href: '/styles/iconfont.css' }],
   ],
   serviceWorker: true,
   base: '/',
@@ -38,21 +38,6 @@ module.exports = {
     }, {
       text: '随笔',
       link: '/life&hobby/'
-    // }, {
-    //   text: '关于',
-    //   link: '/about/'
-    }, {
-      text: '链接',
-      items: [{
-        text: '思否',
-        link: 'https://segmentfault.com/u/starlightunion'
-      }, {
-        text: '掘金',
-        link: 'https://juejin.im/user/5ba792d2f265da0af7751bac'
-      }, {
-        text: 'Github',
-        link: 'https://github.com/StarlightUnion'
-      }]
     }],
     // sidebar: 'auto',
     sidebar: {
@@ -173,16 +158,36 @@ module.exports = {
       // ]
     },
     lastUpdated: 'Last Updated',
+    homePageDisplayCount: 6,
+    filterStrs: ['汇总', '随笔', 'LeetCode'],
+    contactInfo: [{
+      icon: 'iconfont icon-location',
+      text: 'Hangzhou, China'
+    }, {
+      icon: 'iconfont icon-185078emailmailstreamline',
+      text: '2387574095@qq.com'
+    }],
+    platformInfo: [{
+      imgPath: '/images/site/github.jpeg',
+      title: 'GitHub',
+      link: 'https://github.com/StarlightUnion'
+    }, {
+      imgPath: '/images/site/juejin.jpg',
+      title: '掘金',
+      link: 'https://juejin.im/user/5ba792d2f265da0af7751bac'
+    }, {
+      imgPath: '/images/site/sf.png',
+      title: '思否',
+      link: 'https://segmentfault.com/u/starlightunion'
+    }],
     footers: [{
       text: 'Powered by VuePress'
     }, {
       text: 'Copyright © 2020 - Present 游客17846'
     }, {
-      text: '浙ICP备20019615号',
+      text: '浙ICP备20019615号-1',
       link: 'http://beian.miit.gov.cn'
     }],
-    homePageDisplayCount: 8,
-    filterStrs: ['汇总', '随笔']
   },
   plugins: [
     ['@vuepress/active-header-links', {

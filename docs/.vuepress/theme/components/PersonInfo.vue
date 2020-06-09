@@ -2,10 +2,38 @@
   <div class="person-info">
     <img
       class="person-image"
-      v-if="data.themeConfig.logo"
-      :src="$withBase(data.themeConfig.logo)"
-      :alt="data.themeConfig.logoAlt || 'logo'"
+      v-if="data.logo"
+      :src="$withBase(data.logo)"
+      :alt="data.logoAlt || 'logo'"
     >
+    <div
+      class="person-desc"
+      v-if="description !== null"
+    >
+      {{description}}
+    </div>
+    <div
+      class="contact-info"
+      v-if="data.contactInfo.length > 0"
+      v-for="item in data.contactInfo"
+    >
+      <span :class="item.icon"></span>
+      <span>{{item.text}}</span>
+    </div>
+    <div
+      class="platform-info"
+      v-if="data.platformInfo.length > 0"
+    >
+      <template v-for="item in data.platformInfo">
+        <a
+          :href="item.link"
+          :title="item.title"
+          :style="{'background-image': 'url(' + $withBase(item.imgPath) + ')'}"
+          target="_blank"
+        >
+        </a>
+      </template>
+    </div>
   </div>
 </template>
 
@@ -14,7 +42,10 @@ export default {
   name: 'PersonInfo',
   computed: {
     data () {
-      return this.$site
+      return this.$site.themeConfig
+    },
+    description () {
+      return this.$description
     }
   }
 }
@@ -25,8 +56,67 @@ export default {
     // width 25rem
     display flex
     flex-direction column
+    padding 2rem
     .person-image
       width 6rem
       height 6rem
       border-radius 50%
+      align-self center
+      // border 0.25rem solid #eee
+    .person-desc
+      font-size 1.2rem
+      line-height 2rem
+      margin-top 1rem
+      color #999
+      text-align center
+      cursor pointer
+    .contact-info
+      width 100%
+      line-height 2rem
+      display flex
+      justify-content center
+      .iconfont
+        font-size 1.2rem
+        margin-right 0.5rem
+      // span:not(.iconfont):hover
+      //   cursor pointer
+      //   color $accentColor
+      .icon-location
+        font-size 1.5rem
+    .contact-info:first-of-type
+      margin-top 1rem
+    .platform-info
+      width 100%
+      display flex
+      flex-direction row
+      justify-content space-around
+      flex-wrap wrap
+      padding 1rem
+      // border-bottom 1px solid #eaecef
+      box-sizing border-box
+      a
+        display block
+        width 2.5rem
+        height 2.5rem
+        border-radius 50%
+        text-align center
+        background-size cover
+        background-repeat no-repeat
+        background-position center
+        background-attachment scroll
+
+    .person-image:hover
+      transform rotate(360deg)
+      transition all 1.5s linear
+
+  .person-desc:hover
+    color $accentColor
+
+  @media (max-width: $MQMobile) // 719
+    .person-info
+      display flex
+      flex-direction column
+      padding 0
+      border-bottom 1px solid #eaecef
+      width 100%
 </style>

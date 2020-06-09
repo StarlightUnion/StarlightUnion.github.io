@@ -50,6 +50,7 @@ export default {
 
     a
       color #404040
+      font-weight normal
 
     a:hover
       color $accentColor

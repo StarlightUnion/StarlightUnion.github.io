@@ -53,7 +53,7 @@ export default {
         return new Date(b.date) - new Date(a.date)
       }).splice(0, this.displayCount)
 
-      console.log(res)
+      // console.log(res)
 
       return res
     },
@@ -95,21 +95,25 @@ export default {
         padding-left 0.5rem
     .home-person
       display flex
-      margin-left 2rem
+      margin-left 3rem
+      border-left 1px solid #eaecef
 
   @media (max-width: $MQMobile) // 719
     .my-home
       height auto
       padding 0
-      flex-direction column
+      flex-direction column-reverse
       .home-recent
         width 100%
       .home-person
         width 100%
+        margin-left 0
         margin-top 2rem
+        border-left 0
 
-  @media (max-width: $MQMobileNarrow)// 419
-    .my-home
-      height auto
-      padding 0
+  // @media (max-width: $MQMobileNarrow)// 419
+  //   .my-home
+  //     height auto
+  //     padding 0
+  //     flex-direction column-reverse
 </style>
