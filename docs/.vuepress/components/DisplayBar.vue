@@ -82,7 +82,10 @@ export default {
       this.recommend = null;
     }
 
-    // console.log(this.displayData);
+    this.$Tip.show({
+      content: '加载完成！',
+      type: 'info'
+    });
   }
 }
 </script>
@@ -96,10 +99,6 @@ export default {
     font-size 0.8rem
     font-weight 400
     line-height 2rem
-    // width 100%
-    // overflow hidden
-    // white-space nowrap
-    // text-overflow ellipsis
     span:not(.iconfont)
       cursor pointer
       // font-style italic

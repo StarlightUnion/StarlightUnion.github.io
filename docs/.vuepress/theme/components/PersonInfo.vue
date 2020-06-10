@@ -6,12 +6,14 @@
       :src="$withBase(data.logo)"
       :alt="data.logoAlt || 'logo'"
     >
+
     <div
       class="person-desc"
       v-if="description !== null"
     >
       {{description}}
     </div>
+
     <div
       class="contact-info"
       v-if="data.contactInfo.length > 0"
@@ -20,6 +22,7 @@
       <span :class="item.icon"></span>
       <span>{{item.text}}</span>
     </div>
+
     <div
       class="platform-info"
       v-if="data.platformInfo.length > 0"
@@ -91,13 +94,14 @@ export default {
       flex-direction row
       justify-content space-around
       flex-wrap wrap
-      padding 1rem
+      margin 1rem 0 1.5rem
       // border-bottom 1px solid #eaecef
       box-sizing border-box
       a
         display block
         width 2.5rem
         height 2.5rem
+        margin 0 0.5rem
         border-radius 50%
         text-align center
         background-size cover

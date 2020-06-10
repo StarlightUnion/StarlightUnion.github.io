@@ -18,12 +18,12 @@ import PageNav from '@theme/components/PageNav.vue'
 export default {
   components: { PageEdit, PageNav },
   props: ['sidebarItems'],
-  mounted () {
-    this.$Tip.show({
-      content: '加载完成！',
-      type: 'info'
-    });
-  }
+  // mounted () {
+  //   this.$Tip.show({
+  //     content: '加载完成！',
+  //     type: 'info'
+  //   });
+  // }
 }
 </script>
 

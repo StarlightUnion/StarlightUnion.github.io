@@ -187,6 +187,9 @@ module.exports = {
     }, {
       text: '浙ICP备20019615号-1',
       link: 'http://beian.miit.gov.cn'
+    }, {
+      text: '浙公网安备 33010902002529号',
+      link: 'http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=33010902002529'
     }],
   },
   plugins: [
