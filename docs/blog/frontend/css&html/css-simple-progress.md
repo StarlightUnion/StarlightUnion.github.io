@@ -58,6 +58,7 @@ tags: ["CSS", "HTML5", "标签"]
 
 > 用CSS实现一个进度条相信大家都会，直接上代码。
 
+::: details 展开查看源码
 ```html
 <!DOCTYPE html>
 <html lang="en">
@@ -162,6 +163,7 @@ tags: ["CSS", "HTML5", "标签"]
 </body>
 </html>
 ```
+:::
 
 ## 三、组件化
 

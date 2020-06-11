@@ -103,17 +103,30 @@ module.exports = {
 
 源码在下面：👇
 
+::: details 展开查看源码
 ```vue {56}
 <!-- DisplayBar.vue -->
 <template>
   <div class="display-bar">
-    <div class="bar-item" v-show="createTime.length">
+    <div
+      class="bar-item"
+      v-if="createTime.length > 0"
+    >
       <span class="iconfont icon-time"></span>
       <span>{{createTime}}</span>
     </div>
-    <div class="bar-item" v-show="tags.length">
+
+    <div
+      class="bar-item"
+      v-if="tags.length > 0"
+    >
       <span class="iconfont icon-tag"></span>
-      <span v-for="(item, key) in tags" :key="key">{{item.trim()}}</span>
+      <span
+        v-for="(item, key) in tags"
+        :key="key"
+      >
+        {{item.trim()}}
+  	  </span>
     </div>
   </div>
 </template>
@@ -175,6 +188,7 @@ export default {
       margin: 0 0.125rem
 </style>
 ```
+:::
 
 上面使用了CSS预处理器`stylus`，这样可以继承在`palette.styl`中设置的主题色`$accentColor`（行中已高亮）。
 

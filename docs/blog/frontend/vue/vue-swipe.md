@@ -26,6 +26,7 @@ tags: ["Vue.js"]
 
 **废话不多说，直接上代码**
 ## 1.HTML
+
 ```html
 <div id="app">
 <div class="banner">
@@ -62,6 +63,8 @@ tags: ["Vue.js"]
 ```
 
 ## 2.JS
+
+::: details 展开查看源码
 ```js
 var app = new Vue({
   el: "#app",
@@ -196,8 +199,11 @@ var app = new Vue({
   }
 })
 ```
+:::
 
 ## 3.CSS
+
+::: details 展开查看源码
 ```css
 * {
   margin: 0px;
@@ -343,4 +349,6 @@ body, html {
   opacity: 1;
 }
 ```
+:::
+
 [源码在此](https://github.com/StarlightUnion/Blog-Content/tree/master/Vue/banner)

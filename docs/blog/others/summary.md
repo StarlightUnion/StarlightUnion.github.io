@@ -12,6 +12,12 @@ tags: ["杂记", "汇总"]
 
 > 记录**系列篇**和**重要**的文章。
 
+### Git相关
+
+<a href="/blog/others/devtool/git-remove-dir.html" target="_blank">删除GitHub中的某个文件夹以及Git常用命令</a>
+
+<a href="/blog/others/devtool/github-sshkey-config.html" target="_blank">GitHub SSH Key配置push仍然失败的问题</a>
+
 ### Nginx部署相关
 
 <a href="/blog/others/devtool/nginx-deploy-record.html" target="_blank">Nginx部署笔记-Windows（1）</a>
@@ -26,14 +32,19 @@ tags: ["杂记", "汇总"]
 
 <a href="/blog/others/aboutdeploy/nginx-deploy-for-centos.html" target="_blank">Nginx部署笔记-CentOS</a>
 
-### vuepress相关
-
-<a href="/blog/others/aboutblog/vuepress-build-blog.html" target="_blank">vuepress + GitHub搭建个人博客笔记（1）</a>
-
-<a href="/blog/others/aboutblog/vuepress-plugin.html" target="_blank">vuepress + GitHub搭建个人博客笔记（2）必备插件</a>
-
-<a href="/blog/others/aboutblog/vuepress-make-vue-plugin.html" target="_blank">vuepress之开发自己的插件</a>
-
 ### 自动化部署
 
 <a href="/blog/others/aboutdeploy/auto-deploy-nodejs.html" target="_blank">node.js + GitHub Webhooks实现自动化部署</a>
+
+### VuePress相关
+
+<a href="/blog/others/aboutblog/vuepress-build-blog.html" target="_blank">VuePress + GitHub搭建个人博客笔记（1）</a>
+
+<a href="/blog/others/aboutblog/vuepress-plugin.html" target="_blank">VuePress + GitHub搭建个人博客笔记（2）必备插件</a>
+
+<a href="/blog/others/aboutblog/vuepress-make-vue-plugin.html" target="_blank">VuePress之开发自己的插件</a>
+
+<a href="/blog/others/aboutblog/modify-vuepress-theme.html" target="_blank">VuePress之修改默认主题</a>
+
+
+

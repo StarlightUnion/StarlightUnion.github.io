@@ -18,8 +18,9 @@ tags: ["Vue.js"]
 >最终的效果**如上图所示**，当鼠标移入灰色方块时弹出层会**至下而上**显示出来，类似于 **拉链式窗帘(?)**。
 
 ## 一、实例
-> 实现上图所示的效果代码如下：
+> 实现上图所示的效果代码如下：👇
 
+::: details 展开查看源码
 ```html
 <!DOCTYPE html>
 <html lang="en">
@@ -127,6 +128,8 @@ tags: ["Vue.js"]
 </body>
 </html>
 ```
+:::
+
 ## 二、transition的使用
 ![描述](/images/frontend/vue/vue-tran-02.png)
 > 以上为各类状态/过程对应的类名示意图。
