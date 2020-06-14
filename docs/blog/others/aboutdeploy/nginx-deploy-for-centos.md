@@ -12,7 +12,7 @@ tags: ["杂记", "Nginx", "CentOS", "Linux", "Blog"]
 
 > 本文主要记录在CentOS上使用`nginx`部署前端项目的过程。
 
-在[CentOS下配置node.js和nginx环境](/blog/others/devtool/nodejs-config-for-centos.html)一文中已经安装好了`nginx`，并且能顺利跑起来了，那么接下来就比较简单了。这回部署的是**博客**，之前放在`GitHub`上，响应缓慢，较大的图片加载更是有如蜗牛，这次要把它放到云服务器上。
+在[CentOS下配置Node.js和Nginx环境](/blog/others/devtool/nodejs-config-for-centos.html)一文中已经安装好了`nginx`，并且能顺利跑起来了，那么接下来就比较简单了。这回部署的是**博客**，之前放在`GitHub`上，响应缓慢，较大的图片加载更是有如蜗牛，这次要把它放到云服务器上。
 
 ## 一、获取源码
 

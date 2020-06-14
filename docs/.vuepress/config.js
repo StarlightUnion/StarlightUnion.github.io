@@ -97,6 +97,7 @@ module.exports = {
         title: '工具/环境相关',
         // sidebarDepth: 3,
         children: [
+          '/blog/others/devtool/global-variable-config-for-windows',
           '/blog/others/devtool/nodejs-config-for-centos',
           '/blog/others/devtool/folder-tree-content',
           '/blog/others/devtool/github-sshkey-config',

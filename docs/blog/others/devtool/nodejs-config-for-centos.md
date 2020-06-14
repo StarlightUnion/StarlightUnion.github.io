@@ -1,10 +1,10 @@
 ---
-title: CentOS下配置node.js和nginx环境
+title: CentOS下配置Node.js和Nginx环境
 date: 2020/05/26 21:35:00
 tags: ["杂记", "CentOS", "Linux", "Node.js", "Nginx"]
 ---
 
-# CentOS下配置node.js和nginx环境
+# CentOS下配置Node.js和Nginx环境
 
 <ClientOnly>
   <display-bar :displayData="$frontmatter"></display-bar>
