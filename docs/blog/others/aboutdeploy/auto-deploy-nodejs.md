@@ -42,6 +42,185 @@ tags: ["杂记", "自动化部署", "Node.js", "GitHub", "Webhooks", "CentOS", "
 
 说实话这是第一次正经使用`node.js`。。
 
+> 以下为一个简单的`POST`请求实例代码。
+>
+> [完整的项目源码在此](https://github.com/StarlightUnion/AutoUpdateServer-Node.js) ，**引入了日志功能，可以记录服务的常规和异常信息**。
+
+### 1.写个DEMO测试一下
+
+```js
+// config.js
+module.exports = {
+  HOST: "127.0.0.1",
+  PORT: 9000
+};
+
+// server.js
+const express = require('express');
+const bodyParser = require('body-parser');
+const cors = require('cors');// 跨域
+const server = express();
+
+const config = require('./config');// 配置 config.js
+const HOST = config.HOST;
+const PORT = config.PORT;
+
+server.use(bodyParser.json());
+server.use(bodyParser.urlencoded({extended: true}));
+server.use(cors());
+
+server.post('/api/update', (request, response) => {
+  console.log(request.body);
+  response.json(request.body);
+});
+
+server.listen({
+  host: HOST,
+  port: PORT
+}, function () {
+  console.log(`Server is running in http://${HOST}:${PORT}`);
+});
+```
+
+安装必要依赖后执行`node server.js`，在**Postman中模拟一次请求**，如下，成功收到响应！
+
+![auto-deploy-03](/images/other/aboutdeploy/auto-deploy-03.png)
+
+### 2.接着完善一下
+
+> 主要增加了：
+>
+> * 将命令整合至`update.sh`脚本，并通过`node.js`相关API调用；
+> * **从`body`中获取更新的仓库名**并将其作为一个**参数**传入脚本，这样服务可以应用于多个仓库。
+
+::: details 展开查看源码
+
+#### 项目文件结构
+
+```
+.node-update
+├── static
+│   ├── server.js
+│   ├── config.js
+│   └── update.sh
+└── package.json
+```
+
+#### `server.js`服务本体
+
+```js
+// server.js
+const express = require('express');
+const bodyParser = require('body-parser');
+const cors = require('cors');// 跨域
+const server = express();
+const spawn = require('child_process').spawn;
+
+const config = require('./config');// 配置 config.js
+const HOST = config.HOST;
+const PORT = config.PORT;
+
+server.use(bodyParser.json());
+server.use(bodyParser.urlencoded({extended: true}));
+server.use(cors());
+
+// github webhooks 需选用 x-www-form-urlencoded
+server.post('/api/update', (request, response) => {
+  if (request) {
+    // console.log(request.body);
+    const repoName = JSON.parse(request.body.payload).repository.name
+    const cmd = `/documents/GitHub/${repoName}`;// 本地仓库地址
+
+    let res = '';
+    // 调用命令行，执行命令(sh update.sh)，并给update.sh传递一个参数cmd
+    const process = spawn('sh', ['update.sh', cmd]);
+    process.stdout.on('data', function (data) {
+      const ds = data.toString();
+      // console.log(ds);
+      res += ds;
+    });
+
+    process.stderr.on('data', function (data) {
+      const ds = data.toString();
+      // console.log(ds);
+    });
+    response.json(res);
+  }
+
+  // response.json(request.body);
+});
+
+server.listen({
+  host: HOST,
+  port: PORT
+}, function () {
+  console.log(`Server is running in http://${HOST}:${PORT}`);
+});
+
+```
+
+#### `update.sh`更新脚本
+
+```shell
+# update.sh
+echo 'start update...'
+# echo $1
+cd $1 # 接收传入的参数 即地址
+
+# 拉取更新
+git fetch --all
+git reset --hard origin/master
+
+# 获取最新代码合并到本地
+# git pull origin
+
+echo 'update complete!'
+```
+#### `package.json`
+
+```json
+{
+  "name": "node-update",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "server": "cd static && nodemon server.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "nodemon": "^1.11.0",
+    "winston": "^3.2.1",
+    "winston-daily-rotate-file": "^4.4.2"
+  }
+}
+```
+
+:::
+
+## 三、将服务部署至服务器
+
+> 将文件传至服务器，放在`node-update`
+
+![auto-deploy-07](/images/other/aboutdeploy/auto-deploy-07.png)
+
+![auto-deploy-08](/images/other/aboutdeploy/auto-deploy-08.png)
+
+![auto-deploy-04](/images/other/aboutdeploy/auto-deploy-04.png)
+
+![auto-deploy-05](/images/other/aboutdeploy/auto-deploy-05.png)
+
+![auto-deploy-06](/images/other/aboutdeploy/auto-deploy-06.png)
+
+## 四、遇到的问题
+
+![auto-deploy-09](/images/other/aboutdeploy/auto-deploy-09.png)
+
+![auto-deploy-10](/images/other/aboutdeploy/auto-deploy-10.png)
 
 
 施工中🚧...

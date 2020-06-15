@@ -1,5 +1,5 @@
 <template>
-  <div class="tip">
+  <div class="tip-container">
     <div class="tip-main" v-for="item in notices" :key="item.name">
       <div class="tip-content">
         <span v-show="type === 'info'" class="tip-type type-info">i</span>
@@ -55,7 +55,7 @@ export default {
 </script>
 
 <style lang="stylus">
-  .tip
+  .tip-container
     position fixed
     width 100%
     top 1rem

@@ -18,6 +18,8 @@ tags: ["杂记", "汇总"]
 
 <a href="/blog/others/devtool/github-sshkey-config.html" target="_blank">GitHub SSH Key配置push仍然失败的问题</a>
 
+<a href="/blog/others/devtool/gitlab-init.html" target="_blank">GitLab配置及测试提交笔记</a>
+
 ### Nginx部署相关
 
 <a href="/blog/others/devtool/nginx-deploy-record.html" target="_blank">Nginx部署笔记-Windows（1）</a>
