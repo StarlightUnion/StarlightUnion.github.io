@@ -20,6 +20,8 @@ tags: ["杂记", "汇总"]
 
 <a href="/blog/others/devtool/gitlab-init.html" target="_blank">GitLab配置及测试提交笔记</a>
 
+<a href="/blog/others/devtool/gitlab-and-github.html" target="_blank">WindowsPC同时配置GitLab和GitHub</a>
+
 ### Nginx部署相关
 
 <a href="/blog/others/devtool/nginx-deploy-record.html" target="_blank">Nginx部署笔记-Windows（1）</a>

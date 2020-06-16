@@ -43,7 +43,32 @@ module.exports = {
 }
 ```
 
-### 2.google-analytics
+### 2.medium-zoom
+
+> 这是一个用来显示图片的插件，点击文中的图片可以进行展示和缩放。
+
+```shell
+yarn add -D @vuepress/plugin-medium-zoom
+# OR npm install -D @vuepress/plugin-medium-zoom
+```
+
+**配置**
+
+```js
+module.exports = {
+  ...
+  plugins: [
+    ...
+    '@vuepress/medium-zoom',
+    ...
+  ]
+  ...
+}
+```
+
+默认使用配置如上所示，但文档中的**自定义配置项不知为何没起作用，暂未找到原因**。
+
+### 3.google-analytics
 
 > 一个网站分析插件，可以在**谷歌分析**的后台界面查看博客网站的流量、访问来源、在线人数等信息。
 >
@@ -85,7 +110,7 @@ GAID:`UA-账号ID-x`，可以查看注册的账号信息获取GAID。
 
 ## 二、VuePress和默认主题自带
 
-### 3.active-header-links
+### 4.active-header-links
 
 > 作用是使侧边栏的**菜单**随页面的滚动自动选中。
 
@@ -103,7 +128,7 @@ module.exports = {
 }
 ```
 
-### 4.last-updated
+### 5.last-updated
 
 > 从GitHub获取最后提交时间戳(timestamp)作为最后更新的时间基准。
 
@@ -139,7 +164,7 @@ module.exports = {
 
 [Moment.js文档](http://momentjs.cn/)
 
-### 5.search
+### 6.search
 
 > 默认主题自带的搜索插件，即header上面的搜索框。
 
@@ -158,7 +183,7 @@ tags: ["Vuepress", "Blog"]
 ---
 ```
 
-### 6.register-components
+### 7.register-components
 
 具体参考文档，该插件可以使在某个目录下的所有组件被注册为全局组件。
 

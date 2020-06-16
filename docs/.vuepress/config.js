@@ -97,6 +97,7 @@ module.exports = {
         title: '工具/环境相关',
         // sidebarDepth: 3,
         children: [
+          '/blog/others/devtool/gitlab-and-github',
           '/blog/others/devtool/gitlab-init',
           '/blog/others/devtool/global-variable-config-for-windows',
           '/blog/others/devtool/nodejs-config-for-centos',
@@ -202,6 +203,7 @@ module.exports = {
       headerAnchorSelector: '.header-anchor'
     }],
     '@vuepress/back-to-top',
+    '@vuepress/medium-zoom',
     ['@vuepress/last-updated', {
       transformer: (timestamp, lang) => {
         const moment = require('moment');
