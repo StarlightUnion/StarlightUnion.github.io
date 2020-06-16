@@ -29,9 +29,19 @@ git config --list # 查看配置项
 ![gitlab-init-02](/images/other/devtool/gitlab-init-02.png)
 
 ```shell
-#获取SSH Key 需要和上面一样
+#获取SSH Key 邮箱名需要和上面一样
 ssh-keygen -t rsa -C "xxxx@xxx.com"
 ```
+
+::: danger 警告
+
+Windows中存放`id_rsa`的路径中**不能包含中文名**。
+
+`id_rsa`在Windows中一般存放在`C:\Users\<用户名>\.ssh`，在命令行中输入`ls ~/.ssh`可以查看。
+
+若路径中包含中文名，**秘钥会因为存放地址乱码而保存失败**！
+
+:::
 
 SSH Key存放在下图**红圈圈出的位置**。
 
@@ -51,7 +61,7 @@ SSH Key存放在下图**红圈圈出的位置**。
 
 :::
 
-接着在**GitLab配置/Setting**中左侧栏的SSH Keys中添加复制的Key。
+接着在**GitLab配置/Settings**中左侧栏的SSH Keys中添加复制的Key。
 
 > ![gitlab-init-01](/images/other/devtool/gitlab-init-01.png)
 >
@@ -78,7 +88,9 @@ git clone git@111.111.1.111:xxx/xxx.git
 # 当前工作目录为 GitLab
 cd xxxx # xxx为项目名
 git init
-git add.
+
+git add . # 提交新增、修改文件至暂存区，不处理删除文件
+
 git commit -m 'modify:xxx' # 提交说明
 
 # 提交前拉取一次代码，看是否需要合并
