@@ -204,24 +204,94 @@ echo 'update complete!'
 
 ## 三、将服务部署至服务器
 
-> 将文件传至服务器，放在`node-update`
+### 1.运行前的配置
+
+> * 1.设置`config.js`👇，`HOST`为服务的IP，`PORT`填写服务的端口。
+>
+>  ::: danger 注意事项
+>
+> * 需要**确保填写的端口正确开通并暴露在公网**，需设置防火墙（Windows）或安全组（云服务器）；
+> * 云服务器的话`HOST`需要**填写服务器的内网地址**，填写公网地址将会报错；
+> * 服务器需安装`node.js`环境，参考[CentOS下配置Node.js和Nginx环境](/blog/others/devtool/nodejs-config-for-centos.html)
+>
+>  :::
+>
+> ```js
+> ...
+> module.exports = {
+>  HOST: "127.0.0.1",// 云服务器要填写该服务器的内网IP
+>  PORT: 9000,
+>  logger: logger// 日志
+> };
+> ...
+> ```
+>
+> * 2.设置`server.js`
+>
+> 这里需要配置服务器上的**本地仓库的绝对地址**。
+>
+> ```js
+> ...
+> const repoName = JSON.parse(request.body.payload).repository.name
+> const cmd = `/documents/GitHub/${repoName}`;// 本地仓库地址
+> ...
+> ```
+
+将文件传至服务器，在命令行中进入该目录，执行下面命令。
+
+```shell
+npm install # 安装依赖
+npm run server # 运行服务
+```
 
 ![auto-deploy-07](/images/other/aboutdeploy/auto-deploy-07.png)
 
+一次`POST`请求打印出的信息👇
+
 ![auto-deploy-08](/images/other/aboutdeploy/auto-deploy-08.png)
+
+### 2.实现服务端常驻
+
+> `npm run server`只能实现服务的开发环境下的调试部署，要想实现服务的常驻，需要安装`pm2`。
+
+运行`npm i pm2 -g`全局安装`pm2`，下面第一图中可以看到**安装的路径**。
 
 ![auto-deploy-04](/images/other/aboutdeploy/auto-deploy-04.png)
 
+```shell
+pm2 # 尝试调用，发现没有用
+
+# 将安装路径中的pm2建立软链接到全局路径，将pm2设置为全局命令
+ln -s /root/node-v14.3.0-linux-x64/bin/pm2 /usr/bin/pm2
+pm2 # 成功
+```
+
 ![auto-deploy-05](/images/other/aboutdeploy/auto-deploy-05.png)
+
+```shell
+cd static # 进入static目录
+pm2 start server.js # 运行server.js并常驻
+```
 
 ![auto-deploy-06](/images/other/aboutdeploy/auto-deploy-06.png)
 
 ## 四、遇到的问题
 
+### 拉取远程仓库代码失败
+
+> 错误提示：`error: PRC failed; result=18, HTTP code = 200 `、`fatal: The remote end hung up unexpectedly`、`fatal: early EOF`、`fatal: index-pack failed`、`error: could not fetch origin`。
+
+搜索一番，发现是远程仓库文件太大，而缓存设置的大小小，拉取超时。
+
+```shell
+git config --list # 查看 http.postbuffer
+
+# 修改 http.postbuffer 为 1024288000
+git config --global http.postBuffer 1024288000
+git config --list # 再次查看
+```
+
 ![auto-deploy-09](/images/other/aboutdeploy/auto-deploy-09.png)
 
 ![auto-deploy-10](/images/other/aboutdeploy/auto-deploy-10.png)
-
-
-施工中🚧...
 
