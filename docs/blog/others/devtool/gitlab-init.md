@@ -10,13 +10,11 @@ tags: ["杂记", "GitLab", "Git"]
   <display-bar :displayData="$frontmatter"></display-bar>
 </ClientOnly>
 
-> `GitLab`是基于`Git`开发的**项目管理及版本控制**的平台，广泛应用于各类IT企业。
->
-> 那肯定得先装[Git](https://git-scm.com/download/)，按需下载安装即可。
+> `GitLab`是基于`Git`开发的**项目管理及版本控制**平台。那肯定得先安装[Git](https://git-scm.com/download/)，链接页面按需下载安装即可。
 
 ## 一、获取并配置SSH Key
 
-> 获取过程和[GitHub SSH Key配置push仍然失败的问题](/blog/others/devtool/github-sshkey-config.html)一文中的SSH Key获取差不多。。
+> 获取过程和[GitHub SSH Key配置push仍然失败的问题](/blog/others/devtool/github-sshkey-config.html)一文中的过程大差不差。。
 >
 > **用户名和账户初始邮箱**管理员已给出，最好**修改初始密码和初始邮箱**。
 

@@ -6,6 +6,7 @@ module.exports = {
     ['link', { rel: 'manifest', href: '/manifest.json' }],
     ['link', { rel: 'apple-touch-icon', href: '/logo.png' }],
     ['link', { rel: 'stylesheet', href: '/styles/iconfont.css' }],
+    ['link', { rel: 'stylesheet', href: '/styles/universal.css'}]
   ],
   serviceWorker: true,
   base: '/',
