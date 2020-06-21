@@ -32,6 +32,8 @@ tags: ["杂记", "汇总"]
 
 <a href="/blog/others/devtool/nginx-error-summary-1.html" target="_blank">Nginx部署笔记-常见错误总结（1）</a>
 
+<a href="/blog/others/aboutdeploy/nginx-error-summary-2.html" target="_blank">Nginx部署笔记-常见错误总结（2）</a>
+
 <a href="/blog/others/devtool/nodejs-config-for-centos.html" target="_blank">CentOS下配置Node.js和Nginx环境</a>
 
 <a href="/blog/others/aboutdeploy/nginx-deploy-for-centos.html" target="_blank">Nginx部署笔记-CentOS</a>

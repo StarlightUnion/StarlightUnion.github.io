@@ -115,6 +115,7 @@ module.exports = {
         children: [
           '/blog/others/aboutdeploy/auto-deploy-nodejs',
           '/blog/others/aboutdeploy/nginx-deploy-for-centos',
+          '/blog/others/aboutdeploy/nginx-error-summary-2',
           '/blog/others/devtool/nginx-error-summary-1',
           '/blog/others/devtool/nginx-deploy-summary',
           '/blog/others/devtool/nginx-start',

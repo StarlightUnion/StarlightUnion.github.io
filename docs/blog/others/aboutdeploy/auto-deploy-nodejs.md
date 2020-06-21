@@ -281,7 +281,7 @@ pm2 start server.js # 运行server.js并常驻
 
 > 错误提示：`error: PRC failed; result=18, HTTP code = 200 `、`fatal: The remote end hung up unexpectedly`、`fatal: early EOF`、`fatal: index-pack failed`、`error: could not fetch origin`。
 
-搜索一番，发现是远程仓库文件太大，而缓存设置的大小(size)很小，拉取超时。
+搜索一番，需要修改`Git`的传输字节大小设置。
 
 ```shell
 git config --list # 查看 http.postbuffer
