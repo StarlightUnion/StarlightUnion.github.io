@@ -161,6 +161,11 @@ module.exports = {
       //     children: [
       //       '/life&hobby/digital/benq-monitor-pd2500q'
       //     ]
+      //   }, {
+      //     title: '轨道交通',
+      //     children: [
+      //       '/life&hobby/transportation/hzm-line5-experience'
+      //     ]
       //   }
       // ]
     },
