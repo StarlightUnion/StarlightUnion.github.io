@@ -10,6 +10,8 @@ tags: ["随笔", "轨道交通", "杭州地铁"]
   <display-bar :displayData="$frontmatter"></display-bar>
 </ClientOnly>
 
+> 杭州地铁5号线于4月23日“全线”开通。
+
 ![hzm-line5-experience-01](/images/life&hobby/transportation/hzm-line5-experience-01.jpg)
 
 ![hzm-line5-experience-02](/images/life&hobby/transportation/hzm-line5-experience-02.jpg)
