@@ -104,7 +104,13 @@ git push origin # 提交更新到远程仓库
 >
 > ![gitlab-init-11](/images/other/devtool/gitlab-init-11.png)
 
+## 四、Github Desktop
 
+如果懒得打命令或者嫌命令行太麻烦，可以使用**Github Desktop**，虽然出自Github，**但是基于Git的平台都能够使用**。
 
+![gitlab-init-12](/images/other/devtool/gitlab-init-12.png)
 
+如图，使用`Add Local Repository...`添加一个本地仓库就好了，**前提是该仓库已关联至任一基于Git的远程仓库**，接下来就可以愉快~~省事~~地用图形化界面操作了🎉。
+
+![gitlab-init-13](/images/other/devtool/gitlab-init-13.png)
 
