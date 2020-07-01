@@ -106,7 +106,7 @@ git push origin # 提交更新到远程仓库
 
 ## 四、Github Desktop
 
-如果懒得打命令或者嫌命令行太麻烦，可以使用**Github Desktop**，虽然出自Github，**但是基于Git的平台都能够使用**。
+如果懒得打命令或者嫌命令行太麻烦，可以使用[Github Desktop](https://desktop.github.com/)，虽然出自Github，**但是基于Git的平台都能够使用**。
 
 ![gitlab-init-12](/images/other/devtool/gitlab-init-12.png)
 

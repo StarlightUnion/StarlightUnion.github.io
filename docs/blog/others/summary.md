@@ -38,6 +38,8 @@ tags: ["杂记", "汇总"]
 
 <a href="/blog/others/aboutdeploy/nginx-deploy-for-centos.html" target="_blank">Nginx部署笔记-CentOS</a>
 
+<a href="/blog/others/aboutdeploy/nginx-config-https.html" target="_blank">Nginx配置HTTPS/安装SSL证书</a>
+
 ### 自动化部署
 
 <a href="/blog/others/aboutdeploy/auto-deploy-nodejs.html" target="_blank">Node.js + GitHub Webhooks实现自动化部署</a>

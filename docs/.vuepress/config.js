@@ -113,6 +113,7 @@ module.exports = {
       }, {
         title: '部署相关',
         children: [
+          '/blog/others/aboutdeploy/nginx-config-https',
           '/blog/others/aboutdeploy/auto-deploy-nodejs',
           '/blog/others/aboutdeploy/nginx-deploy-for-centos',
           '/blog/others/aboutdeploy/nginx-error-summary-2',
