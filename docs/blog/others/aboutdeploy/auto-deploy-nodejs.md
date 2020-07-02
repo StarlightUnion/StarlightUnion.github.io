@@ -280,10 +280,10 @@ pm2 start server.js # 运行server.js并常驻
 * 查看当前使用`pm2`常驻的服务：`pm2 list`
 * 启动服务：`pm2 start example.js`
 * 重启服务：`pm2 restart example.js`
-* 停止服务：`pm2 stop example.js`/`pm2 stop all`/`pm2 stop 0`
+* 停止服务：`pm2 stop all`/`pm2 stop 0`/`pm2 stop example.js`
 * 查看编号0的服务：`pm2 show 0`
-* 监控服务：`pm2 monit example.js`/`pm2 monit 0`/`pm2 monit example.js`
-* 打印日志：`pm2 logs example.js`/`pm2 logs 0`/`pm2 logs example.js`
+* 监控服务：`pm2 monit`/`pm2 monit 0`/`pm2 monit example.js`
+* 打印日志：`pm2 logs`/`pm2 logs 0`/`pm2 logs example.js`
 
 ## 四、遇到的问题
 

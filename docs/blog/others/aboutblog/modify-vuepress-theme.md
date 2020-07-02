@@ -1,7 +1,7 @@
 ---
 title: VuePress之修改默认主题
 date: 2020/06/06 15:57:00
-tags: ["VuePress", "Blog", "Vue"]
+tags: ["杂记", "VuePress", "Blog", "Vue"]
 ---
 # VuePress之修改默认主题
 
@@ -28,7 +28,7 @@ vuepress eject # 将vuepress源码拷贝至my-blog
 . my-blog
 ├── .vuepress # vuepress源码，不是下面那个
 ├── docs
-│   └── .vuepress 
+│   └── .vuepress
 └── package.json
 ```
 

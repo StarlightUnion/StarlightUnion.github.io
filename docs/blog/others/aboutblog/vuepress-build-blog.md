@@ -1,7 +1,7 @@
 ---
 title: VuePress + GitHub搭建个人博客笔记（1）
 date: 2020/04/07 00:00:00
-tags: ["VuePress", "Blog"]
+tags: ["杂记", "VuePress", "Blog"]
 ---
 
 # VuePress + GitHub搭建个人博客笔记（1）

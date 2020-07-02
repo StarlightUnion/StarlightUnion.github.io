@@ -1,7 +1,7 @@
 ---
 title: VuePress + GitHub搭建个人博客笔记（2）必备插件
 date: 2020/04/08 00:00:00
-tags: ["VuePress", "Blog"]
+tags: ["杂记", "VuePress", "Blog"]
 ---
 # VuePress + GitHub搭建个人博客笔记（2）必备插件
 
