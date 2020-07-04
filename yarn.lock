@@ -1112,8 +1112,8 @@
 
 "@vuepress/plugin-medium-zoom@^1.5.2":
   version "1.5.2"
-  resolved "https://registry.yarnpkg.com/@vuepress/plugin-medium-zoom/-/plugin-medium-zoom-1.5.2.tgz#d7445ed8e8ba0cec9fb9c4c91a880b4e7fd66d91"
-  integrity sha512-zH/D6AutTHktC2G/NberIRbA3msHA/4sGtemk0U+bhoB1f7CvJRjOKRxX60AiabIuWfj2+tAtR2LlCkxLq3M3g==
+  resolved "https://registry.npm.taobao.org/@vuepress/plugin-medium-zoom/download/@vuepress/plugin-medium-zoom-1.5.2.tgz#d7445ed8e8ba0cec9fb9c4c91a880b4e7fd66d91"
+  integrity sha1-10Re2Oi6DOyfucTJGogLTn/WbZE=
   dependencies:
     medium-zoom "^1.0.4"
 
