@@ -66,28 +66,35 @@ module.exports = {
           '/blog/frontend/css&html/css-border-radius'
         ]
       }, {
-        title: 'Vue.js',
+        title: 'Vue.js相关',
         children: [
           '/blog/frontend/vue/vue-swipe',
           '/blog/frontend/vue/vue-port-config',
           '/blog/frontend/vue/vue-transition'
         ]
       }, {
-        title: 'React.js',
+        title: 'React.js相关',
         children: [
           '/blog/frontend/react/react-install-error'
         ]
       }, {
-        title: '小程序',
+        title: '小程序相关',
         children: [
           '/blog/frontend/miniprogram/miniprogram-summary-1'
         ]
       }, {
-        title: 'BootStrap',
+        title: 'GIS相关',
         children: [
-          '/blog/frontend/bootstrap/bootstrap-select-reset-tip',
-          '/blog/frontend/bootstrap/bootstrap-submit-validator',
-          '/blog/frontend/bootstrap/bootstrap-validator&bootstrap-datetimepicker'
+          '/blog/frontend/gis/arcgis-api-for-js-4x',
+          '/blog/frontend/gis/arcgis-api-for-js'
+        ]
+      }, {
+        title: '前端相关杂文',
+        children: [
+          '/blog/frontend/other/echart-basic-config',
+          '/blog/frontend/other/bootstrap-select-reset-tip',
+          '/blog/frontend/other/bootstrap-submit-validator',
+          '/blog/frontend/other/bootstrap-validator&bootstrap-datetimepicker'
         ]
       }],
       '/blog/others/': [
@@ -139,6 +146,7 @@ module.exports = {
       {
         title: 'JavaScript',
         children: [
+          '/blog/leetcode/js/exercises-1371',
           '/blog/leetcode/js/exercises-680',
           '/blog/leetcode/js/exercises-560',
           '/blog/leetcode/js/exercises-152',

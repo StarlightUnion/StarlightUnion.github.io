@@ -8,7 +8,7 @@
     "dev": "vuepress dev docs",
     "build": "vuepress build docs",
     "deploy": "sudo bash deploy.sh",
-    "deploy2": "bash dploy.sh"
+    "deploy2": "bash deploy.sh"
   },
   "keywords": [],
   "author": "",

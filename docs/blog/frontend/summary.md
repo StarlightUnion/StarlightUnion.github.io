@@ -24,3 +24,9 @@ tags: ["前端技术", "汇总"]
 
 <a href="/blog/frontend/javascript/array-sort.html" target="_blank">Array.prototype.sort()用法总结</a>
 
+###  GIS相关
+
+<a href="/blog/frontend/gis/arcgis-api-for-js.html" target="_blank">ArcGIS 3.x常用方法整理</a>
+
+<a href="/blog/frontend/gis/arcgis-api-for-js-4x.html" target="_blank">ArcGIS 4.x与3.x的常用API的区别以及常用方法整理</a>
+
