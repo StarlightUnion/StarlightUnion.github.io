@@ -54,7 +54,7 @@ map.remove(map.findLayerById("layerId"))
       const newLayer = new GraphicsLayer({id: "newLayer"});// 图层id
   	map.addLayer(newLayer);
   })
-  
+
   // 4.x
   require([
       'esri/Graphic'
@@ -63,7 +63,7 @@ map.remove(map.findLayerById("layerId"))
           geometry: geometry,// geometry(point)对象
           symbol: symbol// symbol样式，可以是线、图片等
       }
-      
+
       const layer = new Graphic(GeometryObject);
       map.add(layer);
   })
@@ -84,20 +84,20 @@ map.remove(map.findLayerById("layerId"))
           container: 'map',
           map: map
       });
-      
+
       ...
-      
+
       const centerPoint = new Point({// 构造一个geometry(point)对象
           x: xValue,
           y: yValue,
           spatialReference: mapView.spatialReference
       });
-      
+
       mapView.scale = 10000;// 设置比例尺
       mapView.center = centerPoint;// 设置中心点
-      
+
       ...
-      
+
       // 获取比例尺和中心点 直接从mpView拿就好了
       console.log(mapView.scale);
       console.log(mapView.center);
