@@ -32,7 +32,7 @@ tree /F > tree.txt
 
 ## 二、macOS
 
-需要安装一个插件，在**终端**中输入`brew install tree`，此操作需要安装`HomeBrew`，可[参考此文](/blog/others/devtool/homebrew)。
+需要安装一个插件，在**终端**中输入`brew install tree`，此操作需要安装`HomeBrew`，可[参考此文](/blog/other/devtool/homebrew)。
 
 接下来就可以使用命令了，命令和上面的差不多。
 

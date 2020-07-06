@@ -26,7 +26,7 @@ tags: ["杂记", "Windows", "全局变量", "Yarn"]
 
 **首先**检查安装过程，用的是管理员权限，不存在权限不足的问题；**接着**检查安装路径，路径下已经有`yarn`的文件存在。所以问题应该出在**全局变量**上。
 
-和[CentOS配置Node.js和Nginx环境](/blog/others/devtool/nodejs-config-for-centos.html)一样，想要在全局中使用`npm`、`node`、`nginx`命令需要建立软链接到全局路径下。
+和[CentOS配置Node.js和Nginx环境](/blog/other/devtool/nodejs-config-for-centos.html)一样，想要在全局中使用`npm`、`node`、`nginx`命令需要建立软链接到全局路径下。
 
 ###  配置环境变量
 

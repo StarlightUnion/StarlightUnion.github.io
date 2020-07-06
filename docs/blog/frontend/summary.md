@@ -24,6 +24,8 @@ tags: ["前端技术", "汇总"]
 
 <a href="/blog/frontend/javascript/array-sort.html" target="_blank">Array.prototype.sort()用法总结</a>
 
+<a href="/blog/frontend/javascript/array-filter.html" target="_blank">Array.prototype.filter()进阶</a>
+
 ###  GIS相关
 
 <a href="/blog/frontend/gis/arcgis-api-for-js.html" target="_blank">ArcGIS 3.x常用方法整理</a>

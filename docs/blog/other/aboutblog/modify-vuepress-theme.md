@@ -11,7 +11,7 @@ tags: ["杂记", "VuePress", "Blog", "Vue"]
 
 > 博客使用的是`VuePress`的默认主题，作为**稍微有点动手能力**前端初级切图仔，这个默认主题有点太大众化了，准备一点点的加些自己的东西上去。
 >
-> 前文[VuePress之开发自己的插件](/blog/others/aboutblog/vuepress-make-vue-plugin.html)只是开发插件，使用的时候还需要写在`.md`文件中。。。
+> 前文[VuePress之开发自己的插件](/blog/other/aboutblog/vuepress-make-vue-plugin.html)只是开发插件，使用的时候还需要写在`.md`文件中。。。
 
 `VuePress`提供了[主题的继承](https://www.vuepress.cn/theme/inheritance.html)，这使得我们可以在**本地修改默认主题中的某些组件**，来满足一些自定的需求。
 

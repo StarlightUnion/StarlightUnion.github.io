@@ -25,7 +25,7 @@ module.exports = {
         link: '/blog/frontend/summary'
       }, {
         text: '技术杂记',
-        link: '/blog/others/summary'
+        link: '/blog/other/summary'
       }, {
         text: '计算机基础',
         link: '/blog/cb/'
@@ -49,6 +49,7 @@ module.exports = {
       }, {
         title: 'JavaScript基础',
         children: [
+          '/blog/frontend/javascript/array-filter',
           '/blog/frontend/javascript/float-operation',
           '/blog/frontend/javascript/array-sort',
           '/blog/frontend/javascript/object-array-classification',
@@ -97,45 +98,45 @@ module.exports = {
           '/blog/frontend/other/bootstrap-validator&bootstrap-datetimepicker'
         ]
       }],
-      '/blog/others/': [
+      '/blog/other/': [
       {
         title: '系列汇总',
-        path: '/blog/others/summary'
+        path: '/blog/other/summary'
       }, {
         title: '工具/环境相关',
         // sidebarDepth: 3,
         children: [
-          '/blog/others/devtool/gitlab-and-github',
-          '/blog/others/devtool/gitlab-init',
-          '/blog/others/devtool/global-variable-config-for-windows',
-          '/blog/others/devtool/nodejs-config-for-centos',
-          '/blog/others/devtool/folder-tree-content',
-          '/blog/others/devtool/github-sshkey-config',
-          '/blog/others/devtool/git-remove-dir',
-          '/blog/others/devtool/webstorm-background',
-          '/blog/others/devtool/webstorm-tfs-2',
-          '/blog/others/devtool/webstorm-tfs-1',
-          '/blog/others/devtool/homebrew'
+          '/blog/other/devtool/gitlab-and-github',
+          '/blog/other/devtool/gitlab-init',
+          '/blog/other/devtool/global-variable-config-for-windows',
+          '/blog/other/devtool/nodejs-config-for-centos',
+          '/blog/other/devtool/folder-tree-content',
+          '/blog/other/devtool/github-sshkey-config',
+          '/blog/other/devtool/git-remove-dir',
+          '/blog/other/devtool/webstorm-background',
+          '/blog/other/devtool/webstorm-tfs-2',
+          '/blog/other/devtool/webstorm-tfs-1',
+          '/blog/other/devtool/homebrew'
         ]
       }, {
         title: '部署相关',
         children: [
-          '/blog/others/aboutdeploy/nginx-config-https',
-          '/blog/others/aboutdeploy/auto-deploy-nodejs',
-          '/blog/others/aboutdeploy/nginx-deploy-for-centos',
-          '/blog/others/aboutdeploy/nginx-error-summary-2',
-          '/blog/others/devtool/nginx-error-summary-1',
-          '/blog/others/devtool/nginx-deploy-summary',
-          '/blog/others/devtool/nginx-start',
-          '/blog/others/devtool/nginx-deploy-record'
+          '/blog/other/aboutdeploy/nginx-config-https',
+          '/blog/other/aboutdeploy/auto-deploy-nodejs',
+          '/blog/other/aboutdeploy/nginx-deploy-for-centos',
+          '/blog/other/aboutdeploy/nginx-error-summary-2',
+          '/blog/other/devtool/nginx-error-summary-1',
+          '/blog/other/devtool/nginx-deploy-summary',
+          '/blog/other/devtool/nginx-start',
+          '/blog/other/devtool/nginx-deploy-record'
         ]
       }, {
         title: '博客相关',
         children: [
-          '/blog/others/aboutblog/modify-vuepress-theme',
-          '/blog/others/aboutblog/vuepress-make-vue-plugin',
-          '/blog/others/aboutblog/vuepress-plugin',
-          '/blog/others/aboutblog/vuepress-build-blog'
+          '/blog/other/aboutblog/modify-vuepress-theme',
+          '/blog/other/aboutblog/vuepress-make-vue-plugin',
+          '/blog/other/aboutblog/vuepress-plugin',
+          '/blog/other/aboutblog/vuepress-build-blog'
         ]
       }],
       '/blog/leetcode/': [

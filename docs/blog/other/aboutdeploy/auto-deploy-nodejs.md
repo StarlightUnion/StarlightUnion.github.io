@@ -212,7 +212,7 @@ echo 'update complete!'
 >
 > * 需要**确保填写的端口正确开通并暴露在公网**，需设置防火墙（Windows）或安全组（云服务器）；
 > * 云服务器的话`HOST`需要**填写服务器的内网地址**，填写公网地址将会报错；
-> * 服务器需安装`node.js`环境，参考[CentOS下配置Node.js和Nginx环境](/blog/others/devtool/nodejs-config-for-centos.html)
+> * 服务器需安装`node.js`环境，参考[CentOS下配置Node.js和Nginx环境](/blog/other/devtool/nodejs-config-for-centos.html)
 >
 >  :::
 >

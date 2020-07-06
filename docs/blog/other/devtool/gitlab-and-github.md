@@ -46,7 +46,7 @@ ls ~/.ssh # 查看 .ssh 路径下保存的key
 git config --list # 查看配置
 ```
 
-通过查看保存的SSH Key，在`.ssh`目录下已存在一份Key（即是在前文[GitLab配置及测试提交笔记](/blog/others/devtool/gitlab-init.html)中为`GitLab`配置的Key），接下来只要再下载一份`GitHub`的Key就行了。
+通过查看保存的SSH Key，在`.ssh`目录下已存在一份Key（即是在前文[GitLab配置及测试提交笔记](/blog/other/devtool/gitlab-init.html)中为`GitLab`配置的Key），接下来只要再下载一份`GitHub`的Key就行了。
 
 下一步查看配置可以看到`Git`的全局配置中已经设置了**全局的`user.name`和`user.email`**。
 

@@ -14,7 +14,7 @@ tags: ["杂记", "GitLab", "Git"]
 
 ## 一、获取并配置SSH Key
 
-> 获取过程和[GitHub SSH Key配置push仍然失败的问题](/blog/others/devtool/github-sshkey-config.html)一文中的过程大差不差。。
+> 获取过程和[GitHub SSH Key配置push仍然失败的问题](/blog/other/devtool/github-sshkey-config.html)一文中的过程大差不差。。
 >
 > **用户名和账户初始邮箱**管理员已给出，最好**修改初始密码和初始邮箱**。
 
