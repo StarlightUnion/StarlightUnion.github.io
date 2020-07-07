@@ -12,7 +12,7 @@ tags: ["Javascript", "Method"]
 
 数组的`sort`方法的作用是对**数组元素进行排序**，并返回排序后的数组，⚠️**该方法将改变原数组**。
 
-语法：`Array.sort(compareFunction)`，`compareFunction`为自己指定的排序算法，**若不指定排序算法则会进行默认排序**。
+**语法：**`Array.sort(compareFunction)`，`compareFunction`为自己指定的排序算法，**若不指定排序算法则会进行默认排序**。
 
 该方法的**默认排序算法**是先将元素转换为`字符串`，再将其转换为`UTF-16`代码，根据元素的`UTF-16`代码的顺序排序。
 

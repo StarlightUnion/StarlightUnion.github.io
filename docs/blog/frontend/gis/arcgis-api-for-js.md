@@ -90,7 +90,7 @@ map.centerAt(point);
 
 `point`构造方法参考[构造一个geometry(point)对象](#_2-构造一个geometry-point-对象)。
 
-### 5.获取和设置比例尺
+## 5.获取和设置比例尺
 
 ```js
 /**

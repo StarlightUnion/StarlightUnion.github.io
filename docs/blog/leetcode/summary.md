@@ -27,3 +27,6 @@ tags: ["LeetCode", "汇总"]
 <a href="/blog/leetcode/js/exercises-680.html" target="_blank">【每日一题】680 验证回文字符串 Ⅱ</a>
 
 <a href="/blog/leetcode/js/exercises-1371.html" target="_blank">【每日一题】1371 每个元音包含偶数次的最长子字符串</a>
+
+<a href="/blog/leetcode/js/exercises-76.html" target="_blank">【每日一题】76 最小覆盖子串</a>
+

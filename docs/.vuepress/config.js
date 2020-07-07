@@ -152,6 +152,7 @@ module.exports = {
           '/blog/leetcode/js/exercises-560',
           '/blog/leetcode/js/exercises-152',
           '/blog/leetcode/js/exercises-102',
+          '/blog/leetcode/js/exercises-76',
           '/blog/leetcode/js/exercises-50',
           '/blog/leetcode/js/exercises-33',
           '/blog/leetcode/js/exercises-09',
