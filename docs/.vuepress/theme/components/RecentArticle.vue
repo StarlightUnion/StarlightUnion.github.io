@@ -24,6 +24,11 @@
         {{item.trim()}}
       </a>
     </div>
+
+    <div class="art-info">
+      <!-- <span>大小：{{pageData.size}}</span> -->
+      <span>最后更新时间：{{pageData.lastUpdated}}</span>
+    </div>
   </div>
 </template>
 
@@ -66,6 +71,12 @@ export default {
         cursor pointer
         color #000
       a:hover
+        color $accentColor
+    .art-info
+      font-size 0.8rem
+      span
+        margin-right 0.25rem
+      span:hover
         color $accentColor
 
   .recent-article:hover

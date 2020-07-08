@@ -58,8 +58,7 @@ export default {
       return res
     },
     // 关键词过滤
-    keyStringFilter (keystrs, strs) {
-      let flag = false
+    keyStringFilter (keystrs, strs, flag = false) {
       strs.map(str => {
         flag = flag || keystrs.includes(str)
       })
@@ -68,6 +67,7 @@ export default {
   },
   computed: {
     pages () {
+      console.log(this.$site.pages)
       return this.pagesDataHandle(this.$site.pages)
     },
     displayCount () {
