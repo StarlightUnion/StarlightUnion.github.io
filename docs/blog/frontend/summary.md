@@ -10,7 +10,7 @@ tags: ["前端技术", "汇总"]
   <display-bar :displayData="$frontmatter"></display-bar>
 </ClientOnly>
 
-> 只包括**前端相关**的系列篇文章。
+> 记录**前端相关**的系列篇文章。
 
 ### CSS进阶
 
@@ -24,7 +24,7 @@ tags: ["前端技术", "汇总"]
 
 <a href="/blog/frontend/javascript/array-sort.html" target="_blank">Array.prototype.sort()用法总结</a>
 
-<a href="/blog/frontend/javascript/array-filter.html" target="_blank">Array.prototype.filter()进阶</a>
+<a href="/blog/frontend/javascript/array-filter.html" target="_blank">Array.prototype.filter()进阶笔记</a>
 
 ###  GIS相关
 
@@ -32,3 +32,6 @@ tags: ["前端技术", "汇总"]
 
 <a href="/blog/frontend/gis/arcgis-api-for-js-4x.html" target="_blank">ArcGIS 4.x与3.x的常用API的区别以及常用方法整理</a>
 
+### 数据可视化
+
+<a href="/blog/frontend/other/echart-basic-config.html" target="_blank">EChart常用配置整理</a>
