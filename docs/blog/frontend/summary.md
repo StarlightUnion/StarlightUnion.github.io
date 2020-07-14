@@ -35,3 +35,6 @@ tags: ["前端技术", "汇总"]
 ### 数据可视化
 
 <a href="/blog/frontend/other/echart-basic-config.html" target="_blank">EChart常用配置整理</a>
+
+<a href="/blog/frontend/other/use-echart-in-react-and-vue.html" target="_blank">在React和Vue中使用ECharts</a>
+

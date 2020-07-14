@@ -67,7 +67,7 @@ export default {
   },
   computed: {
     pages () {
-      console.log(this.$site.pages)
+      // console.log(this.$site.pages)
       return this.pagesDataHandle(this.$site.pages)
     },
     displayCount () {

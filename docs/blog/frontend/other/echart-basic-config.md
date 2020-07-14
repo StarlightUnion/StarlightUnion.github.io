@@ -99,6 +99,18 @@ const option = {
 }
 ```
 
+## 5.setOption()
+
+> `chart.setOption(option, notMergen, lazyUpdate)`。
+>
+> 官方文档：[ECharts-setOption](https://echarts.apache.org/zh/api.html#echartsInstance.setOption)
+
+![echart-config-03](/images/frontend/other/echart-config-03.png)
+
+![echart-config-04](/images/frontend/other/echart-config-04.png)
+
+为了**去数据串联**，最好还是将`notMergen`设为`true`
+
 
 
 🍗 有待补充...

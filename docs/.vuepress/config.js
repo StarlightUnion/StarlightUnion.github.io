@@ -92,6 +92,7 @@ module.exports = {
       }, {
         title: '前端相关杂文',
         children: [
+          '/blog/frontend/other/use-echart-in-react-and-vue',
           '/blog/frontend/other/echart-basic-config',
           '/blog/frontend/other/bootstrap-select-reset-tip',
           '/blog/frontend/other/bootstrap-submit-validator',
