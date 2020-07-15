@@ -67,7 +67,7 @@ export default {
       align-self center
       // border 0.25rem solid #eee
     .person-desc
-      font-size 1.2rem
+      font-size 1rem
       line-height 2rem
       margin-top 1rem
       color #999

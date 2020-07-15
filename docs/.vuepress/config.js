@@ -1,6 +1,6 @@
 module.exports = {
   title: '游客17846',
-  description: 'Just do it !',
+  description: '爱写bug，不会修电脑，不怎么爱穿格子衬衫，宅，还能吃。',
   head: [
     ['link', { rel: 'icon', href: '/logo.ico' }],
     ['link', { rel: 'manifest', href: '/manifest.json' }],

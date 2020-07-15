@@ -99,18 +99,112 @@ const option = {
 }
 ```
 
-## 5.setOption()
+## 5.`setOption()`
 
 > `chart.setOption(option, notMergen, lazyUpdate)`。
 >
 > 官方文档：[ECharts-setOption](https://echarts.apache.org/zh/api.html#echartsInstance.setOption)
 
+::: warning
+
+为了**去数据串联**，最好还是将`notMergen`设为`true`。
+
+这样每次更新`option`的时候都不会与之前的合并。
+
+:::
+
 ![echart-config-03](/images/frontend/other/echart-config-03.png)
 
 ![echart-config-04](/images/frontend/other/echart-config-04.png)
 
-为了**去数据串联**，最好还是将`notMergen`设为`true`
+## 6.横向柱状图（数据顺序从上到下）
 
+![echart-config-05](/images/frontend/other/echart-config-05.png)
 
+```js {6,12,18}
+const option = {
+  ...
+  yAxis: {
+    type: "category",
+    data: yAxisData,// y轴坐标
+    inverse: true// 倒序
+  },
+  series: [{
+    name: "xxx",
+    type: "bar",// 柱状图
+    data: datas,
+    barWidth: 14,// 柱状图📊的宽度
+    itemStyle: {
+      normal: {
+        color: "#000",
+        label: {
+          show: true,
+          // 在柱状图柱子顶部显示数值 如果是纵向柱状图，position为top
+          position: "right"
+        }
+      }
+    }
+  }]
+  ...
+}
+```
+
+## 7.`dataZoom`锁定
+
+> 有时候数据太多，而容器的大小有限，而此时数据又太多。所以可以锁定🔒`dataZoom`滑块的长度，**不让用户自由拖动改变其长度**。
+
+```js {9}
+const option = {
+  ...
+  dataZoom:[{
+    type: "slider",// 类型 “slider”
+    show : true,
+    orient: "vertical",// 设置dataZoom的摆放方式
+    start: 0,// 设定滑块的起始位置
+    end: 20,// 设定滑块终止位置 其实就是设置滑块的长度
+    zoomLock: false// 锁定
+  }],
+  ...
+}
+```
+
+## 8.图例显示更多信息
+
+`ECharts`的图表的图例默认**只显示颜色和对应的数据的名称**，现实业务中需要的不仅仅是这些，可能还要显示数值、占比等信息。
+
+![echart-config-06](/images/frontend/other/echart-config-06.png)
+
+```js
+const option = {
+  ...
+  legend: {
+    orient: "vertical",// 图例类型 -> 垂直
+    right: "20%",// 图例位置
+    top: "40%",
+    data: legendData,
+    formatter: function (name, count = null) {
+      datas.some(item => {// 遍历datas获取数值
+        if (item.name === name) {
+          count = item.value;
+          return true;
+        }
+      });
+
+      return `${name}：${count}个`;// 使用字符串模板组装要显示的内容
+    }
+  },
+  ...
+}
+```
+
+<iframe
+  height=400
+  width=100%
+  src="https://echarts.apache.org/examples/zh/editor.html?c=pie-doughnut"
+  frameborder=0
+  allowfullscreen
+>
+</iframe>
 
 🍗 有待补充...
+
