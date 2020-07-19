@@ -1,10 +1,11 @@
 ---
-title: border-radius深入了解
+title: 【CSS进阶】border-radius深入了解
 date: 2020/03/06 00:00:00
 tags: ["CSS", "Border"]
 ---
 
-# border-radius深入了解
+# 【CSS进阶】border-radius深入了解
+
 <ClientOnly>
   <display-bar :displayData="$frontmatter"></display-bar>
 </ClientOnly>
@@ -122,7 +123,7 @@ border-radius: 左上角水平长度值 右上角水平长度值 右下角水平
 
 ## 3.border-radius的其他特点
 
-根据[大佬的秘籍](https://www.zhangxinxu.com/wordpress/2015/11/css3-border-radius-tips/)，``border-radius``还有两个特点，分别是**大值特性**和**等比例特性**，在此就不多说了~~（其实是夜深了。。。）~~，可参考大佬的秘籍。
+根据[大佬的秘籍](https://www.zhangxinxu.com/wordpress/2015/11/css3-border-radius-tips/)，``border-radius``还有两个特点，分别是**大值特性**和**等比例特性**，在此就不多说了~~其实是夜深了。。。~~，可参考大佬的秘籍。
 
 [源码在此](https://github.com/StarlightUnion/Blog-Content/tree/master/css/border-radius)
 

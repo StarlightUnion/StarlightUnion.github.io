@@ -70,7 +70,7 @@ tags: ["数据可视化", "ECharts", "React", "Vue"]
 
 > 省略部分不必要内容。。
 
-```jsx{45}
+```jsx{47}
 import React from "react";
 import echarts from "echarts";
 // import "echarts/lib/chart/bar";// 按需引入 柱状图
@@ -189,7 +189,7 @@ export { ChartView };
 
 ::: details 展开查看完整版代码
 
-```vue
+```vue{21,22}
 <!-- ChartView.vue -->
 <template>
 	<div id="my-chart" ref="myChart"></div>

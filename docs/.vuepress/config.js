@@ -52,7 +52,9 @@ module.exports = {
           '/blog/frontend/javascript/array-filter',
           '/blog/frontend/javascript/float-operation',
           '/blog/frontend/javascript/array-sort',
+          '/blog/frontend/javascript/array-some-and-every-and-includes',
           '/blog/frontend/javascript/object-array-classification',
+          '/blog/frontend/javascript/array-find-and-findindex',
           '/blog/frontend/javascript/javascript-logical-operators',
           '/blog/frontend/javascript/javascript-mulit-array',
           '/blog/frontend/javascript/javascript-loop'
@@ -60,11 +62,13 @@ module.exports = {
       }, {
         title: 'CSS/HTML',
         children: [
+          '/blog/frontend/css&html/flex-and-grid',
           '/blog/frontend/css&html/html-base-tag',
           '/blog/frontend/css&html/css-selector-2',
           '/blog/frontend/css&html/css-selector-1',
           '/blog/frontend/css&html/css-simple-progress',
-          '/blog/frontend/css&html/css-border-radius'
+          '/blog/frontend/css&html/css-border-radius',
+          '/blog/frontend/css&html/box-model-and-box-sizing'
         ]
       }, {
         title: 'Vue.js相关',
@@ -90,7 +94,7 @@ module.exports = {
           '/blog/frontend/gis/arcgis-api-for-js'
         ]
       }, {
-        title: '前端相关杂文',
+        title: '未分类文章',
         children: [
           '/blog/frontend/other/use-echart-in-react-and-vue',
           '/blog/frontend/other/echart-basic-config',
