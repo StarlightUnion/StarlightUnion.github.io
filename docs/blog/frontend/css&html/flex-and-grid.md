@@ -10,6 +10,14 @@ tags: ["CSS",  "Flex", "Grid", "CSS进阶", "布局"]
   <display-bar :displayData="$frontmatter"></display-bar>
 </ClientOnly>
 
+> 在HTML和CSS中，**网页布局**是一个重点。
+>
+> 本文记录这个重点中的两个重点**Flex**和**Grid**布局的使用要点。
+
+## 一、Flex布局
+
+
+
 ## 参考资料
 
 * [Flex 布局教程：语法篇 - 阮一峰的网络日志](http://www.ruanyifeng.com/blog/2015/07/flex-grammar.html)

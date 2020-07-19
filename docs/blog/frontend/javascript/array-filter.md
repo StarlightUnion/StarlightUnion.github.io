@@ -11,8 +11,8 @@ tags: ["Javascript", "Method"]
 </ClientOnly>
 
 > `Arrar.filter()`方法创建一个新数组，其包含通过所提供函数实现的测试的所有元素。--MDN
->
-> 该方法**不会改变原数组**。
+
+<font color="#FF0000">该方法不会改变原数组。</font>
 
 **语法：**`var newArray = arr.filter(callback(element[, index[, array]])[, thisArg])`。
 

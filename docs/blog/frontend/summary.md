@@ -26,8 +26,6 @@ tags: ["前端技术", "汇总"]
 
 ### JavaScript方法
 
-#### Array
-
 <a href="/blog/frontend/javascript/array-find-and-findindex.html" target="_blank">Array.find()和findIndex()方法</a>
 
 <a href="/blog/frontend/javascript/array-some-and-every-and-includes.html" target="_blank">Array.some()、every()、includes()方法</a>

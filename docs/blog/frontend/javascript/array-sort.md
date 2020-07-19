@@ -10,7 +10,9 @@ tags: ["Javascript", "Method"]
   <display-bar :displayData="$frontmatter"></display-bar>
 </ClientOnly>
 
-数组的`sort`方法的作用是对**数组元素进行排序**，并返回排序后的数组，⚠️**该方法将改变原数组**。
+数组的`sort`方法的作用是对**数组元素进行排序**，并返回排序后的数组。
+
+<font color="#FF0000">❗️⚠️：**该方法将改变原数组**。</font>
 
 **语法：**`Array.sort(compareFunction)`，`compareFunction`为自己指定的排序算法，**若不指定排序算法则会进行默认排序**。
 

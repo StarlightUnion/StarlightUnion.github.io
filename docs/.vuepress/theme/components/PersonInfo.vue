@@ -123,4 +123,8 @@ export default {
       padding 0
       border-bottom 1px solid #eaecef
       width 100%
+      .person-desc
+        width 100%
+        box-sizing border-box
+        padding 0 4rem
 </style>
