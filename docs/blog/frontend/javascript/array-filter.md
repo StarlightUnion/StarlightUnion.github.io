@@ -10,9 +10,9 @@ tags: ["Javascript", "Method"]
   <display-bar :displayData="$frontmatter"></display-bar>
 </ClientOnly>
 
-> `Arrar.filter()`方法创建一个新数组，其包含通过所提供函数实现的测试的所有元素。--MDN
+> `Array.filter()`方法创建一个新数组，其包含通过所提供函数实现的测试的所有元素。--MDN
 
-<font color="#FF0000">该方法不会改变原数组。</font>
+<font color="#FF0000">⚠该方法不会改变原数组。</font>
 
 **语法：**`var newArray = arr.filter(callback(element[, index[, array]])[, thisArg])`。
 

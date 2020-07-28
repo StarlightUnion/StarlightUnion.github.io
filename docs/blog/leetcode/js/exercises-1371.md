@@ -46,14 +46,49 @@ difficulty: 中等
 > * `1 <= s.length <= 5 x 10^5`
 > * `s` 只包含小写英文字母。
 
+## 一、前缀和（来自题解）
+
+这题看题目就了解了🤣 ，肯定不会做，直奔题解而去。
+
+> 官方题解：[LeetCode@LeetCode-Solution](https://leetcode-cn.com/problems/find-the-longest-substring-containing-vowels-in-even-counts/solution/mei-ge-yuan-yin-bao-han-ou-shu-ci-de-zui-chang-z-2/)
+>
+> 前缀和解法，看懂废了好大的力气🤣 。
+
 ```js
 /**
  * @param {string} s
  * @return {number}
  */
 var findTheLongestSubstring = function(s) {
+  const n = s.length;
+  const pos = new Array(1 << 5).fill(-1);
+  let ans = 0, status = 0;
+  pos[0] = 0;
 
+  for (let i = 0; i < n; ++i) {
+    const ch = s.charAt(i);
+
+    if (ch === 'a') {
+      status ^= 1 << 0;
+    } else if (ch === 'e') {
+      status ^= 1 << 1;
+    } else if (ch === 'i') {
+      status ^= 1 << 2;
+    } else if (ch === 'o') {
+      status ^= 1 << 3;
+    } else if (ch === 'u') {
+      status ^= 1 << 4;
+    }
+
+    if (~pos[status]) {
+      ans = Math.max(ans, i + 1 - pos[status]);
+    } else {
+      pos[status] = i + 1;
+    }
+  }
+  return ans;
 };
 ```
 
 施工中🚧...
+

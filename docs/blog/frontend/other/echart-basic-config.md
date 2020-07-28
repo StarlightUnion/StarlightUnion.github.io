@@ -49,7 +49,7 @@ const option = {
   // 网格位置 配置项文档：
   grid: {
     top: '10%',
-    bottom: '10%'
+    bottom: '10%',
     left: '5%',
     right: '5%',
   },
@@ -206,5 +206,115 @@ const option = {
 >
 </iframe>
 
-🍗 有待补充...
+## 9.轴线相关
+
+```js
+const option = {
+  ...
+  xAxis: {
+    type: 'category',
+    data: xAxisData,
+    // 坐标轴轴线
+    axisLine:{
+      show: false,
+      lineStyle: {
+        color: '#05A9CF'// 指定颜色
+      }
+    },
+    // 坐标轴刻度线
+    axisTick: {
+       show: false
+    },
+    // 显示区域刻度线
+    splitLine: {
+       lineStyle:{
+         color: '#05A9CF'// 指定颜色
+       }
+    }
+  },
+  ...
+}
+```
+
+## 10.设置曲线阴影部分渐变
+
+效果如下图所示↓：
+
+![echart-config-07](/images/frontend/other/echart-config-07.png)
+
+```js{8}
+const option = {
+  ...
+  series: [{
+    name: 'xxxxx',
+    data: datas,
+    type: 'line',
+    smooth: true,// 是否顺滑
+    areaStyle: {// 从这里开始
+      normal: {
+        color: new echarts.graphic.LinearGradient(0, 0, 0, 1, [{
+          offset: 0,
+          color: 'rgba(0,202,149,0.3)'
+        },
+        {
+          offset: 1,
+          color: 'rgba(0,202,149,0)'
+        }], false),
+        shadowColor: 'rgba(0,202,149, 0.9)',
+        shadowBlur: 20
+      }
+    },
+  }],
+  ...
+}
+```
+
+## 11.去除饼图标签和线
+
+```js
+const option = {
+  ...
+  series: [
+    {
+      name: '访问来源',
+      type: 'pie',
+      radius: '55%',
+      center: ['50%', '60%'],
+      label: {
+        normal: {
+          show: false// 去除饼图标签和线
+        }
+      }
+    }
+  ]
+  ...
+}
+```
+
+![echart-config-08](/images/frontend/other/echart-config-08.png)
+
+## 12.修改图例样式
+
+```js{8,9,10}
+const option = {
+  ...
+  legend: {
+    orient: 'vertical',
+    top: 'center',
+    right: '0%',
+    data: ['直接访问', '邮件营销'],
+    itemWidth: 12,   // 设置图例图形的宽
+    itemHeight: 9,  // 设置图例图形的高
+    textStyle: {  // 图例文字样式
+      color: '#fff',
+      fontSize: 12
+    }
+  },
+  ...
+}
+```
+
+![echart-config-09](/images/frontend/other/echart-config-09.png)
+
+🍗 不断更新...
 

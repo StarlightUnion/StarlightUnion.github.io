@@ -49,6 +49,7 @@ module.exports = {
       }, {
         title: 'JavaScript基础',
         children: [
+          '/blog/frontend/javascript/setinterval-and-settimeout',
           '/blog/frontend/javascript/array-filter',
           '/blog/frontend/javascript/float-operation',
           '/blog/frontend/javascript/array-sort',
@@ -155,8 +156,10 @@ module.exports = {
           '/blog/leetcode/js/exercises-1371',
           '/blog/leetcode/js/exercises-680',
           '/blog/leetcode/js/exercises-560',
+          '/blog/leetcode/js/exercises-392',
           '/blog/leetcode/js/exercises-152',
           '/blog/leetcode/js/exercises-105',
+          '/blog/leetcode/js/exercises-104',
           '/blog/leetcode/js/exercises-102',
           '/blog/leetcode/js/exercises-76',
           '/blog/leetcode/js/exercises-50',

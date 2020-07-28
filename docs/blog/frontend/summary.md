@@ -26,6 +26,8 @@ tags: ["前端技术", "汇总"]
 
 ### JavaScript方法
 
+**Array**
+
 <a href="/blog/frontend/javascript/array-find-and-findindex.html" target="_blank">Array.find()和findIndex()方法</a>
 
 <a href="/blog/frontend/javascript/array-some-and-every-and-includes.html" target="_blank">Array.some()、every()、includes()方法</a>
@@ -33,6 +35,10 @@ tags: ["前端技术", "汇总"]
 <a href="/blog/frontend/javascript/array-sort.html" target="_blank">Array.prototype.sort()用法总结</a>
 
 <a href="/blog/frontend/javascript/array-filter.html" target="_blank">Array.prototype.filter()进阶笔记</a>
+
+**Window**
+
+<a href="/blog/frontend/javascript/setinterval-and-settimeout.html" target="_blank">setInterval()和setTimeout()方法</a>
 
 ### 数据可视化
 
