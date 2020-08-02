@@ -38,7 +38,7 @@ module.exports = {
       link: '/blog/leetcode/summary'
     }, {
       text: '随笔',
-      link: '/life&hobby/'
+      link: '/life&hobby/discovery/vscode-browser'
     }],
     // sidebar: 'auto',
     sidebar: {
@@ -175,19 +175,24 @@ module.exports = {
           '/blog/leetcode/js/exercises-01'
         ]
       }],
-      // '/life&hobby/': [
-      //   {
-      //     title: '电子数码',
-      //     children: [
-      //       '/life&hobby/digital/benq-monitor-pd2500q'
-      //     ]
-      //   }, {
-      //     title: '交通运输',
-      //     children: [
-      //       '/life&hobby/transportation/hzm-line5-experience'
-      //     ]
-      //   }
-      // ]
+      '/life&hobby/': [
+        {
+          title: '发现',
+          children: [
+            '/life&hobby/discovery/vscode-browser'
+          ]
+        }, {
+          title: '电子数码',
+          children: [
+            '/life&hobby/digital/benq-monitor-pd2500q'
+          ]
+        }, {
+          title: '交通运输',
+          children: [
+            '/life&hobby/transportation/hzm-line5-experience'
+          ]
+        }
+      ]
     },
     lastUpdated: 'Last Updated',
     homePageDisplayCount: 6,

@@ -62,7 +62,7 @@ tags: ["随笔", "交通运输", "轨道交通", "杭州地铁"]
 
 ![hzm-line5-experience-07](/images/life&hobby/transportation/hzm-line5-experience-07.jpg)
 
-## 二“桥”悬念终分胜负。
+## 二“桥”悬念终分胜负
 
 ![hzm-line5-experience-11](/images/life&hobby/transportation/hzm-line5-experience-11.jpg)
 
