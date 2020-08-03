@@ -10,5 +10,11 @@ tags: ["Javascript"]
   <display-bar :displayData="$frontmatter"></display-bar>
 </ClientOnly>
 
+## 参考资料
+
+* [window.setInterval - Web API 接口参考 | MDN](https://developer.mozilla.org/zh-CN/docs/Web/API/Window/setInterval)
+* [window.setTimeout - Web API 接口参考 | MDN](https://developer.mozilla.org/zh-CN/docs/Web/API/Window/setTimeout)
+* [setInterval()与setTimeout()计时器](https://www.cnblogs.com/lengyuehuahun/p/5650030.html)
+
 施工中🚧...
 

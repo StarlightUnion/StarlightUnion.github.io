@@ -44,6 +44,7 @@ export default {
   .recent-article
     box-sizing border-box
     padding 1rem
+    border-radius 5px
     display flex
     flex-direction column
     // border-bottom 1px solid #eaecef

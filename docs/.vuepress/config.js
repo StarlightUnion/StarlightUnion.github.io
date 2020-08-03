@@ -157,6 +157,7 @@ module.exports = {
           '/blog/leetcode/js/exercises-680',
           '/blog/leetcode/js/exercises-560',
           '/blog/leetcode/js/exercises-392',
+          '/blog/leetcode/js/exercises-350',
           '/blog/leetcode/js/exercises-152',
           '/blog/leetcode/js/exercises-105',
           '/blog/leetcode/js/exercises-104',
@@ -164,6 +165,8 @@ module.exports = {
           '/blog/leetcode/js/exercises-76',
           '/blog/leetcode/js/exercises-50',
           '/blog/leetcode/js/exercises-33',
+          '/blog/leetcode/js/exercises-25',
+          '/blog/leetcode/js/exercises-24',
           '/blog/leetcode/js/exercises-09',
           '/blog/leetcode/js/exercises-08',
           '/blog/leetcode/js/exercises-07',
@@ -208,6 +211,10 @@ module.exports = {
       imgPath: '/images/site/github.jpeg',
       title: 'GitHub',
       link: 'https://github.com/StarlightUnion'
+    }, {
+      imgPath: '/images/site/gitee.jpeg',
+      title: 'Gitee',
+      link: 'https://gitee.com/StarlightUnion'
     }, {
       imgPath: '/images/site/juejin.jpg',
       title: '掘金',
