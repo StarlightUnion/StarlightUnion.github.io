@@ -97,9 +97,9 @@ const intersect = (nums1, nums2) => {
   const res = [];
   for (const num1 of nums1) { // 存下nums1数字的出现次数
     if (map[num1]) {
-      map[num1]++;  
-    } else {         
-      map[num1] = 1; 
+      map[num1]++;
+    } else {
+      map[num1] = 1;
     }
   }
   for (const num2 of nums2) { // 遍历nums2看看有没有数字在nums1出现过
