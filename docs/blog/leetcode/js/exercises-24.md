@@ -45,7 +45,7 @@ var swapPairs = function(head) {
 
     transform(head, arr);// 转换为数组
     if (arr.length <= 1) return head;
-  
+
   	// 两两互换
     for (let i = 0; i < arr.length; i += 2) {
         arr[i + 1] !== undefined ? _arr.push(arr[i + 1], arr[i]) : _arr.push(arr[i]);

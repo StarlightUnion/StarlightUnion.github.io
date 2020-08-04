@@ -1,10 +1,10 @@
 ---
-title: 系列汇总
+title: 快速导航
 date: 2020/04/12 00:00:00
-tags: ["前端技术", "汇总"]
+tags: ["前端技术", "导航"]
 ---
 
-# 前端技术系列汇总
+# 前端技术快速导航
 
 <ClientOnly>
   <display-bar :displayData="$frontmatter"></display-bar>

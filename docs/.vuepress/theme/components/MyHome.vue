@@ -94,6 +94,7 @@ export default {
       h3
         padding-left 0.5rem
     .home-person
+      max-width 400px
       display flex
       margin-left 3rem
       border-left 1px solid #eaecef

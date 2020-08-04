@@ -1,10 +1,10 @@
 ---
-title: 系列汇总
+title: 快速导航
 date: 2020/04/16 00:00:00
-tags: ["杂记", "汇总"]
+tags: ["杂记", "导航"]
 ---
 
-# 技术杂记系列汇总
+# 技术杂记快速导航
 
 <ClientOnly>
   <display-bar :displayData="$frontmatter"></display-bar>

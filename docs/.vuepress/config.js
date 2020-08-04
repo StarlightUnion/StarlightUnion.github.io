@@ -44,7 +44,7 @@ module.exports = {
     sidebar: {
       '/blog/frontend/': [
       {
-        title: '系列汇总',
+        title: '快速导航',
         path: '/blog/frontend/summary'
       }, {
         title: 'JavaScript基础',
@@ -106,7 +106,7 @@ module.exports = {
       }],
       '/blog/other/': [
       {
-        title: '系列汇总',
+        title: '快速导航',
         path: '/blog/other/summary'
       }, {
         title: '工具/环境相关',
@@ -147,7 +147,7 @@ module.exports = {
       }],
       '/blog/leetcode/': [
       {
-        title: '系列汇总',
+        title: '快速导航',
         path: '/blog/leetcode/summary'
       },
       {
@@ -199,7 +199,7 @@ module.exports = {
     },
     lastUpdated: 'Last Updated',
     homePageDisplayCount: 6,
-    filterStrs: ['汇总', '随笔', 'LeetCode'],
+    filterStrs: ['导航', '随笔', 'LeetCode'],
     contactInfo: [{
       icon: 'iconfont icon-location',
       text: 'Hangzhou, China'

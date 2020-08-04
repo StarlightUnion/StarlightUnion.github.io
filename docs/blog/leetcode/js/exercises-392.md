@@ -28,6 +28,7 @@ difficulty: 简单
 > 返回 `true`.
 >
 > **示例 2:**
+>
 > **s** = `"axc"`, **t** = `"ahbgdc"`
 >
 > 返回 `false`.

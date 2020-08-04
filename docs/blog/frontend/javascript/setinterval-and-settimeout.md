@@ -10,6 +10,8 @@ tags: ["Javascript"]
   <display-bar :displayData="$frontmatter"></display-bar>
 </ClientOnly>
 
+> 本文记录`setInterval()`和`setTimeout()`的异同与用法心得。。
+
 ## 参考资料
 
 * [window.setInterval - Web API 接口参考 | MDN](https://developer.mozilla.org/zh-CN/docs/Web/API/Window/setInterval)

@@ -1,16 +1,24 @@
 ---
-title: 系列汇总
+title: 快速导航
 date: 2020/05/12 00:00:00
-tags: ["LeetCode", "汇总"]
+tags: ["LeetCode", "导航"]
 ---
 
-# 系列汇总
+# 快速导航
 
 <ClientOnly>
   <display-bar :displayData="$frontmatter"></display-bar>
 </ClientOnly>
 
-> [力扣](https://leetcode-cn.com/)系列篇，每天（~~其实并没有每天。。~~）进步一点点。
+> [力扣](https://leetcode-cn.com/)系列篇，每天（~~有空~~）进步一点点。
+
+::: danger
+
+⚠️  **力扣刷题系列**暂停更新❗️
+
+:::
+
+**系列暂停更新**
 
 ### 每日一题
 
@@ -24,7 +32,7 @@ tags: ["LeetCode", "汇总"]
 
 <a href="/blog/leetcode/js/exercises-560.html" target="_blank">2020-05-15 |【每日一题】560 和为K的子数组</a>
 
-<a href="/blog/leetcode/js/exercises-25.html" target="_blank">2020-05-16 |【每日一题】25 K 个一组翻转链表</a>
+<a href="/blog/leetcode/js/exercises-25.html" target="_blank">2020-05-16 |【题库练习】25 K 个一组翻转链表</a>
 
 <a href="/blog/leetcode/js/exercises-152.html" target="_blank">2020-05-18 |【每日一题】152 乘积最大子数组</a>
 
@@ -40,11 +48,11 @@ tags: ["LeetCode", "汇总"]
 
 **7月**
 
+<a href="/blog/leetcode/js/exercises-350.html" target="_blank">2020-07-13 |【每日一题】350 两个数组的交集 II</a>
+
 <a href="/blog/leetcode/js/exercises-392.html" target="_blank">2020-07-27 |【每日一题】392 判断子序列</a>
 
 <a href="/blog/leetcode/js/exercises-104.html" target="_blank">2020-07-28 |【每日一题】104 二叉树的最大深度</a>
 
-**8月**
 
-<a href="/blog/leetcode/js/exercises-350.html" target="_blank">2020-08-03 |【每日一题】350 两个数组的交集 II</a>
 
