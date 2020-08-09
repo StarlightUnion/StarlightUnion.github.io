@@ -107,6 +107,7 @@ export default {
       .home-recent
         width 100%
       .home-person
+        max-width none
         width 100%
         margin-left 0
         margin-top 2rem

@@ -37,8 +37,11 @@ module.exports = {
       text: 'LeetCode',
       link: '/blog/leetcode/summary'
     }, {
-      text: '随笔',
-      link: '/life&hobby/discovery/vscode-browser'
+      text: '随想',
+      link: '/thoughts/'
+    }, {
+      text: '爱好',
+      link: '/life&hobby/'
     }],
     // sidebar: 'auto',
     sidebar: {
@@ -59,6 +62,11 @@ module.exports = {
           '/blog/frontend/javascript/javascript-logical-operators',
           '/blog/frontend/javascript/javascript-mulit-array',
           '/blog/frontend/javascript/javascript-loop'
+        ]
+      }, {
+        title: 'ES6/ES6+',
+        children: [
+          '/blog/frontend/es6&es6+/export-and-export-default'
         ]
       }, {
         title: 'CSS/HTML',
@@ -127,6 +135,7 @@ module.exports = {
       }, {
         title: '部署相关',
         children: [
+          '/blog/other/aboutdeploy/nginx-proxy-resource',
           '/blog/other/aboutdeploy/nginx-config-https',
           '/blog/other/aboutdeploy/auto-deploy-nodejs',
           '/blog/other/aboutdeploy/nginx-deploy-for-centos',
@@ -178,28 +187,28 @@ module.exports = {
           '/blog/leetcode/js/exercises-01'
         ]
       }],
-      '/life&hobby/': [
-        {
-          title: '发现',
-          children: [
-            '/life&hobby/discovery/vscode-browser'
-          ]
-        }, {
-          title: '电子数码',
-          children: [
-            '/life&hobby/digital/benq-monitor-pd2500q'
-          ]
-        }, {
-          title: '交通运输',
-          children: [
-            '/life&hobby/transportation/hzm-line5-experience'
-          ]
-        }
-      ]
+      // '/thoughts/': [{
+      //   title: '主页',
+      //   path: '/thoughts/'
+      // }],
+      '/life&hobby/': [{
+        title: '主页',
+        path: '/life&hobby/'
+      }, {
+        title: '电子数码',
+        children: [
+          '/life&hobby/digital/benq-monitor-pd2500q'
+        ]
+      }, {
+        title: '交通运输',
+        children: [
+          '/life&hobby/transportation/hzm-line5-experience'
+        ]
+      }]
     },
     lastUpdated: 'Last Updated',
     homePageDisplayCount: 6,
-    filterStrs: ['导航', '随笔', 'LeetCode'],
+    filterStrs: ['导航', '爱好', '随想', '影片', 'LeetCode'],
     contactInfo: [{
       icon: 'iconfont icon-location',
       text: 'Hangzhou, China'
@@ -223,6 +232,10 @@ module.exports = {
       imgPath: '/images/site/sf.png',
       title: '思否',
       link: 'https://segmentfault.com/u/starlightunion'
+    }, {
+      imgPath: 'images/site/steam.jpg',
+      title: 'steam',
+      link: 'https://steamcommunity.com/id/StarlightUnion/'
     }],
     footers: [{
       text: 'Powered by VuePress'

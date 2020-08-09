@@ -40,6 +40,10 @@ tags: ["前端技术", "导航"]
 
 <a href="/blog/frontend/javascript/setinterval-and-settimeout.html" target="_blank">setInterval()和setTimeout()方法</a>
 
+### ES6
+
+<a href="/blog/frontend/es6&es6+/export-and-export-default.html" target="_blank">export和export default</a>
+
 ### 数据可视化
 
 <a href="/blog/frontend/other/echart-basic-config.html" target="_blank">EChart常用配置整理</a>

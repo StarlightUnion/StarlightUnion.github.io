@@ -40,6 +40,8 @@ tags: ["杂记", "导航"]
 
 <a href="/blog/other/aboutdeploy/nginx-config-https.html" target="_blank">Nginx配置HTTPS/安装SSL证书</a>
 
+<a href="/blog/other/aboutdeploy/nginx-proxy-resource.html" target="_blank">使用Nginx代理访问图片等资源</a>
+
 ### 自动化部署
 
 <a href="/blog/other/aboutdeploy/auto-deploy-nodejs.html" target="_blank">Node.js + GitHub Webhooks实现自动化部署</a>

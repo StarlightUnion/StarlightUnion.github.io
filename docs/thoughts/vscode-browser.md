@@ -1,7 +1,7 @@
 ---
 title: VS Code的本质-浏览器
 date: 2020/07/31 00:00:00
-tags: ["随笔", "发现", "VS Code"]
+tags: ["随想", "发现", "VS Code"]
 ---
 
 # VS Code的本质-浏览器
@@ -19,11 +19,11 @@ tags: ["随笔", "发现", "VS Code"]
 
 * 顶部菜单栏选择「帮助」 -> 「`Toggle Developer Tools`」 。
 
-![vscode-browser-01](/images/life&hobby/discovery/vscode-browser-01.png)
+![vscode-browser-01](/images/thoughts/vscode-browser-01.png)
 
 然后弹出来下面这个👇
 
-![vscode-browser-02](/images/life&hobby/discovery/vscode-browser-02.png)
+![vscode-browser-02](/images/thoughts/vscode-browser-02.png)
 
 刚开始并没有啥感觉。。（因为弹个浏览器的开发者工具也没啥😐 ）
 
@@ -41,7 +41,7 @@ tags: ["随笔", "发现", "VS Code"]
 
 打开`GitHub Desktop`找了一下，果然找到了。。。
 
-![vscode-browser-03](/images/life&hobby/discovery/vscode-browser-03.png)
+![vscode-browser-03](/images/thoughts/vscode-browser-03.png)
 
 ### 总结
 
