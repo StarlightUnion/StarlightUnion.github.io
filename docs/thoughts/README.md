@@ -14,5 +14,7 @@ tags: ["随想", "主页"]
 >
 > 虽然是瞎写，但写的是和工作相关的内容。
 
+### 想到什么写什么
+
 <a href="/thoughts/vscode-browser.html" target="_blank">2020-07-31 | VS Code的本质-浏览器</a>
 
