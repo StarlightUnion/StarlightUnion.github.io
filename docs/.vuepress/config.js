@@ -1,6 +1,6 @@
 module.exports = {
   title: '游客17846',
-  description: '爱写bug，不会修电脑，不怎么爱穿格子衬衫，宅，还能吃。',
+  description: '热爱写bug的切图仔。',
   head: [
     ['link', { rel: 'icon', href: '/logo.ico' }],
     ['link', { rel: 'manifest', href: '/manifest.json' }],
@@ -53,8 +53,9 @@ module.exports = {
         title: '快速导航',
         path: '/blog/frontend/summary'
       }, {
-        title: 'JavaScript基础',
+        title: 'JS/ES6/ES6+',
         children: [
+          '/blog/frontend/javascript/export-and-export-default',
           '/blog/frontend/javascript/setinterval-and-settimeout',
           '/blog/frontend/javascript/array-filter',
           '/blog/frontend/javascript/float-operation',
@@ -65,11 +66,6 @@ module.exports = {
           '/blog/frontend/javascript/javascript-logical-operators',
           '/blog/frontend/javascript/javascript-mulit-array',
           '/blog/frontend/javascript/javascript-loop'
-        ]
-      }, {
-        title: 'ES6/ES6+',
-        children: [
-          '/blog/frontend/es6&es6+/export-and-export-default'
         ]
       }, {
         title: 'CSS/HTML',
@@ -194,6 +190,15 @@ module.exports = {
       //   title: '主页',
       //   path: '/thoughts/'
       // }],
+      '/record/': [{
+        title: '主页',
+        path: '/record/'
+      }, {
+        title: "记录",
+        children: [
+          '/record/daily-practicing'
+        ]
+      }],
       '/life&hobby/': [{
         title: '主页',
         path: '/life&hobby/'

@@ -18,8 +18,6 @@ tags: ["LeetCode", "导航"]
 
 :::
 
-**系列暂停更新**
-
 ### 每日一题
 
 <a href="/blog/leetcode/js/exercises-33.html" target="_blank">2020-04-27 |【每日一题】33 搜索旋转排序数组</a>
