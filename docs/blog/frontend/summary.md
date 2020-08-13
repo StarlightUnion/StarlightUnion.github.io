@@ -42,7 +42,7 @@ tags: ["前端技术", "导航"]
 
 ### ES6
 
-<a href="/blog/frontend/es6&es6+/export-and-export-default.html" target="_blank">export和export default</a>
+<a href="/blog/frontend/es6&es6+/export-and-export-default.html" target="_blank">export、export default和import</a>
 
 ### 数据可视化
 

@@ -4,6 +4,7 @@
       controls="controls"
       :src="src"
       :poster="poster"
+      preload="preload"
     >
       Your browser does not support the video tag.
     </video>
