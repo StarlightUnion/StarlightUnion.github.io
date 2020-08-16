@@ -40,6 +40,8 @@ tags: ["前端技术", "导航"]
 
 <a href="/blog/frontend/javascript/setinterval-and-settimeout.html" target="_blank">setInterval()和setTimeout()方法</a>
 
+<a href="/blog/frontend/javascript/element-resize-observer.html" target="_blank">ResizeObserver监听元素的resize事件</a>
+
 ### ES6
 
 <a href="/blog/frontend/es6&es6+/export-and-export-default.html" target="_blank">export、export default和import</a>

@@ -55,6 +55,7 @@ module.exports = {
       }, {
         title: 'JS/ES6/ES6+',
         children: [
+          '/blog/frontend/javascript/element-resize-observer',
           '/blog/frontend/javascript/export-and-export-default',
           '/blog/frontend/javascript/setinterval-and-settimeout',
           '/blog/frontend/javascript/array-filter',
