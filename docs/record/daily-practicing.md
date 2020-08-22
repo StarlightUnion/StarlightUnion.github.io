@@ -104,5 +104,15 @@ console.log(value);// false
 >
 > ![daily-practicing-03](/images/record/daily-practicing-03.png)
 
+## 2020-08-19
+
+```js
+var arr = [1, 2, 3, 4];
+arr.length = 1;
+console.log(arr);// [1]
+```
+
+> 这。。。就相当于截取了吧。。
+
 🍗 不断更新...
 
