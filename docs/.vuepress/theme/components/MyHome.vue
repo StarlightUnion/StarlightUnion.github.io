@@ -1,7 +1,7 @@
 <template>
   <div class="my-home">
     <div class="home-recent">
-      <h3>最近博文：</h3>
+      <h3>最近博文（近{{displayCount}}篇）：</h3>
       <template v-for="(item, index) in pages">
         <RecentArticle
           :pageData="item"

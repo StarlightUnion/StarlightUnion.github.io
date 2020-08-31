@@ -217,7 +217,7 @@ module.exports = {
     },
     lastUpdated: 'Last Updated',
     homePageDisplayCount: 6,
-    filterStrs: ['导航', '爱好', '随想', '记录', '影片', 'LeetCode'],
+    filterStrs: ['导航', '爱好', '记录', '影片', 'LeetCode'],
     contactInfo: [{
       icon: 'iconfont icon-location',
       text: 'Hangzhou, China'
