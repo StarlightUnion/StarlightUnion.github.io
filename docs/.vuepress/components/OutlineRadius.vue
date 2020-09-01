@@ -44,6 +44,8 @@ export default {
       color #fff
       border none
       box-shadow none
+    button:hover
+      background #005fe6
     button.first
       margin-right 1rem
     button.first:focus, button.first:focus-within

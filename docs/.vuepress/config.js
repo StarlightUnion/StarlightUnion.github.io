@@ -72,6 +72,7 @@ module.exports = {
         title: 'CSS/HTML',
         children: [
           '/blog/frontend/css&html/flex-and-grid',
+          '/blog/frontend/css&html/css-and-html-tips',
           '/blog/frontend/css&html/html-base-tag',
           '/blog/frontend/css&html/css-selector-2',
           '/blog/frontend/css&html/css-selector-1',

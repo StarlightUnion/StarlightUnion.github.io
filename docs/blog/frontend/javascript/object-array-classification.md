@@ -87,7 +87,7 @@ const data = {
       {Name: "资料", Value: 2},
       {Name: "type", Value: 'type1'},
       {Name: "资料", Value: 3},
-      {Name: "type", Value: ''},
+      {Name: "type", Value: ''}
   ],
   name: 'data',
 };
@@ -97,3 +97,15 @@ data._Infos = Classification(data, 'Infos', 'Name');
 **测试结果：**
 
 ![](/images/frontend/js/js-classification.png)
+
+### 以下为更新内容：
+
+优化后的分类算法：
+
+```js
+// 使用findIndex进行优化
+const FindIndex = (array, key, com) => {
+  return array.findIndex(item => item[key] === con);
+}
+```
+

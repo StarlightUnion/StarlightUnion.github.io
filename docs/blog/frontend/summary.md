@@ -46,15 +46,18 @@ tags: ["前端技术", "导航"]
 
 <a href="/blog/frontend/es6&es6+/export-and-export-default.html" target="_blank">export、export default和import</a>
 
+### 技巧
+
+<a href="/blog/frontend/css&html/css-and-html-tips.html" target="_blank">【不断更新】CSS和HTML的实用技巧集合</a>
+
 ### 数据可视化
 
-<a href="/blog/frontend/other/echart-basic-config.html" target="_blank">EChart常用配置整理</a>
+<a href="/blog/frontend/other/echart-basic-config.html" target="_blank">【不断更新】EChart常用配置整理</a>
 
 <a href="/blog/frontend/other/use-echart-in-react-and-vue.html" target="_blank">在React和Vue中使用ECharts</a>
 
 ###  GIS相关
 
-<a href="/blog/frontend/gis/arcgis-api-for-js.html" target="_blank">ArcGIS 3.x常用方法整理</a>
+<a href="/blog/frontend/gis/arcgis-api-for-js.html" target="_blank">【不断更新】ArcGIS 3.x常用方法整理</a>
 
-<a href="/blog/frontend/gis/arcgis-api-for-js-4x.html" target="_blank">ArcGIS 4.x与3.x的常用API的区别以及常用方法整理</a>
-
+<a href="/blog/frontend/gis/arcgis-api-for-js-4x.html" target="_blank">【不断更新】ArcGIS 4.x与3.x的常用API的区别以及常用方法整理</a>
