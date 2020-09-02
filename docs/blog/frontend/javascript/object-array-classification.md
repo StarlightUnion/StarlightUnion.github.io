@@ -105,7 +105,7 @@ data._Infos = Classification(data, 'Infos', 'Name');
 ```js
 // 使用findIndex进行优化
 const FindIndex = (array, key, com) => {
-  return array.findIndex(item => item[key] === con);
+  return array.findIndex(item => item[key] === com);
 }
 ```
 
