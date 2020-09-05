@@ -44,20 +44,31 @@ tags: ["前端技术", "导航"]
 
 ### ES6
 
-<a href="/blog/frontend/es6&es6+/export-and-export-default.html" target="_blank">export、export default和import</a>
+<a href="/blog/frontend/javascript/export-and-export-default.html" target="_blank">export、export default和import</a>
 
-### 技巧
+### React相关
 
-<a href="/blog/frontend/css&html/css-and-html-tips.html" target="_blank">【不断更新】CSS和HTML的实用技巧集合</a>
+<a href="/blog/frontend/react/react-install-error.html" target="_blank">npx create-react-app xxx创建项目报错的解决办法</a>
+
+<a href="/blog/frontend/react/react-errors-summary.html" target="_blank">【缓慢更新中...】React开发环境中的错误和问题集合</a>
+
+<a href="/blog/frontend/react/use-modularized-antd-in-react.html" target="_blank">在React中按需引入antd</a>
+
+<a href="/blog/frontend/react/npm-run-eject.html" target="_blank">npm run eject获取React配置</a>
 
 ### 数据可视化
 
-<a href="/blog/frontend/other/echart-basic-config.html" target="_blank">【不断更新】EChart常用配置整理</a>
+<a href="/blog/frontend/other/echart-basic-config.html" target="_blank">【缓慢更新中...】EChart常用配置整理</a>
 
 <a href="/blog/frontend/other/use-echart-in-react-and-vue.html" target="_blank">在React和Vue中使用ECharts</a>
 
+### 技巧集合
+
+<a href="/blog/frontend/css&html/css-and-html-tips.html" target="_blank">【缓慢更新中...】CSS和HTML的实用技巧集合</a>
+
 ###  GIS相关
 
-<a href="/blog/frontend/gis/arcgis-api-for-js.html" target="_blank">【不断更新】ArcGIS 3.x常用方法整理</a>
+<a href="/blog/frontend/gis/arcgis-api-for-js.html" target="_blank">【缓慢更新中...】ArcGIS 3.x常用方法整理</a>
 
-<a href="/blog/frontend/gis/arcgis-api-for-js-4x.html" target="_blank">【不断更新】ArcGIS 4.x与3.x的常用API的区别以及常用方法整理</a>
+<a href="/blog/frontend/gis/arcgis-api-for-js-4x.html" target="_blank">【缓慢更新中...】ArcGIS 4.x与3.x的常用API的区别以及常用方法整理</a>
+

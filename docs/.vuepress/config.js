@@ -90,6 +90,9 @@ module.exports = {
       }, {
         title: 'React.js相关',
         children: [
+          '/blog/frontend/react/npm-run-eject',
+          '/blog/frontend/react/use-modularized-antd-in-react',
+          '/blog/frontend/react/react-errors-summary',
           '/blog/frontend/react/react-install-error'
         ]
       }, {
@@ -218,7 +221,7 @@ module.exports = {
     },
     lastUpdated: 'Last Updated',
     homePageDisplayCount: 6,
-    filterStrs: ['导航', '爱好', '记录', '影片', 'LeetCode'],
+    filterStrs: ['导航', '爱好', '记录', '影片', '主页', 'LeetCode'],
     contactInfo: [{
       icon: 'iconfont icon-location',
       text: 'Hangzhou, China'
