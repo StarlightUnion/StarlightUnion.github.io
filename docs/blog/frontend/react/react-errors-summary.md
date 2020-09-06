@@ -14,7 +14,7 @@ tags: ["React.js"]
 
 引入`antd`组件报错：`findDOMNode is deprecated in StrictMode...`
 
-引入`antd`组件报错了，研究~~百度~~一番发现是`<React.StrictMode>`的问题，去掉就好了。。
+研究~~百度~~一番发现是`<React.StrictMode>`的问题，去掉就好了。。
 
 ![react-errors-01](/images/frontend/react/react-errors-01.png)
 
@@ -28,7 +28,7 @@ tags: ["React.js"]
 internal/modules/cjs/loader.js:985
 	throw err;
 	^
-	
+
 Error: Cannot find module 'resolve'
 ....
 ```
@@ -52,6 +52,8 @@ Error: Cannot find module 'resolve'
 ![react-errors-05](/images/frontend/react/react-errors-05.png)
 
 红圈内就是获取的项目配置文件。
+
+> 详细请出门右转[npm run eject获取React配置](/blog/frontend/react/npm-run-eject.html)
 
 🍗 有待补充...
 
