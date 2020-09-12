@@ -64,10 +64,12 @@ Cannot find module '../../assets/logo128.png'
 
 ...
 
-Module not found: You attempted
+Module not found: You attempted to import ../../assets/logo128.png which falls outside of the project src/ directory.Relatives imports outside of src/ are not supported.
 ```
 
+要修改的话需要在`consig/webpack.config.js`里面找到`ModuleScopePlugin`。
 
+注释掉之后重新启动`dev server`。
 
 ![react-errors-07](/images/frontend/react/react-errors-07.png)
 
