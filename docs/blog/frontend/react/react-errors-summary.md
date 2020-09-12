@@ -55,5 +55,23 @@ Error: Cannot find module 'resolve'
 
 > 详细请出门右转[npm run eject获取React配置](/blog/frontend/react/npm-run-eject.html)
 
+## 4.引用`src`外的静态资源
+
+默认状态下不支持引用`src`以外的静态资源，比如我引用了一张存放在与`src`同级的`assets`目录下的图片，报了以下错误：
+
+```
+Cannot find module '../../assets/logo128.png'
+
+...
+
+Module not found: You attempted
+```
+
+
+
+![react-errors-07](/images/frontend/react/react-errors-07.png)
+
+![react-errors-08](/images/frontend/react/react-errors-08.png)
+
 🍗 有待补充...
 
