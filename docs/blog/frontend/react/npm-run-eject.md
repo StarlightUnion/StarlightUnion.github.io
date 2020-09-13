@@ -10,7 +10,9 @@ tags: ["React.js"]
   <display-bar :displayData="$frontmatter"></display-bar>
 </ClientOnly>
 
-## 前言
+> 注：当前`react`版本`16.13.1`。
+
+## 一、获取配置
 
 通常情况下，使用`npx create-react-app new-project`创建的新项目中的配置文件时隐藏的。
 
@@ -22,13 +24,35 @@ tags: ["React.js"]
 
 :::
 
-## 一、获取配置
+## 二、配置文件目录结构
 
 ![react-errors-05](/images/frontend/react/react-errors-05.png)
 
-红圈内就是获取的项目配置。
+红圈内就是获取的项目配置。下面是结构
 
-## 二、配置文件详解
+```
+.根目录
+├── config
+│   ├── jest 单元测试的配置
+│   │   ├── cssTransform.js
+│   │   └── fileTransform.js
+│   ├── env.js
+│   ├── getHttpsConfig.js
+│   ├── modules.js
+│   ├── paths.js
+│   ├── pnpTs.js
+│   ├── webpack.config.js
+│   └── webpackDevServer.config.js
+├── scripts
+│   ├── build.js
+│   ├── start.js
+│   └── test.js
+└── ...
+```
+
+## 三、常用配置文件详解
+
+### 1.`paths.js`
 
 `paths.js`部分内容如下图：👇
 

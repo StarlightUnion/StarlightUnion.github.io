@@ -28,17 +28,13 @@ tags: ["Window"]
 
 * `setTimeout`：设置一个时间，这个时间后执行，并且只执行一次，也就是所谓的**延迟/延后执行**。
 
-## 一、简单使用
+### 用法参考
 
-## 二、进阶
+[参考资料【3】](#参考资料)
 
-
-
-## 参考资料
+### 参考资料
 
 * 1.[window.setInterval - Web API 接口参考 | MDN](https://developer.mozilla.org/zh-CN/docs/Web/API/Window/setInterval)
 * 2.[window.setTimeout - Web API 接口参考 | MDN](https://developer.mozilla.org/zh-CN/docs/Web/API/Window/setTimeout)
 * 3.[setTimeout和setInterval从入门到精通](https://www.cnblogs.com/pelli/p/6225858.html)
-
-施工中🚧...
 
