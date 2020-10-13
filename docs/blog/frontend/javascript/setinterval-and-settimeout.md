@@ -28,6 +28,33 @@ tags: ["Window"]
 
 * `setTimeout`：设置一个时间，这个时间后执行，并且只执行一次，也就是所谓的**延迟/延后执行**。
 
+****
+
+### 应用技巧
+
+#### 延后执行
+
+有如下代码：
+
+```js {3,5}
+function demo() {
+  setTimeout(function () {
+    console.log(1);// 1
+  }, 0);
+  console.log(2);// 2
+}
+
+demo();// 2 1
+```
+
+> 执行结果是**先**`2`**后**`1`。虽然延时的时间是`0`，但是它也不会立即执行。
+
+`setTimeout`的作用是把**延后任务**提出到任务队列的最后一个，并在指定时间后执行该**延后任务**。
+
+即使指定的时间是`0`，那么，该事件将在任务队列所有任务执行完成后执行。
+
+**`setTimeout(function, 0)`适用于想要调整事件的执行顺序的情形**。
+
 ### 用法参考
 
 [参考资料【3】](#参考资料)
@@ -37,4 +64,5 @@ tags: ["Window"]
 * 1.[window.setInterval - Web API 接口参考 | MDN](https://developer.mozilla.org/zh-CN/docs/Web/API/Window/setInterval)
 * 2.[window.setTimeout - Web API 接口参考 | MDN](https://developer.mozilla.org/zh-CN/docs/Web/API/Window/setTimeout)
 * 3.[setTimeout和setInterval从入门到精通](https://www.cnblogs.com/pelli/p/6225858.html)
+* 4.[关于setTimeout()你所不知道的地方,详解setTimeout()](http://caibaojian.com/about-settimeout.html)
 

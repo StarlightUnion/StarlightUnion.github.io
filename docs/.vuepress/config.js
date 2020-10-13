@@ -90,6 +90,7 @@ module.exports = {
       }, {
         title: 'React.js相关',
         children: [
+          '/blog/frontend/react/antd-table-scroll-y',
           '/blog/frontend/react/npm-run-eject',
           '/blog/frontend/react/use-modularized-antd-in-react',
           '/blog/frontend/react/react-errors-summary',
