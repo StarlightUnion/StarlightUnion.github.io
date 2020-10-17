@@ -47,7 +47,7 @@ export default {
     border-radius 5px
     display flex
     flex-direction column
-    // border-bottom 1px solid #eaecef
+    cursor pointer
     transition all .4s linear
     transform translate3d(0, -0.25rem, 0)
     a, div
@@ -81,5 +81,7 @@ export default {
         color $accentColor
 
   .recent-article:hover
-    box-shadow 0 0.2rem 0.8rem rgba(0,0,0,.1)
+    // box-shadow 0 0.2rem 0.8rem rgba(0,0,0,.1)
+    // transform scale(1)
+    background #f5f5f5
 </style>

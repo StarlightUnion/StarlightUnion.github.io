@@ -75,5 +75,42 @@ Module not found: You attempted to import ../../assets/logo128.png which falls o
 
 ![react-errors-08](/images/frontend/react/react-errors-08.png)
 
+## 5.解决在`componentDidMount`中无法正确获取DOM的宽高
+
+最初是因为在
+
+```jsx
+// demo.jsx
+class Demo extends React.Component {
+    constructor(props) {
+        super(props);
+        // dom实例
+        this.demo_dom = React.createRef();
+    }
+
+    componentDidMount() {
+        console.log(this.demo_dom.current.offsetHeight);
+    }
+
+    render() {
+        return (
+            <div className="demo-container" ref={this.demo_dom}>
+                {"Demo"}
+            </div>
+        )
+    }
+}
+```
+
+```less
+// demo.less
+.demo-container{
+    width: 200px;
+    height: 200px;
+}
+```
+
+
+
 🍗 有待补充...
 

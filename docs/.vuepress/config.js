@@ -221,7 +221,7 @@ module.exports = {
       }]
     },
     lastUpdated: 'Last Updated',
-    homePageDisplayCount: 6,
+    homePageDisplayCount: 8,// 首页展示博文数量
     filterStrs: ['导航', '爱好', '记录', '影片', '主页', 'LeetCode'],
     contactInfo: [{
       icon: 'iconfont icon-location',
