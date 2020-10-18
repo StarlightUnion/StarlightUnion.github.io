@@ -75,11 +75,13 @@ Module not found: You attempted to import ../../assets/logo128.png which falls o
 
 ![react-errors-08](/images/frontend/react/react-errors-08.png)
 
-## 5.解决在`componentDidMount`中无法正确获取DOM的宽高
+## 5.解决在`componentDidMount`中无法正确获取DOM
 
-最初是因为在
+最初是因为在实例化一个`echart`图表中发现的问题。
 
-```jsx
+在搭页面的过程中，还没做交互的时候，发现**图表往往不能占满整个父元素的空间**，`resize`图表之后恢复正常。
+
+```jsx {10}
 // demo.jsx
 class Demo extends React.Component {
     constructor(props) {
@@ -90,6 +92,10 @@ class Demo extends React.Component {
 
     componentDidMount() {
         console.log(this.demo_dom.current.offsetHeight);
+
+        //setTimeout(() => {
+        //    console.log(this.demo_dom.current.offsetHeight);
+        //}, 0);
     }
 
     render() {
@@ -102,15 +108,23 @@ class Demo extends React.Component {
 }
 ```
 
-```less
-// demo.less
-.demo-container{
-    width: 200px;
-    height: 200px;
+**解决办法**：在`componentDidMount`中写一个延时方法，把实例化的内容写在延时方法中延后执行。这里我使用`setTimeout`延后执行。👇
+
+```jsx {3,6}
+...
+componentDidMount() {
+    console.log(this.demo_dom.current.offsetHeight);
+
+    setTimeout(() => {
+        console.log(this.demo_dom.current.offsetHeight);
+    }, 0);
 }
+...
 ```
 
+**出现问题的原因**：项目用了`less`作为CSS的预处理器。大型的项目中，`less`要通过`less-loader`转换为CSS，才能在浏览器中运行，处理需要时间，会导致样式加载延后。
 
+不只有`less`，`sass`、`stylus`等也会这样。
 
 🍗 有待补充...
 
