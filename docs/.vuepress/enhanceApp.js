@@ -2,6 +2,7 @@
 // import 'ant-design-vue/dist/antd.css'
 
 import Tip from '@theme/util/tip.js'
+import "./styles/global.styl"
 
 // Vue.use(Antd);
 
