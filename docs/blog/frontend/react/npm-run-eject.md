@@ -56,8 +56,6 @@ tags: ["React.js"]
 
 `paths.js`部分内容如下图：👇
 
-![react-errors-06](/images/frontend/react/react-errors-06.png)
-
 ```js
 module.exports = {
   dotenv: resolveApp('.env'),
