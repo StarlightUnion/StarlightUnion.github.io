@@ -66,7 +66,9 @@ tags: ["前端技术", "导航"]
 
 ### 技巧集合
 
-<a href="/blog/frontend/css&html/css-and-html-tips.html" target="_blank">【缓慢更新中...】CSS和HTML的实用技巧集合</a>
+<a href="/blog/frontend/css&html/html-practical-skills.html" target="_blank">【缓慢更新中...】HTML实用技巧集合</a>
+
+<a href="/blog/frontend/css&html/css-practical-skills.html" target="_blank">【缓慢更新中...】CSS实用技巧集合</a>
 
 ###  GIS相关
 

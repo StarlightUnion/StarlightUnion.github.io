@@ -72,13 +72,14 @@ module.exports = {
         title: 'CSS/HTML',
         children: [
           '/blog/frontend/css&html/flex-and-grid',
-          '/blog/frontend/css&html/css-and-html-tips',
           '/blog/frontend/css&html/html-base-tag',
           '/blog/frontend/css&html/css-selector-2',
           '/blog/frontend/css&html/css-selector-1',
           '/blog/frontend/css&html/css-simple-progress',
           '/blog/frontend/css&html/css-border-radius',
-          '/blog/frontend/css&html/box-model-and-box-sizing'
+          '/blog/frontend/css&html/box-model-and-box-sizing',
+          '/blog/frontend/css&html/css-practical-skills',
+          '/blog/frontend/css&html/html-practical-skills'
         ]
       }, {
         title: 'Vue.js相关',
