@@ -54,7 +54,7 @@ tags: ["HTML", "技巧"]
 
 ## 5.利用`<iframe>`属性
 
-利用`<iframe>`属性解决
+利用`<iframe>`属性初始化。
 
 ```html
 <iframe src="https://www.baidu.com"></iframe>
