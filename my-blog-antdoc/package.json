@@ -1,0 +1,23 @@
+{
+  "name": "my-blog-antd",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "vuepress dev docs"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "core-js": "^2.6.11",
+    "vuepress": "^1.7.1",
+    "vuepress-theme-antdocs": "^1.2.0"
+  },
+  "devDependencies": {
+    "core-js": "^2.6.11",
+    "vuepress": "^1.7.1",
+    "vuepress-theme-antdocs": "^1.2.0"
+  }
+}
