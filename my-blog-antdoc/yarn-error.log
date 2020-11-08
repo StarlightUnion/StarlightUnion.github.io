@@ -1,0 +1,48 @@
+Arguments: 
+  /usr/local/bin/node /usr/local/bin/yarn add -D @vuepress/plugin-active-header-links
+
+PATH: 
+  /usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/Library/Apple/usr/bin
+
+Yarn version: 
+  1.22.4
+
+Node version: 
+  10.15.1
+
+Platform: 
+  darwin x64
+
+Trace: 
+  Error: EINVAL: invalid argument, unlink '/Users/xingchen/Documents/GitHub/My-Blog/my-blog-antdoc/node_modules/compression/node_modules/bytes'
+
+npm manifest: 
+  {
+    "name": "my-blog-antd",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "scripts": {
+      "test": "echo \"Error: no test specified\" && exit 1",
+      "dev": "vuepress dev docs"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "dependencies": {
+      "core-js": "^2.6.11",
+      "vuepress": "^1.7.1",
+      "vuepress-theme-antdocs": "^1.2.0"
+    },
+    "devDependencies": {
+      "core-js": "^2.6.11",
+      "vuepress": "^1.7.1",
+      "vuepress-theme-antdocs": "^1.2.0"
+    }
+  }
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile
