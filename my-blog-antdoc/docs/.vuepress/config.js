@@ -9,13 +9,13 @@ module.exports = {
   ],
   serviceWorker: true,
   base: "/",
-  theme: "antdocs",
   markdown: {
     lineNumbers: true
   },
   themeConfig: {
     logo: '/logo.png',
     backToTop: true,
+    algolia: true,
     nav: [{
       text: '首页',
       link: '/'

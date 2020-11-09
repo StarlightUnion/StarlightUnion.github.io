@@ -5,7 +5,10 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "dev": "vuepress dev docs"
+    "dev": "vuepress dev docs",
+    "build": "vuepress build docs",
+    "deploy1": "sudo bash deploy.sh",
+    "deploy2": "bash deploy.sh"
   },
   "keywords": [],
   "author": "",
