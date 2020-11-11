@@ -33,13 +33,13 @@ export default {
 </script>
 
 <style lang="less">
-  @import "../../styles/palette.less";
+  @import '../styles/palette.less';
 
   .my-footer {
     color: #404040;
     padding: 2.5rem;
     border-top: 1px solid #eaecef;
-    width: calc(100% - 5rem);
+    // width: calc(100% - 5rem);
     display: flex;
     justify-content: center;
     flex-direction: row;

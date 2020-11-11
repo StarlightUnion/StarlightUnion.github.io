@@ -100,6 +100,7 @@ export default {
 }
 .navbar {
   line-height: 4rem;
+  box-shadow: 11px 0 17px -10px rgba(0,0,0,.46);
 
   a,
   span,
@@ -240,7 +241,7 @@ export default {
 @media (max-width: @MQMobile) {
   .navbar {
     position: relative;
-    
+
     .home-link {
       justify-content: center;
     }
