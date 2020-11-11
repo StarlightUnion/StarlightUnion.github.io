@@ -85,43 +85,68 @@ export default {
 }
 </script>
 
-<style lang="stylus">
-  .display-bar
-    display flex
-    flex-direction row
-    flex-wrap wrap
-    color rgba(0,0,0,.54)
-    font-size 0.8rem
-    font-weight 400
-    line-height 2rem
-    span:not(.iconfont)
-      cursor pointer
-      // font-style italic
-    span:not(.iconfont):hover
-      color $accentColor
-    .iconfont
-      font-size 0.8rem
-      font-weight 600
-    .bar-item
-      margin-right 1.25rem
-    .icon-time + span
-      margin-left 0.125rem
-    .icon-tag ~ a
-      font-weight 400
-      margin: 0 0.125rem
-      background-color rgba(27,31,35,.05)
-      border-radius 0.25rem
-      padding 0.25rem
-      cursor pointer
-      color #000
-    .icon-tag ~ a:hover
-      color $accentColor
-      text-decoration none
-    .icon-like ~ span
-      cursor pointer
-      font-style italic
-    .icon-like ~ .icon-stars
-      margin 0 0.125rem
-    .icon-like ~ .icon-star-half
-      margin 0 -0.0625rem
+<style lang="less">
+  @import "../styles/palette.less";
+
+  .display-bar {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    color: rgba(0,0,0,.54);
+    font-size: 0.8rem;
+    font-weight: 400;
+    line-height: 2rem;
+
+    span:not(.iconfont) {
+      cursor: pointer;
+      // font-style: italic;
+
+      &:hover {
+        color: @accentColor;
+      }
+    }
+
+    .iconfont {
+      font-size: 0.8rem;
+      font-weight: 600;
+    }
+
+    .bar-item {
+      margin-right: 1.25rem;
+    }
+
+    .icon-time + span {
+      margin-left: 0.125rem;
+    }
+
+    .icon-tag ~ a {
+      font-weight: 400;
+      margin: 0 0.125rem;
+      background-color: rgba(27,31,35,.05);
+      border-radius: 0.25rem;
+      padding: 0.25rem;
+      cursor: pointer;
+      color: #000;
+
+      &:hover {
+        color: @accentColor;
+        text-decoration: none;
+      }
+    }
+
+    .icon-like {
+      & ~ span {
+        cursor: pointer;
+        font-style: italic;
+      }
+
+      & ~ .icon-stars {
+        margin: 0 0.125rem;
+      }
+
+      & ~ .icon-star-half {
+        margin: 0 -0.0625rem;
+      }
+    }
+  }
 </style>

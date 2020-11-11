@@ -281,7 +281,7 @@ export default {
         margin: 2rem auto 1.2rem;
       }
     }
-    
+
     .features {
       flex-direction: column;
     }
