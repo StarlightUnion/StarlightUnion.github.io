@@ -237,6 +237,7 @@ module.exports = {
       }]
     },
     homePageDisplayCount: 8,// 首页展示博文数量
+    tagColorHexs: ["#ff5500", "#2db7f5", "#87d068", "#108ee9", "#eb2f96", "#fa8c16", "#13c2c2", "#1e90ff", "#722ed1"],// 标签颜色设置
     filterStrs: ['导航', '爱好', '记录', '影片', '主页', 'LeetCode'],
     contactInfo: [{
       icon: 'iconfont icon-location',

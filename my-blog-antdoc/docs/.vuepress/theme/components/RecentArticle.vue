@@ -17,12 +17,13 @@
       v-if="pageData.tags.length > 0"
     >
       <span class="iconfont icon-tag"></span>
-      <a
+      <a-tag
         v-for="(item, key) in pageData.tags"
         :key="key"
+        :color="randomColor"
       >
         {{item.trim()}}
-      </a>
+      </a-tag>
     </div>
 
     <div class="art-info">
@@ -35,7 +36,29 @@
 <script>
 export default {
   name: 'RecentArticle',
-  props: ['pageData']
+  props: ['pageData'],
+  datas () {
+    return {
+      colorHexs: []
+    }
+  },
+  methods: {
+    reset () {
+      this.colorHexs = [];
+    }
+  },
+  mounted () {
+    // 重置
+    this.reset();
+
+    this.colorHexs = this.$themeConfig.tagColorHexs;
+  },
+  computed: {
+    // 获取随机颜色
+    randomColor () {
+      return this.colorHexs[(Math.random() * this.colorHexs.length).toFixed(0)];
+    }
+  }
 
 }
 </script>
