@@ -47,11 +47,6 @@
 
       <MyHome />
 
-      <MyFooter
-        v-if="configData.footer !== null"
-        :footers="configData.footers"
-      />
-
       <Content class="theme-antdocs-content custom" />
     </main>
     <div v-if="data.footer" class="footer">
@@ -73,7 +68,12 @@
           </a-col>
         </a-row>
       </div>
-      <div :class="{ 'footer-divider': isDivider, 'footer-bottom': true }">{{ data.footer }}</div>
+      <div :class="{ 'footer-divider': isDivider, 'footer-bottom': true }">
+        <MyFooter
+          v-if="configData.footer !== null"
+          :footers="configData.footers"
+        />
+      </div>
     </div>
   </div>
 </template>
@@ -287,6 +287,7 @@ export default {
     .footer-item {
       margin: 0.75rem 0;
       a {
+        cursor: pointer;
         color: #fff;
       }
       a:hover {

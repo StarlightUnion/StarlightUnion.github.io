@@ -1,30 +1,32 @@
 <template>
   <div class="my-home">
-    <div class="home-recent">
-      <h3>最近博文（近{{displayCount}}篇）：</h3>
-      <a-timeline :pending="isPending">
-        <a-timeline-item color="green" v-for="(item, index) in pages" v-if="index==0">
-          <RecentArticle
-            :pageData="item"
-            :key="index"
-          />
-        </a-timeline-item>
-        <a-timeline-item v-else>
-          <RecentArticle
-            :pageData="item"
-            :key="index"
-          />
-        </a-timeline-item>
-      </a-timeline>
-      <a-button
-        class="load-more"
-        type="primary"
-        :disabled="isDisabled"
-        @click="loadMore"
-      >
-        {{btnTxt}}
-      </a-button>
-    </div>
+    <a-spin :spinning="isSpinning" class="home-recent-spin">
+      <div class="home-recent">
+        <h3>最近博文（近{{displayCount}}篇）：</h3>
+        <a-timeline :pending="isPending">
+          <a-timeline-item color="green" v-for="(item, index) in pages" v-if="index==0">
+            <RecentArticle
+              :pageData="item"
+              :key="index"
+            />
+          </a-timeline-item>
+          <a-timeline-item v-else>
+            <RecentArticle
+              :pageData="item"
+              :key="index"
+            />
+          </a-timeline-item>
+        </a-timeline>
+        <a-button
+          class="load-more"
+          type="primary"
+          :disabled="isDisabled"
+          @click="loadMore"
+        >
+          {{btnTxt}}
+        </a-button>
+      </div>
+    </a-spin>
     <div class="home-person">
       <PersonInfo />
     </div>
@@ -48,6 +50,7 @@ export default {
       displayCount: 0,
       pageDatas: null,
       isPending: false,
+      isSpinning: true,// 是否显示loading
       isDisabled: false,
       btnTxt: "加载更多(10条)",
       count: 0// 点击次数
@@ -91,6 +94,7 @@ export default {
 
       if (Array.isArray(this.pageDatas) && this.pageDatas.length) {
         this.isPending = true;
+        this.isSpinning = true;
 
         if (this.displayCount + 10 >= length) {
           this.displayCount = length;
@@ -108,6 +112,7 @@ export default {
         }
 
         this.isPending = false;
+        this.isSpinning = false;
       }
     },
     reset() {
@@ -115,6 +120,7 @@ export default {
       this.displayCount = 0;
       this.pageDatas = null;
       this.isPending = false;
+      this.isSpinning = true;// 正在加载
       this.isDisabled = false;
       this.btnTxt = "加载更多(10条)";
       this.count = 0;
@@ -126,6 +132,8 @@ export default {
 
     this.displayCount = this.$themeConfig.homePageDisplayCount;
     this.pages = this.pagesDataHandle(this.$site.pages);
+
+    this.isSpinning = false;
   },
   computed: {
     keyStrs () {
@@ -145,11 +153,13 @@ export default {
     flex-direction: row;
     justify-content: center;
 
-    .home-recent {
-      // min-width: 60rem;
+    .home-recent-spin {
       max-width: 60rem;
       width: 100%;
-      h3 {
+    }
+
+    .home-recent {
+      &>h3 {
         padding-left: 0.5rem;
       }
 
@@ -172,7 +182,7 @@ export default {
       padding: 0;
       flex-direction: column-reverse;
 
-      .home-recent {
+      .home-recent-spin {
         width: 100%;
         padding: .5rem;
       }

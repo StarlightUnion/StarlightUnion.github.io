@@ -7,12 +7,13 @@
 
     <div class="bar-item" v-if="tags.length > 0">
       <span class="iconfont icon-tag"></span>
-      <a
+      <a-tag
         v-for="(item, key) in tags"
         :key="key"
+        :color="randomColor()"
       >
         {{item.trim()}}
-      </a>
+      </a-tag>
     </div>
 
     <div class="bar-item" v-if="recommend !== null">
@@ -52,6 +53,13 @@ export default {
       diffColor: ''
     }
   },
+  methods: {
+    // 标签随机颜色
+    randomColor () {
+      const index = (Math.random() * (this.tagColorHexs.length - 1)).toFixed(0);
+      return this.tagColorHexs[index];
+    }
+  },
   computed: {
     // 标签
     tags () {
@@ -60,6 +68,10 @@ export default {
     // 时间
     createTime () {
       return this.displayData.date ? this.displayData.date : ''
+    },
+    // 获取随机颜色
+    tagColorHexs () {
+      return this.$themeConfig.tagColorHexs;
     }
   },
   mounted () {
@@ -97,14 +109,14 @@ export default {
     font-weight: 400;
     line-height: 2rem;
 
-    span:not(.iconfont) {
-      cursor: pointer;
-      // font-style: italic;
+    // span:not(.iconfont) {
+    //   cursor: pointer;
+    //   // font-style: italic;
 
-      &:hover {
-        color: @accentColor;
-      }
-    }
+    //   &:hover {
+    //     color: @accentColor;
+    //   }
+    // }
 
     .iconfont {
       font-size: 0.8rem;
@@ -117,21 +129,6 @@ export default {
 
     .icon-time + span {
       margin-left: 0.125rem;
-    }
-
-    .icon-tag ~ a {
-      font-weight: 400;
-      margin: 0 0.125rem;
-      background-color: rgba(27,31,35,.05);
-      border-radius: 0.25rem;
-      padding: 0.25rem;
-      cursor: pointer;
-      color: #000;
-
-      &:hover {
-        color: @accentColor;
-        text-decoration: none;
-      }
     }
 
     .icon-like {

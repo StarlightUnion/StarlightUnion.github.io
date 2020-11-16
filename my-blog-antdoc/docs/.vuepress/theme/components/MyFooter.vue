@@ -37,8 +37,6 @@ export default {
 
   .my-footer {
     color: #404040;
-    padding: 2.5rem;
-    border-top: 1px solid #eaecef;
     // width: calc(100% - 5rem);
     display: flex;
     justify-content: center;

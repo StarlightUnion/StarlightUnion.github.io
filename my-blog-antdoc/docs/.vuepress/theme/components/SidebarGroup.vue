@@ -111,7 +111,8 @@ export default {
   transition: color 0.15s ease;
   cursor: pointer;
   font-size: 14px;
-  margin: 0.25rem auto;
+  // margin: 0.25rem auto;
+  margin: 0;
   padding: 0.35rem 2.2rem;
   width: 100%;
   box-sizing: border-box;

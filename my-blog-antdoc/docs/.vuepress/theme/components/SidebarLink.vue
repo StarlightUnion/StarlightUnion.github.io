@@ -114,7 +114,7 @@ function renderExternal (h, to, text) {
 
 .sidebar-links {
   > li > a.sidebar-link {
-    margin-top: 0.25rem;
+    // margin-top: 0.25rem;
     line-height: 2;
   }
 }

@@ -20,8 +20,12 @@
       <a-tag
         v-for="(item, key) in pageData.tags"
         :key="key"
-        :color="randomColor"
+        :color="randomColor()"
       >
+      <!-- <a-tag
+        v-for="(item, key) in pageData.tags"
+        :key="key"
+      > -->
         {{item.trim()}}
       </a-tag>
     </div>
@@ -37,26 +41,17 @@
 export default {
   name: 'RecentArticle',
   props: ['pageData'],
-  datas () {
-    return {
-      colorHexs: []
-    }
-  },
   methods: {
-    reset () {
-      this.colorHexs = [];
+    // 标签随机颜色
+    randomColor () {
+      const index = (Math.random() * (this.tagColorHexs.length - 1)).toFixed(0);
+      return this.tagColorHexs[index];
     }
-  },
-  mounted () {
-    // 重置
-    this.reset();
-
-    this.colorHexs = this.$themeConfig.tagColorHexs;
   },
   computed: {
     // 获取随机颜色
-    randomColor () {
-      return this.colorHexs[(Math.random() * this.colorHexs.length).toFixed(0)];
+    tagColorHexs () {
+      return this.$themeConfig.tagColorHexs;
     }
   }
 
@@ -107,19 +102,19 @@ export default {
       }
     }
 
-    .art-tags {
-      a {
-        background-color: rgba(27,31,35,.05);
-        border-radius: 0.25rem;
-        padding: 0.25rem;
-        cursor: pointer;
-        color: #000;
+    // .art-tags {
+    //   a {
+    //     background-color: rgba(27,31,35,.05);
+    //     border-radius: 0.25rem;
+    //     padding: 0.25rem;
+    //     cursor: pointer;
+    //     color: #000;
 
-        &:hover {
-          color: @accentColor;
-        }
-      }
-    }
+    //     &:hover {
+    //       color: @accentColor;
+    //     }
+    //   }
+    // }
 
     .art-info {
       font-size: 0.8rem;

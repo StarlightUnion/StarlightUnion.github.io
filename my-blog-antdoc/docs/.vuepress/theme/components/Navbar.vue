@@ -240,7 +240,7 @@ export default {
 
 @media (max-width: @MQMobile) {
   .navbar {
-    position: relative;
+    position: sticky;
 
     .home-link {
       justify-content: center;
