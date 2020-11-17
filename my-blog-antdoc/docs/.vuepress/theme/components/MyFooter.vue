@@ -36,13 +36,13 @@ export default {
   @import '../styles/palette.less';
 
   .my-footer {
-    color: #404040;
+    color: #b0b0b0;
     // width: calc(100% - 5rem);
     display: flex;
     justify-content: center;
     flex-direction: row;
     flex-wrap: wrap;
-    font-size: 1rem;
+    font-size: .875rem;
     line-height: 2rem;
 
     .footer-item:last-of-type + .split-colum {
@@ -51,7 +51,7 @@ export default {
 
 
     a {
-      color: #404040;
+      color: #b0b0b0;
       font-weight: normal;
 
       &:hover {

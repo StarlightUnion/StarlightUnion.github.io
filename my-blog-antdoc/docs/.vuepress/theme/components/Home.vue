@@ -259,12 +259,13 @@ export default {
 .footer {
   clear: both;
   font-size: .875rem;
-  background-color: #000;
+  background-color: #fafafa;
   position: relative;
-  color: rgba(255, 255, 255, 0.4);
+  color: #b0b0b0;
+  border-top: 1px solid #eaecef;
   .footer-container {
     max-width: 1100px;
-    padding: 5rem 0;
+    padding: 1rem 0;
     margin: 0 auto;
 
     h2 {
@@ -273,7 +274,7 @@ export default {
       padding: 0;
       font-weight: 500;
       font-size: 16px;
-      color: #fff;
+      color: #757575;
       text-align: left;
     }
     .add-bottom{
@@ -288,7 +289,7 @@ export default {
       margin: 0.75rem 0;
       a {
         cursor: pointer;
-        color: #fff;
+        color: #757575;
       }
       a:hover {
         color: @accentColor;
@@ -301,16 +302,12 @@ export default {
   .footer-bottom {
     max-width: 1200px;
     text-align: center;
-    padding: 16px 0;
+    padding: 0 0 16px;
     margin: 0 auto;
     line-height: 32px;
     overflow: hidden;
     font-size: 16px;
     font-variant: tabular-nums;
-
-    &.footer-divider {
-      border-top: 1px solid rgba(255, 255, 255, 0.25);
-    }
   }
 }
 

@@ -68,8 +68,8 @@ export default {
     display: flex;
     flex-direction: column;
     cursor: pointer;
-    transition: all .4s linear;
-    transform: translate3d(0, -0.25rem, 0);
+    // transition: all .4s linear;
+    transform: translate3d(0, -0.5rem, 0);
     &:hover {
       // box-shadow: 0 0.2rem 0.8rem rgba(0,0,0,.1);
       // transform: scale(1);
