@@ -110,12 +110,19 @@ function renderExternal (h, to, text) {
 .sidebar .sidebar-sub-headers {
   padding-left: 1rem;
   font-size: .875rem;
+
+  > .sidebar-sub-header {
+    line-height: 1;
+  }
 }
 
 .sidebar-links {
-  > li > a.sidebar-link {
-    // margin-top: 0.25rem;
-    line-height: 2;
+  > li {
+    line-height: 1;
+    > a.sidebar-link {
+      // margin-top: 0.25rem;
+      line-height: 1.7;
+    }
   }
 }
 
@@ -166,6 +173,8 @@ a.sidebar-link {
     padding-top: 0.5rem;
     padding-bottom: 0.5rem;
     border-right: none;
+    line-height: 1.2;
+    font-size: .8rem;
 
     &.active {
       background-color: transparent;

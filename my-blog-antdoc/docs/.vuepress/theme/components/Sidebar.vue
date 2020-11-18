@@ -14,7 +14,7 @@ import Ads from '@theme/components/Ads.vue';
 
 export default {
   name: 'Sidebar',
-  components: { 
+  components: {
     SidebarLinks,
     Ads
   },
@@ -26,6 +26,7 @@ export default {
 @import '../styles/palette.less';
 
 .sidebar {
+  top: 5rem;
   ul {
     padding: 0;
     margin: 0;

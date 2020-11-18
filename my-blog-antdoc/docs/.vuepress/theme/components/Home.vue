@@ -262,10 +262,10 @@ export default {
   background-color: #fafafa;
   position: relative;
   color: #b0b0b0;
-  border-top: 1px solid #eaecef;
+  // border-top: 1px solid #eaecef;
   .footer-container {
     max-width: 1100px;
-    padding: 1rem 0;
+    padding: 2rem 0 1rem;
     margin: 0 auto;
 
     h2 {
@@ -277,13 +277,13 @@ export default {
       color: #757575;
       text-align: left;
     }
-    .add-bottom{
-      > div{
-        > div{
-          margin-bottom: 1.875rem;
-        }
-      }
-    }
+    // .add-bottom{
+    //   > div{
+    //     > div{
+    //       margin-bottom: 1.875rem;
+    //     }
+    //   }
+    // }
 
     .footer-item {
       margin: 0.75rem 0;
