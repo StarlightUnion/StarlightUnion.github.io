@@ -115,7 +115,7 @@ export default {
   & {
     .wrapper;
   }
-  
+
   padding-top: 1rem;
   padding-bottom: 1rem;
   overflow: auto;
