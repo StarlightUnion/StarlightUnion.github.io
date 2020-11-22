@@ -10,12 +10,23 @@ tags: ["随想", "主页"]
   <display-bar :displayData="$frontmatter"></display-bar>
 </ClientOnly>
 
-> 基本就是瞎写，想到什么写什么。。😂
->
+> 技术相关的瞎写，想到什么写什么。。
+
+::: tip 图例
+
+* 📝 ：更新中
+
+* 🚧 ：施工中
+
+* 📌 ：未完成
+
+:::
 
 ### 想到什么写什么
 
 <a href="/thoughts/vscode-browser.html" target="_blank">2020-07-31 | VS Code的本质-浏览器</a>
 
 <a href="/thoughts/outline-radius.html" target="_blank">2020-08-28 | 并不存在的outline-radius</a>
+
+<a href="/thoughts/object-oriented-programming.html" target="_blank">2020-10-24 | 面向对象编程初窥</a> 🚧 
 

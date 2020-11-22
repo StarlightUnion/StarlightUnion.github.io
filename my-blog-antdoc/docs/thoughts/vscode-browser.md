@@ -1,7 +1,7 @@
 ---
 title: VS Code的本质-浏览器
 date: 2020/07/31 00:00:00
-tags: ["随想", "发现", "VS Code"]
+tags: ["随想", "VS Code"]
 ---
 
 # VS Code的本质-浏览器

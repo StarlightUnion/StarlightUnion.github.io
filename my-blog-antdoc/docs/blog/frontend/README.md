@@ -12,6 +12,16 @@ tags: ["前端技术", "导航"]
 
 > 记录**前端相关**的系列篇文章。
 
+::: tip 图例
+
+* 📝 ：更新中
+
+* 🚧 ：施工中
+
+* 📌 ：未完成
+
+:::
+
 ### CSS进阶
 
 <a href="/blog/frontend/css&html/box-model-and-box-sizing.html" target="_blank">【CSS进阶】盒子模型与box-sizing属性</a>
@@ -22,7 +32,7 @@ tags: ["前端技术", "导航"]
 
 <a href="/blog/frontend/css&html/css-selector-2.html" target="_blank">【CSS进阶】选择器进阶笔记（2）伪类</a>
 
-<a href="/blog/frontend/css&html/flex-and-grid.html" target="_blank">【CSS进阶】Flex和Grid布局</a>
+<a href="/blog/frontend/css&html/flex-and-grid.html" target="_blank">【CSS进阶】Flex和Grid布局</a> 🚧
 
 ### JavaScript方法
 
@@ -50,29 +60,29 @@ tags: ["前端技术", "导航"]
 
 <a href="/blog/frontend/react/react-install-error.html" target="_blank">npx create-react-app xxx创建项目报错的解决办法</a>
 
-<a href="/blog/frontend/react/react-errors-summary.html" target="_blank">【缓慢更新中...】React开发环境中的错误和问题集合</a>
+<a href="/blog/frontend/react/react-errors-summary.html" target="_blank">React开发环境中的错误和问题集合</a> 📝
 
 <a href="/blog/frontend/react/use-modularized-antd-in-react.html" target="_blank">在React中按需引入antd</a>
 
-<a href="/blog/frontend/react/npm-run-eject.html" target="_blank">npm run eject获取React配置</a>
+<a href="/blog/frontend/react/npm-run-eject.html" target="_blank">npm run eject获取React配置</a> 🚧
 
 <a href="/blog/frontend/react/antd-table-scroll-y.html" target="_blank">antd Table组件滚动高度自适应问题</a>
 
 ### 数据可视化
 
-<a href="/blog/frontend/other/echart-basic-config.html" target="_blank">【缓慢更新中...】EChart常用配置整理</a>
+<a href="/blog/frontend/other/echart-basic-config.html" target="_blank">EChart常用配置整理</a> 📝
 
 <a href="/blog/frontend/other/use-echart-in-react-and-vue.html" target="_blank">在React和Vue中使用ECharts</a>
 
 ### 技巧集合
 
-<a href="/blog/frontend/css&html/html-practical-skills.html" target="_blank">【缓慢更新中...】HTML实用技巧集合</a>
+<a href="/blog/frontend/css&html/html-practical-skills.html" target="_blank">HTML实用技巧集合</a> 📝
 
-<a href="/blog/frontend/css&html/css-practical-skills.html" target="_blank">【缓慢更新中...】CSS实用技巧集合</a>
+<a href="/blog/frontend/css&html/css-practical-skills.html" target="_blank">CSS实用技巧集合</a> 📝
 
 ###  GIS相关
 
-<a href="/blog/frontend/gis/arcgis-api-for-js.html" target="_blank">【缓慢更新中...】ArcGIS 3.x常用方法整理</a>
+<a href="/blog/frontend/gis/arcgis-api-for-js.html" target="_blank">ArcGIS 3.x常用方法整理</a> 📝
 
-<a href="/blog/frontend/gis/arcgis-api-for-js-4x.html" target="_blank">【缓慢更新中...】ArcGIS 4.x与3.x的常用API的区别以及常用方法整理</a>
+<a href="/blog/frontend/gis/arcgis-api-for-js-4x.html" target="_blank">ArcGIS 4.x与3.x的常用API的区别以及常用方法整理</a> 📝
 

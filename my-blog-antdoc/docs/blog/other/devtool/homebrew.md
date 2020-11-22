@@ -1,7 +1,7 @@
 ---
 title: macOS系统下安装Homebrew
 date: 2019/03/02 00:00:00
-tags: ["杂记", "HomeBrew"]
+tags: ["杂记", "macOS", "HomeBrew"]
 ---
 
 # macOS系统下安装Homebrew

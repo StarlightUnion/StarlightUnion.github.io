@@ -1,7 +1,7 @@
 ---
 title: 并不存在的outline-radius
 date: 2020/08/28 00:00:00
-tags: ["随想", "发现"]
+tags: ["随想"]
 ---
 
 # 并不存在的outline-radius

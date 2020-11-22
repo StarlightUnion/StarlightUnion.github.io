@@ -12,11 +12,24 @@ tags: ["LeetCode", "导航"]
 
 > [力扣](https://leetcode-cn.com/)系列篇，每天（~~有空~~）进步一点点。
 
-::: danger
+::: tip 图例
 
-⚠️  **力扣刷题系列**暂停更新❗️
+* 📝 ：更新中
+
+* 🚧 ：施工中
+
+* 📌 ：未完成
 
 :::
+
+<ClientOnly>
+  <a-alert
+    message="注意"
+    description="力扣刷题系列暂停更新❗️"
+    type="error"
+    show-icon
+  />
+</ClientOnly>
 
 ### 每日一题
 
@@ -36,19 +49,19 @@ tags: ["LeetCode", "导航"]
 
 <a href="/blog/leetcode/js/exercises-680.html" target="_blank">2020-05-19 |【每日一题】680 验证回文字符串 Ⅱ</a>
 
-<a href="/blog/leetcode/js/exercises-1371.html" target="_blank">2020-05-20 |【每日一题】1371 每个元音包含偶数次的最长子字符串</a>
+<a href="/blog/leetcode/js/exercises-1371.html" target="_blank">2020-05-20 |【每日一题】1371 每个元音包含偶数次的最长子字符串</a> 📌
 
 <a href="/blog/leetcode/js/exercises-05.html" target="_blank">2020-05-21 |【题库练习】05 最长回文子串</a>
 
 <a href="/blog/leetcode/js/exercises-105.html" target="_blank">2020-05-22 |【每日一题】105 从前序与中序遍历序列构造二叉树</a>
 
-<a href="/blog/leetcode/js/exercises-76.html" target="_blank">2020-05-23 |【每日一题】76 最小覆盖子串</a>
+<a href="/blog/leetcode/js/exercises-76.html" target="_blank">2020-05-23 |【每日一题】76 最小覆盖子串</a> 📌
 
 **7月**
 
 <a href="/blog/leetcode/js/exercises-350.html" target="_blank">2020-07-13 |【每日一题】350 两个数组的交集 II</a>
 
-<a href="/blog/leetcode/js/exercises-392.html" target="_blank">2020-07-27 |【每日一题】392 判断子序列</a>
+<a href="/blog/leetcode/js/exercises-392.html" target="_blank">2020-07-27 |【每日一题】392 判断子序列</a> 📌
 
 <a href="/blog/leetcode/js/exercises-104.html" target="_blank">2020-07-28 |【每日一题】104 二叉树的最大深度</a>
 

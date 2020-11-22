@@ -12,6 +12,16 @@ tags: ["杂记", "导航"]
 
 > 记录**系列篇**和**重要**的文章。
 
+::: tip 图例
+
+* 📝 ：更新中
+
+* 🚧 ：施工中
+
+* 📌 ：未完成
+
+:::
+
 ### Git相关
 
 <a href="/blog/other/devtool/git-remove-dir.html" target="_blank">删除GitHub中的某个文件夹以及Git常用命令</a>
@@ -52,9 +62,11 @@ tags: ["杂记", "导航"]
 
 <a href="/blog/other/aboutblog/vuepress-plugin.html" target="_blank">VuePress + GitHub搭建个人博客笔记（2）必备插件</a>
 
-<a href="/blog/other/aboutblog/vuepress-make-vue-plugin.html" target="_blank">VuePress之开发自己的插件</a>
+<a href="/blog/other/aboutblog/vuepress-diy-plugin.html" target="_blank">VuePress之开发自己的插件</a>
 
 <a href="/blog/other/aboutblog/modify-vuepress-theme.html" target="_blank">VuePress之修改默认主题</a>
+
+<a href="/blog/other/aboutblog/vuepress-theme-antdocs.html" target="_blank">使用和改造vuepress-theme-antdocs主题</a>
 
 
 
