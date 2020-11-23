@@ -10,5 +10,12 @@ tags: ["爱好", "主页"]
   <display-bar :displayData="$frontmatter"></display-bar>
 </ClientOnly>
 
-> 热爱生活，发现美好。
+::: tip 图例
 
+* 📝 ：更新中
+
+* 🚧 ：施工中
+
+* 📌 ：未完成
+
+:::

@@ -64,7 +64,7 @@ tags: ["前端技术", "导航"]
 
 <a href="/blog/frontend/react/use-modularized-antd-in-react.html" target="_blank">在React中按需引入antd</a>
 
-<a href="/blog/frontend/react/npm-run-eject.html" target="_blank">npm run eject获取React配置</a> 🚧
+<a href="/blog/frontend/react/npm-run-eject.html" target="_blank">npm run eject获取React配置</a>
 
 <a href="/blog/frontend/react/antd-table-scroll-y.html" target="_blank">antd Table组件滚动高度自适应问题</a>
 

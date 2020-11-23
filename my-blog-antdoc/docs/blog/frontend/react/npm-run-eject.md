@@ -36,46 +36,16 @@ tags: ["React.js"]
 │   ├── jest 单元测试的配置
 │   │   ├── cssTransform.js
 │   │   └── fileTransform.js
-│   ├── env.js
-│   ├── getHttpsConfig.js
-│   ├── modules.js
-│   ├── paths.js
-│   ├── pnpTs.js
-│   ├── webpack.config.js
-│   └── webpackDevServer.config.js
+│   ├── env.js 开发环境配置方法库
+│   ├── getHttpsConfig.js 获取https证书配置方法库
+│   ├── modules.js 获取模块配置方法库
+│   ├── paths.js 开发环境/打包路径配置文件
+│   ├── pnpTs.js TypeScript模块映射表(?)
+│   ├── webpack.config.js 打包配置文件
+│   └── webpackDevServer.config.js 开发环境dev server配置文件
 ├── scripts
-│   ├── build.js
-│   ├── start.js
-│   └── test.js
+│   ├── build.js 打包时执行
+│   ├── start.js 开发时执行
+│   └── test.js 测试时执行
 └── ...
 ```
-
-## 三、常用配置文件详解
-
-### 1.`paths.js`
-
-`paths.js`部分内容如下图：👇
-
-```js
-module.exports = {
-  dotenv: resolveApp('.env'),
-  appPath: resolveApp('.'),
-  appBuild: resolveApp('build'),
-  appPublic: resolveApp('public'),
-  appHtml: resolveApp('public/index.html'),
-  appIndexJs: resolveModule(resolveApp, 'src/main'),
-  appPackageJson: resolveApp('package.json'),
-  appSrc: resolveApp('src'),
-  appTsConfig: resolveApp('tsconfig.json'),
-  appJsConfig: resolveApp('jsconfig.json'),
-  yarnLockFile: resolveApp('yarn.lock'),
-  testsSetup: resolveModule(resolveApp, 'src/setupTests'),
-  proxySetup: resolveApp('src/setupProxy.js'),
-  appNodeModules: resolveApp('node_modules'),
-  publicUrlOrPath,
-};
-```
-
-
-
-🚧 施工中...
