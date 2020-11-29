@@ -1,7 +1,7 @@
 ---
 title: macOS终端开启命令/路径自动补全
 date: 2020/09/28 00:00:00
-tags: ["杂记","macOS", "terminal"]
+tags: ["杂记", "macOS", "terminal"]
 ---
 
 # macOS终端开启命令/路径自动补全

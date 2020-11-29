@@ -62,11 +62,15 @@ tags: ["前端技术", "导航"]
 
 <a href="/blog/frontend/react/react-errors-summary.html" target="_blank">React开发环境中的错误和问题集合</a> 📝
 
-<a href="/blog/frontend/react/use-modularized-antd-in-react.html" target="_blank">在React中按需引入antd</a>
+<a href="/blog/frontend/react/use-modularized-antd-in-react.html" target="_blank">在React中引入antd的两种方法</a>
 
 <a href="/blog/frontend/react/npm-run-eject.html" target="_blank">npm run eject获取React配置</a>
 
 <a href="/blog/frontend/react/antd-table-scroll-y.html" target="_blank">antd Table组件滚动高度自适应问题</a>
+
+<a href="/blog/frontend/react/sub-directory-deploy.html" target="_blank">Nginx部署React项目至服务器二级目录实践</a> 🚧
+
+<a href="/blog/frontend/react/react-async-router-practice.html" target="_blank">React配置动态路由实践</a> 🚧
 
 ### 数据可视化
 

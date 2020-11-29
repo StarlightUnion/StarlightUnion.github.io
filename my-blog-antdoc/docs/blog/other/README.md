@@ -32,6 +32,8 @@ tags: ["杂记", "导航"]
 
 <a href="/blog/other/devtool/gitlab-and-github.html" target="_blank">WindowsPC同时配置GitLab和GitHub</a>
 
+<a href="/blog/other/devtool/forked-repo-update-config.html" target="_blank">Git派生（fork）的仓库代码的更新问题</a> 🚧
+
 ### Nginx部署相关
 
 <a href="/blog/other/devtool/nginx-deploy-record.html" target="_blank">Nginx部署笔记-Windows（1）</a>
@@ -51,6 +53,8 @@ tags: ["杂记", "导航"]
 <a href="/blog/other/aboutdeploy/nginx-config-https.html" target="_blank">Nginx配置HTTPS/安装SSL证书</a>
 
 <a href="/blog/other/aboutdeploy/nginx-proxy-resource.html" target="_blank">使用Nginx代理访问图片等资源</a>
+
+<a href="/blog/frontend/react/sub-directory-deploy.html" target="_blank">Nginx部署React项目至服务器二级目录实践</a> 🚧
 
 ### 自动化部署
 

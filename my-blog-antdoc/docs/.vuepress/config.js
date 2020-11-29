@@ -92,6 +92,8 @@ module.exports = {
       }, {
         title: "React.js相关",
         children: [
+          "/blog/frontend/react/react-async-router-practice",
+          "/blog/frontend/react/sub-directory-deploy",
           "/blog/frontend/react/antd-table-scroll-y",
           "/blog/frontend/react/npm-run-eject",
           "/blog/frontend/react/use-modularized-antd-in-react",
@@ -127,6 +129,7 @@ module.exports = {
         title: "工具/环境相关",
         // sidebarDepth: 3,
         children: [
+          "/blog/other/devtool/forked-repo-update-config",
           "/blog/other/devtool/terminal-command-completing",
           "/blog/other/devtool/gitlab-and-github",
           "/blog/other/devtool/gitlab-init",

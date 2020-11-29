@@ -1,10 +1,10 @@
 ---
-title: 在React中按需引入antd
+title: 在React中引入antd的两种方法
 date: 2020/08/22 00:00:00
 tags: ["React.js", "antd"]
 ---
 
-# 在React中按需引入antd
+# 在React中引入antd的两种方法
 
 <ClientOnly>
   <display-bar :displayData="$frontmatter"></display-bar>
