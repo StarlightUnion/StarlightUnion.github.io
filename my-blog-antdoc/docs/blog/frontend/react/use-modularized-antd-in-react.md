@@ -1,20 +1,20 @@
 ---
-title: 在React中引入antd的两种方法
+title: 在React中引入AntD的两种方法
 date: 2020/08/22 00:00:00
-tags: ["React.js", "antd"]
+tags: ["React.js", "AntD"]
 ---
 
-# 在React中引入antd的两种方法
+# 在React中引入AntD的两种方法
 
 <ClientOnly>
   <display-bar :displayData="$frontmatter"></display-bar>
 </ClientOnly>
 
-> `antd`不推荐使用已构建的文件引入，这样做不利于底层依赖模块bug的快速修复。--`antd`文档
+> `AntD`不推荐使用已构建的文件引入，这样做不利于底层依赖模块bug的快速修复。--`AntD`文档
 
 ## 一、直接引入
 
-有区别与**按需引入**，直接引入`antd`需要在入口的js文件，如`index.js/index.jsx`等，
+有区别与**按需引入**，直接引入`AntD`需要在入口的js文件，如`index.js/index.jsx`等，
 
 入口的js文件就是挂载到根节点的那个：
 
@@ -58,7 +58,7 @@ export default App;
 
 ## 二、按需引入
 
-直接引入相当于把`antd`所有的组件包括样式文件引入了，打包时的依赖包体积也会大上不少，会影响加载速度。
+直接引入相当于把`AntD`所有的组件包括样式文件引入了，打包时的依赖包体积也会大上不少，会影响加载速度。
 
 按需引入可以**只引入用到的UI组件和对应的样式文件**，这样可以**减少打包后的项目的依赖包的大小**，从而**优化首屏加载速度**，**提升用户体验**。
 

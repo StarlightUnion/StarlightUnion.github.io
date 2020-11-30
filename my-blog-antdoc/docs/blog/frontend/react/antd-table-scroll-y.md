@@ -1,20 +1,20 @@
 ---
-title: antd Table组件滚动高度自适应问题
+title: AntD Table组件滚动高度自适应问题
 date: 2020/09/13 22:19:00
-tags: ["antd", "React.js"]
+tags: ["AntD", "React.js"]
 ---
 
-# antd Table组件滚动高度自适应问题
+# AntD Table组件滚动高度自适应问题
 
 <ClientOnly>
   <display-bar :displayData="$frontmatter"></display-bar>
 </ClientOnly>
 
-> **`antd`版本信息**：*4.6.2*。
+> *`AntD`版本信息：4.6.2*。
 
 ::: warning 问题描述
 
-实际使用中发现`antd`的`Table`组件宽度是自适应的，但是高度并不是自适应的，这就造成了一个问题，**如果表格容器高度发生变化，而表格的高度并不会发生变化**。
+实际使用中发现`AntD`的`Table`组件宽度是自适应的，但是高度并不是自适应的，这就造成了一个问题，**如果表格容器高度发生变化，而表格的高度并不会发生变化**。
 
 :::
 

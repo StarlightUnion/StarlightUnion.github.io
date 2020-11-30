@@ -82,7 +82,7 @@ export default {
 
     .art-title {
       font-size: 1.2rem;
-      font-weight: 700;
+      font-weight: 500;
     }
 
     .art-time, .art-tags {

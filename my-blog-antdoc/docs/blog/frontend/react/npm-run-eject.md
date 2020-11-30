@@ -10,7 +10,7 @@ tags: ["React.js"]
   <display-bar :displayData="$frontmatter"></display-bar>
 </ClientOnly>
 
-> 注：当前`react`版本`16.13.1`。
+> *版本信息：当前使用`React`版本`16.13.1`。*
 
 ## 一、获取配置
 

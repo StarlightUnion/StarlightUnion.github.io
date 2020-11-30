@@ -21,7 +21,7 @@ tags: ["CSS", "Border"]
 
 ```css
 .style {
-	border-radius: 5px;
+  border-radius: 5px;
 }
 ```
 
@@ -31,12 +31,12 @@ tags: ["CSS", "Border"]
 
 ```html
 <style>
-    .circle {
-      width: 200px;
-      height: 400px;
-      border: 2px solid #000;
-      border-radius: 50px 50px 50px 50px/50px 100px 20px 0;
-    }
+  .circle {
+    width: 200px;
+    height: 400px;
+    border: 2px solid #000;
+    border-radius: 50px 50px 50px 50px/50px 100px 20px 0;
+  }
 </style>
 
 <div class="circle"></div>
@@ -54,7 +54,7 @@ border-radius: 左上角水平长度值 右上角水平长度值 右下角水平
 
 ```html
 <style>
-	.block {
+  .block {
     width: 300px;
     height: 200px;
     border-radius: 5px;
@@ -62,7 +62,7 @@ border-radius: 左上角水平长度值 右上角水平长度值 右下角水平
     background-color: rgb(61, 148, 248);
   }
 
-	.header {
+  .header {
     display: block;
     height: 40px;
     line-height: 30px;
@@ -93,27 +93,27 @@ border-radius: 左上角水平长度值 右上角水平长度值 右下角水平
 
 ```html
 <style>
-		.block {
-      width: 300px;
-      height: 200px;
-      border-radius: 5px;
-      display: flex;
-      background-color: rgb(61, 148, 248);
-    }
+  .block {
+    width: 300px;
+    height: 200px;
+    border-radius: 5px;
+    display: flex;
+    background-color: rgb(61, 148, 248);
+  }
 
-    .header {
-      display: block;
-      height: 40px;
-      line-height: 30px;
-      color: #fff;
-      padding: 0 40px 0 10px;
-      border-radius: 5px 0 100% 0/5px 0 40px 0;
-      background-color: rgba(0, 0, 0, 0.1);/* 不管底色怎么变，都是通透的 */
-      max-width: 50%;/* 控制最大宽度 */
-      overflow: hidden;/* 以下三个是控制超出部分省略 */
-      text-overflow: ellipsis;
-      white-space: nowrap;
-    }
+  .header {
+    display: block;
+    height: 40px;
+    line-height: 30px;
+    color: #fff;
+    padding: 0 40px 0 10px;
+    border-radius: 5px 0 100% 0/5px 0 40px 0;
+    background-color: rgba(0, 0, 0, 0.1);/* 不管底色怎么变，都是通透的 */
+    max-width: 50%;/* 控制最大宽度 */
+    overflow: hidden;/* 以下三个是控制超出部分省略 */
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
 </style>
 
 <div class="block center">
