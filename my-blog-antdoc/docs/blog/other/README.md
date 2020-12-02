@@ -32,7 +32,7 @@ tags: ["杂记", "导航"]
 
 <a href="/blog/other/devtool/gitlab-and-github.html" target="_blank">WindowsPC同时配置GitLab和GitHub</a>
 
-<a href="/blog/other/devtool/forked-repo-update-config.html" target="_blank">Git派生（fork）的仓库代码的更新问题</a> 🚧
+<a href="/blog/other/devtool/forked-repo-update-config.html" target="_blank">Git派生（fork）的仓库代码的同步问题</a> 🚧
 
 ### Nginx部署相关
 
