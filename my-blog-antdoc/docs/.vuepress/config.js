@@ -94,7 +94,6 @@ module.exports = {
         title: "React.js相关",
         children: [
           "/blog/frontend/react/react-async-router-practice",
-          "/blog/frontend/react/sub-directory-deploy",
           "/blog/frontend/react/antd-table-scroll-y",
           "/blog/frontend/react/npm-run-eject",
           "/blog/frontend/react/use-modularized-antd-in-react",
@@ -147,6 +146,7 @@ module.exports = {
       }, {
         title: "部署相关",
         children: [
+          "/blog/other/aboutdeploy/sub-directory-deploy",
           "/blog/other/aboutdeploy/nginx-proxy-resource",
           "/blog/other/aboutdeploy/nginx-config-https",
           "/blog/other/aboutdeploy/auto-deploy-nodejs",

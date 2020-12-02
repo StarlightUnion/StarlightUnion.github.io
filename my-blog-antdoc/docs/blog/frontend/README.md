@@ -70,8 +70,6 @@ tags: ["前端技术", "导航"]
 
 <a href="/blog/frontend/react/antd-table-scroll-y.html" target="_blank">AntD Table组件滚动高度自适应问题</a>
 
-<a href="/blog/frontend/react/sub-directory-deploy.html" target="_blank">Nginx部署React项目至服务器二级目录实践</a> 🚧
-
 <a href="/blog/frontend/react/react-async-router-practice.html" target="_blank">React路由组件按需异步加载实践</a>
 
 ### 数据可视化

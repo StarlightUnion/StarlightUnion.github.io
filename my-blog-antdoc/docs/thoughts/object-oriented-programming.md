@@ -10,4 +10,6 @@ tags: ["随想", "面向对象", "Java", "ES6"]
   <display-bar :displayData="$frontmatter"></display-bar>
 </ClientOnly>
 
+![oop-01](/images/thoughts/oop-01.png)
+
 🚧 施工中...
