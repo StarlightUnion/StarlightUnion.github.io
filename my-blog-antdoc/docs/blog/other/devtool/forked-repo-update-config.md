@@ -61,4 +61,6 @@ git remote -v
 
 在本地仓库根目录中找到`.git/config`，`.git`一般隐藏。
 
+![forked-update-04](/images/other/devtool/forked-update-04.png)
+
 :::
