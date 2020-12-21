@@ -60,6 +60,14 @@ tags: ["杂记", "导航"]
 
 <a href="/blog/other/aboutdeploy/auto-deploy-nodejs.html" target="_blank">Node.js + GitHub Webhooks实现自动化部署</a>
 
+### Linux相关
+
+<a href="/blog/other/devtool/nodejs-config-for-centos.html" target="_blank">CentOS下配置Node.js和Nginx环境</a>
+
+<a href="/blog/other/aboutdeploy/nginx-deploy-for-centos.html" target="_blank">Nginx部署笔记-CentOS</a>
+
+<a href="/blog/other/devtool/wsl-config.html" target="_blank">WSL（Ubuntu）使用小记</a> 🚧
+
 ### VuePress相关
 
 <a href="/blog/other/aboutblog/vuepress-build-blog.html" target="_blank">VuePress + GitHub搭建个人博客笔记（1）</a>
@@ -71,6 +79,4 @@ tags: ["杂记", "导航"]
 <a href="/blog/other/aboutblog/modify-vuepress-theme.html" target="_blank">VuePress之修改默认主题</a>
 
 <a href="/blog/other/aboutblog/vuepress-theme-antdocs.html" target="_blank">使用和改造vuepress-theme-antdocs主题</a>
-
-
 

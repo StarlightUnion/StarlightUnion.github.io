@@ -1,7 +1,7 @@
 ---
 title: ResizeObserver监听元素的resize事件
 date: 2020/08/10 00:00:00
-tags: ["Window", "ResizeObserver"]
+tags: ["Web APIs", "ResizeObserver"]
 ---
 
 # ResizeObserver监听元素的resize事件

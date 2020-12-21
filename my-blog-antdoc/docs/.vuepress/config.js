@@ -57,9 +57,7 @@ module.exports = {
         title: "JS/ES6/ES6+",
         children: [
           "/blog/frontend/javascript/import-and-require",
-          "/blog/frontend/javascript/element-resize-observer",
           "/blog/frontend/javascript/export-and-export-default",
-          "/blog/frontend/javascript/setinterval-and-settimeout",
           "/blog/frontend/javascript/array-filter",
           "/blog/frontend/javascript/float-operation",
           "/blog/frontend/javascript/array-sort",
@@ -82,6 +80,13 @@ module.exports = {
           "/blog/frontend/css&html/box-model-and-box-sizing",
           "/blog/frontend/css&html/css-practical-skills",
           "/blog/frontend/css&html/html-practical-skills"
+        ]
+      }, {
+        title: "Web APIs",
+        children: [
+          "/blog/frontend/web-apis/element-request-full-screen",
+          "/blog/frontend/web-apis/element-resize-observer",
+          "/blog/frontend/web-apis/setinterval-and-settimeout"
         ]
       }, {
         title: "Vue.js相关",
@@ -127,8 +132,8 @@ module.exports = {
         path: "/blog/other/"
       }, {
         title: "工具/环境相关",
-        // sidebarDepth: 3,
         children: [
+          "/blog/other/devtool/wsl-config.html",
           "/blog/other/devtool/forked-repo-update-config",
           "/blog/other/devtool/terminal-command-completing",
           "/blog/other/devtool/gitlab-and-github",
