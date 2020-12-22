@@ -71,6 +71,7 @@ module.exports = {
       }, {
         title: "CSS/HTML",
         children: [
+          "/blog/frontend/css&html/css-variable",
           "/blog/frontend/css&html/flex-and-grid",
           "/blog/frontend/css&html/html-base-tag",
           "/blog/frontend/css&html/css-selector-2",
@@ -109,6 +110,11 @@ module.exports = {
         title: "小程序相关",
         children: [
           "/blog/frontend/miniprogram/miniprogram-summary-1"
+        ]
+      }, {
+        title: "浏览器相关",
+        children: [
+          "/blog/frontend/browser/304-and-web-cache"
         ]
       }, {
         title: "GIS相关",

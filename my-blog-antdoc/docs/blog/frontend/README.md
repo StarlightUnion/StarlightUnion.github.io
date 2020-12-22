@@ -34,6 +34,8 @@ tags: ["前端技术", "导航"]
 
 <a href="/blog/frontend/css&html/flex-and-grid.html" target="_blank">【CSS进阶】Flex和Grid布局</a> 🚧
 
+<a href="/blog/frontend/css&html/css-variable.html" target="_blank">【CSS进阶】CSS变量</a> 🚧
+
 ### JavaScript方法
 
 <a href="/blog/frontend/javascript/array-find-and-findindex.html" target="_blank">Array.find()和findIndex()方法</a>
@@ -72,21 +74,7 @@ tags: ["前端技术", "导航"]
 
 <a href="/blog/frontend/react/react-async-router-practice.html" target="_blank">React路由组件按需异步加载实践</a>
 
-### 数据可视化
+### 浏览器相关
 
-<a href="/blog/frontend/other/echart-basic-config.html" target="_blank">EChart常用配置整理</a> 📝
-
-<a href="/blog/frontend/other/use-echart-in-react-and-vue.html" target="_blank">在React和Vue中使用ECharts</a>
-
-### 技巧集合
-
-<a href="/blog/frontend/css&html/html-practical-skills.html" target="_blank">HTML实用技巧集合</a> 📝
-
-<a href="/blog/frontend/css&html/css-practical-skills.html" target="_blank">CSS实用技巧集合</a> 📝
-
-###  GIS相关
-
-<a href="/blog/frontend/gis/arcgis-api-for-js.html" target="_blank">ArcGIS 3.x常用方法整理</a> 📝
-
-<a href="/blog/frontend/gis/arcgis-api-for-js-4x.html" target="_blank">ArcGIS 4.x与3.x的常用API的区别以及常用方法整理</a> 📝
+<a href="/blog/frontend/browser/304-and-web-cache.html" target="_blank">304状态码和浏览器缓存</a> 🚧
 
