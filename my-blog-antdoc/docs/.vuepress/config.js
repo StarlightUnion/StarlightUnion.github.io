@@ -1,6 +1,6 @@
 module.exports = {
   title: "游客17846",
-  description: "热爱写bug的切图仔。",
+  description: "切图仔、CV/API工程师。",
   head: [
     ["link", { rel: "icon", href: "/logo.ico"}],
     ["link", { rel: "manifest", href: "/manifest.json" }],

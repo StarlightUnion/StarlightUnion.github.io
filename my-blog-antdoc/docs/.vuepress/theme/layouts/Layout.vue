@@ -25,6 +25,8 @@
 
     <Home v-if="$page.frontmatter.home" />
 
+    <Tool v-else-if="$page.frontmatter.tool" />
+
     <Page
       v-else
       :sidebar-items="sidebarItems"
@@ -37,7 +39,7 @@
       </template>
     </Page>
 
-    <a-back-top v-if="$themeConfig.backToTop"/>
+    <a-back-top v-if="$themeConfig.backToTop" />
   </div>
 </template>
 
@@ -48,6 +50,8 @@ import Page from '@theme/components/Page.vue'
 import Sidebar from '@theme/components/Sidebar.vue'
 import { resolveSidebarItems } from '../util'
 
+import Tool from '@theme/components/Tool.vue'
+
 export default {
   name: 'Layout',
 
@@ -55,7 +59,8 @@ export default {
     Home,
     Page,
     Sidebar,
-    Navbar
+    Navbar,
+    Tool
   },
 
   // data () {

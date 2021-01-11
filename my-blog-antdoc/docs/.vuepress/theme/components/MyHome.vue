@@ -29,20 +29,23 @@
     </a-spin>
     <div class="home-person">
       <PersonInfo />
+      <ToolsInfo />
     </div>
   </div>
 </template>
 
 <script>
-import RecentArticle from './RecentArticle.vue';
-import PersonInfo from './/PersonInfo.vue';
+import RecentArticle from '../my-components/RecentArticle';
+import PersonInfo from '../my-components/PersonInfo';
+import ToolsInfo from '../my-components/ToolsInfo';
 import { message } from 'ant-design-vue';
 
 export default {
   name: 'MyHome',
   components: {
     RecentArticle,
-    PersonInfo
+    PersonInfo,
+    ToolsInfo
   },
   data () {
     return {
@@ -170,7 +173,9 @@ export default {
 
     .home-person {
       max-width: 400px;
+      min-width: 360px;
       display: flex;
+      flex-direction: column;
       margin-left: 3rem;
       border-left: 1px solid #eaecef;
     }
