@@ -2,7 +2,7 @@ module.exports = {
   title: "游客17846",
   description: "切图仔、CV/API工程师。",
   head: [
-    ["link", { rel: "icon", href: "/logo.ico"}],
+    ["link", { rel: "icon", href: "/logo.ico" }],
     ["link", { rel: "manifest", href: "/manifest.json" }],
     ["link", { rel: "apple-touch-icon", href: "/logo.png" }],
     ["link", { rel: "stylesheet", href: "/styles/iconfont.css" }]
@@ -40,17 +40,16 @@ module.exports = {
     }, {
       text: "随想",
       link: "/thoughts/"
-    // }, {
-    //   text: "记录",
-    //   link: "/record/"
+        // }, {
+        //   text: "记录",
+        //   link: "/record/"
     }, {
       text: "爱好",
       link: "/life&hobby/"
     }],
     // sidebar: "auto",
     sidebar: {
-      "/blog/frontend/": [
-      {
+      "/blog/frontend/": [{
         title: "快速导航",
         path: "/blog/frontend/"
       }, {
@@ -132,8 +131,7 @@ module.exports = {
           "/blog/frontend/other/bootstrap-validator&bootstrap-datetimepicker"
         ]
       }],
-      "/blog/other/": [
-      {
+      "/blog/other/": [{
         title: "快速导航",
         path: "/blog/other/"
       }, {
@@ -178,39 +176,39 @@ module.exports = {
           "/blog/other/aboutblog/vuepress-build-blog"
         ]
       }],
-      "/blog/leetcode/": [
-      {
-        title: "快速导航",
-        path: "/blog/leetcode/"
-      },
-      {
-        title: "JavaScript",
-        children: [
-          "/blog/leetcode/js/exercises-1371",
-          "/blog/leetcode/js/exercises-680",
-          "/blog/leetcode/js/exercises-560",
-          "/blog/leetcode/js/exercises-392",
-          "/blog/leetcode/js/exercises-350",
-          "/blog/leetcode/js/exercises-152",
-          "/blog/leetcode/js/exercises-105",
-          "/blog/leetcode/js/exercises-104",
-          "/blog/leetcode/js/exercises-102",
-          "/blog/leetcode/js/exercises-76",
-          "/blog/leetcode/js/exercises-50",
-          "/blog/leetcode/js/exercises-33",
-          "/blog/leetcode/js/exercises-25",
-          "/blog/leetcode/js/exercises-24",
-          "/blog/leetcode/js/exercises-09",
-          "/blog/leetcode/js/exercises-08",
-          "/blog/leetcode/js/exercises-07",
-          "/blog/leetcode/js/exercises-06",
-          "/blog/leetcode/js/exercises-05",
-          "/blog/leetcode/js/exercises-04",
-          "/blog/leetcode/js/exercises-03",
-          "/blog/leetcode/js/exercises-02",
-          "/blog/leetcode/js/exercises-01"
-        ]
-      }],
+      "/blog/leetcode/": [{
+          title: "快速导航",
+          path: "/blog/leetcode/"
+        },
+        {
+          title: "JavaScript",
+          children: [
+            "/blog/leetcode/js/exercises-1371",
+            "/blog/leetcode/js/exercises-680",
+            "/blog/leetcode/js/exercises-560",
+            "/blog/leetcode/js/exercises-392",
+            "/blog/leetcode/js/exercises-350",
+            "/blog/leetcode/js/exercises-152",
+            "/blog/leetcode/js/exercises-105",
+            "/blog/leetcode/js/exercises-104",
+            "/blog/leetcode/js/exercises-102",
+            "/blog/leetcode/js/exercises-76",
+            "/blog/leetcode/js/exercises-50",
+            "/blog/leetcode/js/exercises-33",
+            "/blog/leetcode/js/exercises-25",
+            "/blog/leetcode/js/exercises-24",
+            "/blog/leetcode/js/exercises-09",
+            "/blog/leetcode/js/exercises-08",
+            "/blog/leetcode/js/exercises-07",
+            "/blog/leetcode/js/exercises-06",
+            "/blog/leetcode/js/exercises-05",
+            "/blog/leetcode/js/exercises-04",
+            "/blog/leetcode/js/exercises-03",
+            "/blog/leetcode/js/exercises-02",
+            "/blog/leetcode/js/exercises-01"
+          ]
+        }
+      ],
       // "/thoughts/": [{
       //   title: "主页",
       //   path: "/thoughts/"
@@ -253,9 +251,9 @@ module.exports = {
         link: "https://curl.qcloud.com/WOgU8Xb2"
       }]
     },
-    homePageDisplayCount: 8,// 首页展示博文数量
+    homePageDisplayCount: 8, // 首页展示博文数量
     // tagColorHexs: ["#ff5500", "#2db7f5", "#87d068", "#108ee9", "#eb2f96", "#fa8c16", "#13c2c2", "#1e90ff", "#722ed1"],// 标签颜色设置 16进制颜色
-    tagColorHexs: ["pink", "red", "orange", "green", "cyan", "blue", "purple"],// 标签颜色设置 预设七色
+    tagColorHexs: ["pink", "red", "orange", "green", "cyan", "blue", "purple"], // 标签颜色设置 预设七色
     filterStrs: ["导航", "爱好", "记录", "影片", "主页", "LeetCode"],
     contactInfo: [{
       icon: "iconfont icon-location",
@@ -296,14 +294,17 @@ module.exports = {
       text: "浙公网安备 33010902002529号",
       link: "http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=33010902002529"
     }],
+    toolPages: [{
+      name: "在线表格",
+      path: "/tools/excel-online.html"
+    }]
   },
   plugins: [
     ["@vuepress/active-header-links", {
       sidebarLinkSelector: ".sidebar-link",
       headerAnchorSelector: ".header-anchor"
     }],
-    "@vuepress/medium-zoom",
-    ["@vuepress/last-updated", {
+    "@vuepress/medium-zoom", ["@vuepress/last-updated", {
       transformer: (timestamp, lang) => {
         const moment = require("moment");
         moment.locale(lang);
