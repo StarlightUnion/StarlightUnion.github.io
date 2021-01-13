@@ -44,6 +44,8 @@
 </template>
 
 <script>
+import Vue from "vue";
+
 import Home from '@theme/components/Home.vue'
 import Navbar from '@theme/components/Navbar.vue'
 import Page from '@theme/components/Page.vue'
@@ -51,6 +53,7 @@ import Sidebar from '@theme/components/Sidebar.vue'
 import { resolveSidebarItems } from '../util'
 
 import Tool from '@theme/components/Tool.vue'
+import Loading from '@theme/my-pages/Loading.vue'
 
 export default {
   name: 'Layout',
@@ -60,7 +63,8 @@ export default {
     Page,
     Sidebar,
     Navbar,
-    Tool
+    Tool,
+    Loading
   },
 
   // data () {
@@ -117,6 +121,13 @@ export default {
       ]
     }
   },
+  created() {
+    const loading = new Vue({
+      render: h => h(Loading)
+    });
+
+    new loading().$mount("#app");
+  }
 
   // mounted () {
   //   this.$router.afterEach(() => {

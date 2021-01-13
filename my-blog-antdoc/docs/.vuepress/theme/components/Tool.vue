@@ -14,3 +14,14 @@ export default {
   }
 }
 </script>
+
+<style lang="less">
+  .tool-page {
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+    padding-top: 4.25rem;
+    position: relative;
+    overflow: hidden;
+  }
+</style>

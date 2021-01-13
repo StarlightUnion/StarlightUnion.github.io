@@ -120,7 +120,7 @@ export default {
       flex-direction: row;
       justify-content: center;
       flex-wrap: wrap;
-      margin: 1rem 0 1.5rem;
+      margin: 1rem 0;
       // border-botto: 1px solid #eaecef;
       box-sizing: border-box;
 

@@ -300,6 +300,13 @@ module.exports = {
     }]
   },
   plugins: [
+    [
+      '@vuepress/pwa',
+      {
+        serviceWorker: true,
+        updatePopup: true
+      }
+    ],
     ["@vuepress/active-header-links", {
       sidebarLinkSelector: ".sidebar-link",
       headerAnchorSelector: ".header-anchor"
