@@ -27,12 +27,12 @@ module.exports = {
       }, {
         text: "技术杂记",
         link: "/blog/other/"
-      }, {
-        text: "计算机基础",
-        link: "/blog/cb/"
-      }, {
-        text: "数据结构与算法",
-        link: "/blog/algorithm/"
+          // }, {
+          //   text: "计算机基础",
+          //   link: "/blog/cb/"
+          // }, {
+          //   text: "数据结构与算法",
+          //   link: "/blog/algorithm/"
       }]
     }, {
       text: "LeetCode",
