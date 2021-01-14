@@ -2,6 +2,8 @@ import store from './store';
 import Antd from 'ant-design-vue';
 import './styles/index.less';
 
+import Loading from './my-pages/Loading';
+
 export default ({
   Vue,
   options,
@@ -10,4 +12,6 @@ export default ({
 }) => {
   Vue.mixin({ store })
   Vue.use(Antd)
+
+  Vue.component('Loading', Loading);
 }

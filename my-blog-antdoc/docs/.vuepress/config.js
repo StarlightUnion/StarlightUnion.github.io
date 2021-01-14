@@ -299,14 +299,12 @@ module.exports = {
       path: "/tools/excel-online.html"
     }]
   },
+  globalUIComponents: ["Loading"],
   plugins: [
-    [
-      '@vuepress/pwa',
-      {
-        serviceWorker: true,
-        updatePopup: true
-      }
-    ],
+    ["@vuepress/pwa",{
+      serviceWorker: true,
+      updatePopup: true
+    }],
     ["@vuepress/active-header-links", {
       sidebarLinkSelector: ".sidebar-link",
       headerAnchorSelector: ".header-anchor"

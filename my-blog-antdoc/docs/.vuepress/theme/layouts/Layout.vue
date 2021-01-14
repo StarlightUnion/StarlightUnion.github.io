@@ -44,7 +44,7 @@
 </template>
 
 <script>
-import Vue from "vue";
+import Vue from 'vue';
 
 import Home from '@theme/components/Home.vue'
 import Navbar from '@theme/components/Navbar.vue'
@@ -121,19 +121,18 @@ export default {
       ]
     }
   },
-  created() {
-    const loading = new Vue({
-      render: h => h(Loading)
-    });
+  beforeCreated(){
+    /** 手动挂载loading 淘汰 **/
+    // new Vue({
+    //   render: h => h(Loading)
+    // }).$mount("#app");
 
-    new loading().$mount("#app");
+    this.$store.dispatch('show');
+  },
+  mounted () {
+    this.$store.dispatch('hide');
+    this.$message.info('加载完成');
   }
-
-  // mounted () {
-  //   this.$router.afterEach(() => {
-  //     this.isSidebarOpen = false
-  //   })
-  // },
 
   // methods: {
     // toggleSidebar (to) {

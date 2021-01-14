@@ -13,10 +13,7 @@ export default {
   },
   methods: {
     ShowTip () {
-      this.$Tip.show({
-        content: '点击成功！',
-        type: 'info'
-      });
+      this.$message.info("点击成功");
     }
   }
 }
