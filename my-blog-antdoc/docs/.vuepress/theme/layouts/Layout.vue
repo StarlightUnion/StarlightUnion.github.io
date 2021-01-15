@@ -122,11 +122,6 @@ export default {
     }
   },
   beforeCreated(){
-    /** 手动挂载loading 淘汰 **/
-    // new Vue({
-    //   render: h => h(Loading)
-    // }).$mount("#app");
-
     this.$store.dispatch('show');
   },
   mounted () {

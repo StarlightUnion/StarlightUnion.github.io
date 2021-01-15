@@ -1,16 +1,25 @@
 <template>
   <div class="tool-page">
-    <ExcelOnline v-if="$page.frontmatter.toolType === 'excel-online'" />
+    <component v-if="dynamicComponent" :is="dynamicComponent"></component>
   </div>
 </template>
 
 <script>
-import ExcelOnline from "../my-pages/ExcelOnline";
-
 export default {
   name: "Tool",
-  components: {
-    ExcelOnline
+  data() {
+    return {
+      dynamicComponent: null
+    }
+  },
+  mounted() {
+    const toolType = this.$page.frontmatter.toolType;
+
+    if (toolType === "excel-online") {
+      import("../my-pages/ExcelOnline").then(moudle => {
+        this.dynamicComponent = moudle.default;
+      })
+    }
   }
 }
 </script>

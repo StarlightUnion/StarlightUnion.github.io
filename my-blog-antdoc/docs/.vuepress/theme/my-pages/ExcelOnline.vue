@@ -9,7 +9,7 @@
 import Spreadsheet from "x-data-spreadsheet";
 import zhCN from 'x-data-spreadsheet/src/locale/zh-cn';
 
-import { IsMobileEnv } from "../util/my-util";
+// import { IsMobileEnv } from "../util/my-util";
 
 export default {
   name: "ExcelOnline",
@@ -22,8 +22,8 @@ export default {
         showGrid: true,
         showContextmenu: true,
         view: {
-          height: () => document.documentElement.clientHeight,
-          width: () => document.documentElement.clientWidth
+          height: null,
+          width: null
         },
         row: {
           len: 100,

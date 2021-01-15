@@ -10,8 +10,8 @@ export default ({
   router,
   siteData,
 }) => {
-  Vue.mixin({ store })
-  Vue.use(Antd)
+  Vue.mixin({ store });
+  Vue.use(Antd);
 
   Vue.component('Loading', Loading);
 }

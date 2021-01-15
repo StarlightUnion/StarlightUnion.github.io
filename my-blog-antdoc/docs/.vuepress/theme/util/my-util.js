@@ -1,6 +1,6 @@
 // 判断是否手机浏览器
 export function IsMobileEnv() {
-  const ua = navigator.userAgent.toLowerCase();
+  const ua = window.navigator.userAgent.toLowerCase();
 
   return ua.match(/ipad/i) == "ipad" ||
     ua.match(/iphone os/i) == "iphone os" ||
