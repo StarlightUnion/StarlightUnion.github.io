@@ -1,7 +1,7 @@
 ---
 title: 在React中引入AntD的两种方法
 date: 2020/08/22 00:00:00
-tags: ["React.js", "AntD"]
+tags: ["React", "AntD"]
 ---
 
 # 在React中引入AntD的两种方法

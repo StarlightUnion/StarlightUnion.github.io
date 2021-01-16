@@ -6,16 +6,13 @@
   "background_color": "#2196f3",
   "description": "游客17846的个人主页",
   "theme_color": "white",
-  "icons": [
-    {
-      "src": "logo.png",
-      "sizes": "144x144",
-      "type": "image/png"
-    }
-  ],
-  "related_applications": [
-    {
-      "platform": "web"
-    }
-  ]
+  "icons": [{
+    "src": "logo_144.png",
+    "sizes": "144x144",
+    "type": "image/png"
+  }],
+  "related_applications": [{
+    "platform": "web",
+    "url": "https://tourist17846.cn"
+  }]
 }

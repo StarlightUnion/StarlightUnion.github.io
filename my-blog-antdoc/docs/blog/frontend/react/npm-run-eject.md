@@ -1,7 +1,7 @@
 ---
 title: npm run eject获取React配置
 date: 2020/09/05 00:00:00
-tags: ["React.js"]
+tags: ["React"]
 ---
 
 # npm run eject获取React配置

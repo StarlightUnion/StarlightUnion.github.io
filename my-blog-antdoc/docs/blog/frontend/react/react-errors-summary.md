@@ -1,7 +1,7 @@
 ---
 title: React开发环境中的错误和问题集合
 date: 2020/07/13 00:00:00
-tags: ["React.js"]
+tags: ["React"]
 ---
 
 # React开发环境中的错误和问题集合

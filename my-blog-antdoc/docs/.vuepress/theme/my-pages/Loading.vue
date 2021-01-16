@@ -23,6 +23,8 @@ export default {
 </script>
 
 <style lang="less">
+  @import "../styles/palette.less";
+
   #loading-mask {
     position: fixed;
     left: 0;
@@ -58,7 +60,7 @@ export default {
     height: 15px;
     position: absolute;
     display: block;
-    background-color: #1890ff;
+    background-color: @accentColor;
     border-radius: 100%;
     transform: scale(.75);
     transform-origin: 50% 50%;

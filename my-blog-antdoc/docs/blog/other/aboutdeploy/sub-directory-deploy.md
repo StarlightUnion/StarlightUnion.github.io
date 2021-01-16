@@ -1,7 +1,7 @@
 ---
 title: Nginx部署React项目至服务器二级目录实践
 date: 2020/10/28 22:15:59
-tags: ["Nginx", "React.js", "部署"]
+tags: ["杂记", "Nginx", "React", "部署"]
 ---
 
 # Nginx部署React项目至服务器二级目录实践

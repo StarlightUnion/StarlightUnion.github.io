@@ -1,7 +1,7 @@
 ---
 title: AntD Table组件滚动高度自适应问题
 date: 2020/09/13 22:19:00
-tags: ["AntD", "React.js"]
+tags: ["AntD", "React"]
 ---
 
 # AntD Table组件滚动高度自适应问题

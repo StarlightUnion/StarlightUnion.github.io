@@ -1,7 +1,7 @@
 ---
 title: npx create-react-app xxx创建项目报错的解决办法
 date: 2020/02/16 00:00:00
-tags: ["React.js"]
+tags: ["React"]
 ---
 
 # npx create-react-app xxx创建项目报错的解决办法

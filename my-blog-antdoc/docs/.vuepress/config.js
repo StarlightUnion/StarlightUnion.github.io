@@ -89,14 +89,15 @@ module.exports = {
           "/blog/frontend/web-apis/setinterval-and-settimeout"
         ]
       }, {
-        title: "Vue.js相关",
+        title: "Vue相关",
         children: [
+          "/blog/frontend/vue/x-data-spreadsheet-practice",
           "/blog/frontend/vue/vue-swipe",
           "/blog/frontend/vue/vue-port-config",
           "/blog/frontend/vue/vue-transition"
         ]
       }, {
-        title: "React.js相关",
+        title: "React相关",
         children: [
           "/blog/frontend/react/react-async-router-practice",
           "/blog/frontend/react/antd-table-scroll-y",
@@ -124,6 +125,7 @@ module.exports = {
       }, {
         title: "未分类文章",
         children: [
+          "/blog/frontend/other/swiper-loop-stop-on-last-slide",
           "/blog/frontend/other/use-echart-in-react-and-vue",
           "/blog/frontend/other/echart-basic-config",
           "/blog/frontend/other/bootstrap-select-reset-tip",
@@ -137,7 +139,8 @@ module.exports = {
       }, {
         title: "工具/环境相关",
         children: [
-          "/blog/other/devtool/wsl-config.html",
+          "/blog/other/devtool/telnet-netcat",
+          "/blog/other/devtool/wsl-config",
           "/blog/other/devtool/forked-repo-update-config",
           "/blog/other/devtool/terminal-command-completing",
           "/blog/other/devtool/gitlab-and-github",
@@ -161,14 +164,16 @@ module.exports = {
           "/blog/other/aboutdeploy/auto-deploy-nodejs",
           "/blog/other/aboutdeploy/nginx-deploy-for-centos",
           "/blog/other/aboutdeploy/nginx-error-summary-2",
-          "/blog/other/devtool/nginx-error-summary-1",
-          "/blog/other/devtool/nginx-deploy-summary",
-          "/blog/other/devtool/nginx-start",
-          "/blog/other/devtool/nginx-deploy-record"
+          "/blog/other/aboutdeploy/nginx-error-summary-1",
+          "/blog/other/aboutdeploy/nginx-deploy-summary",
+          "/blog/other/aboutdeploy/nginx-start",
+          "/blog/other/aboutdeploy/nginx-deploy-record"
         ]
       }, {
         title: "博客相关",
         children: [
+          "/blog/other/aboutblog/window-is-not-defined",
+          "/blog/other/aboutblog/vuepress-loading-mask",
           "/blog/other/aboutblog/vuepress-theme-antdocs",
           "/blog/other/aboutblog/modify-vuepress-theme",
           "/blog/other/aboutblog/vuepress-diy-plugin",
@@ -301,7 +306,7 @@ module.exports = {
   },
   globalUIComponents: ["Loading"],
   plugins: [
-    ["@vuepress/pwa",{
+    ["@vuepress/pwa", {
       serviceWorker: true,
       updatePopup: true
     }],

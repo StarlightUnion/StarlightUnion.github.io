@@ -1,7 +1,7 @@
 ---
 title: React路由组件按需异步加载实践
 date: 2020/11/11 00:00:00
-tags: ["React.js", "Router"]
+tags: ["React", "Router"]
 ---
 
 # React路由组件按需异步加载实践

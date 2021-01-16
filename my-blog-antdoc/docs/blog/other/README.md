@@ -36,13 +36,13 @@ tags: ["杂记", "导航"]
 
 ### Nginx部署相关
 
-<a href="/blog/other/devtool/nginx-deploy-record.html" target="_blank">Nginx部署笔记-Windows（1）</a>
+<a href="/blog/other/aboutdeploy/nginx-deploy-record.html" target="_blank">Nginx部署笔记-Windows（1）</a>
 
-<a href="/blog/other/devtool/nginx-start.html" target="_blank">Nginx部署笔记-Windows（2）开机自启动</a>
+<a href="/blog/other/aboutdeploy/nginx-start.html" target="_blank">Nginx部署笔记-Windows（2）开机自启动</a>
 
-<a href="/blog/other/devtool/nginx-deploy-summary.html" target="_blank">Nginx部署笔记-常用配置总结</a>
+<a href="/blog/other/aboutdeploy/nginx-deploy-summary.html" target="_blank">Nginx部署笔记-常用配置总结</a>
 
-<a href="/blog/other/devtool/nginx-error-summary-1.html" target="_blank">Nginx部署笔记-常见错误总结（1）</a>
+<a href="/blog/other/aboutdeploy/nginx-error-summary-1.html" target="_blank">Nginx部署笔记-常见错误总结（1）</a>
 
 <a href="/blog/other/aboutdeploy/nginx-error-summary-2.html" target="_blank">Nginx部署笔记-常见错误总结（2）</a>
 
@@ -80,3 +80,6 @@ tags: ["杂记", "导航"]
 
 <a href="/blog/other/aboutblog/vuepress-theme-antdocs.html" target="_blank">使用和改造vuepress-theme-antdocs主题</a>
 
+<a href="/blog/other/aboutblog/vuepress-loading-mask.html" target="_blank">VuePress添加loading页</a> 🚧
+
+<a href="/blog/other/aboutblog/window-is-not-defined.html" target="_blank">ReferenceError: window is not defined</a> 🚧
