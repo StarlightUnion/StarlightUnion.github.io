@@ -1,7 +1,7 @@
 ---
 title: setInterval()和setTimeout()方法
 date: 2020/07/28 22:51:00
-tags: ["Window"]
+tags: ["Web APIs", "Window"]
 ---
 
 # setInterval()和setTimeout()方法

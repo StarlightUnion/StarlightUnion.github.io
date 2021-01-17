@@ -58,7 +58,7 @@ tags: ["前端技术", "导航"]
 
 <a href="/blog/frontend/web-apis/element-resize-observer.html" target="_blank">ResizeObserver监听元素的resize事件</a>
 
-<a href="/blog/frontend/web-apis/element-request-full-screen.html" target="_blank">Element.requestFullscreen实现元素全屏</a> 🚧
+<a href="/blog/frontend/web-apis/element-request-full-screen.html" target="_blank">Element.requestFullscreen实现元素全屏</a>
 
 ### React相关
 
