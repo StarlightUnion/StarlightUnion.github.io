@@ -243,19 +243,6 @@ module.exports = {
       }]
     },
     lastUpdated: "Last Updated",
-    ads: {
-      style: 2,
-      speed: 5000,
-      items: [{
-        text: "【腾讯云】11.11 云上盛惠，云产品限时抢购，1核2G云服务器首年88元",
-        image: "https://upload-dianshi-1255598498.file.myqcloud.com/%E6%B8%A0%E9%81%93%E6%97%A0%E8%81%8A%E6%8E%A8%E5%B9%BFA_345%20200-70f8a089f163f763ebbb88f84ec24ef586d917a8.jpg",
-        link: "https://curl.qcloud.com/eVoe5SEJ"
-      }, {
-        text: "【腾讯云】腾讯云数据库性能卓越稳定可靠，为您解决数据库运维难题",
-        image: "https://upload-dianshi-1255598498.file.myqcloud.com/%E5%85%A5%E9%97%A8%E4%BA%91%E6%95%B0%E6%8D%AE%E5%BA%93MYSQL-345x200-a68c566987f9bf687433e2cf4fbdc85ece6e2d93.jpg",
-        link: "https://curl.qcloud.com/WOgU8Xb2"
-      }]
-    },
     homePageDisplayCount: 8, // 首页展示博文数量
     // tagColorHexs: ["#ff5500", "#2db7f5", "#87d068", "#108ee9", "#eb2f96", "#fa8c16", "#13c2c2", "#1e90ff", "#722ed1"],// 标签颜色设置 16进制颜色
     tagColorHexs: ["pink", "red", "orange", "green", "cyan", "blue", "purple"], // 标签颜色设置 预设七色
@@ -306,10 +293,10 @@ module.exports = {
   },
   globalUIComponents: ["Loading"],
   plugins: [
-    ["@vuepress/pwa", {
-      serviceWorker: true,
-      updatePopup: true
-    }],
+    // ["@vuepress/pwa", {
+    //   serviceWorker: true,
+    //   updatePopup: true
+    // }],
     ["@vuepress/active-header-links", {
       sidebarLinkSelector: ".sidebar-link",
       headerAnchorSelector: ".header-anchor"

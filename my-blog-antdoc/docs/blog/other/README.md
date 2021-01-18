@@ -66,7 +66,7 @@ tags: ["杂记", "导航"]
 
 <a href="/blog/other/aboutdeploy/nginx-deploy-for-centos.html" target="_blank">Nginx部署笔记-CentOS</a>
 
-<a href="/blog/other/devtool/wsl-config.html" target="_blank">WSL（Ubuntu）使用小记</a> 🚧
+<a href="/blog/other/devtool/wsl-config.html" target="_blank">WSL-Ubuntu使用小记</a>
 
 ### VuePress相关
 
@@ -82,4 +82,5 @@ tags: ["杂记", "导航"]
 
 <a href="/blog/other/aboutblog/vuepress-loading-mask.html" target="_blank">VuePress添加loading页</a> 🚧
 
-<a href="/blog/other/aboutblog/window-is-not-defined.html" target="_blank">ReferenceError: window is not defined</a> 🚧
+<a href="/blog/other/aboutblog/window-is-not-defined.html" target="_blank">ReferenceError: window is not defined</a>
+

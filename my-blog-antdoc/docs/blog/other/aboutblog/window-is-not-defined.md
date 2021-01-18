@@ -10,5 +10,8 @@ tags: ["杂记", "VuePress", "VueSSR", "Blog"]
   <display-bar :displayData="$frontmatter"></display-bar>
 </ClientOnly>
 
-🚧 施工中...
+## 参考资料
 
+* 1.[VuePress window document is not defined](https://segmentfault.com/a/1190000022727986)
+
+🚧 施工中...
