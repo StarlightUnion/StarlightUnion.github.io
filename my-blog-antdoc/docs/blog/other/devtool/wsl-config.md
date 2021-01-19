@@ -10,13 +10,13 @@ tags: ["杂记", "WSL", "Linux", "Ubuntu"]
   <display-bar :displayData="$frontmatter"></display-bar>
 </ClientOnly>
 
-本文来折腾一下WSL。
+> 本文来折腾一下WSL。
+>
+> WSL即`Windows Subsystem for Linux`是**Windows10**的一个子系统，可以提供**近乎原生**的GNU/Linux环境。
+>
+> 与Linux相比，Windows对于开发人员来说还是不怎么友好的，仅前端开发环境配置而言，Windows还是稍显繁琐。
 
-WSL即`Windows Subsystem for Linux`是**Windows10**的一个子系统，可以提供**近乎原生**的GNU/Linux环境。
-
-与Linux相比，Windows对于开发人员来说还是不怎么友好的，仅前端开发环境配置而言，Windows还是稍显繁琐。
-
-好的，下面开始配置。
+开始折腾。
 
 ## 一、启用Windows功能
 

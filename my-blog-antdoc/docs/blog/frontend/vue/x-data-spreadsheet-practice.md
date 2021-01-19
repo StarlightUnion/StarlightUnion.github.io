@@ -95,15 +95,15 @@ export default {
 
 :::
 
-简直傻瓜式操作，实例化成功了。
+照着文档来简直傻瓜式操作，实例化成功了。
 
 ## 二、坑
 
-**但是**，来转折了，虽然实例化成功，问题随之而来。。
+来转折了，虽然实例化成功，但是问题随之而来。这告诉我们文档也不一定全对😂
 
-### 1.语言还是英文
+### 1.本地化之后语言还是英文
 
-按文档来:
+我们先按文档来:
 
 ```js
 // 引入中文包
@@ -113,13 +113,15 @@ import zhCN from 'x-data-spreadsheet/dist/locale/zh-cn';
 Spreadsheet.locale("zh-cn", zhCN);
 ```
 
-😮 最后百度大法发现，引这个包成功不了，需要用下面这个路径。。。
+**保存等待热更新完成之后发现还是英文。。**
+
+最后百度大法发现，引这个包成功不了，需要用下面这个路径。。。😮
 
 ```js
 import zhCN from 'x-data-spreadsheet/src/locale/zh-cn'
 ```
 
-### 2.表格默认为全屏
+### 2.表格宽高默认为浏览器窗口的宽高
 
 ![x-data-spreadsheet-01](/images/frontend/vue/x-data-spreadsheet-01.png)
 
