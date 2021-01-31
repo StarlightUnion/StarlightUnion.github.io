@@ -4,7 +4,8 @@ date: 2020/03/10 00:00:00
 tags: ["CSS", "HTML5", "标签"]
 ---
 
-# HTML5 Progress标签和纯CSS实现简单进度条
+# HTML5 progress标签和纯CSS实现简单进度条
+
 <ClientOnly>
   <display-bar :displayData="$frontmatter"></display-bar>
 </ClientOnly>

@@ -1,10 +1,10 @@
 ---
-title: 【CSS进阶】CSS变量
+title: 【CSS进阶】CSS变量相关
 date: 2020/11/28 00:00:00
 tags: ["CSS", "CSS进阶"]
 ---
 
-# 【CSS进阶】CSS变量
+# 【CSS进阶】CSS变量相关
 
 <ClientOnly>
   <display-bar :displayData="$frontmatter"></display-bar>

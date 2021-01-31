@@ -28,5 +28,7 @@ tags: ["随想", "主页"]
 
 <a href="/thoughts/outline-radius.html" target="_blank">2020-08-28 | 并不存在的outline-radius</a>
 
-<a href="/thoughts/object-oriented-programming.html" target="_blank">2020-10-24 | 面向对象编程初窥</a> 🚧 
+<a href="/thoughts/object-oriented-programming.html" target="_blank">2020-10-24 | 面向对象编程初窥</a> 🚧
+
+<a href="/thoughts/arctic-code-vault.html" target="_blank">2021-01-29 | 北极代码库计划（Arctic Code Vault）</a>
 

@@ -22,6 +22,12 @@ tags: ["前端技术", "导航"]
 
 :::
 
+### HTML进阶
+
+<a href="/blog/frontend/css&html/html-base-tag.html" target="_blank">【HTML进阶】base标签的使用技巧-为页面设置统一的资源地址</a>
+
+<a href="/blog/frontend/css&html/a-tag-download-image.html" target="_blank">【HTML进阶】点击a标签直接下载图片的实现</a> 🚧
+
 ### CSS进阶
 
 <a href="/blog/frontend/css&html/box-model-and-box-sizing.html" target="_blank">【CSS进阶】盒子模型与box-sizing属性</a>
@@ -34,7 +40,7 @@ tags: ["前端技术", "导航"]
 
 <a href="/blog/frontend/css&html/flex-and-grid.html" target="_blank">【CSS进阶】Flex和Grid布局</a> 🚧
 
-<a href="/blog/frontend/css&html/css-variable.html" target="_blank">【CSS进阶】CSS变量</a> 🚧
+<a href="/blog/frontend/css&html/css-variable.html" target="_blank">【CSS进阶】CSS变量相关</a> 🚧
 
 ### JavaScript方法
 

@@ -1,10 +1,11 @@
 ---
-title: HTML Base标签的使用技巧-为页面设置统一的资源地址
+title: 【HTML进阶】base标签的使用技巧-为页面设置统一的资源地址
 date: 2020/03/31 00:00:00
-tags: ["HTML", "标签"]
+tags: ["HTML", "HTML进阶", "标签"]
 ---
 
-# HTML Base标签的使用技巧-为页面设置统一的资源地址
+# 【HTML进阶】base标签的使用技巧-为页面设置统一的资源地址
+
 <ClientOnly>
   <display-bar :displayData="$frontmatter"></display-bar>
 </ClientOnly>
