@@ -121,7 +121,7 @@ export default {
       ]
     }
   },
-  beforeCreated(){
+  beforeCreated (){
     this.$store.dispatch('show');
   },
   mounted () {

@@ -25,6 +25,10 @@ export default {
     getMsg () {
       return msgs[Math.floor(Math.random() * msgs.length)]
     }
+  },
+  mounted () {
+    this.$store.dispatch('hide');
+    this.$message.error('此页不存在');
   }
 }
 </script>
