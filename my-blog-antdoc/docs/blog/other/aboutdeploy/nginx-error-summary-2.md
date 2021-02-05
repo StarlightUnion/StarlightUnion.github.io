@@ -22,7 +22,7 @@ tags: ["杂记", "Nginx", "Windows", "Summary"]
 
 一个典型的`Nginx`包目录结构如下：👇
 
-![nginx-project-content](/images/other/nginx-deploy-02.png)
+![nginx-project-content](/images/other/aboutdeploy/nginx-deploy-02.png)
 
 ## 二、处理`HTTP 304 Not Modified`问题
 

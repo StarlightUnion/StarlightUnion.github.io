@@ -20,11 +20,11 @@ tags: ["杂记", "端口"]
 
 `telnet 192.168.1.100 8888`
 
-![telnet-netcat-03](/images/other/devtool/telnet-netcat-03.png)
+![telnet-netcat-03](/images/other/systemenv/telnet-netcat-03.png)
 
 ### 若连接失败
 
-![telnet-netcat-03](/images/other/devtool/telnet-netcat-04.png)
+![telnet-netcat-03](/images/other/systemenv/telnet-netcat-04.png)
 
 ### 连接成功
 
@@ -38,11 +38,11 @@ tags: ["杂记", "端口"]
 
 * 1.搜索「windows功能」或在「控制面板」中找到「启用或关闭Windows功能」；
 
-  ![telnet-netcat-02](/images/other/devtool/telnet-netcat-02.png)
+  ![telnet-netcat-02](/images/other/systemenv/telnet-netcat-02.png)
 
 * 2.在弹出窗口中勾选「Telnet Client」，点击确定即可。
 
-  ![telnet-netcat-01](/images/other/devtool/telnet-netcat-01.png)
+  ![telnet-netcat-01](/images/other/systemenv/telnet-netcat-01.png)
 
 :::
 

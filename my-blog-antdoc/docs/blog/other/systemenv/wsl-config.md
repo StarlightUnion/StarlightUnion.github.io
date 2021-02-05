@@ -24,7 +24,7 @@ tags: ["杂记", "WSL", "Linux", "Ubuntu"]
 
 * 在下面的弹窗中**勾选**「适用于Linux的Windows子系统」。
 
-  ![wsl-01](/images/other/devtool/wsl-01.png)
+  ![wsl-01](/images/other/systemenv/wsl-01.png)
 
 * 点击「确定」，**这需要一些时间来配置功能**。
 
@@ -32,15 +32,15 @@ tags: ["杂记", "WSL", "Linux", "Ubuntu"]
 
 * 功能开启后，打开「应用商店」，搜索`linux`即出现以下结果（结果只表示当时，不代表将来），包括了多个Linux的发行版。这里我选择`Ubuntu`，直接下载即可。
 
-  ![wsl-02](/images/other/devtool/wsl-02.png)
+  ![wsl-02](/images/other/systemenv/wsl-02.png)
 
 * 下载完成并安装后就可以看到它了。
 
-  ![wsl-03](/images/other/devtool/wsl-03.png)
+  ![wsl-03](/images/other/systemenv/wsl-03.png)
 
 * 点击即可打开命令窗口。
 
-  ![wsl-08](/images/other/devtool/wsl-08.png)
+  ![wsl-08](/images/other/systemenv/wsl-08.png)
 
 ## 三、开发环境搭建
 
@@ -54,17 +54,17 @@ tags: ["杂记", "WSL", "Linux", "Ubuntu"]
 
 * 在`VSCode`中搜索插件「Remote-WSL」并安装。
 
-  ![wsl-05](/images/other/devtool/wsl-05.png)
+  ![wsl-05](/images/other/systemenv/wsl-05.png)
 
 * 此时左下角会出现一个**醒目**的蓝色标识（此时它会自动连接到安装的WSL），如下图👇
 
-  ![wsl-06](/images/other/devtool/wsl-06.png)
+  ![wsl-06](/images/other/systemenv/wsl-06.png)
 
 * 点击它打开一个新窗口，选择「打开文件夹」，就可以打开Linux子系统里面的项目代码并编辑了。
 
-  ![wsl-07](/images/other/devtool/wsl-07.png)
+  ![wsl-07](/images/other/systemenv/wsl-07.png)
 
-  ![wsl-09](/images/other/devtool/wsl-09.png)
+  ![wsl-09](/images/other/systemenv/wsl-09.png)
 
 ## 四、安装`node`环境
 
@@ -72,16 +72,16 @@ tags: ["杂记", "WSL", "Linux", "Ubuntu"]
 >
 > 不过也有个好消息，它是内置`git`的。😂
 >
-> ![wsl-04](/images/other/devtool/wsl-04.png)
+> ![wsl-04](/images/other/systemenv/wsl-04.png)
 
-安装`node`环境可参考[CentOS下配置Node.js和Nginx环境](/blog/other/devtool/nodejs-config-for-centos.html)，都是Linux，大差不差。。。
+安装`node`环境可参考[CentOS下配置Node.js和Nginx环境](/blog/other/systemenv/nodejs-config-for-centos)，都是Linux，大差不差。。。
 
 ::: danger ⚠️安装环境前必须切换root用户!!!
 
-* ![wsl-10](/images/other/devtool/wsl-10.png)
+* ![wsl-10](/images/other/systemenv/wsl-10.png)
 
 
-* ![wsl-11](/images/other/devtool/wsl-11.png)
+* ![wsl-11](/images/other/systemenv/wsl-11.png)
 
 ```shell
 sudo passwd root # 设置root新密码

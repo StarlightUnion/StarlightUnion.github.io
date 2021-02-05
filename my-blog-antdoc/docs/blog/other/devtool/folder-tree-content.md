@@ -12,7 +12,7 @@ tags: ["杂记", "Tree"]
 
 > 在看网络上的不管是文档也好，还是各位大佬的博客也好，会发现里面经常会出现**文件目录结构的树状示意图**。比如下面这个[vuepress的目录结构示意](https://www.vuepress.cn/guide/directory-structure.html)，这个肯定装了其他插件。那么怎么**自动**生成一个朴实无华，并且极致简洁~~😂~~的这种示意结构？
 
-![tree-content-01](/images/other/tree-content-01.png)
+![tree-content-01](/images/other/devtool/tree-content-01.png)
 
 ## 一、windows
 
@@ -26,13 +26,13 @@ tree > tree.txt # 将生成的目录树保存到tree.txt 下同
 tree /F > tree.txt
 ```
 
-![tree-content-02](/images/other/tree-content-02.png)
+![tree-content-02](/images/other/devtool/tree-content-02.png)
 
-![tree-content-03](/images/other/tree-content-03.png)
+![tree-content-03](/images/other/devtool/tree-content-03.png)
 
 ## 二、macOS
 
-需要安装一个插件，在**终端**中输入`brew install tree`，此操作需要安装`HomeBrew`，可[参考此文](/blog/other/devtool/homebrew)。
+需要安装一个插件，在**终端**中输入`brew install tree`，此操作需要安装`HomeBrew`，可[参考此文](/blog/other/systemenv/homebrew)。
 
 接下来就可以使用命令了，命令和上面的差不多。
 
@@ -42,5 +42,5 @@ tree -d # 显示该目录下所有子文件夹的目录树
 tree > tree.txt # 将生成的目录树保存到tree.txt
 ```
 
-![tree-content-04](/images/other/tree-content-04.png)
+![tree-content-04](/images/other/devtool/tree-content-04.png)
 

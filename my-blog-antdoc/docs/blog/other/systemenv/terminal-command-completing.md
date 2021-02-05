@@ -20,7 +20,7 @@ tags: ["杂记", "macOS", "terminal"]
 
 * 2.进入如下界面👇
 
-  ![terminal-command-completing-01](/images/other/devtool/terminal-completing-01.png)
+  ![terminal-command-completing-01](/images/other/systemenv/terminal-completing-01.png)
 
   输入：
 

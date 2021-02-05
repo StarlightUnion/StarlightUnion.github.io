@@ -13,7 +13,7 @@ tags: ["杂记", "Nginx", "Windows"]
 
 ## 一、获取Nginx
 
-![nginx](/images/other/nginx-deploy-01.png)
+![nginx](/images/other/aboutdeploy/nginx-deploy-01.png)
 
 可以从[官网](http://nginx.org/en/download.html)获取，上图中选择一个版本，下载后直接解压即可。
 
@@ -25,7 +25,7 @@ tags: ["杂记", "Nginx", "Windows"]
 
 :::
 
-![nginx](/images/other/nginx-deploy-02.png)
+![nginx](/images/other/aboutdeploy/nginx-deploy-02.png)
 
 如上图所示，这是一个典型的``nginx``的文件目录结构。
 
@@ -100,14 +100,14 @@ http {
 
 :::
 
-![nginx](/images/other/nginx-deploy-03.png)
+![nginx](/images/other/aboutdeploy/nginx-deploy-03.png)
 
 ## 四、Nginx常见错误
 
 ### 1.需使用管理员权限打开cmd
 
-![nginx](/images/other/nginx-deploy-04.png)
+![nginx](/images/other/aboutdeploy/nginx-deploy-04.png)
 
 ### 2.nginx -s reload需要在start nginx后使用
 
-![nginx](/images/other/nginx-deploy-05.png)
+![nginx](/images/other/aboutdeploy/nginx-deploy-05.png)

@@ -14,7 +14,7 @@ tags: ["杂记", "Nginx", "Windows", "Summary"]
 
 ## 一、端口被占用
 
-![nginx-error-summary-1-01](/images/other/nginx-error-summary-1-01.png)
+![nginx-error-summary-1-01](/images/other/aboutdeploy/nginx-error-summary-1-01.png)
 
 在部署时出现了上图这个错误，提示：`bind<> to 0.0.0.0:9091 failed <0013: An attempt was made to access a socket in a way forbidden by its access permission> `。
 
@@ -24,7 +24,7 @@ tags: ["杂记", "Nginx", "Windows", "Summary"]
 
 ## 二、自启动配置失败
 
-![nginx-error-summary-1-02](/images/other/nginx-error-summary-1-02.png)
+![nginx-error-summary-1-02](/images/other/aboutdeploy/nginx-error-summary-1-02.png)
 
 `install`的时候发现报错了，👆上图所示。
 
@@ -36,15 +36,15 @@ tags: ["杂记", "Nginx", "Windows", "Summary"]
 >
 > * 打开`IIS`，在最右边栏可以看到👇
 >
->   ![nginx-error-summary-1-03](/images/other/nginx-error-summary-1-03.png)
+>   ![nginx-error-summary-1-03](/images/other/aboutdeploy/nginx-error-summary-1-03.png)
 >
 > * 点击可以看到👇
 >
->   ![nginx-error-summary-1-04](/images/other/nginx-error-summary-1-04.png)
+>   ![nginx-error-summary-1-04](/images/other/aboutdeploy/nginx-error-summary-1-04.png)
 
-根据[Nginx部署笔记-Windows（2）开机自启动](/blog/other/aboutdeploy/nginx-start.html)一文：
+根据[Nginx部署笔记-Windows（2）开机自启动](/blog/other/aboutdeploy/nginx-start)一文：
 
-![nginx-error-summary-1-05](/images/other/nginx-error-summary-1-05.png)
+![nginx-error-summary-1-05](/images/other/aboutdeploy/nginx-error-summary-1-05.png)
 
 似乎问题已解决？
 

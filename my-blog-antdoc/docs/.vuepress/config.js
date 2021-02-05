@@ -138,23 +138,28 @@ module.exports = {
         title: "快速导航",
         path: "/blog/other/"
       }, {
-        title: "工具/环境相关",
+        title: "系统环境相关",
         children: [
-          "/blog/other/devtool/telnet-netcat",
-          "/blog/other/devtool/wsl-config",
+          "/blog/other/systemenv/telnet-netcat",
+          "/blog/other/systemenv/wsl-config",
+          "/blog/other/systemenv/terminal-command-completing",
+          "/blog/other/systemenv/global-variable-config-for-windows",
+          "/blog/other/systemenv/nodejs-config-for-centos",
+          "/blog/other/systemenv/homebrew"
+        ]
+      }, {
+        title: "开发工具相关",
+        children: [
+          "/blog/other/devtool/vscode-plugins",
           "/blog/other/devtool/forked-repo-update-config",
-          "/blog/other/devtool/terminal-command-completing",
           "/blog/other/devtool/gitlab-and-github",
           "/blog/other/devtool/gitlab-init",
-          "/blog/other/devtool/global-variable-config-for-windows",
-          "/blog/other/devtool/nodejs-config-for-centos",
           "/blog/other/devtool/folder-tree-content",
           "/blog/other/devtool/github-sshkey-config",
           "/blog/other/devtool/git-remove-dir",
           "/blog/other/devtool/webstorm-background",
           "/blog/other/devtool/webstorm-tfs-2",
-          "/blog/other/devtool/webstorm-tfs-1",
-          "/blog/other/devtool/homebrew"
+          "/blog/other/devtool/webstorm-tfs-1"
         ]
       }, {
         title: "部署相关",

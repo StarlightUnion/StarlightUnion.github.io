@@ -37,7 +37,7 @@ BREW_REPO = "git://mirrors.ustc.edu.cn/brew.git".freeze#修改后
 CORE_TAP_REPO = "git://mirrors.ustc.edu.cn/homebrew-core.git".freeze#新增
 ```
 
-![code](/images/other/other_01_1.png)
+![code](/images/other/systemenv/other_01_1.png)
 
 ## 2.开始安装
 

@@ -35,7 +35,7 @@ wget https://cdn.npm.taobao.org/dist/node/v14.3.0/node-v14.3.0-linux-x64.tar.xz
 
 ### 2.开始安装
 
-![centos-node-04](/images/other/devtool/centos-node-04.png)
+![centos-node-04](/images/other/systemenv/centos-node-04.png)
 
 下载完成后将存放在根目录下的`root`中（在没有进入其他目录的情况下）。
 
@@ -48,9 +48,9 @@ ls # 查看
 
 这个版本是**即下即用的**，但是此时`node`和`npm`只在目录下，全局中并没有，下面示例👇
 
-![centos-node-07](/images/other/devtool/centos-node-07.png)
+![centos-node-07](/images/other/systemenv/centos-node-07.png)
 
-![centos-node-02](/images/other/devtool/centos-node-02.png)
+![centos-node-02](/images/other/systemenv/centos-node-02.png)
 
 可以发现在全局中使用`node -v`是拿不到`node.js`的版本号的。
 
@@ -66,7 +66,7 @@ ls # 查看
 echo $PATH # 查看全局有哪些路径
 ```
 
-![centos-node-01](/images/other/devtool/centos-node-01.png)
+![centos-node-01](/images/other/systemenv/centos-node-01.png)
 
 ```shell
 # 将root目录中的node安装包中的node 链接到 全局路径/usr/bin/，下面的类似
@@ -76,7 +76,7 @@ ln -s /root/node-v14.3.0-linux-x64/bin/npm /usr/bin/npm
 ln -s /root/node-v14.3.0-linux-x64/bin/npx /usr/bin/npx
 ```
 
-![centos-node-03](/images/other/devtool/centos-node-03.png)
+![centos-node-03](/images/other/systemenv/centos-node-03.png)
 
 ```shell
 cd /usr/bin && ls # 进入/usr/bin 查看
@@ -85,15 +85,15 @@ npm -v
 npx -v
 ```
 
-![centos-node-05](/images/other/devtool/centos-node-05.png)
+![centos-node-05](/images/other/systemenv/centos-node-05.png)
 
-![centos-node-06](/images/other/devtool/centos-node-06.png)
+![centos-node-06](/images/other/systemenv/centos-node-06.png)
 
 ::: danger
 
 ⚠️软链接的路径必须为**绝对路径**（全路径），否则出现下面问题。。
 
-![centos-node-08](/images/other/devtool/centos-node-08.png)
+![centos-node-08](/images/other/systemenv/centos-node-08.png)
 
 这里建立软链接时没有使用**绝对路径**，对比上面成功的图可以发现，这个图里的`node`等都是**红色**的，并且输入`node -v`也不成功。。
 
@@ -118,7 +118,7 @@ rm -rf node-v14.3.0-linux-x64.tar.xz # 删除安装包
 wget -c https://nginx.org/download/nginx-1.16.1.tar.gz
 ```
 
-![centos-nginx-01](/images/other/devtool/centos-nginx-01.png)
+![centos-nginx-01](/images/other/systemenv/centos-nginx-01.png)
 
 ### 2.开始安装
 
@@ -131,7 +131,7 @@ make
 make install # 编译安装
 ```
 
-![centos-nginx-02](/images/other/devtool/centos-nginx-02.png)
+![centos-nginx-02](/images/other/systemenv/centos-nginx-02.png)
 
 ```shell
 whereis nginx # 查看nginx位置
@@ -144,11 +144,11 @@ nginx # 通过这一步和上一步可以发现全局中没有nginx
 ps aux|grep nginx # 查看nginx进程
 ```
 
-![centos-nginx-03](/images/other/devtool/centos-nginx-03.png)
+![centos-nginx-03](/images/other/systemenv/centos-nginx-03.png)
 
 `nginx`此时已开启，默认配置是`80`端口，此时打开浏览器输入服务器的外网地址，可以发现👇
 
-![centos-nginx-05](/images/other/devtool/centos-nginx-05.png)
+![centos-nginx-05](/images/other/systemenv/centos-nginx-05.png)
 
 ### 3.配置nginx的开机自启动
 

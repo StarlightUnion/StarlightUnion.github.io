@@ -46,7 +46,7 @@ tags: ["杂记", "导航"]
 
 <a href="/blog/other/aboutdeploy/nginx-error-summary-2.html" target="_blank">Nginx部署笔记-常见错误总结（2）</a>
 
-<a href="/blog/other/devtool/nodejs-config-for-centos.html" target="_blank">CentOS下配置Node.js和Nginx环境</a>
+<a href="/blog/other/systemenv/nodejs-config-for-centos.html" target="_blank">CentOS下配置Node.js和Nginx环境</a>
 
 <a href="/blog/other/aboutdeploy/nginx-deploy-for-centos.html" target="_blank">Nginx部署笔记-CentOS</a>
 
@@ -62,11 +62,11 @@ tags: ["杂记", "导航"]
 
 ### Linux相关
 
-<a href="/blog/other/devtool/nodejs-config-for-centos.html" target="_blank">CentOS下配置Node.js和Nginx环境</a>
+<a href="/blog/other/systemenv/nodejs-config-for-centos.html" target="_blank">CentOS下配置Node.js和Nginx环境</a>
 
 <a href="/blog/other/aboutdeploy/nginx-deploy-for-centos.html" target="_blank">Nginx部署笔记-CentOS</a>
 
-<a href="/blog/other/devtool/wsl-config.html" target="_blank">WSL-Ubuntu使用小记</a>
+<a href="/blog/other/systemenv/wsl-config.html" target="_blank">WSL-Ubuntu使用小记</a>
 
 ### VuePress相关
 

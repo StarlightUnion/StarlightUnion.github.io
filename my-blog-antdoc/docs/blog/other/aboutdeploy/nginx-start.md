@@ -39,7 +39,7 @@ tags: ["杂记", "Nginx", "Windows"]
 
 **安装：**
 
-![nginx](/images/other/nginx-start-01.png)
+![nginx](/images/other/aboutdeploy/nginx-start-01.png)
 
 打开`cmd`进入到`nginx`根目录，输入`start-nginx.exe install`。
 
@@ -49,7 +49,7 @@ tags: ["杂记", "Nginx", "Windows"]
 
 :::
 
-![nginx](/images/other/nginx-start-03.jpg)
+![nginx](/images/other/aboutdeploy/nginx-start-03.jpg)
 
 安装后`nginx`根目录下会生成上图所示的多个文件，但是此时**服务并未启动！！！**
 
@@ -57,10 +57,10 @@ tags: ["杂记", "Nginx", "Windows"]
 
 * 1.打开**任务管理器**，选择最后一栏**服务**，找到在`start-nginx.xml`中设置的`name`对应的服务，右键选择`开始`。
 
-![nginx](/images/other/nginx-start-02.png)
+![nginx](/images/other/aboutdeploy/nginx-start-02.png)
 
 * 2.再次点击右键，选择`打开服务`，跟上面一样找到服务，**查看启动类型**是否为`自动`，右键选择`属性`可以设置`启动类型`。
 
-![nginx](/images/other/nginx-start-04.png)
+![nginx](/images/other/aboutdeploy/nginx-start-04.png)
 
-![nginx](/images/other/nginx-start-05.png)
+![nginx](/images/other/aboutdeploy/nginx-start-05.png)

@@ -9,7 +9,7 @@ tags: ["杂记", "Git", "GitHub"]
   <display-bar :displayData="$frontmatter"></display-bar>
 </ClientOnly>
 
-![git_ssh_key](/images/other/git_ssh_key_01.png)
+![git_ssh_key](/images/other/devtool/git_ssh_key_01.png)
 
 > 最近在搞博客的事情，发现部署时会出现如上图所示的错误，主要是这句：``git@github.com: Permission denied (publickey)``，提示**没有权限**，push失败，之前一直是拿GitHub客户端上下代码的，这回打命令用git居然失败了。结果一番研究~~百度~~，发现和``SSH Key``有关，下面是我**解决这个问题的经过**，在此记录下来。↓
 
@@ -35,7 +35,7 @@ tags: ["杂记", "Git", "GitHub"]
 
 :::
 
-![git_ssh_key](/images/other/git_ssh_key_07.png)
+![git_ssh_key](/images/other/devtool/git_ssh_key_07.png)
 
 **macOS：** ``访达 -> 前往 -> 个人 -> .ssh``（.ssh文件夹一般是隐藏的，**显示隐藏文件夹**可用**快捷键**``shift + command + .``）
 
@@ -61,9 +61,9 @@ tags: ["杂记", "Git", "GitHub"]
 
 :::
 
-![git_ssh_key](/images/other/git_ssh_key_02.png)➡️![git_ssh_key](/images/other/git_ssh_key_03.png)
+![git_ssh_key](/images/other/devtool/git_ssh_key_02.png)➡️![git_ssh_key](/images/other/devtool/git_ssh_key_03.png)
 
-![git_ssh_key](/images/other/git_ssh_key_08.png)
+![git_ssh_key](/images/other/devtool/git_ssh_key_08.png)
 
 ```shell
 -> vim ~/.ssh/id_rsa.pub
@@ -71,7 +71,7 @@ tags: ["杂记", "Git", "GitHub"]
 
 添加key，title任意填，key就不行了，使用上面的命令打开后，将**完整的key**，就是**从``ssh-rsa一直``到邮箱**，都复制到里面去，保存即可。完成后的截图⬇️。
 
-![git_ssh_key](/images/other/git_ssh_key_04.png)
+![git_ssh_key](/images/other/devtool/git_ssh_key_04.png)
 
 ### 2.SSH Key 和 Deploy Key
 
