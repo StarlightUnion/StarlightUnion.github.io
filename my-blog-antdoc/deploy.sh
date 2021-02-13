@@ -13,5 +13,6 @@ git commit -m 'deploy'
 
 # 如果发布到 https://<USERNAME>.github.io/<REPO>
 git push -f git@github.com:StarlightUnion/StarlightUnion.github.io.git master
+git push -f git@gitee.com:StarlightUnion/starlightunion.git master
 
 cd -
