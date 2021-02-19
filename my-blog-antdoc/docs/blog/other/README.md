@@ -56,6 +56,8 @@ tags: ["杂记", "导航"]
 
 <a href="/blog/other/aboutdeploy/sub-directory-deploy.html" target="_blank">Nginx部署React项目至服务器二级目录实践</a>
 
+<a href="/blog/other/aboutdeploy/sub-domain-deploy.html" target="_blank">Nginx二级域名部署实践</a>
+
 ### 自动化部署
 
 <a href="/blog/other/aboutdeploy/auto-deploy-nodejs.html" target="_blank">Node.js + GitHub Webhooks实现自动化部署</a>

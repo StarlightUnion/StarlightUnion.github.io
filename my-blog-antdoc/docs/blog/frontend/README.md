@@ -80,6 +80,10 @@ tags: ["前端技术", "导航"]
 
 <a href="/blog/frontend/react/react-async-router-practice.html" target="_blank">React路由组件按需异步加载实践</a>
 
+<a href="/blog/frontend/react/setstate-and-useeffect.html" target="_blank">setState and useEffect</a> 🚧
+
+<a href="/blog/frontend/react/use-react-redux-hooks.html" target="_blank">如何使用React-Redux Hooks？</a> 🚧
+
 ### 浏览器相关
 
 <a href="/blog/frontend/browser/304-and-web-cache.html" target="_blank">304状态码和浏览器缓存</a> 🚧

@@ -32,3 +32,5 @@ tags: ["随想", "主页"]
 
 <a href="/thoughts/arctic-code-vault.html" target="_blank">2021-01-29 | 北极代码库计划（Arctic Code Vault）</a>
 
+<a href="/thoughts/transfer-blog-code-from-github-to-gitee.html" target="_blank">2021-02-13 | 将博客仓库从Github迁移到Gitee</a>
+

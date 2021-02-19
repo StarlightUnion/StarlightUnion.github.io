@@ -67,12 +67,11 @@ function exitFullscreen() {
 }
 
 //  检查当前是否全屏状态
-function checkFull() {
-    let isFull = window.fullScreen || document.webkitIsFullScreen || document.msFullscreenEnabled;
-
-    if (isFull === undefined) isFull = false;
-
-    return isFull;
+function isFullScreen() {
+    return window.fullScreen ||
+      document.webkitIsFullScreen ||
+      document.msFullscreenEnabled ||
+      false;
 }
 ```
 
