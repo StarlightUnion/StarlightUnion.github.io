@@ -43,9 +43,9 @@ module.exports = {
         // }, {
         //   text: "记录",
         //   link: "/record/"
-    }, {
-      text: "爱好",
-      link: "/life&hobby/"
+        // }, {
+        //   text: "爱好",
+        //   link: "/life&hobby/"
     }],
     // sidebar: "auto",
     sidebar: {
