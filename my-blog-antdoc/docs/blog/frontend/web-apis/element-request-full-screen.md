@@ -66,11 +66,21 @@ function exitFullscreen() {
     }
 }
 
-//  检查当前是否全屏状态
+// 获取当前全屏的元素
+function fullScreenElement() {
+    return document.fullscreenElement ||
+      document.webkitFullscreenElement ||
+      document.msFullscreenElement ||
+      document.mozFullScreenElement ||
+      null;
+}
+
+// 检查当前是否全屏状态
 function isFullScreen() {
     return window.fullScreen ||
       document.webkitIsFullScreen ||
       document.msFullscreenEnabled ||
+      fullScreenElement() ||
       false;
 }
 ```
