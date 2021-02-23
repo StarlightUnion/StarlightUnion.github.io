@@ -13,7 +13,7 @@ tags: ["杂记", "Nginx", "Windows"]
 
 在Windows下实现自启动需要借助一个开源程序[winsw](https://github.com/winsw/winsw/releases)。
 
-**版本选择：**
+## 一、版本选择：
 
 ::: warning
 
@@ -21,6 +21,8 @@ tags: ["杂记", "Nginx", "Windows"]
 * `.NET Framework4.0` 选择`WinSW.NET4.exe`
 
 :::
+
+## 二、配置文件
 
 将这个`exe`放到`nginx`根目录下，将其名字改为`start-nginx.exe`，**当然名字是自定义的**。再新建一个`txt`文件，将名字改为`start-nginx.xml`，**扩展名前面的名字部分要保持一致**。在`start-nginx.xml`里面添加如下代码：
 
@@ -37,7 +39,7 @@ tags: ["杂记", "Nginx", "Windows"]
 </service>
 ```
 
-**安装：**
+## 三、安装
 
 ![nginx](/images/other/aboutdeploy/nginx-start-01.png)
 
@@ -53,6 +55,8 @@ tags: ["杂记", "Nginx", "Windows"]
 
 安装后`nginx`根目录下会生成上图所示的多个文件，但是此时**服务并未启动！！！**
 
+## 四、开启自启动
+
 **要设置成开机自启动，仍需要两步骤：**
 
 * 1.打开**任务管理器**，选择最后一栏**服务**，找到在`start-nginx.xml`中设置的`name`对应的服务，右键选择`开始`。
@@ -64,3 +68,16 @@ tags: ["杂记", "Nginx", "Windows"]
 ![nginx](/images/other/aboutdeploy/nginx-start-04.png)
 
 ![nginx](/images/other/aboutdeploy/nginx-start-05.png)
+
+## 五、常用命令
+
+| Command     | Description        |
+| ----------- | ------------------ |
+| `install`   | 安装服务           |
+| `uninstall` | 卸载服务           |
+| `start`     | 开启服务           |
+| `stop`      | 停止服务           |
+| `restart`   | 重启服务           |
+| `status`    | 检查当前服务的状态 |
+| `refresh`   | 刷新服务           |
+

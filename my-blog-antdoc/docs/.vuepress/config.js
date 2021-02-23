@@ -110,6 +110,11 @@ module.exports = {
           "/blog/frontend/react/react-install-error"
         ]
       }, {
+        title: "Webpack相关",
+        children: [
+          "/blog/frontend/webpack/devtool-source-map"
+        ]
+      }, {
         title: "小程序相关",
         children: [
           "/blog/frontend/miniprogram/miniprogram-summary-1"
