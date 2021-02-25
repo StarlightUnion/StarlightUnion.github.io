@@ -41,9 +41,6 @@ module.exports = {
       text: "随想",
       link: "/thoughts/"
         // }, {
-        //   text: "记录",
-        //   link: "/record/"
-        // }, {
         //   text: "爱好",
         //   link: "/life&hobby/"
     }],
@@ -232,15 +229,6 @@ module.exports = {
       //   title: "主页",
       //   path: "/thoughts/"
       // }],
-      "/record/": [{
-        title: "主页",
-        path: "/record/"
-      }, {
-        title: "记录",
-        children: [
-          "/record/daily-practicing"
-        ]
-      }],
       "/life&hobby/": [{
         title: "主页",
         path: "/life&hobby/"
