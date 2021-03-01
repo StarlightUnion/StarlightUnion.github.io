@@ -12,17 +12,15 @@ tags: ["随想"]
 
 ## 一、从`Github`拉取更新巨慢
 
-参考前文[Node.js + GitHub Webhooks实现自动化部署](/blog/other/aboutdeploy/auto-deploy-nodejs)，我的博客使用了**自动化部署**。
+&emsp;&emsp;参考前文[Node.js + GitHub Webhooks实现自动化部署](/blog/other/aboutdeploy/auto-deploy-nodejs)，我的博客使用了**自动化部署**。更新时，**只需要执行相关脚本（打包修改后的博客源码并提交到`Github`，服务器会从`Github`下载打包后的源码）。**
 
-更新时，**只需要执行相关脚本（打包修改后的博客源码并提交到`Github`，服务器会从`Github`下载打包后的源码）。**
-
-但是国内网络从`Github`**拉取和克隆**代码一直是不稳定的，我在更新过程中经常遇到因为网络原因（速度**xkb/s~1xkb/s**不等🙃 ）导致拉取更新超时，从而导致**更新失败**。。如下图👇 ，是一次更新失败的日志。
+&emsp;&emsp;但是国内网络从`Github`**拉取和克隆**代码一直是不稳定的，我在更新过程中经常遇到因为网络原因（速度**xkb/s~1xkb/s**不等🙃 ）导致拉取更新超时，从而导致**更新失败**。。如下图👇 ，是一次更新失败的日志。
 
 ![tbcfgtg-01](/images/thoughts/tbcfgtg-01.png)
 
 ## 二、迁移到`Gitee`
 
-`Gitee`（即码云）毕竟是国内版的`Github`，体验过之后感觉还不错，就是用惯了`Github`，它的操作习惯和界面有些不适应。
+&emsp;&emsp;`Gitee`（即码云）毕竟是国内版的`Github`，体验过之后感觉还不错，就是用惯了`Github`，它的操作习惯和界面有些不适应。
 
 * 1.在`Gitee`上新建一个仓库用于保存博客打包后的源码，从`Github`导入代码。
 
@@ -46,5 +44,5 @@ tags: ["随想"]
 
 ## 三、要点
 
-推送到`Gitee`需要在本地配置`Gitee`的SSH Key，可参考[WindowsPC同时配置GitLab和GitHub](/blog/other/devtool/gitlab-and-github)。
+&emsp;&emsp;推送到`Gitee`需要在本地配置`Gitee`的SSH Key，可参考[WindowsPC同时配置GitLab和GitHub](/blog/other/devtool/gitlab-and-github)。
 
