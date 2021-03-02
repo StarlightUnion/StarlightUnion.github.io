@@ -52,6 +52,7 @@ module.exports = {
       }, {
         title: "JS/ES6/ES6+",
         children: [
+          "/blog/frontend/javascript/create-new-object",
           "/blog/frontend/javascript/import-and-require",
           "/blog/frontend/javascript/export-and-export-default",
           "/blog/frontend/javascript/array-filter",

@@ -1,10 +1,10 @@
 ---
-title: export、export default和import
+title: 【JavaScript进阶】export、export default和import
 date: 2020/08/07 00:00:00
-tags: ["ES6", "export", "import"]
+tags: ["JavaScript进阶", "ES6", "export", "import"]
 ---
 
-# export、export default和import
+# 【JavaScript进阶】export、export default和import
 
 <ClientOnly>
   <display-bar :displayData="$frontmatter"></display-bar>
@@ -18,7 +18,7 @@ tags: ["ES6", "export", "import"]
 
 本文研究一下`export`的问题，还有与之对应的`import`。
 
-## 一、ES6最重要特性之一
+## 一、ES6最重要特性
 
 `export`还有`import`是**ES6最重要的特性之二**。
 

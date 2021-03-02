@@ -42,21 +42,13 @@ tags: ["前端技术", "导航"]
 
 <a href="/blog/frontend/css&html/css-variable.html" target="_blank">【CSS进阶】CSS变量相关</a> 🚧
 
-### JavaScript方法
+### JavaScript进阶
 
-<a href="/blog/frontend/javascript/array-find-and-findindex.html" target="_blank">Array.find()和findIndex()方法</a>
+<a href="/blog/frontend/javascript/export-and-export-default.html" target="_blank">【JavaScript进阶】export、export default和import</a>
 
-<a href="/blog/frontend/javascript/array-some-and-every-and-includes.html" target="_blank">Array.some()、every()、includes()方法</a>
+<a href="/blog/frontend/javascript/import-and-require.html" target="_blank">【JavaScript进阶】import和require和JS模块化</a> 🚧
 
-<a href="/blog/frontend/javascript/array-sort.html" target="_blank">Array.prototype.sort()用法总结</a>
-
-<a href="/blog/frontend/javascript/array-filter.html" target="_blank">Array.prototype.filter()进阶笔记</a>
-
-### ES6
-
-<a href="/blog/frontend/javascript/export-and-export-default.html" target="_blank">export、export default和import</a>
-
-<a href="/blog/frontend/javascript/import-and-require.html" target="_blank">import和require和JS模块化</a> 🚧
+<a href="/blog/frontend/javascript/create-new-object.html" target="_blank">【JavaScript进阶】如何创建一个对象？</a> 🚧
 
 ### Web APIs
 
@@ -86,7 +78,7 @@ tags: ["前端技术", "导航"]
 
 ### Webpack相关
 
-<a href="/blog/frontend/webpack/devtool-source-map.html" target="_blank">【Webpack入门】devTool和SourceMap</a> 🚧
+<a href="/blog/frontend/webpack/devtool-source-map.html" target="_blank">【Webpack入门】devTool配置项和SourceMap</a> 🚧
 
 ### 浏览器相关
 
