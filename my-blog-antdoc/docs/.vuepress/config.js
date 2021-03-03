@@ -17,33 +17,39 @@ module.exports = {
     backToTop: true,
     algolia: true,
     nav: [{
-      text: "首页",
-      link: "/"
-    }, {
-      text: "博文",
-      items: [{
-        text: "前端技术",
-        link: "/blog/frontend/"
+        text: "首页",
+        link: "/"
       }, {
-        text: "技术杂记",
-        link: "/blog/other/"
+        text: "博文",
+        items: [{
+          text: "前端技术",
+          link: "/blog/frontend/"
+        }, {
+          text: "技术杂记",
+          link: "/blog/other/"
+        }, {
+          text: "源码阅读",
+          link: "/blog/sourcecode/"
+            // }, {
+            //   text: "计算机基础",
+            //   link: "/blog/cb/"
+            // }, {
+            //   text: "数据结构与算法",
+            //   link: "/blog/algorithm/"
+        }]
+      },
+      {
+        text: "LeetCode",
+        link: "/blog/leetcode/"
+      },
+      {
+        text: "随想",
+        link: "/thoughts/"
           // }, {
-          //   text: "计算机基础",
-          //   link: "/blog/cb/"
-          // }, {
-          //   text: "数据结构与算法",
-          //   link: "/blog/algorithm/"
-      }]
-    }, {
-      text: "LeetCode",
-      link: "/blog/leetcode/"
-    }, {
-      text: "随想",
-      link: "/thoughts/"
-        // }, {
-        //   text: "爱好",
-        //   link: "/life&hobby/"
-    }],
+          //   text: "爱好",
+          //   link: "/life&hobby/"
+      }
+    ],
     // sidebar: "auto",
     sidebar: {
       "/blog/frontend/": [{
@@ -192,6 +198,10 @@ module.exports = {
           "/blog/other/aboutblog/vuepress-plugin",
           "/blog/other/aboutblog/vuepress-build-blog"
         ]
+      }],
+      "/blog/sourcecode/": [{
+        title: "快速导航",
+        path: "/blog/sourcecode/"
       }],
       "/blog/leetcode/": [{
           title: "快速导航",
