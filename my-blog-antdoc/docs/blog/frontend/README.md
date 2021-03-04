@@ -46,7 +46,7 @@ tags: ["前端技术", "导航"]
 
 <a href="/blog/frontend/javascript/export-and-export-default.html" target="_blank">【JavaScript进阶】export、export default和import</a>
 
-<a href="/blog/frontend/javascript/import-and-require.html" target="_blank">【JavaScript进阶】import和require和JS模块化</a> 🚧
+<a href="/blog/frontend/javascript/import-and-require.html" target="_blank">【JavaScript进阶】从import和require到JS模块化</a> 🚧
 
 <a href="/blog/frontend/javascript/create-new-object.html" target="_blank">【JavaScript进阶】如何创建一个对象？</a> 🚧
 

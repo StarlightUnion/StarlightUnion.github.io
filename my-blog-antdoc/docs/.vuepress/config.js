@@ -27,9 +27,9 @@ module.exports = {
         }, {
           text: "技术杂记",
           link: "/blog/other/"
-        }, {
-          text: "源码阅读",
-          link: "/blog/sourcecode/"
+            // }, {
+            // text: "源码阅读",
+            // link: "/blog/sourcecode/"
             // }, {
             //   text: "计算机基础",
             //   link: "/blog/cb/"
