@@ -36,11 +36,52 @@ Node采用`CJS`规范，所以我们会发现`CJS`模块通常需要Node环境�
 
 ### 3.二者区别
 
+**如何简单区分二者**：👇
+
+* `CJS`：`require/exports`
+
+* `ESM`：`import/export`。
+
+****
+
+**在加载时**，`CJS`属于**运行时加载，理论上可以放在代码的任何地方**，`CJS`在加载时会加载模块内的所有的东西，使用其中的一种或几种。而`ESM`属于**编译时加载（静态加载），必须放在代码开头**，它可以在编译时就完成模块加载，速度比较快。
+
+## 二、`import/export`和`require/exports`的使用
+
+### 1.`import/export`
+
+```js
+// module
+export default func;
+export const func;
+export function func;
+export { func1, func2 };
+export * from "other_module_path";
+
+// main
+import func from "module";
+import { newFunc as func } from "module";
+import * as funcModule from "module";
+import { func } from "module";
+import module, { func } from "module";
+```
+
+### 2.`require/exports`
+
+```js
+// module
+module.exports = {
+  func: function() {}
+}
+
+// main
+const funcModule = require("module");// 全部引入
+funcModule.func()
+```
 
 
-## 二、`import`和`require`
 
-如何区分二者：ESM：`import/export`，CJS：`require/exports`。
+
 
 ## 参考资料
 
