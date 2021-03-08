@@ -79,14 +79,68 @@ const funcModule = require("module");// 全部引入
 funcModule.func()
 ```
 
+## 三、`ESM`和`CJS`模块的相互加载
 
+::: danger ⚠️注意
 
+值得注意的是，两种模块的相互加载需要在`Node`环境下，**因为`CJS`模块不能在浏览器中运行**。
 
+:::
 
-## 参考资料
+### 1.在`ESM`中引入`CJS`模块
 
-* 1.[JS中的「import」和「require」](https://www.jianshu.com/p/f1e54dde30c8)
-* 2.[前端科普系列-CommonJS：不是前端却革命了前端](https://zhuanlan.zhihu.com/p/113009496)
+`import`可以加载`CJS`模块，但是必须是整体加载，否则会报错。👇
+
+```js
+// module 为CJS模块
+import module from "module";// √
+import { func } from "module";// ×
+
+// 部分加载
+import module from "module";
+const { func } = module;
+```
+
+在`Node`环境中使用`import`加载`CJS`模块时，`Node`会将`CJS`模块的`module.exports`输出的结果作为**默认输出**。即`module.exports`等于`export dafult`。👇
+
+```js
+// CJS module
+module.exports = {
+  a: "a",
+  b: "b"
+}
+
+// main
+import module from "module";// module: {a: "a", b: "b"}
+import { default as module } from "module";// module: {a: "a", b: "b"}
+```
+
+### 2.在`CJS`中引入`ESM`模块
+
+```js
+// ESM module
+export default {
+  func() {
+    console.log("fun!")
+  }
+}
+
+// main
+const module = require("module");// ×
+// {default: {...}, ...}
+const module = require("module").default;// √
+```
+
+## 四、浏览器如何加载`CJS`
+
+上面一节的[ESM和CJS模块的相互加载](#三、esm和cjs模块的相互加载)实际上就是如何在`Node`环境加载`ESM`，那么浏览器环境下如何加载`CJS`？
+
+答案是**转格式**。。详见[参考资料[4]](#五、参考资料)。
+
+## 五、参考资料
+
+* 1.[前端科普系列-CommonJS：不是前端却革命了前端](https://zhuanlan.zhihu.com/p/113009496)
+* 2.[CommonJS模块与ES6模块相互加载](https://blog.csdn.net/qq_18547381/article/details/105679955)
 * 3.[Node.js 如何处理 ES6 模块 - 阮一峰的网络日志](http://www.ruanyifeng.com/blog/2020/08/how-nodejs-use-es6-module.html)
 * 4.[浏览器加载 CommonJS 模块的原理与实现 - 阮一峰的网络日志](http://www.ruanyifeng.com/blog/2015/05/commonjs-in-browser.html)
 

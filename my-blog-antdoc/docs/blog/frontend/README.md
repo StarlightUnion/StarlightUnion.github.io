@@ -38,7 +38,7 @@ tags: ["前端技术", "导航"]
 
 <a href="/blog/frontend/css&html/css-selector-2.html" target="_blank">【CSS进阶】选择器进阶笔记（2）伪类</a>
 
-<a href="/blog/frontend/css&html/flex-and-grid.html" target="_blank">【CSS进阶】Flex和Grid布局</a> 🚧
+<a href="/blog/frontend/css&html/flex-and-grid.html" target="_blank">【CSS进阶】Flex和Grid布局</a>
 
 <a href="/blog/frontend/css&html/css-variable.html" target="_blank">【CSS进阶】CSS变量相关</a> 🚧
 
@@ -46,7 +46,7 @@ tags: ["前端技术", "导航"]
 
 <a href="/blog/frontend/javascript/export-and-export-default.html" target="_blank">【JavaScript进阶】export、export default和import</a>
 
-<a href="/blog/frontend/javascript/import-and-require.html" target="_blank">【JavaScript进阶】从import和require到JS模块化</a> 🚧
+<a href="/blog/frontend/javascript/import-and-require.html" target="_blank">【JavaScript进阶】从import和require到JS模块化</a>
 
 <a href="/blog/frontend/javascript/create-new-object.html" target="_blank">【JavaScript进阶】如何创建一个对象？</a> 🚧
 
@@ -84,3 +84,4 @@ tags: ["前端技术", "导航"]
 
 <a href="/blog/frontend/browser/304-and-web-cache.html" target="_blank">304状态码和浏览器缓存</a> 🚧
 
+ 
