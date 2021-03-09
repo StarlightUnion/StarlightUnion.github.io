@@ -4,13 +4,11 @@
       <div class="home-recent">
         <h3>最近博文（近{{displayCount}}篇）：</h3>
         <a-timeline :pending="isPending">
-          <a-timeline-item color="green" v-for="(item, index) in pages" v-if="index==0">
-            <RecentArticle
-              :pageData="item"
-              :key="index"
-            />
-          </a-timeline-item>
-          <a-timeline-item v-else>
+          <a-timeline-item
+            :color="index == 0 ? 'green' : 'blue'"
+            v-for="(item, index) in pages"
+            :key="index"
+            >
             <RecentArticle
               :pageData="item"
               :key="index"
@@ -61,35 +59,25 @@ export default {
   },
   methods: {
     pagesDataHandle (datas) {
-      let res = [], _res = [];
-
-      if (datas && datas.length) {
-        datas.map(item => {
-          if (item.frontmatter && item.frontmatter.date) {
-            item.date = item.frontmatter.date;
-            item.tags = item.frontmatter.tags;
-
-            _res.push(item);
+      this.pageDatas = datas
+        .filter(item => item?.frontmatter?.date && item?.frontmatter?.tags?.length)
+        .map(item => {
+          return {
+            ...item,
+            ...{
+              date: item.frontmatter.date,
+              tags: item.frontmatter.tags
+            }
           }
-        });
-      }
+        })
+        .filter(item => !this.keyStringFilter(this.keyStrs, item.tags))
+        .sort((a, b) => new Date(b.date) - new Date(a.date));
 
-      _res = _res.filter(item => {
-        return !this.keyStringFilter(this.keyStrs, item.tags);
-      });
-
-      this.pageDatas = res = _res.sort((a, b) => {
-        return new Date(b.date) - new Date(a.date);
-      });
-
-      return res.filter((item, index) => index < this.displayCount);
+      return this.pageDatas.filter((item, index) => index < this.displayCount);
     },
-    // 关键词过滤
-    keyStringFilter (keystrs, strs, flag = false) {
-      strs.map(str => {
-        flag = flag || keystrs.includes(str);
-      })
-      return flag;
+    // 关键词过滤 判断是否包含关键词
+    keyStringFilter (keystrs, strs) {
+      return strs.reduce((acc, str) => acc || keystrs.includes(str), false);
     },
     // 加载更多
     loadMore() {
