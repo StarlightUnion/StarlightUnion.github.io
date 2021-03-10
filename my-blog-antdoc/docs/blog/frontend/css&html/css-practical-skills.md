@@ -14,9 +14,7 @@ tags: ["CSS", "技巧"]
 
 ```css
 /* 选中第 5 的倍数个子元素 */
-.parent > .child:nth-child(5n+5) {
-
-}
+.parent > .child:nth-child(5n+5) {}
 ```
 
 ## 2.子元素相对于父元素绝对定位
@@ -59,6 +57,16 @@ tags: ["CSS", "技巧"]
   ![css-practical-skills-01](/images/frontend/css/css-practical-skills-01.png)
 
   > 👉~~现在这段文字已经选不中了~~
+
+## 8.选中奇偶子元素
+
+```css
+/* 奇元素 */
+.parent > .child:nth-child(odd) {}
+
+/* 偶元素 */
+.parent > .child:nth-child(even) {}
+```
 
 
 

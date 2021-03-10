@@ -4,6 +4,7 @@
       <span
         class="footer-item"
         v-if="!item.link"
+        :key="index"
       >
         {{item.text}}
       </span>
@@ -12,11 +13,12 @@
         class="footer-item"
         :href="item.link"
         target="_blank"
+        :key="index"
         v-else
       >
         {{item.text}}
       </a>
-      <span class="split-colum">|</span>
+      <span class="split-colum" :key="index">|</span>
     </template>
   </div>
 </template>
