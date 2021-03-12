@@ -1,10 +1,9 @@
 <template>
   <div class="my-footer">
-    <template v-for="(item, index) in  footers">
+    <template v-for="item in footers">
       <span
         class="footer-item"
         v-if="!item.link"
-        :key="index"
       >
         {{item.text}}
       </span>
@@ -13,12 +12,11 @@
         class="footer-item"
         :href="item.link"
         target="_blank"
-        :key="index"
         v-else
       >
         {{item.text}}
       </a>
-      <span class="split-colum" :key="index">|</span>
+      <span class="split-colum">|</span>
     </template>
   </div>
 </template>

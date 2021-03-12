@@ -14,5 +14,5 @@ tags: ["JavaScript进阶", "Object"]
 
 ## 参考资料
 
-* 1.[Object.create() - JavaScript | MDN](https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Global_Objects/Object/create)
+* *1.[Object.create() - JavaScript | MDN](https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Global_Objects/Object/create)*
 

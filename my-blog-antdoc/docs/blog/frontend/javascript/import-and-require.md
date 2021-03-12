@@ -30,21 +30,65 @@ tags: ["import", "require", "CommonJS", "ES6"]
 
 Node采用`CJS`规范，所以我们会发现`CJS`模块通常需要Node环境的支持，换句话说，它需要服务器环境的支持。
 
+::: tip 要点
+
+* 1.`Node`支持`CJS`和`ESM`，参考[esm和cjs模块的相互加载](#三、esm和cjs模块的相互加载)。
+* 2.`CJS`**不能在浏览器中运行**，但可以将其转换成`ESM`后在浏览器中运行。
+
+:::
+
 ### 2.`ESM`
 
 `ESM`是ECMAScript标准的模块化标准，在**ES6**中被正式提出。在此之前的`CJS`标准应用场景是服务端环境，`ESM`则是用于**浏览器环境**。
 
+::: tip 要点
+
+* 1.`ESM`加载时属于**静态加载**，可以在加载时进行`Tree Shaking`，即**树摇**，去除**模块中引入了却未被使用的方法**，以减小打包后的代码体积，获得更快的加载速度。
+
+* 2.`ESM`可以直接在**现代浏览器**中运行。例👇：
+
+  ```html
+  <script type="module">
+      ...
+  </script>
+  ```
+
+:::
+
 ### 3.二者区别
 
-**如何简单区分二者**：👇
+* **如何简单区分二者**：👇
+  * `CJS`：`require/exports`
+  * `ESM`：`import/export`
 
-* `CJS`：`require/exports`
+* **加载时的区别：**
 
-* `ESM`：`import/export`。
+  `CJS`属于**运行时加载（动态加载），理论上可以放在代码的任何地方**，`CJS`在加载时会加载模块内的所有的东西，使用其中的一种或几种。而`ESM`属于**编译时加载（静态加载），必须放在代码顶部**，它可以在编译时就完成模块加载，速度比较快。
+
+::: danger 为何动态加载不能进行Tree Shaking，只有静态加载时可以？
+
+`CJS`属于运行时加载，可以在代码中的任何地方引入，如果有以下代码片段：
+
+```js
+if (flag) {
+    myModule = require("a_module_path");
+} else {
+    myModule = require("b_module_path");
+}
+```
+
+由于无法确定用到了哪个模块，所以无法进行`Tree Shaking`。
 
 ****
 
-**在加载时**，`CJS`属于**运行时加载，理论上可以放在代码的任何地方**，`CJS`在加载时会加载模块内的所有的东西，使用其中的一种或几种。而`ESM`属于**编译时加载（静态加载），必须放在代码开头**，它可以在编译时就完成模块加载，速度比较快。
+与`CJS`不同的是`ESM`中所有模块必须在代码顶部声明引入。
+
+```js
+import AModule from "a_module_path";
+import BModule from "b_module_path";
+```
+
+:::
 
 ## 二、`import/export`和`require/exports`的使用
 
@@ -139,8 +183,8 @@ const module = require("module").default;// √
 
 ## 五、参考资料
 
-* 1.[前端科普系列-CommonJS：不是前端却革命了前端](https://zhuanlan.zhihu.com/p/113009496)
-* 2.[CommonJS模块与ES6模块相互加载](https://blog.csdn.net/qq_18547381/article/details/105679955)
-* 3.[Node.js 如何处理 ES6 模块 - 阮一峰的网络日志](http://www.ruanyifeng.com/blog/2020/08/how-nodejs-use-es6-module.html)
-* 4.[浏览器加载 CommonJS 模块的原理与实现 - 阮一峰的网络日志](http://www.ruanyifeng.com/blog/2015/05/commonjs-in-browser.html)
+* *1.[前端科普系列-CommonJS：不是前端却革命了前端](https://zhuanlan.zhihu.com/p/113009496)*
+* *2.[CommonJS模块与ES6模块相互加载](https://blog.csdn.net/qq_18547381/article/details/105679955)*
+* *3.[Node.js 如何处理 ES6 模块 - 阮一峰的网络日志](http://www.ruanyifeng.com/blog/2020/08/how-nodejs-use-es6-module.html)*
+* *4.[浏览器加载 CommonJS 模块的原理与实现 - 阮一峰的网络日志](http://www.ruanyifeng.com/blog/2015/05/commonjs-in-browser.html)*
 

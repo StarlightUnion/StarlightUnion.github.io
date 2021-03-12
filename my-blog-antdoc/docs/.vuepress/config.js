@@ -75,8 +75,7 @@ module.exports = {
         title: "CSS/HTML",
         children: [
           "/blog/frontend/css&html/a-tag-download-image",
-          "/blog/frontend/css&html/css-variable",
-          "/blog/frontend/css&html/flex-and-grid",
+          "/blog/frontend/css&html/css-advance",
           "/blog/frontend/css&html/html-base-tag",
           "/blog/frontend/css&html/css-selector-2",
           "/blog/frontend/css&html/css-selector-1",
