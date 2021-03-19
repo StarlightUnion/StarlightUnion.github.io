@@ -4,11 +4,17 @@ heroImage: /cover_01.jpg
 footer: true
 footerColumn: 2
 footerWrap:
-- headline: 我的项目
+- headline: 我的开源项目
   items:
   - title: Maptalks
-    link: https://maptalks.tourist17846.cn
+    link: https://github.com/StarlightUnion/Maptalks
     details: 2D/3D在线地图React实践
+  - title: Tust-CLI
+    link: https://github.com/StarlightUnion/Tust-CLI
+    details: 脚手架DIY
+  - title: AutoUpdateServer
+    link: https://github.com/StarlightUnion/AutoUpdateServer
+    details: WebHooks同步Github更新服务
 - headline: 博客资源
   items:
   - title: VuePress

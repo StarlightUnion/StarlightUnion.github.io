@@ -70,7 +70,7 @@ tags: ["前端技术", "导航"]
 
 <a href="/blog/frontend/react/react-async-router-practice.html" target="_blank">React路由组件按需异步加载实践</a>
 
-<a href="/blog/frontend/react/setstate-and-useeffect.html" target="_blank">【React进阶】setState and useEffect</a> 🚧
+<a href="/blog/frontend/react/setstate-and-useeffect.html" target="_blank">【React进阶】在useEffect中使用setState</a> 🚧
 
 <a href="/blog/frontend/react/use-react-redux-hooks.html" target="_blank">【React进阶】如何使用React-Redux Hooks？</a> 🚧
 

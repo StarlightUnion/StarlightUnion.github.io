@@ -34,3 +34,4 @@ tags: ["随想", "主页"]
 
 <a href="/thoughts/transfer-blog-code-from-github-to-gitee.html" target="_blank">2021-02-13 | 将博客仓库从Github迁移到Gitee</a>
 
+<a href="/thoughts/leek-fund.html" target="_blank">2021-03-01 | 韭菜盒子-投资/韭菜/摸鱼神器</a>
