@@ -160,6 +160,7 @@ module.exports = {
       }, {
         title: "开发工具相关",
         children: [
+          "/blog/other/devtool/vscode-format-conflict",
           "/blog/other/devtool/vscode-plugins",
           "/blog/other/devtool/forked-repo-update-config",
           "/blog/other/devtool/gitlab-and-github",
