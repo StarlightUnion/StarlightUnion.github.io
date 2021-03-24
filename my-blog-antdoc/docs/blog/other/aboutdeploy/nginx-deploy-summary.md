@@ -90,3 +90,18 @@ http {
 }
 ```
 
+## 四、快捷访问
+
+假设当前访问`192.168.1.1`，直接跳转至`192.168.1.1/example/index.html`以实现快捷访问。
+
+使用配置：
+
+```nginx
+server {
+    location /{
+        index /example/index.html;
+        try_files $uri /$uri /example/$uri /example/index.html;
+    }
+}
+```
+
