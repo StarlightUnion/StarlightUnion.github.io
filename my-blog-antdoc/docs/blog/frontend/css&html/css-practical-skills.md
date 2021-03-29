@@ -44,11 +44,25 @@ tags: ["CSS", "技巧"]
 
 ## 6.超出部分文字显示省略号
 
+### 单行文本省略
+
 ```css
 .ellipsis {
-  overflow: hidden;      /*溢出隐藏*/
-  white-space: nowrap;	/*规定文本不进行换行*/
-  text-overflow: ellipsis;	/*当对象内文本溢出时显示省略标记（...）*/
+  overflow: hidden;      /* 溢出隐藏 */
+  white-space: nowrap;	/* 规定文本不进行换行 */
+  text-overflow: ellipsis;	/* 当对象内文本溢出时显示省略标记（...） */
+}
+```
+
+### 多行文本省略
+
+```css
+.multi-line-ellipsis {
+    overflow : hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 2; /* 指定两行 */
+    -webkit-box-orient: vertical;
 }
 ```
 
