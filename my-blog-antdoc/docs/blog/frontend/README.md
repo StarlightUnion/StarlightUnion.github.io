@@ -48,6 +48,8 @@ tags: ["前端技术", "导航"]
 
 <a href="/blog/frontend/javascript/create-new-object.html" target="_blank">【JavaScript进阶】如何创建一个对象？</a> 🚧
 
+<a href="/blog/frontend/javascript/switch-case-and-scope.html" target="_blank">【JavaScript进阶】Switch/Case和块级作用域</a> 🚧
+
 ### Web APIs
 
 <a href="/blog/frontend/web-apis/setinterval-and-settimeout.html" target="_blank">setInterval()和setTimeout()方法</a>
@@ -60,7 +62,7 @@ tags: ["前端技术", "导航"]
 
 <a href="/blog/frontend/react/react-install-error.html" target="_blank">npx create-react-app xxx创建项目报错的解决办法</a>
 
-<a href="/blog/frontend/react/react-errors-summary.html" target="_blank">React开发环境中的错误和问题集合</a> 📝
+<a href="/blog/frontend/react/react-errors-summary.html" target="_blank">React开发过程中遇到的错误和问题集合</a> 📝
 
 <a href="/blog/frontend/react/use-modularized-antd-in-react.html" target="_blank">在React中引入AntD的两种方法</a>
 

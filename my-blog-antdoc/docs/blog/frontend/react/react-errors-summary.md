@@ -1,10 +1,10 @@
 ---
-title: React开发环境中的错误和问题集合
+title: React开发过程中遇到的错误和问题集合
 date: 2020/07/13 00:00:00
 tags: ["React"]
 ---
 
-# React开发环境中的错误和问题集合
+# React开发过程中遇到的错误和问题集合
 
 <ClientOnly>
   <display-bar :displayData="$frontmatter"></display-bar>

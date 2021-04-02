@@ -2,10 +2,22 @@ module.exports = {
   title: "游客17846",
   description: "切图仔、CV/API工程师。",
   head: [
-    ["link", { rel: "icon", href: "/logo.ico" }],
-    ["link", { rel: "manifest", href: "/manifest.json" }],
-    ["link", { rel: "apple-touch-icon", href: "/logo.png" }],
-    ["link", { rel: "stylesheet", href: "/styles/iconfont.css" }]
+    ["link", {
+      rel: "icon",
+      href: "/logo.ico"
+    }],
+    ["link", {
+      rel: "manifest",
+      href: "/manifest.json"
+    }],
+    ["link", {
+      rel: "apple-touch-icon",
+      href: "/logo.png"
+    }],
+    ["link", {
+      rel: "stylesheet",
+      href: "/styles/iconfont.css"
+    }]
   ],
   serviceWorker: true,
   base: "/",
@@ -27,15 +39,15 @@ module.exports = {
         }, {
           text: "技术杂记",
           link: "/blog/other/"
-            // }, {
-            // text: "源码阅读",
-            // link: "/blog/sourcecode/"
-            // }, {
-            //   text: "计算机基础",
-            //   link: "/blog/cb/"
-            // }, {
-            //   text: "数据结构与算法",
-            //   link: "/blog/algorithm/"
+          // }, {
+          // text: "源码阅读",
+          // link: "/blog/sourcecode/"
+          // }, {
+          //   text: "计算机基础",
+          //   link: "/blog/cb/"
+          // }, {
+          //   text: "数据结构与算法",
+          //   link: "/blog/algorithm/"
         }]
       },
       {
@@ -45,9 +57,9 @@ module.exports = {
       {
         text: "随想",
         link: "/thoughts/"
-          // }, {
-          //   text: "爱好",
-          //   link: "/life&hobby/"
+        // }, {
+        //   text: "爱好",
+        //   link: "/life&hobby/"
       }
     ],
     // sidebar: "auto",
@@ -58,6 +70,7 @@ module.exports = {
       }, {
         title: "JS/ES6/ES6+",
         children: [
+          "/blog/frontend/javascript/switch-case-and-scope",
           "/blog/frontend/javascript/create-new-object",
           "/blog/frontend/javascript/import-and-require",
           "/blog/frontend/javascript/export-and-export-default",
