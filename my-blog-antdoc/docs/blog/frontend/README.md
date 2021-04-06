@@ -48,7 +48,7 @@ tags: ["前端技术", "导航"]
 
 <a href="/blog/frontend/javascript/create-new-object.html" target="_blank">【JavaScript进阶】如何创建一个对象？</a> 🚧
 
-<a href="/blog/frontend/javascript/switch-case-and-scope.html" target="_blank">【JavaScript进阶】Switch/Case和块级作用域</a> 🚧
+<a href="/blog/frontend/javascript/switch-case-and-scope.html" target="_blank">【JavaScript进阶】Switch/Case和块级作用域</a>
 
 ### Web APIs
 
@@ -83,3 +83,4 @@ tags: ["前端技术", "导航"]
 ### 浏览器相关
 
 <a href="/blog/frontend/browser/304-and-web-cache.html" target="_blank">304状态码和浏览器缓存</a> 🚧
+
