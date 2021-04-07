@@ -131,6 +131,11 @@ module.exports = {
           "/blog/frontend/webpack/devtool-source-map"
         ]
       }, {
+        title: "npm相关",
+        children: [
+          "/blog/frontend/npm/package-publish"
+        ]
+      }, {
         title: "小程序相关",
         children: [
           "/blog/frontend/miniprogram/miniprogram-summary-1"
@@ -278,7 +283,8 @@ module.exports = {
       text: "Hangzhou, China"
     }, {
       icon: "iconfont icon-185078emailmailstreamline",
-      text: "2387574095@qq.com"
+      text: "2387574095@qq.com",
+      isMail: true
     }],
     platformInfo: [{
       imgPath: "/images/site/github.jpeg",

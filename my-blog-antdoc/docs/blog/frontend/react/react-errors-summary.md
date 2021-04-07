@@ -126,5 +126,57 @@ componentDidMount() {
 
 不只有`less`，`sass`、`stylus`等也会这样。
 
+## 6.`React Hooks`中使用定时器
+
+在函数组件中使用定时器需要借助`useRef`实现。
+
+```js
+function Example() {
+  const timer = useRef(); // 创建实例对象
+
+  const setTimer = useCallback(() => {// 设置定时器
+    timer.current = setInterval(() => {
+      // do something
+    }, 6000);
+  }, []);
+
+  useEffect(() => {
+    setTimer();
+
+    return () => {// 组件卸载时清除定时器
+      clearInterval(timer.current);
+    };
+  }, [setTimer]);
+}
+```
+
+## 7.开发环境下图片地址不能正确访问
+
+给`<img>`标签的`src`属性添加的地址并不能正确访问到。
+
+![react-errors-10](/images/frontend/react/react-errors-10.png)
+
+![react-errors-11](/images/frontend/react/react-errors-11.png)
+
+需要使用`require`对图片地址进行处理。
+
+![react-errors-09](/images/frontend/react/react-errors-09.png)
+
+## 8.`onClick`事件在页面渲染时就执行
+
+使用：
+
+`onClick={ () => handleSomething() }`
+
+代替：
+
+`onClick={ handleSomething }`
+
+<br/>
+
+<br/>
+
+****
+
 🍗 有待补充...
 
