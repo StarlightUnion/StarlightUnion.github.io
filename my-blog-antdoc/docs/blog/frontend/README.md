@@ -44,7 +44,7 @@ tags: ["前端技术", "导航"]
 
 <a href="/blog/frontend/javascript/import-and-require.html" target="_blank">【JavaScript进阶】从import和require到JS模块化</a>
 
-<a href="/blog/frontend/javascript/create-new-object.html" target="_blank">【JavaScript进阶】如何创建一个对象？</a>
+<a href="/blog/frontend/javascript/create-new-object.html" target="_blank">【JavaScript进阶】创建对象的方法</a>
 
 <a href="/blog/frontend/javascript/switch-case-and-scope.html" target="_blank">【JavaScript进阶】Switch/Case和块级作用域</a>
 
