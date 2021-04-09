@@ -76,7 +76,9 @@ tags: ["前端技术", "导航"]
 
 ### Webpack相关
 
-<a href="/blog/frontend/webpack/devtool-source-map.html" target="_blank">【Webpack入门】devTool配置项和SourceMap</a> 🚧
+<a href="/blog/frontend/webpack/webpack-devserver.html" target="_blank">【Webpack入门】devServer配置项</a> 🚧
+
+<a href="/blog/frontend/webpack/devtool-source-map.html" target="_blank">【Webpack入门】devtool配置项和source map</a> 🚧
 
 ### npm相关
 

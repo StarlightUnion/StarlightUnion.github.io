@@ -36,7 +36,7 @@ tags: ["npm"]
 * 如果包的根目录下没有`.npmignore`文件，将使用`.gitignore`的配置作为**黑名单**。
 
 * `package.json`里面的`files`字段也可以设置发包时的文件目录，但是它是**白名单**。
-* 优先级：`files`（白名单） > `.gitignore`（黑名单） > `.npmignore`（黑名单）。
+* 优先级：`files`（白名单） > `.npmignore`（黑名单） > `.gitignore`（黑名单）。
 
 :::
 

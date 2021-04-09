@@ -128,6 +128,7 @@ module.exports = {
       }, {
         title: "Webpack相关",
         children: [
+          "/blog/frontend/webpack/webpack-devserver",
           "/blog/frontend/webpack/devtool-source-map"
         ]
       }, {
