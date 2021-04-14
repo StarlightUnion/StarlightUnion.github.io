@@ -17,13 +17,13 @@ tags: ["杂记", "WebStorm"]
 >由于忘记以前是怎么设置的，鼓捣了好久才实现原来的界面。**在这里做个记录，方便以后设置。**~~（完全傻瓜式操作流程）~~
 
 ## 1.进入设置：File -> Settings。
-![描述](/images/other/ws_bg_01.png)
+![描述](/images/other/devtool/ws_bg_01.png)
 
 ## 2.在Settings界面选择：Editor -> Color Scheme -> 选择主题类型
-![描述](/images/other/ws_bg_02.png)
+![描述](/images/other/devtool/ws_bg_02.png)
 
 >这里需要注意的是千万不要点击``OK``保存设置，否则整个界面都会是选中的那个主题，要点击``Apply``保存，此时会弹出下图的弹窗，此时选择``NO``即可，若选择Yes，整个界面也会变为那个主题。
 
-![描述](/images/other/ws_bg_03.png)
+![描述](/images/other/devtool/ws_bg_03.png)
 ## 3.设置完成后的界面如下
-![描述](/images/other/ws_bg_04.png)
+![描述](/images/other/devtool/ws_bg_04.png)
