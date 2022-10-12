@@ -7,8 +7,8 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "dev": "vuepress dev docs",
     "build": "vuepress build docs",
-    "deploy1": "sudo bash deploy.sh",
-    "deploy2": "bash deploy.sh"
+    "deploy:mac": "sudo bash deploy.sh",
+    "deploy:windows": "bash deploy.sh"
   },
   "keywords": [],
   "author": "",
