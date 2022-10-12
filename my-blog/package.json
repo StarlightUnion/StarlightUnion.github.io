@@ -27,7 +27,7 @@
     "@babel/runtime": "^7.11.2",
     "ant-design-vue": "^1.7.2",
     "core-js": "^3.6.5",
-    "moment": "^2.24.0",
+    "moment": "^2.29.4",
     "vuepress-plugin-helper-live2d": "^1.0.2"
   }
 }
