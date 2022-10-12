@@ -2,27 +2,20 @@
   <div class="my-home">
     <a-spin :spinning="isSpinning" class="home-recent-spin">
       <div class="home-recent">
-        <h3>最近博文（近{{displayCount}}篇）：</h3>
-        <a-timeline :pending="isPending">
-          <a-timeline-item
-            :color="index == 0 ? 'green' : 'blue'"
-            v-for="(item, index) in pages"
-            :key="index"
-            >
-            <RecentArticle
-              :pageData="item"
-              :key="index"
-            />
-          </a-timeline-item>
-        </a-timeline>
-        <a-button
-          class="load-more"
-          type="primary"
-          :disabled="isDisabled"
-          @click="loadMore"
-        >
-          {{btnTxt}}
-        </a-button>
+        <template v-for="(item, index) in pages">
+          <RecentArticle :pageData="item" :key="index" />
+        </template>
+        <div class="pagination">
+          <a-pagination
+              v-model="current"
+              show-size-changer
+              show-quick-jumper
+              :page-size.sync="pageSize"
+              :total="total"
+              @change="onChange"
+              @showSizeChange="onShowSizeChange"
+          />
+        </div>
       </div>
     </a-spin>
     <div class="home-person">
@@ -37,6 +30,7 @@ import RecentArticle from '../my-components/RecentArticle';
 import PersonInfo from '../my-components/PersonInfo';
 import ToolsInfo from '../my-components/ToolsInfo';
 import { message } from 'ant-design-vue';
+import { cloneDeep } from 'loadsh';
 
 export default {
   name: 'MyHome',
@@ -48,18 +42,22 @@ export default {
   data () {
     return {
       pages: [],
-      displayCount: 0,
       pageDatas: null,
-      isPending: false,
-      isSpinning: true,// 是否显示loading
-      isDisabled: false,
-      btnTxt: "加载更多(10条)",
-      count: 0// 点击次数
+      /** 是否显示loading */
+      isSpinning: true,
+      current: 1,
+      pageSize: 10,
+      total: 0
     }
   },
   methods: {
+    /**
+     * 处理
+     * @param datas
+     * @returns {*}
+     */
     pagesDataHandle (datas) {
-      this.pageDatas = datas
+      return datas
         .filter(item => item?.frontmatter?.date && item?.frontmatter?.tags?.length)
         .map(item => {
           return {
@@ -72,57 +70,58 @@ export default {
         })
         .filter(item => !this.keyStringFilter(this.keyStrs, item.tags))
         .sort((a, b) => new Date(b.date) - new Date(a.date));
-
-      return this.pageDatas.filter((item, index) => index < this.displayCount);
     },
-    // 关键词过滤 判断是否包含关键词
+    /**
+     * 关键词过滤 判断是否包含关键词
+     * @param keystrs
+     * @param strs
+     */
     keyStringFilter (keystrs, strs) {
       return strs.reduce((acc, str) => acc || keystrs.includes(str), false);
     },
-    // 加载更多
-    loadMore() {
-      const length = this.pageDatas.length;
-
-      if (Array.isArray(this.pageDatas) && this.pageDatas.length) {
-        this.isPending = true;
-        this.isSpinning = true;
-
-        if (this.displayCount + 10 >= length) {
-          this.displayCount = length;
-          this.pages = this.pageDatas;
-
-          // 禁用按钮
-          this.isDisabled = true;
-          this.btnTxt = "暂无更多";
-          message.info("博文已全部加载")
-        } else {
-          this.displayCount += 10;
-          this.pages = this.pageDatas.filter((item, index) => {
-            return index < this.displayCount;
-          });
-        }
-
-        this.isPending = false;
-        this.isSpinning = false;
-      }
-    },
+    /**
+     * 重置
+     */
     reset() {
       this.pages = [];
-      this.displayCount = 0;
+      this.pageSize = 0;
+      this.current = 1;
+      this.total = 0;
       this.pageDatas = null;
-      this.isPending = false;
-      this.isSpinning = true;// 正在加载
-      this.isDisabled = false;
-      this.btnTxt = "加载更多(10条)";
-      this.count = 0;
+      this.isSpinning = true;
+    },
+    /**
+     * 处理pageSize change
+     * @param current
+     * @param pageSize
+     */
+    onShowSizeChange(current, pageSize) {
+      this.isSpinning = true;
+      const _data = cloneDeep(this.pageDatas);
+      this.pages = _data.slice((current - 1) * pageSize, current * pageSize);
+      this.isSpinning = false;
+    },
+    /**
+     * 处理页码change
+     * @param current
+     * @param pageSize
+     */
+    onChange(current, pageSize) {
+      this.isSpinning = true;
+      const _data = cloneDeep(this.pageDatas);
+      this.pages = _data.slice((current - 1) * pageSize, current * pageSize);
+      this.isSpinning = false;
     }
   },
   mounted () {
     // 重置
     this.reset();
 
-    this.displayCount = this.$themeConfig.homePageDisplayCount;
-    this.pages = this.pagesDataHandle(this.$site.pages);
+    this.pageSize = this.$themeConfig.homePageDisplayCount;
+    this.pageDatas = this.pagesDataHandle(this.$site.pages);
+    this.total = this.pageDatas.length;
+    const _data = cloneDeep(this.pageDatas);
+    this.pages = _data.slice(0, 10);
 
     this.isSpinning = false;
   },
@@ -154,8 +153,11 @@ export default {
         padding-left: 0.5rem;
       }
 
-      .load-more {
-        margin: 1rem;
+      .pagination {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 0.5rem;
       }
     }
 

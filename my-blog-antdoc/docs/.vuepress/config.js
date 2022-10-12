@@ -1,5 +1,5 @@
 module.exports = {
-  title: "游客17846",
+  title: "个人技术的分享",
   description: "切图仔、CV/API工程师。",
   head: [
     ["link", {
@@ -46,7 +46,7 @@ module.exports = {
           //   text: "计算机基础",
           //   link: "/blog/cb/"
           // }, {
-          //   text: "数据结构与算法",
+            //   text: "数据结构与算法",
           //   link: "/blog/algorithm/"
         }]
       },
@@ -275,7 +275,7 @@ module.exports = {
       }]
     },
     lastUpdated: "Last Updated",
-    homePageDisplayCount: 8, // 首页展示博文数量
+    homePageDisplayCount: 10, // 首页展示博文数量
     // tagColorHexs: ["#ff5500", "#2db7f5", "#87d068", "#108ee9", "#eb2f96", "#fa8c16", "#13c2c2", "#1e90ff", "#722ed1"],// 标签颜色设置 16进制颜色
     tagColorHexs: ["pink", "red", "orange", "green", "cyan", "blue", "purple"], // 标签颜色设置 预设七色
     filterStrs: ["导航", "爱好", "记录", "影片", "主页", "LeetCode"],
@@ -291,18 +291,6 @@ module.exports = {
       imgPath: "/images/site/github.jpeg",
       title: "GitHub",
       link: "https://github.com/StarlightUnion"
-    }, {
-      imgPath: "/images/site/gitee.jpeg",
-      title: "Gitee",
-      link: "https://gitee.com/StarlightUnion"
-    }, {
-      imgPath: "/images/site/juejin.jpg",
-      title: "掘金",
-      link: "https://juejin.im/user/5ba792d2f265da0af7751bac"
-    }, {
-      imgPath: "/images/site/sf.png",
-      title: "思否",
-      link: "https://segmentfault.com/u/starlightunion"
     }, {
       imgPath: "images/site/steam.jpg",
       title: "steam",

@@ -1,51 +1,41 @@
 <template>
-  <div
-    class="theme-container"
-    :class="pageClasses"
-  >
-    <Navbar
-      v-if="shouldShowNavbar"
-    />
+  <a-config-provider :locale="locale">
+    <div class="theme-container" :class="pageClasses">
+      <Navbar v-if="shouldShowNavbar" />
 
-    <!-- <div
-      class="sidebar-mask"
-      @click="toggleSidebar(false)"
-    /> -->
+      <!-- <div
+        class="sidebar-mask"
+        @click="toggleSidebar(false)"
+      /> -->
 
-    <Sidebar
-      :items="sidebarItems"
-    >
-      <template #top>
-        <slot name="sidebar-top" />
-      </template>
-      <template #bottom>
-        <slot name="sidebar-bottom" />
-      </template>
-    </Sidebar>
+      <Sidebar :items="sidebarItems">
+        <template #top>
+          <slot name="sidebar-top" />
+        </template>
+        <template #bottom>
+          <slot name="sidebar-bottom" />
+        </template>
+      </Sidebar>
 
-    <Home v-if="$page.frontmatter.home" />
+      <Home v-if="$page.frontmatter.home" />
 
-    <Tool v-else-if="$page.frontmatter.tool" />
+      <Tool v-else-if="$page.frontmatter.tool" />
 
-    <Page
-      v-else
-      :sidebar-items="sidebarItems"
-    >
-      <template #top>
-        <slot name="page-top" />
-      </template>
-      <template #bottom>
-        <slot name="page-bottom" />
-      </template>
-    </Page>
+      <Page v-else :sidebar-items="sidebarItems">
+        <template #top>
+          <slot name="page-top" />
+        </template>
+        <template #bottom>
+          <slot name="page-bottom" />
+        </template>
+      </Page>
 
-    <a-back-top v-if="$themeConfig.backToTop" />
-  </div>
+      <a-back-top v-if="$themeConfig.backToTop" />
+    </div>
+  </a-config-provider>
 </template>
 
 <script>
-import Vue from 'vue';
-
 import Home from '@theme/components/Home.vue'
 import Navbar from '@theme/components/Navbar.vue'
 import Page from '@theme/components/Page.vue'
@@ -54,10 +44,10 @@ import { resolveSidebarItems } from '../util'
 
 import Tool from '@theme/components/Tool.vue'
 import Loading from '@theme/my-pages/Loading.vue'
+import zhCN from 'ant-design-vue/es/locale/zh_CN';
 
 export default {
   name: 'Layout',
-
   components: {
     Home,
     Page,
@@ -66,13 +56,12 @@ export default {
     Tool,
     Loading
   },
-
-  // data () {
-  //   return {
-  //     isSidebarOpen: false
-  //   }
-  // },
-
+  data () {
+    return {
+      locale: zhCN,
+      // isSidebarOpen: false
+    }
+  },
   computed: {
     shouldShowNavbar () {
       const { themeConfig } = this.$site
@@ -90,7 +79,6 @@ export default {
         || this.$themeLocaleConfig.nav
       )
     },
-
     shouldShowSidebar () {
       const { frontmatter } = this.$page
       return (
@@ -99,7 +87,6 @@ export default {
         && this.sidebarItems.length
       )
     },
-
     sidebarItems () {
       return resolveSidebarItems(
         this.$page,
@@ -108,7 +95,6 @@ export default {
         this.$localePath
       )
     },
-
     pageClasses () {
       const userPageClass = this.$page.frontmatter.pageClass
       return [
@@ -126,34 +112,31 @@ export default {
   },
   mounted () {
     this.$store.dispatch('hide');
-    this.$message.info('加载完成');
-  }
-
+    // this.$message.info('加载完成');
+  },
   // methods: {
-    // toggleSidebar (to) {
-    //   this.isSidebarOpen = typeof to === 'boolean' ? to : !this.isSidebarOpen
-    //   this.$emit('toggle-sidebar', this.isSidebarOpen)
-    // },
-
-    // side swipe
-    // onTouchStart (e) {
-      // this.touchStart = {
-      //   x: e.changedTouches[0].clientX,
-      //   y: e.changedTouches[0].clientY
-      // }
-    // },
-
-    // onTouchEnd (e) {
-      // const dx = e.changedTouches[0].clientX - this.touchStart.x
-      // const dy = e.changedTouches[0].clientY - this.touchStart.y
-      // if (Math.abs(dx) > Math.abs(dy) && Math.abs(dx) > 40) {
-      //   if (dx > 0 && this.touchStart.x <= 80) {
-      //     this.toggleSidebar(true)
-      //   } else {
-      //     this.toggleSidebar(false)
-      //   }
-      // }
-    // }
+  //   toggleSidebar (to) {
+  //     this.isSidebarOpen = typeof to === 'boolean' ? to : !this.isSidebarOpen
+  //     this.$emit('toggle-sidebar', this.isSidebarOpen)
+  //   },
+  //   // side swipe
+  //   onTouchStart (e) {
+  //     this.touchStart = {
+  //       x: e.changedTouches[0].clientX,
+  //       y: e.changedTouches[0].clientY
+  //     }
+  //   },
+  //   onTouchEnd (e) {
+  //     const dx = e.changedTouches[0].clientX - this.touchStart.x
+  //     const dy = e.changedTouches[0].clientY - this.touchStart.y
+  //     if (Math.abs(dx) > Math.abs(dy) && Math.abs(dx) > 40) {
+  //       if (dx > 0 && this.touchStart.x <= 80) {
+  //         this.toggleSidebar(true)
+  //       } else {
+  //         this.toggleSidebar(false)
+  //       }
+  //     }
+  //   }
   // }
 }
 </script>

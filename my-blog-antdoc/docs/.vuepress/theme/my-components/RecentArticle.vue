@@ -12,10 +12,7 @@
       <span>{{pageData.date}}</span>
     </div>
 
-    <div
-      class="art-tags"
-      v-if="pageData.tags.length > 0"
-    >
+    <div class="art-tags" v-if="pageData.tags.length > 0">
       <span class="iconfont icon-tag"></span>
       <a-tag
         v-for="(item, key) in pageData.tags"
@@ -68,6 +65,7 @@ export default {
     display: flex;
     flex-direction: column;
     cursor: pointer;
+    margin: 0.5rem 0;
     // transition: all .4s linear;
     transform: translate3d(0, -0.5rem, 0);
     &:hover {
